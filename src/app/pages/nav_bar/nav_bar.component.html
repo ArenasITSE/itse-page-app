@@ -1,51 +1,289 @@
-<!-- Top bar -->
-<nav class="navbar navbar-expand-lg navbar-dark top-bar px-4">
-  <div class="container-fluid d-flex justify-content-between">
+<!-- 🔴 BARRA GOBIERNO -->
+<nav class="navbar navbar-expand fixed-top barra-gobmx px-4">
 
-    <!-- Izquierda -->
-    <div class="d-flex align-items-center gap-2">
-      <img src="../../../../src/app/pages/assets/logos/gobierno_mexico.png" class="logo-small" alt="">
-      <span class="fw-bold text-white">Gobierno de México</span>
-    </div>
+  <a class="navbar-brand" href="https://www.gob.mx/" target="_blank">
+    <img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg"
+         class="logo-gobierno"
+         alt="Gobierno de México">
+  </a>
 
-    <!-- Derecha -->
-    <div class="d-flex align-items-center gap-4 text-white">
-      <a class="nav-link text-white">Trámites</a>
-      <a class="nav-link text-white">Gobierno</a>
-      <i class="bi bi-search"></i>
-    </div>
-
+  <div class="collapse navbar-collapse justify-content-end">
+    <ul class="navbar-nav d-flex align-items-center gap-4 text-white">
+      <li class="nav-item">
+        <a href="https://www.gob.mx/" class="nav-link text-white">Trámites</a>
+      </li>
+      <li class="nav-item">
+        <a href="https://www.gob.mx/" class="nav-link text-white">Gobierno</a>
+      </li>
+      <li class="nav-item">
+        <i class="bi bi-search"></i>
+      </li>
+    </ul>
   </div>
+
 </nav>
 
-<!-- Main navbar -->
-<nav class="navbar navbar-light bg-light px-4 main-navbar">
-  <div class="container-fluid d-flex justify-content-between">
+<!-- ESPACIO -->
+<div class="mt-5 pt-4"></div>
+
+<!-- 🏛️ ENCABEZADO -->
+<div class="contenedorGobierno py-3 px-4">
+
+  <div class="d-flex justify-content-between align-items-center flex-wrap">
 
     <!-- Logos -->
-<div class="d-flex align-items-center logos-container">
-    <img src="assets/logos/educacion.png" class="logo me-3" alt="Educación">
-    <img src="assets/logos/tecnm.jpg" class="logo" alt="TecNM">
-  </div>
+    <div class="d-flex align-items-center gap-3">
+      <a href="https://www.gob.mx/sep" target="_blank">
+        <img src="assets/logos/educacion.png" class="logo-educacion">
+      </a>
+
+      <a href="/">
+        <img src="assets/logos/tecnm.jpg" class="logo-tecnm">
+      </a>
+    </div>
 
     <!-- Iconos -->
-    <div class="d-flex align-items-center gap-3">
+    <div class="d-flex align-items-center gap-3 mt-2 mt-md-0">
 
-      <i class="bi bi-envelope icon"></i>
-      <i class="bi bi-calendar icon"></i>
+      <img src="assets/encabezado/calendario-icono.png" class="flag">
+      <img src="assets/encabezado/correo-icono.png" class="flag">
+      <img src="assets/encabezado/microsoft_teams.png" class="flag">
+      <img src="assets/encabezado/china-icono.png" class="flag">
+      <img src="assets/encabezado/usa-icono.png" class="flag">
+      <img src="assets/encabezado/francia-icono.png" class="flag">
+      <img src="assets/encabezado/mexico-icono.png" class="flag">
 
-      <!-- Banderas -->
-      <img src="assets/encabezado/china-icono.png" class="flag" alt="">
-      <img src="assets/encabezado/usa-icono.png" class="flag" alt="">
-      <img src="assets/encabezado/francia-icono.png" class="flag" alt="">
-      <img src="assets/encabezado/mexico-icono.png" class="flag" alt="">
-
-      <!-- Accesibilidad -->
       <span class="access">A+</span>
       <span class="access">A-</span>
       <span class="access">A</span>
 
     </div>
 
+  </div>
+
+</div>
+
+<!-- 🔵 MENÚ CON SUBMENÚ -->
+<nav class="navbar navbar-expand-lg menu-bar px-3">
+
+  <div class="container-fluid">
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuNav">
+
+      <ul class="navbar-nav">
+
+        <!-- Home -->
+        <li class="nav-item">
+          <a class="nav-link text-white">
+            <i class="bi bi-house-fill"></i>
+          </a>
+        </li>
+
+        <!-- Nivel 1 -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">
+            Programas Educativos
+          </a>
+
+          <ul class="dropdown-menu">
+
+            <!-- Submenu -->
+            <li class="dropdown-submenu">
+              <a class="dropdown-item">Ingenieria en inteligencia artificial</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Ingenieria en sistemas computacionales Virtual </a>
+            </li>
+            <li>
+              <a class="dropdown-item">Ingenieria en Animación Digital y Efectos Visuales</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Ingenieria en Energias Renovables</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Ingenieria Ferrroviaria</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Ingenieria en Industrias Alimentarias</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Ingenieria en Sistemas Computacionales </a>
+            </li>
+            <li>
+              <a class="dropdown-item">Ingenieria en Administracion Modalidad Mixta</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Ingenieria en Administracion</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Ingenieria en Gastronomia</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Ingenieria en Turismo</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Contador Publico</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Maestria en Economia Social y Solidaria</a>
+            </li>
+          </ul>
+        </li>
+
+        <!-- Lista de Menu de ITSESCARCEGA -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">
+            ITSESCARCEGA
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item">Historia</a>
+            </li>
+             <li>
+              <a class="dropdown-item">Directorio</a>
+            </li>
+             <li>
+              <a class="dropdown-item">Normatividad</a>
+            </li>
+             <li>
+              <a class="dropdown-item">Manual de Lineamientos TecNM</a>
+            </li>
+             <li>
+              <a class="dropdown-item">Convocatorias</a>
+            </li>
+
+
+
+          </ul>
+        </li>
+
+   <!-- menu plataforma -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">
+            Plataformas 
+          </a>
+          <ul class="dropdown-menu">
+
+            <li>
+              <a class="dropdown-item">Moodle</a>
+            </li>
+            <li>
+              <a class="dropdown-item">SITSE</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Siaceb</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Tutorias</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Sistema de Mantenimiento</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Evaluacion Docente</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Registro Biblioteca</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Elibro ITSE</a>
+            </li>
+            
+
+
+          </ul>
+        </li>
+
+
+          <!-- menu servicios  -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">
+            servicios 
+          </a>
+          <ul class="dropdown-menu">
+
+            <li>
+              <a class="dropdown-item">Centro de Cómputo</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Recursos Financieros</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Centro de Información</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Servicios Escolares</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Lactario</a>
+            </li>
+          </ul>
+        </li>
+
+          <!-- menu sistema gestion -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">
+            Sistemas de gestión
+          </a>
+          <ul class="dropdown-menu">
+
+            <li>
+              <a class="dropdown-item">Sistema de Gestion de Igualdad de Genero y no Discriminacion</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Sistema de Gestion Integral (SGI) </a>
+            </li>
+            <li>
+              <a class="dropdown-item">Proteccion Civil y Accesibilidad</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Quejas y Denuncias</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Buzon Digital ITSE</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Fondo de Pantalla Institucional</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Directorio Enlaces de CJM-Universidades </a>
+            </li>
+
+          </ul>
+        </li>
+
+          <!-- menu gestion institucional -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">
+            gestion institucional 
+          </a>
+          <ul class="dropdown-menu">
+
+            <li>
+              <a class="dropdown-item">Misceláneos</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Vinculación</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Transparencias</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Planeacion</a>
+            </li>
+            <li>
+              <a class="dropdown-item">Contactenos</a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
   </div>
 </nav>

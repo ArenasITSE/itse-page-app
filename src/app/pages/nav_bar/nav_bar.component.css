@@ -1,22 +1,28 @@
 /* Barra superior */
-.top-bar {
-  background-color: #6a0f2b; /* guinda gobierno */
-  height: 50px;
+.barra-gobmx {
+  background-color: #6a0f2b;
+  height: 90px;
+  z-index: 1000;
 }
 
-/* Navbar principal */
-.main-navbar {
-  height: 80px;
-  border-bottom: 1px solid #ddd;
+.logo-gobierno {
+  height: 50px;
+  margin-left: 290px;
+}
+
+/* Contenedor principal */
+.contenedorGobierno {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e9e8e8;
 }
 
 /* Logos */
-.logo {
-  height: 50px;
+.logo-educacion {
+  height: 55px;
 }
 
-.logo-small {
-  height: 30px;
+.logo-tecnm {
+  height: 90px;
 }
 
 /* Iconos */
@@ -28,7 +34,8 @@
 
 /* Banderas */
 .flag {
-  height: 22px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -37,4 +44,108 @@
 .access {
   font-size: 14px;
   cursor: pointer;
+}
+
+/* 🔵 ===== MENÚ AZUL ===== */
+.menu-bar {
+  background-color: #243f6b;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* Links del menú */
+.menu-bar .nav-link {
+  color: white;
+  font-weight: 500;
+  padding: 10px 15px;
+}
+
+.menu-bar .nav-link:hover {
+  color: #dcdcdc;
+}
+
+/* Dropdown principal */
+.dropdown-menu {
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Items dropdown */
+.dropdown-item {
+  font-size: 14px;
+  padding: 8px 15px;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+}
+
+/* 🧩 SUBMENÚ (nivel 2) */
+.dropdown-submenu {
+  position: relative;
+}
+
+/* Submenu oculto */
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 2px;
+  display: none;
+}
+
+/* Mostrar submenu */
+.dropdown-submenu:hover .dropdown-menu {
+  display: block;
+}
+
+/* Flechita derecha */
+.dropdown-submenu > a::after {
+  content: "▶";
+  float: right;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+/* 🏠 Icono home */
+.menu-bar .bi-house-fill {
+  font-size: 18px;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .logo-gobierno {
+    margin-left: 0;
+  }
+
+  .logo-tecnm {
+    height: 60px;
+  }
+
+  .logo-educacion {
+    height: 45px;
+  }
+
+  .flag {
+    height: 25px;
+    width: 25px;
+  }
+
+
+
+/* Hover dropdown */
+.menu-bar .dropdown-item:hover {
+  background-color: #1b2f52;
+  color: #fff;
+}
+
+/* Submenu mismo color */
+.menu-bar .dropdown-submenu .dropdown-menu {
+  background-color: #243f6b;
+}
+
+/* Flechita blanca */
+.dropdown-submenu > a::after {
+  color: white;
+}
 }

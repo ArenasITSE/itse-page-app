@@ -1,0 +1,40 @@
+/* Barra superior */
+.top-bar {
+  background-color: #6a0f2b; /* guinda gobierno */
+  height: 50px;
+}
+
+/* Navbar principal */
+.main-navbar {
+  height: 80px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logos */
+.logo {
+  height: 50px;
+}
+
+.logo-small {
+  height: 30px;
+}
+
+/* Iconos */
+.icon {
+  font-size: 18px;
+  color: #1f3c88;
+  cursor: pointer;
+}
+
+/* Banderas */
+.flag {
+  height: 22px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Accesibilidad */
+.access {
+  font-size: 14px;
+  cursor: pointer;
+}

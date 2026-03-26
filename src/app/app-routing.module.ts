@@ -116,10 +116,9 @@ export const routes: Routes = [
     ]
   },
 
-  // 📌 NAVBAR
+  
   { path: 'nav-bar', component: Nav_barComponent },
 
-  // ❌ 
   { path: '**', redirectTo: '' }
 
 ];

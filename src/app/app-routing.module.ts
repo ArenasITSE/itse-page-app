@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-// 🔹 IMPORTA TODOS TUS COMPONENTES
+// componentes de programas educativos 
 import { Contador_pubComponent } from './pages/programas_educativos/contador_pub/contador_pub.component';
 import { Ing_animacionComponent } from './pages/programas_educativos/ing_animacion/ing_animacion.component';
 import { Ing_energias_renoComponent } from './pages/programas_educativos/ing_energias_reno/ing_energias_reno.component';
@@ -18,6 +18,14 @@ import { Nav_barComponent } from './pages/nav_bar/nav_bar.component';
 
 import { HomeComponent } from './pages/home/home.component';
 
+// componentes de Itsescarcega
+ 
+import { ConvocatoriaComponent } from './pages/ITSESCARCEGA/convocatoria/convocatoria.component';
+import { DirectorioComponent } from './pages/ITSESCARCEGA/directorio/directorio.component';
+import { HistoriaComponent } from './pages/ITSESCARCEGA/historia/historia.component';
+import { Manual_lineComponent } from './pages/ITSESCARCEGA/manual_line/manual_line.component';
+import { NormativaComponent } from './pages/ITSESCARCEGA/normativa/normativa.component';
+import { OrganigramaComponent } from './pages/ITSESCARCEGA/organigrama/organigrama.component';
 
 export const routes: Routes = [
 
@@ -41,6 +49,19 @@ export const routes: Routes = [
       { path: 'lic-gastro', component: Lic_gastroComponent },
       { path: 'lic-turismo', component: Lic_turismoComponent },
       { path: 'master-economia', component: Master_economiaComponent }
+    ]
+  },
+
+
+  {
+    path: 'ITSESCARCEGA',
+    children: [
+      { path: 'convocatoria', component: ConvocatoriaComponent },
+      { path: 'directorio', component: DirectorioComponent },
+      { path: 'historia', component: HistoriaComponent },
+      { path: 'manual-line', component: Manual_lineComponent },
+      { path: 'normativa', component: NormativaComponent },
+      { path: 'organigrama', component: OrganigramaComponent }
     ]
   },
 

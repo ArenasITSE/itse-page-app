@@ -27,6 +27,26 @@ import { Manual_lineComponent } from './pages/ITSESCARCEGA/manual_line/manual_li
 import { NormativaComponent } from './pages/ITSESCARCEGA/normativa/normativa.component';
 import { OrganigramaComponent } from './pages/ITSESCARCEGA/organigrama/organigrama.component';
 
+//componentes plataforma
+import { SiacebComponent } from './pages/plataforma/siaceb/siaceb.component';
+import { Sistema_mantenimientoComponent } from './pages/plataforma/sistema_mantenimiento/sistema_mantenimiento.component';
+import { TutoriasComponent } from './pages/plataforma/tutorias/tutorias.component';
+
+// componentes servicios 
+
+import { Centro_computoComponent } from './pages/servicios/centro_computo/centro_computo.component';
+import { Centro_informacionComponent } from './pages/servicios/centro_informacion/centro_informacion.component';
+import { Recursos_financierosComponent } from './pages/servicios/recursos_financieros/recursos_financieros.component';
+import { Servicios_escolaresComponent } from './pages/servicios/servicios_escolares/servicios_escolares.component';
+
+// compontes sistemas de gestion
+
+import { BuzonComponent } from './pages/sistema_gestion/buzon/buzon.component';
+import { Protecion_civilComponent } from './pages/sistema_gestion/protecion_civil/protecion_civil.component';
+import { Quejas_denunciasComponent } from './pages/sistema_gestion/quejas_denuncias/quejas_denuncias.component';
+import { Sistema_ges_igualdadComponent } from './pages/sistema_gestion/sistema_ges_igualdad/sistema_ges_igualdad.component';
+import { Sistema_ges_integralComponent } from './pages/sistema_gestion/sistema_ges_integral/sistema_ges_integral.component';
+
 export const routes: Routes = [
 
   // 🔥 RUTA INICIAL
@@ -62,6 +82,37 @@ export const routes: Routes = [
       { path: 'manual-line', component: Manual_lineComponent },
       { path: 'normativa', component: NormativaComponent },
       { path: 'organigrama', component: OrganigramaComponent }
+    ]
+  },
+
+  {
+    path: 'Plataforma',
+    children: [
+        {path: 'siaceb', component: SiacebComponent},
+        {path: 'sistema-mantenimiento', component: Sistema_mantenimientoComponent},
+        {path: 'tutorias', component: TutoriasComponent}
+
+    ]
+  },
+    {
+    path: 'Servicios',
+    children: [
+        {path: 'centro-computo', component: Centro_computoComponent},
+        {path: 'centro-informacion', component: Centro_informacionComponent},
+        {path: 'recursos-financieros', component: Recursos_financierosComponent},
+        {path: 'servicios-escolares', component: Servicios_escolaresComponent}
+
+    ]
+  },
+    {
+    path: 'sistema-gestion',
+    children: [
+        {path: 'buzon', component: BuzonComponent},
+        {path: 'proteccion-civil', component: Protecion_civilComponent},
+        {path: 'quejas-denuncias', component: Quejas_denunciasComponent},
+        {path: 'sistema-ges-igualdad', component: Sistema_ges_igualdadComponent},
+        {path: 'sistema-ges-integral', component: Sistema_ges_integralComponent}
+
     ]
   },
 

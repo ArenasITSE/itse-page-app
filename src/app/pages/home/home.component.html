@@ -1,3 +1,104 @@
-<p>
-  home works!
-</p>
+
+<div id="carouselTecNM" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+  <div class="carousel-indicators">
+    <button *ngFor="let img of images; let i = index" type="button" data-bs-target="#carouselTecNM"
+      [attr.data-bs-slide-to]="i" [class.active]="i === 0" [attr.aria-label]="'Slide ' + (i + 1)">
+    </button>
+  </div>
+
+  <!-- 🖼 SLIDES -->
+  <div class="carousel-inner">
+
+    <div *ngFor="let img of images; let i = index" class="carousel-item" [class.active]="i === 0">
+
+      <div class="slider-container">
+        <img [src]="img" class="slider-img" alt="Imagen del carrusel">
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BOTÓN ANTERIOR -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselTecNM" data-bs-slide="prev">
+
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Anterior</span>
+
+  </button>
+
+  <!-- BOTÓN SIGUIENTE -->
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselTecNM" data-bs-slide="next">
+
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Siguiente</span>
+
+  </button>
+
+  <!-- comunicacion  -->
+
+  <br>
+  
+  <div class="container my-5 comunicacion-box">
+
+    <h2 class="titulo text-center mb-4">Comunicación</h2>
+
+    <div class="position-relative">
+
+      <!-- Flecha izquierda -->
+      <button class="btn-nav left">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+
+      <!-- Cards -->
+      <div class="row g- px-6">
+
+        <div class="col-md-3" *ngFor="let item of [1,2,3,4]">
+          <div class="card-comunicacion"></div>
+          <p class="mt-2 mb-1">Noticias TecNM {{item}}</p>
+          <a href="#" class="leer-mas">LEER MÁS</a>
+        </div>
+
+      </div>
+
+      <!-- Flecha derecha -->
+      <button class="btn-nav right">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+  
+  <div class="container my-5 seguenos-box">
+
+    <h2 class="titulo text-center mb-4">Síguenos</h2>
+
+    <div class="row justify-content-center">
+
+      <!-- YouTube -->
+      <div class="col-md-5 mb-3">
+        <div class="video-box">
+          <iframe width="100%" height="300" src="https://www.youtube.com/embed/VIDEO_ID" title="YouTube video"
+            frameborder="0" allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Facebook -->
+      <div class="col-md-5 mb-3">
+        <div class="fb-box">
+          <iframe
+            src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/TecNMEscarcega/posts/pfbid0ArahxGLscfso4K1DNuYmg761toUnGys6ydpTvHVnPVCgaAbC13XcsVjera7m8sBSl"
+            width="100%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowfullscreen="true">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

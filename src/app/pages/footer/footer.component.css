@@ -1,0 +1,44 @@
+/* 🔵 Parte superior */
+.footer-top {
+  background-color: #243f6b;
+  color: #fff;
+}
+
+.footer-top h5 {
+  font-weight: 600;
+}
+
+.footer-top p {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* 🔴 Parte inferior */
+.footer-bottom {
+  background-color: #6a0f2b;
+  color: #fff;
+}
+
+.footer-bottom h5 {
+  font-weight: 600;
+}
+
+.footer-bottom ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.logo-footer {
+  height: 60px;
+}
+
+/* Redes */
+.footer-bottom i {
+  cursor: pointer;
+}
+
+/* Número */
+.numero {
+  font-size: 28px;
+  font-weight: bold;
+}

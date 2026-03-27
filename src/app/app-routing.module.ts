@@ -17,6 +17,7 @@ import { Master_economiaComponent } from './pages/programas_educativos/master_ec
 import { Nav_barComponent } from './pages/nav_bar/nav_bar.component';
 
 import { HomeComponent } from './pages/home/home.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 // componentes de Itsescarcega
  
@@ -50,7 +51,7 @@ import { Sistema_ges_integralComponent } from './pages/sistema_gestion/sistema_g
 export const routes: Routes = [
 
   // 🔥 RUTA INICIAL
-  { path: '', redirectTo: 'programas-educativos/contador-publico', pathMatch: 'full' },
+  { path: '', redirectTo: 'Inicio', pathMatch: 'full' },
 
 
   {
@@ -116,8 +117,9 @@ export const routes: Routes = [
     ]
   },
 
-  
+  { path: 'Inicio', component: HomeComponent },
   { path: 'nav-bar', component: Nav_barComponent },
+  { path: 'footer', component: FooterComponent },
 
   { path: '**', redirectTo: '' }
 

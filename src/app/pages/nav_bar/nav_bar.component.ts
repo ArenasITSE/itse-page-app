@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav_bar',
+  standalone: true,
   templateUrl: './nav_bar.component.html',
   styleUrls: ['./nav_bar.component.css']
 })

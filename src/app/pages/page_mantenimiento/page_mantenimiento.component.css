@@ -1,0 +1,13 @@
+.mantenimiento-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* azul oscuro institucional */
+}
+
+.logo-mantenimiento {
+
+  object-fit: contain;
+}

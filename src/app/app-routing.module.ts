@@ -18,6 +18,7 @@ import { Nav_barComponent } from './pages/nav_bar/nav_bar.component';
 
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { Page_mantenimientoComponent } from './pages/page_mantenimiento/page_mantenimiento.component';
 
 // componentes de Itsescarcega
  
@@ -120,7 +121,9 @@ export const routes: Routes = [
   { path: 'Inicio', component: HomeComponent },
   { path: 'nav-bar', component: Nav_barComponent },
   { path: 'footer', component: FooterComponent },
+  { path: 'mantenimiento', component: Page_mantenimientoComponent },
+  
 
-  { path: '**', redirectTo: '' }
+  { path: '**', redirectTo: 'mantenimiento' }
 
 ];

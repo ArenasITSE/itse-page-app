@@ -6,11 +6,12 @@
 
 .footer-top h5 {
   font-weight: 600;
+  font-size: 25px;
 }
 
 .footer-top p {
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 17px;
 }
 
 /* 🔴 Parte inferior */
@@ -21,6 +22,7 @@
 
 .footer-bottom h5 {
   font-weight: 600;
+  font-size:30px;
 }
 
 .footer-bottom ul li {

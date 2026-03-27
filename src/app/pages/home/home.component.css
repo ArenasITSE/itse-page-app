@@ -14,12 +14,12 @@
   object-fit: cover;
 }
 
-.carousel-control-prev-icon,
+/* .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0,0,0,0.5);
   border-radius: 50%;
   padding: 15px;
-}
+} */
 
 /* CONTENEDORES */
 .comunicacion-box,
@@ -50,7 +50,7 @@
 }
 
 /* BOTONES LATERALES */
-.btn-nav {
+/* .btn-nav {
   position: absolute;
   top: 35%;
   background: none;
@@ -58,15 +58,15 @@
   font-size: 25px;
   color: #2c4a7a;
   cursor: pointer;
-}
+} */
 
-.btn-nav.left {
+/* .btn-nav.left {
   left: 0;
 }
 
 .btn-nav.right {
   right: 0;
-}
+} */
 
 /* VIDEO */
 .video-box {
@@ -78,4 +78,108 @@
 .fb-box {
   background: #fff;
   padding: 10px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  border-right: 1px solid #ddd;
+}
+
+.titulo-side {
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-top: 15px;
+}
+
+.side-text {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+/* CONTENIDO */
+.contenido {
+  padding-left: 20px;
+}
+
+.titulo-principal {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.sub-info {
+  font-size: 12px;
+  color: #666;
+}
+
+.seccion-titulo {
+  margin-top: 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.subtitulo {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+/* 🎯 Título */
+.titulo-seccion {
+  font-weight: 600;
+  color: #1f3c88;
+}
+
+/* 🧱 Tarjeta */
+.card-plataforma {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 25px;
+  height: 200px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+/* 🖼 Imagen */
+.card-plataforma img {
+  max-width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+
+  transition: transform 0.3s ease;
+}
+
+/* ✨ Hover bonito */
+.card-plataforma:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* 🖼 Zoom leve */
+.card-plataforma:hover img {
+  transform: scale(1.08);
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .card-plataforma {
+    height: 130px;
+    padding: 15px;
+  }
+
+  .card-plataforma img {
+    max-height: 60px;
+  }
 }

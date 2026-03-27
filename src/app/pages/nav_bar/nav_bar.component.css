@@ -149,3 +149,68 @@
   color: white;
 }
 }
+
+/* Contenedor padre */
+.dropdown-submenu {
+  position: relative;
+}
+
+/* Submenu */
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: -1px;
+  display: none;
+  position: absolute;
+}
+
+/* 🔥 CLAVE: mantener abierto */
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+/* 🔥 CLAVE EXTRA: evita que se cierre al pasar */
+.dropdown-menu > li {
+  position: relative;
+}
+
+/* Mejora interacción */
+.dropdown-menu {
+  pointer-events: auto;
+}
+
+/* Submenu nivel 3 más estilizado */
+.submenu-programas {
+  background-color: #f2f2f2;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  min-width: 280px;
+  padding: 8px 0;
+  margin-left: 8px; /* separación del menú padre */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Items */
+.submenu-programas .submenu-item {
+  padding: 10px 18px;
+  margin: 2px 6px; /* 🔥 separación entre items */
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+/* Texto */
+.submenu-programas .submenu-item .text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Hover elegante */
+.submenu-programas .submenu-item:hover {
+  background-color: #e4e4e4;
+  transform: translateX(3px); /* efecto suave */
+}
+
+/* Separación entre bloques (opcional) */
+.submenu-programas .submenu-item:not(:last-child) {
+  border-bottom: 1px solid #eaeaea;
+}

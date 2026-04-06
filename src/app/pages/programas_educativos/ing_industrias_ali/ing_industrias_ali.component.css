@@ -1,0 +1,269 @@
+/* 🔷 Título */
+.titulo {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* 🟥 Banner */
+  .banner-ia {
+    width: 1300px;
+    height: 270px;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-bottom: 8px solid #6a0f2b;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .banner-left img {
+    width: 1280px;
+    
+  }
+  
+  .banner-right {
+    text-align: right;
+  }
+  
+  .banner-right h4 {
+    color: #6a0f2b;
+    font-weight: bold;
+  }
+  
+  /* 📄 Docs */
+  .doc-section {
+    margin-top: 20px;
+  }
+  
+  .doc-icon {
+    width: 80px;
+    height: 70px;
+  }
+  
+  .doc-link {
+    color: #1f3c88;
+    font-weight: bold;
+  }
+  
+  /* 📝 Texto */
+  .texto {
+    text-align: justify;
+  }
+  
+  /* 🧠 Tabs */
+  .tabs-box {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Tabs header */
+  .nav-tabs {
+    background: #e9ecef;
+    border-bottom: none;
+  }
+  
+  .nav-tabs .nav-link {
+    border: none;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .nav-tabs .nav-link.active {
+    background: #ffffff;
+    border-bottom: 3px solid #1f3c88;
+    font-weight: bold;
+  }
+  
+  /* Contenido */
+  .tab-content {
+    padding: 20px;
+    background: #fff;
+  }
+  
+  /* Lista */
+  .tab-content ul {
+    list-style: square;
+    padding-left: 20px;
+  }
+  
+  .tab-content li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+
+
+  .contact-section {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .contact-card {
+    margin-bottom: 25px;
+  }
+  
+  .contact-card h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .contact-card .name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-card a:hover {
+    text-decoration: underline;
+  }
+  
+  hr {
+    margin: 25px auto;
+    width: 60%;
+  }
+
+
+
+
+  .info-gallery {
+    padding: 40px 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .gallery-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 35px;
+    color: #222;
+  }
+  
+  .info-image-card {
+    max-width: 1100px;
+    margin: 0 auto 35px auto;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .info-image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+  }
+  
+  .info-image-card img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+
+
+
+
+  .custom-tabs {
+    border-bottom: none;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  
+  .custom-tabs .nav-link {
+    background: #f1f1f1;
+    color: #222;
+    border: 1px solid #cfcfcf;
+    border-radius: 8px 8px 0 0;
+    padding: 14px 24px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-tabs .nav-link:hover {
+    background: #e8e8e8;
+  }
+  
+  .custom-tabs .nav-link.active {
+    background: #ffffff;
+    color: #111;
+    border-bottom: 1px solid #ffffff;
+    font-weight: 600;
+  }
+  
+  .custom-tab-content {
+    border: 1px solid #d6d6d6;
+    border-radius: 0 0 12px 12px;
+    background: #fff;
+    padding: 30px 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .tab-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tab-image {
+    max-width: 100%;
+    width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+  }
+  
+  .tab-image:hover {
+    transform: scale(1.01);
+  }
+
+
+
+  .info-section {
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+  }
+  
+  .info-block {
+    margin-bottom: 25px;
+    padding: 15px;
+    border-left: 5px solid #007bff;
+    background-color: #ffffff;
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  
+  .info-block:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .info-block h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .info-block p {
+    text-align: justify;
+    color: #555;
+    line-height: 1.6;
+  }

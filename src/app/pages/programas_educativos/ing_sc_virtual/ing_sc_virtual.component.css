@@ -1,0 +1,94 @@
+/* 🔷 Título */
+.titulo {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* 🟥 Banner */
+  .banner-ia {
+    width: 1300px;
+    height: 270px;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-bottom: 8px solid #6a0f2b;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .banner-left img {
+    width: 1280px;
+    
+  }
+  
+  .banner-right {
+    text-align: right;
+  }
+  
+  .banner-right h4 {
+    color: #6a0f2b;
+    font-weight: bold;
+  }
+  
+  /* 📄 Docs */
+  .doc-section {
+    margin-top: 20px;
+  }
+  
+  .doc-icon {
+    width: 80px;
+    height: 70px;
+  }
+  
+  .doc-link {
+    color: #1f3c88;
+    font-weight: bold;
+  }
+  
+  /* 📝 Texto */
+  .texto {
+    text-align: justify;
+  }
+  
+  /* 🧠 Tabs */
+  .tabs-box {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Tabs header */
+  .nav-tabs {
+    background: #e9ecef;
+    border-bottom: none;
+  }
+  
+  .nav-tabs .nav-link {
+    border: none;
+    color: #000;
+    font-weight: 500;
+  }
+  
+  .nav-tabs .nav-link.active {
+    background: #ffffff;
+    border-bottom: 3px solid #1f3c88;
+    font-weight: bold;
+  }
+  
+  /* Contenido */
+  .tab-content {
+    padding: 20px;
+    background: #fff;
+  }
+  
+  /* Lista */
+  .tab-content ul {
+    list-style: square;
+    padding-left: 20px;
+  }
+  
+  .tab-content li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }

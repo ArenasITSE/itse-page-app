@@ -1,0 +1,51 @@
+.historia-section {
+    background-color: #f5f5f5;
+    padding: 50px 25px;
+  }
+  
+  .historia-title {
+    font-size: 42px;
+    font-weight: 800;
+    color: #2b2b2b;
+    margin-bottom: 30px;
+  }
+  
+  .historia-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+  
+  .historia-img {
+    max-width: 100%;
+    width: 420px;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .historia-img:hover {
+    transform: scale(1.03);
+  }
+  
+  .historia-text {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .historia-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #222;
+    text-align: justify;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 18px;
+    line-height: 1.8;
+    text-align: justify;
+  }

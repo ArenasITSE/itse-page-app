@@ -1,0 +1,82 @@
+.container {
+  padding: 20px;
+  background: #ffffff;
+}
+
+
+/* TITULO */
+.title {
+  margin-bottom: 15px;
+}
+
+/* TABS */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tabs button {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background: #e9ecef;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+}
+
+.tabs button.active {
+  background: white;
+  border-bottom: none;
+  font-weight: bold;
+}
+
+/* CONTENIDO */
+.content {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 0 6px 6px 6px;
+}
+
+/* CARD */
+.card {
+  text-align: center;
+}
+
+/* BARRA ROJA */
+.header-bar {
+  background: #7a0f2b;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* TEXTO */
+.note {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* IMAGEN */
+.center img {
+  width: 850px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.center img:hover {
+  transform: scale(1.03);
+}
+
+
+/* pdf tamaño del card */
+
+iframe {
+  border: none;
+  margin-top: 10px;
+  border-radius: 8px;
+  height: 800px; 
+}

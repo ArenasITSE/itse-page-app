@@ -1,3 +1,58 @@
-<p>
-  centro_computo works!
-</p>
+<br><br><br>
+<div class="container">
+
+  <!-- HEADER -->
+  <h2 class="title">DEPARTAMENTO DE CÓMPUTO Y TI</h2>
+
+  <!-- TABS -->
+  <div class="tabs">
+    <button (click)="tab = 'sistema'" [class.active]="tab === 'sistema'">
+      Sistema de Mantenimiento
+    </button>
+
+    <button (click)="tab = 'comite'" [class.active]="tab === 'comite'">
+      Comité TIC'S
+    </button>
+
+    <button (click)="tab = 'instalaciones'" [class.active]="tab === 'instalaciones'">
+      Instalaciones
+    </button>
+  </div>
+
+  <!-- CONTENIDO -->
+  <div class="content">
+
+    <!-- TAB 1: IMAGEN LOGIN -->
+    <div *ngIf="tab === 'sistema'" class="card">
+      <p class="note">
+        (EXCLUSIVAMENTE PARA USO INTERNO DEL PERSONAL ADMINISTRATIVO)
+      </p>
+
+
+      <div class="center">
+        <img src="assets/servicios/Mantenimiento.jpg" alt="Login CMYS">
+      </div>
+    </div>
+
+    <!-- TAB 2: PDF -->
+    <div *ngIf="tab === 'comite'" class="card">
+      <br>
+      <h3>FUNCIONES Y RESPONSABILIDADES COMITE TIC</h3>
+br>   <br>
+      <iframe
+        src="assets/servicios/Funciones _y _responsabilidades _del _comite _de _TIC _2025.pdf"
+        width="100%"
+        height="500px">
+      </iframe>
+    </div>
+
+    <!-- TAB 3: PDF -->
+    <div *ngIf="tab === 'instalaciones'" class="card">
+      <h3>Instalaciones</h3>
+
+      
+    </div>
+
+  </div>
+</div>
+<br><br><br>

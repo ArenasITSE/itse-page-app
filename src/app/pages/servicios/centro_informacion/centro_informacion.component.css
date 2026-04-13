@@ -1,0 +1,87 @@
+.centro-info-section {
+  padding: 40px;
+  background: #ffffff;
+}
+
+.centro-container {
+ 
+     display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 1100px; /* controla el ancho */
+  margin: 0 auto;    /* centra en la pantalla */
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+}
+
+.sidebar h5 {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.sidebar img {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* CONTENIDO */
+.contenido-centro {
+  flex: 1;
+  max-width: 800px;
+}
+
+.contenido-centro h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.visitas {
+  font-size: 13px;
+  color: gray;
+}
+
+.img-centro img {
+  width: 300px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* TEXTO */
+.contenido-centro p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+/* INFO FINAL */
+.info-final {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.horario {
+  color: green;
+  font-weight: bold;
+}
+
+/* LINKS */
+.links-final {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.links-final a {
+  display: block;
+  color: #1e88e5;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.links-final a:hover {
+  text-decoration: underline;
+}

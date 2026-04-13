@@ -1,0 +1,23 @@
+/* LOGIN IMAGEN */
+.login-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.login-img-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.login-img-container img {
+  width: 550px;
+  max-width: 100%;
+  display: block;
+}
+
+.link {
+  font-size: 20px;
+}

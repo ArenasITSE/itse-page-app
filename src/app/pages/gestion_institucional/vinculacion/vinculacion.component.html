@@ -1,0 +1,711 @@
+<section class="servicios-section">
+
+  <div class="servicios-container">
+
+    <h2>Servicios</h2>
+
+    <p class="subinfo">
+      ITESCARCEGA – VINCULACIÓN – Última actualización: 07 Noviembre 2025
+    </p>
+
+    <div class="servicios-layout">
+
+      <!-- ===== MENU LATERAL ===== -->
+      <aside class="menu-lateral">
+
+        <a class="menu-item" [class.active]="seccionActiva === 'deporte'" (click)="cambiarSeccion('deporte')">
+          Promoción de la Cultura y el Deporte
+        </a>
+
+        <a class="menu-item" [class.active]="seccionActiva === 'capacitacion'" (click)="cambiarSeccion('capacitacion')">
+          Centro de Capacitación, Evaluación y Certificación
+        </a>
+
+        <a class="menu-item" [class.active]="seccionActiva === 'social'" (click)="cambiarSeccion('social')">
+          Servicio Social
+        </a>
+
+        <a class="menu-item" [class.active]="seccionActiva === 'ciee'" (click)="cambiarSeccion('ciee')">
+          Desarrollo Emprendedor (CIEE)
+        </a>
+
+        <a class="menu-item" [class.active]="seccionActiva === 'bolsa'" (click)="cambiarSeccion('bolsa')">
+          Seguimiento y Bolsa de Trabajo
+        </a>
+
+        <a class="menu-item" [class.active]="seccionActiva === 'cle'" (click)="cambiarSeccion('cle')">
+          Coordinación de Lenguas Extranjeras (CLE)
+        </a>
+
+        <a class="menu-item" [class.active]="seccionActiva === 'convenios'" (click)="cambiarSeccion('convenios')">
+          Convenios
+        </a>
+
+      </aside>
+
+      <!-- ===== CONTENIDO DINÁMICO ===== -->
+      <div class="contenido-servicios">
+
+        <div [ngSwitch]="seccionActiva">
+
+          <!-- 🔥 DEPORTE -->
+          <div *ngSwitchCase="'deporte'">
+
+            <h3>Promoción de la Cultura y el Deporte</h3>
+
+            <p>
+              El Departamento de promoción de la cultura y el deporte tiene como objetivo desarrollar en los estudiantes
+              las habilidades y actitudes en los ámbitos culturales, artísticos, recreativos, cívicos, deportivos y de
+              la salud.
+            </p>
+
+            <p>
+              Como parte del cumplimiento de las actividades complementarias, estas actividades permiten alcanzar un
+              crédito
+              complementario de su plan de estudios.
+            </p>
+
+            <h4>Las actividades que se ofertan son las siguientes:</h4>
+
+            <div class="grid-actividades">
+
+              <div>
+                <strong>Recreativas:</strong>
+                <ul>
+                  <li>Básquetbol</li>
+                  <li>Béisbol</li>
+                  <li>Voleibol</li>
+                  <li>Fútbol</li>
+                  <li>Ajedrez</li>
+                  <li>Lectura</li>
+                </ul>
+              </div>
+
+              <div>
+                <strong>Actividades Culturales:</strong>
+                <ul>
+                  <li>Ballet Folclórico</li>
+                  <li>Música</li>
+                </ul>
+              </div>
+
+              <div>
+                <strong>Actividades Cívicas:</strong>
+                <ul>
+                  <li>Banda de Guerra</li>
+                  <li>Escolta</li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="responsable">
+              <p><strong>Responsable:</strong> Lic. Martha Dalila Flores Arias</p>
+              <p><strong>Correo:</strong> extraescolares@itsescarcega.edu.mx</p>
+            </div>
+
+            <div class="img-persona">
+              <img src="assets/vinculacion/MARTHA.JPG">
+            </div>
+
+          </div>
+
+          <!-- 🔥 CAPACITACIÓN -->
+          <div *ngSwitchCase="'capacitacion'">
+
+            <h3>Centro de Capacitación, Evaluación y Certificación</h3>
+
+            <p><strong>Documentación</strong></p>
+
+            <p>CERTIFICADO DEL CENTRO EVALUADOR</p>
+
+            <!-- PDF -->
+            <div class="pdf-container">
+              <iframe src="assets/vinculacion/Cedula_Escarcega.pdf" frameborder="0">
+              </iframe>
+            </div>
+
+          </div>
+          <div *ngSwitchCase="'social'">
+
+            <h3>Servicio Social</h3>
+
+            <p>
+              Tiene como función aplicar y cumplir con los lineamientos respectivos, para que la comunidad estudiantil
+              del Instituto
+              realice la actividad de Servicio Social con el fin de que adquieran conocimientos y experiencias que
+              complementen y
+              actualicen su aprendizaje.
+            </p>
+
+            <!-- IMÁGENES -->
+            <div class="imagenes-servicio">
+              <img src="assets/vinculacion/servsocial.jpg">
+
+            </div>
+
+            <p>
+              El objetivo de esta actividad consiste en desarrollar en él y la prestadora una conciencia de solidaridad
+              y compromiso
+              con la sociedad a la que pertenece, retribuyendo en parte lo que esta aporta en su formación.
+            </p>
+
+            <h4>REQUISITOS:</h4>
+
+            <ul>
+              <li><strong>Ser estudiante inscrito.</strong></li>
+              <li><strong>Contar con el 70% de los créditos aprobados del plan de estudios, siendo el equivalente a 182
+                  créditos.</strong></li>
+            </ul>
+
+            <h4>DOCUMENTOS PARA SERVICIO SOCIAL DEL SISTEMA DE GESTIÓN INTEGRAL:</h4>
+
+            <!-- TABLA -->
+            <div class="tabla-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Entrega en el SITSE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ITSE-SGI-VI-PO-004-01</td>
+                    <td>Solicitud de Servicio Social</td>
+                    <td>Una vez al inicio</td>
+                  </tr>
+                  <tr>
+                    <td>ITSE-SGI-VI-PO-004-02</td>
+                    <td>Carta de presentación de Servicio Social</td>
+                    <td>Una vez al inicio</td>
+                  </tr>
+                  <tr>
+                    <td>ITSE-SGI-VI-PO-004-03</td>
+                    <td>Carta compromiso de Servicio Social</td>
+                    <td>Una vez al inicio</td>
+                  </tr>
+                  <tr>
+                    <td>ITSE-SGI-VI-PO-004-04</td>
+                    <td>Plan de trabajo de Servicio Social</td>
+                    <td>Una vez al inicio</td>
+                  </tr>
+                  <tr>
+                    <td>ITSE-SGI-VI-PO-004-05</td>
+                    <td>Reporte bimestral de Servicio Social</td>
+                    <td>Cada bimestre</td>
+                  </tr>
+                  <tr>
+                    <td>ITSE-SGI-VI-PO-004-06</td>
+                    <td>Evaluación cualitativa de Servicio Social</td>
+                    <td>Cada bimestre</td>
+                  </tr>
+                  <tr>
+                    <td>ITSE-SGI-VI-PO-004-07</td>
+                    <td>Autoevaluación cualitativa de Servicio Social</td>
+                    <td>Cada bimestre</td>
+                  </tr>
+                  <tr>
+                    <td>ITSE-SGI-VI-PO-004-08</td>
+                    <td>Evaluación de actividades de Servicio Social</td>
+                    <td>Cada bimestre</td>
+                  </tr>
+                  <tr>
+                    <td>ITSE-SGI-VI-PO-004-09</td>
+                    <td>Reporte final de Servicio Social</td>
+                    <td>Una vez al final</td>
+                  </tr>
+                  <tr>
+                    <td>ITSE-SGI-VI-PO-004-10</td>
+                    <td>Constancia de terminación de Servicio Social</td>
+                    <td>Una vez final</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <br>
+            <h4>CONSULTAS:</h4>
+
+            <ul>
+              <li><a href="#">Convocatoria enero-julio 2026</a></li>
+              <li><a href="#">Lista de Dependencias donde puedes hacer tu servicio Social</a></li>
+            </ul>
+
+            <!-- IMAGEN RESPONSABLE -->
+            <div class="img-responsable">
+              <img src="assets/vinculacion/serviciosocial2.jpeg">
+            </div>
+
+            <!-- CONTACTO -->
+            <div class="contacto">
+              <p><strong>CONTACTO:</strong></p>
+              <p><strong>Christian Rossina Balán Cruz</strong></p>
+              <p>E-mail: serviciosocial@itsescarcega.edu.mx</p>
+              <p>serviciosocial@escarcega.tecnm.mx</p>
+              <p><strong>Atención:</strong> lunes a viernes horario 10:00 am - 03:00 pm.</p>
+              <p><strong>Ubicación:</strong> Edificio A, planta baja.</p>
+            </div>
+
+          </div>
+
+          <!-- 🔥 CIEE COMPLETO -->
+          <div *ngSwitchCase="'ciee'">
+
+            <h3>Desarrollo Emprendedor (CIEE)</h3>
+
+            <!-- 🔥 SUBMENÚ -->
+            <div class="ciee-tabs">
+              <button (click)="subSeccion = 'incubacion'" [class.active]="subSeccion === 'incubacion'">
+                Centro de Incubación e Innovación Empresarial CIIE
+              </button>
+
+              <button (click)="subSeccion = 'servicios'" [class.active]="subSeccion === 'servicios'">
+                CIIE ofrece los siguientes servicios
+              </button>
+
+              <button (click)="subSeccion = 'nodess'" [class.active]="subSeccion === 'nodess'">
+                NODESS
+              </button>
+
+              <button (click)="subSeccion = 'modelo'" [class.active]="subSeccion === 'modelo'">
+                Modelo Talento Emprendedor
+              </button>
+
+              <button (click)="subSeccion = 'innovatec'" [class.active]="subSeccion === 'innovatec'">
+                INNOVATEC
+              </button>
+            </div>
+
+            <!-- 🔥 CONTENIDO -->
+            <div class="ciee-content">
+
+              <!-- INCUBACIÓN -->
+              <div *ngIf="subSeccion === 'incubacion'" class="incubacion-section">
+
+                <h4>CONÓCENOS</h4>
+
+                <p>
+                  <strong>¿QUIÉNES SOMOS?</strong> Somos un Centro de Incubación e Innovación Empresarial que ofrece
+                  programas
+                  de emprendimiento, incubación y acompañamiento para el desarrollo de competencias empresariales en las
+                  y los
+                  emprendedores (as), la creación, el desarrollo y la consolidación de micro, pequeñas y medianas
+                  empresas.
+                </p>
+
+                <p>
+                  <strong>OBJETIVO:</strong> Vincular el capital intelectual con el sector empresarial y social para
+                  desarrollar
+                  proyectos de negocio y comunitarios, sólidos y viables.
+                </p>
+
+                <p>
+                  <strong>MISIÓN:</strong> Brindar asistencia para concretar proyectos que contribuyan a mejorar la
+                  actividad económica
+                  de la región.
+                </p>
+
+                <p>
+                  <strong>VISIÓN:</strong> Ser la incubadora líder en la región en la creación de empresas tecnológicas
+                  y de impacto.
+                </p>
+
+                <!-- 🔥 IMAGEN -->
+                <div class="incubacion-img">
+                  <img src="assets/vinculacion/Convocatoria_Seeds.jpg" alt="Seeds for the future">
+                </div>
+
+                <!-- DATOS -->
+                <p><strong>Responsable:</strong> Lic. José del Carmen Chi Alcocer</p>
+
+                <p>
+                  <strong>Correo Electrónico:</strong>
+                  <a href="mailto:ciie@itsescarcega.edu.mx">ciie@itsescarcega.edu.mx</a>
+                </p>
+
+                <p><strong>Cel:</strong> 9821249263</p>
+
+                <p><strong>Horario de atención:</strong> 8:00 a 16:00 horas</p>
+
+                <!-- IMAGEN PERSONA -->
+                <div class="incubacion-persona">
+                  <img src="assets/vinculacion/jose.jpg" alt="Responsable">
+                </div>
+
+
+              </div>
+              <!-- SERVICIOS CIIE -->
+              <div *ngIf="subSeccion === 'servicios'">
+                <p><strong>El CIIE ofrece los siguientes servicios:</strong></p>
+
+                <ul>
+                  <li>Incubación de proyectos</li>
+                  <li>Gestión de Registro de marcas</li>
+                  <li>Asesoría en Proyectos</li>
+                  <li>Procesos productivos.</li>
+                  <li>Capacitación</li>
+                  <li>Elaboración de Plan de Negocios</li>
+                  <li>Estudios de factibilidad</li>
+                  <li>Vinculación a fuentes de financiamiento</li>
+                </ul>
+              </div>
+
+              <!-- NODESS -->
+              <div *ngIf="subSeccion === 'nodess'">
+
+                <p>
+                  <strong>¿Qué son los NODESS?</strong> Los NODESS son alianzas de integración voluntaria conformada por
+                  al menos tres actores,
+                  con el fin de desarrollar ecosistemas de economía social y solidaria en sus territorios, a través de
+                  los cuales se
+                  propongan, diseñen e implementen soluciones territoriales a necesidades colectivas..
+                </p>
+
+                <p><strong>El Instituto Tecnológico superior de Escárcega tiene integrado 3 NODESS:</strong></p>
+
+                <ul>
+                  <li>NODESS Cachorros Cardenales de Escárcega</li>
+                  <li>NODESS SEVIDA</li>
+                  <li>NODESS Centro Ecoturístico Miguel Colorado</li>
+                </ul>
+
+                <h4>NODESS SEVIDA</h4>
+
+                <div class="nodess-card">
+                  <div class="nodess-text">
+                    REUNIÓN CON LA COMUNIDAD DE DON SAMUEL Y DIVISIÓN DEL NORTE
+                  </div>
+                  <div class="nodess-img">
+                    <img src="assets/vinculacion/ciee.jpg">
+                  </div>
+                </div>
+                <div class="nodess-card">
+                  <div class="nodess-text">
+                    VISITA DEL DIRECTOR GENERAL DEL TEC NM RAMON JIMENEZ LOPEZ, EXPOSICION DE PRODUCTOS DEL NODESS
+                    SEVIDA
+                  </div>
+                  <div class="nodess-img">
+                    <img src="assets/vinculacion/ciee.jpg">
+                  </div>
+                </div>
+                <br>
+                <h3>NODESS COOPERATIVA CACHORROS CARDENALES</h3>
+                <br>
+                <div class="nodess-card">
+                  <div class="nodess-text">
+                    REUNION CON COMITÉ DE LA COOPERATIVA
+                  </div>
+                  <div class="nodess-img">
+                    <img src="assets/vinculacion/ciee.jpg">
+                  </div>
+                </div>
+                <div class="nodess-card">
+                  <div class="nodess-text">
+                    ENTREGA SIMBOLICA DEL REGISTRO DE LA MARCA CACHORROS CARDENALES DE ESCARCEGA
+                  </div>
+                  <div class="nodess-img">
+                    <img src="assets/vinculacion/ciee.jpg">
+                  </div>
+                </div>
+
+                <br>
+                <h3>NODESS CENTRO ECOTURISTICO Y DE AVENTURAS MIGUEL COLORADOS</h3>
+                <br>
+                <div class="nodess-card">
+                  <div class="nodess-text">
+                    IMPARTICIÓN DE CURSOS DE INGLES A OPERARIOS DEL PARQUE
+                  </div>
+                  <div class="nodess-img">
+                    <img src="assets/vinculacion/ciee.jpg">
+                  </div>
+                </div>
+                <div class="nodess-card">
+                  <div class="nodess-text">
+                    REUNION CON LOS MIEMBROS DE LA COMUNIDAD MIGUEL HIDALGO
+                  </div>
+                  <div class="nodess-img">
+                    <img src="assets/vinculacion/ciee.jpg">
+                  </div>
+                </div>
+                <div class="nodess-card">
+                  <div class="nodess-text">
+                    VISITA DEL DIRECTOR GENERAL DEL TEC NM RAMON JIMENEZ LOPEZ AL CENTRO ECOTURISTICO Y DE AVENTURAS
+                    MIGUEL COLORADO
+                  </div>
+                  <div class="nodess-img">
+                    <img src="assets/vinculacion/ciee.jpg">
+                  </div>
+                </div>
+                <div class="nodess-card">
+                  <div class="nodess-text">
+                    LEVANTAMIENTO DE MEDIDAS PARA LA INSTALACIÓN DE PANELES SOLARES
+                  </div>
+                  <div class="nodess-img">
+                    <img src="assets/vinculacion/ciee.jpg">
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- MODELO -->
+              <div *ngIf="subSeccion === 'modelo'">
+          <div class="modelo-section">
+
+  <!-- 🔥 IMÁGENES -->
+  <div class="modelo-imgs">
+    <img src="assets/vinculacion/modelo1.jpg" alt="Modelo Talento">
+    <img src="assets/vinculacion/moelo2.jpg" alt="Modelo Talento">
+  </div>
+
+  <!-- 🔥 TEXTO -->
+  <div class="modelo-texto">
+
+    <p>
+      El TECNM en 2014 propone la creación de un Programa institucional de formación de emprendedores, cuyo objetivo principal 
+      estaba basado en fomentar el talento emprendedor entre el estudiantado de los institutos tecnológicos, con vertientes en 
+      la generación de emprendedores innovadores independientes, intra-emprendedores y emprendedores sociales, para confluir 
+      en la generación de valor a la sociedad, a través del diseño y despliegue delMODELO TALENTO EMPRENDEDOR.
+    </p>
+
+    <p>
+      <strong>Objetivo General:</strong> Fomentar en el estudiante del TECNOLÓGICO NACIONAL DE MÉXICO la cultura emprendedora e impulsar la generación de empresarios independientes, intraemprendedores y emprendedores sociales. Fomentar en el estudiante la cultura emprendedora e impulsar la generación
+      de empresarios independientes.
+    </p>
+
+    <p>
+      <strong>Misión:</strong>  Desarrollar el capital humano emprendedor que propicie la transformación sustentable de su entorno inmediato a través de la innovación.
+    </p>
+
+    <p>
+      <strong>Visión:</strong> Ser un modelo funcional que contribuya con el ecosistema emprendedor nacional, aportando el talento innovador de los jóvenes del TECNOLÓGICO NACIONAL DE MÉXICO
+    </p>
+
+    <p>
+      <strong>Objetivo de actualización 2025:</strong> Reactivar y fortalecer la vocación emprendedora de la comunidad estudiantil del Tecnológico Nacional de México a través de la actualización del Modelo Talento Emprendedor y la construcción y formalización de un Ecosistema de Emprendimiento e Innovación que genere líderes con visión social, sustentable y de equidad. 
+
+    <h4>Convocatoria de Talento Emprendedor</h4>
+
+  </div>
+
+  <!-- 🔥 PDF -->
+  <div class="modelo-pdf">
+    <iframe 
+      src="assets/vinculacion/modelo.pdf" 
+      width="100%" 
+      height="500px">
+    </iframe>
+  </div>
+
+</div>
+              </div>
+
+              <!-- INNOVATEC -->
+              <div *ngIf="subSeccion === 'innovatec'">
+  <div class="innovatec-section">
+
+  <!-- 🔥 LOGO -->
+  <div class="innovatec-logo">
+    <img src="assets/vinculacion/innovatec.jpg" alt="InnovaTecNM">
+  </div>
+
+  <!-- 🔥 TEXTO -->
+  <p class="innovatec-texto">
+    <strong>Objetivo del InnovaTecNM:</strong> Desarrollar proyectos de base tecnológica y creativos con características
+     de escalabilidad que incentiven las capacidades de investigación y desarrollo tecnológico en la solución de problemas
+      de los diferentes sectores público, social y privado, presentes en el ámbito local, regional y nacional, así como 
+      fortalecer procesos de innovación y emprendimiento en los participantes. 
+  </p>
+
+  <!-- 🔥 CONTENIDO TIPO TABLA -->
+  <div class="innovatec-grid">
+
+    <!-- LADO IZQUIERDO -->
+    <div class="innovatec-label">
+      <p>CURSOS</p>
+    </div>
+
+    <!-- LADO DERECHO -->
+    <div class="innovatec-content">
+
+      <img src="assets/vinculacion/innovatec1.jpg" alt="Curso 1">
+      <img src="assets/vinculacion/innovatec2.jpg" alt="Curso 2">
+
+    </div>
+
+  </div>
+
+</div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- 🔥 SEGUIMIENTO Y BOLSA -->
+          <div *ngSwitchCase="'bolsa'">
+
+            <h3>Seguimiento y Bolsa de Trabajo</h3>
+
+            <p>
+              El Instituto Tecnológico Superior de Escárcega tiene como objetivo evaluar y mejorar la formación
+              profesional de los egresados,
+              a través de encuestas de seguimiento a egresados y empleadores con la finalidad de valorar su desempeño
+              profesional y atender
+              las necesidades de educación continua, así como retroalimentar los planes y programas de estudio.
+            </p>
+
+            <p>Dentro de las actividades propuestas a realizar con nuestros egresados están:</p>
+
+            <ol class="lista-actividades">
+              <li>Reuniones con egresados.</li>
+              <li>Ferias de empleo.</li>
+              <li>Encuentros de networking, talleres y/o seminarios de empleabilidad.</li>
+              <li>Ciclos de conferencias o paneles de discusión.</li>
+              <li>Mentorías.</li>
+            </ol>
+
+            <h4>Formularios:</h4>
+
+            <ul class="lista-links">
+              <li><a href="#" target="_blank">Carpeta del DRIVE</a></li>
+              <li><a href="#" target="_blank">Informes de Seguimiento de Egresados 2024</a></li>
+
+              <li><a href="#">Lic. en Administración</a></li>
+              <li><a href="#">Lic. en Gastronomía</a></li>
+              <li><a href="#">Lic. en Turismo</a></li>
+              <li><a href="#">Ing. en Industrias Alimentarias</a></li>
+              <li><a href="#">Ing. en Sistemas Computacionales</a></li>
+              <li><a href="#">Ing. en Energías Renovables</a></li>
+            </ul>
+
+            <!-- IMAGEN -->
+            <div class="img-responsable">
+              <img src="assets/vinculacion/GEMINI.jpg" alt="Responsable">
+            </div>
+
+            <!-- CONTACTO -->
+            <div class="contacto">
+              <p><strong>Responsable:</strong> Lic. Gemini Georgina Cruz Mena</p>
+              <p><strong>Correo Electrónico:</strong> auxvinculacion@itsescarcega.edu.mx</p>
+              <p><strong>Horario de Atención:</strong> lunes a viernes de 8:00 am – 16:00 pm.</p>
+              <p><strong>Ubicación:</strong> Edificio A, Planta Alta</p>
+            </div>
+
+          </div>
+
+          <!-- 🔥 CLE -->
+          <div *ngSwitchCase="'cle'">
+
+            <h3>Coordinación de Lenguas Extranjeras (CLE)</h3>
+
+            <p>
+              El Departamento de Lenguas Extranjeras CLE tiene como objetivo establecer los lineamientos para facilitar
+              y normar
+              la determinación del nivel de idioma adecuado de los estudiantes de nuevo ingreso y dar seguimiento a los
+              estudiantes
+              inscritos y realizar el proceso de inscripción en el nivel correspondiente.
+            </p>
+
+            <h4>Alcance</h4>
+            <p>
+              Este departamento es de aplicación obligatoria para todo el alumnado del ITS campus Escárcega.
+            </p>
+
+            <h4>Official Exam Preparation Centre</h4>
+            <p>
+              Desde inicios del año 2024 el ITS Escárcega realizó un convenio con la editorial <strong>British
+                Council</strong>
+              para realizar certificaciones y el examen de ubicación de inglés con validez internacional.
+            </p>
+
+            <p>
+              Todo alumno tiene la obligación de obtener nivel <strong>B1</strong> para cumplir requisitos de
+              titulación,
+              o bien presentar comprobante externo validado.
+            </p>
+
+            <h4>¿Cuáles son los niveles?</h4>
+            <ul>
+              <li><strong>Principiante:</strong> A1, A2</li>
+              <li><strong>Intermedio:</strong> B1, B2</li>
+              <li><strong>Avanzado:</strong> C1, C2</li>
+            </ul>
+
+            <p><strong>Nota:</strong></p>
+            <ul>
+              <li>Centro certificador</li>
+              <li>Lineamientos de inglés</li>
+              <li>Examen diagnóstico</li>
+              <li>Preguntas frecuentes</li>
+            </ul>
+
+            <h4>Actividades ofertadas</h4>
+            <ul>
+              <li><strong>Examen de Certificación:</strong> English Score (British Council)</li>
+              <li><strong>Curso Largo Escolarizado:</strong> 3 semestres</li>
+              <li><strong>Examen de Liberación:</strong> Interno CLE</li>
+              <li><strong>Examen de Ubicación:</strong> Diagnóstico</li>
+              <li><strong>Curso Intensivo:</strong> 6 meses</li>
+            </ul>
+
+            <!-- 🔥 IMAGEN GRANDE -->
+            <div class="cle-img">
+              <img src="assets/vinculacion/ingless.jpeg" alt="Cursos CLE">
+            </div>
+
+            <h4>Formatos</h4>
+            <ul>
+              <li>Formato de inscripción</li>
+              <li>Comprobante de pago</li>
+            </ul>
+
+            <h4>Horarios</h4>
+            <p>Flexibles (Matutinos/Vespertinos/Fin de semana) <br><br>
+
+              Para dudas relacionadas con el programa de inglés, escribir al correo: cle@itsescarcega.edu.mx o al
+              celular 9932964213.</p>
+
+            <!-- 🔥 RESPONSABLE -->
+            <div class="contacto">
+              <p><strong>Responsable:</strong> Lic. Rosa Guadalupe Sarricolea Luna</p>
+              <p><strong>Correo:</strong> cle@itsescarcega.edu.mx</p>
+              <p>sarimoon@hotmail.com</p>
+              <p><strong>Teléfono:</strong> 9932964213</p>
+            </div>
+
+          </div>
+
+          <!-- 🔥 CONVENIOS -->
+          <div *ngSwitchCase="'convenios'" class="convenios-section">
+
+            <h3>Convenios</h3>
+
+            <p class="convenios-text">
+              Contenido sobre convenios institucionales que fortalecen la vinculación académica y profesional
+              con diferentes organismos y empresas.
+            </p>
+
+            <!-- LINK -->
+            <div class="convenios-link">
+              <a href="#" target="_blank">
+                Relación de Convenios Vigentes 2025
+              </a>
+            </div>
+
+            <!-- IMAGEN -->
+            <div class="convenios-img">
+              <img src="assets/vinculacion/martin.jpg" alt="Responsable Convenios">
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

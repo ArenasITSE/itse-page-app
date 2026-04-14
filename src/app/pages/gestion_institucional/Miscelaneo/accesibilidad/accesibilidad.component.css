@@ -1,0 +1,25 @@
+.accesibilidad-section {
+  background: #f3f3f3;
+  padding: 40px 20px;
+  font-family: roboto, sans-serif;
+}
+
+.accesibilidad-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* TITULO */
+.accesibilidad-container h2 {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* TEXTO */
+.accesibilidad-container p {
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 12px;
+}

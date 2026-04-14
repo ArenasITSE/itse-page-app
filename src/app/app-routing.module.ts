@@ -49,9 +49,20 @@ import { Quejas_denunciasComponent } from './pages/sistema_gestion/quejas_denunc
 import { Sistema_ges_igualdadComponent } from './pages/sistema_gestion/sistema_ges_igualdad/sistema_ges_igualdad.component';
 import { Sistema_ges_integralComponent } from './pages/sistema_gestion/sistema_ges_integral/sistema_ges_integral.component';
 
+
+// rutas gestion institucional MISCELANEO
+import { ArchivoComponent } from './pages/gestion_institucional/Miscelaneo/archivo/archivo.component';
+import { Contabilidad_institucionalComponent } from './pages/gestion_institucional/Miscelaneo/contabilidad_institucional/contabilidad_institucional.component';
+import { CS_S247_PRODEPComponent } from './pages/gestion_institucional/Miscelaneo/CS_S247_PRODEP/CS_S247_PRODEP.component';
+import { CS_PpU006Component } from './pages/gestion_institucional/Miscelaneo/CS_PpU006/CS_PpU006.component';
+import { AccesibilidadComponent } from './pages/gestion_institucional/Miscelaneo/accesibilidad/accesibilidad.component';
+
+// vinculacion
+import { VinculacionComponent } from './pages/gestion_institucional/vinculacion/vinculacion.component';
+
 export const routes: Routes = [
 
-  // 🔥 RUTA INICIAL
+
   { path: '', redirectTo: 'Inicio', pathMatch: 'full' },
 
 
@@ -116,6 +127,20 @@ export const routes: Routes = [
         {path: 'sistema-ges-integral', component: Sistema_ges_integralComponent}
 
     ]
+  },
+
+  {
+    path: 'gestion_institucional',
+    children: [
+      {path: 'archivo', component: ArchivoComponent},
+      {path: 'contabilidad-institucional', component: Contabilidad_institucionalComponent},
+      {path: 'cs-s247-prodep', component: CS_S247_PRODEPComponent},
+      {path: 'cs-ppu006', component: CS_PpU006Component},
+      {path: 'accesibilidad', component: AccesibilidadComponent},
+      {path: 'vinculacion', component: VinculacionComponent}
+
+    ]
+
   },
 
   { path: 'Inicio', component: HomeComponent },

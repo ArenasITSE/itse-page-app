@@ -1,0 +1,28 @@
+/* PDF */
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pdf-container iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 650px;
+  border: 1px solid #ccc;
+  margin-bottom: 100px;
+}
+
+h5 {
+  margin-top: 40px;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+p {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  margin-top: 20px;
+}

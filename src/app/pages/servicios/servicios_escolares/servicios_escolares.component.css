@@ -1,0 +1,53 @@
+.servicios-section {
+  background: #f5f5f5;
+  padding: 40px 20px;
+}
+
+.servicios-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* TITULO */
+.servicios-container h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+/* SUBTITULOS */
+.servicios-container h4 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* TEXTO */
+.servicios-container p {
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* LISTA */
+.lista-servicios {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.lista-servicios li {
+  margin-bottom: 6px;
+}
+
+/* PDF */
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pdf-container iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 500px;
+  border: 1px solid #ccc;
+}

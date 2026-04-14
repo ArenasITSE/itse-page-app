@@ -1,0 +1,94 @@
+
+.sgi-section {
+  background: #f3f3f3;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sgi-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ===== SIDEBAR ===== */
+.sgi-sidebar {
+  width: 220px;
+}
+
+.menu-item {
+  display: block;
+  padding: 10px;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.menu-item.active {
+  background: #c82333;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-item.gray {
+  background: #e0e0e0;
+}
+
+/* ===== CONTENIDO ===== */
+.sgi-content {
+  flex: 1;
+  max-width: 750px;
+}
+
+.sgi-content h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* ICONO */
+.sgi-icono {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sgi-icono img {
+  width: 60px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.link-doc {
+  color: #1e88e5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.link-doc:hover {
+  text-decoration: underline;
+}
+
+/* TITULOS */
+.sgi-content h4 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* TEXTO */
+.sgi-content p {
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* LINEAS */
+.sgi-content hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}

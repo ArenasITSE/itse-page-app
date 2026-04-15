@@ -1,3 +1,143 @@
-<p>
-  CS_PpU006 works!
-</p>
+
+<div class="contraloria-section">
+
+  <h2>CSU006</h2>
+  
+
+  <!-- LOGO -->
+  <div class="contraloria-logo">
+    <img src="assets/home_logos/logo_conta.jpg">
+  </div>
+
+  <!-- RESPONSABLE -->
+  <div class="contraloria-responsable">
+    <p><strong>■ RESPONSABLE</strong></p>
+    <p>Gabriela Gutiérrez Hernández | Responsable de Contraloría Social y CSU006</p>
+    <p>E-mail: <a href="#">prodep@escarcega.tecnm.mx</a></p>
+  </div>
+
+  <!-- 🔥 MENÚ TIPO PESTAÑAS (IGUAL QUE LOS DEMÁS) -->
+  <div class="tabs-menu">
+
+    <button [class.active]="tab==='prodep'" (click)="tab='prodep'">CONTROLARÌA SOCIAL</button>
+    <button [class.active]="tab==='social'" (click)="tab='social'">DOCUMENTOS NORMATIVOS</button>
+    <button [class.active]="tab==='docs'" (click)="tab='docs'">INFORMES</button>
+    <button [class.active]="tab==='informes'" (click)="tab='informes'">QUEJAS, DENUNCIAS O IRREGULARIDADES</button>
+    <button [class.active]="tab==='quejas'" (click)="tab='quejas'">MANUAL DE OPERACIONES DEL SICS-INSTANCIAS EJECUTORAS 2024</button>
+    <button [class.active]="tab==='logo'" (click)="tab='logo'">LOGOTIPO CONTRALORIA SOCIAL</button>
+
+  </div>
+
+  <!-- CONTENIDO -->
+  <div class="tabs-content">
+
+    <div *ngIf="tab==='prodep'">
+      <iframe src="">
+        <p>prueba</p>
+      </iframe>
+    </div>
+
+    <div *ngIf="tab==='social'">
+         <ul class="docs-list">
+          <h3>Documentos Normativos</h3>
+    <li>
+      
+      <br><br>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">Lineamientos </a>
+    </li>
+      <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">Esquema U006</a>
+    </li>
+      <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">Guía Operativa U006 </a>
+    </li>
+     <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">Modelo 4 PATCS</a>
+    </li>
+     <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">OF Validación U006</a>
+    </li>
+
+    <h3>Formatos de la Guía Operativa</h3>
+
+     <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank"> Anexo 1 Acta constitución de CCS U006 2024 TecNM </a>
+    </li> <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">Anexo 2 Acta sustitución de CCS U006 2024 TecNM</a>
+    </li> <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">Anexo 3 Minuta Reunión CCS U006 2024 TecNM </a>
+    </li> <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">Anexo 4 Informe Final del CCS U006 2024 TecNM </a>
+    </li>
+    
+    
+  </ul>
+    </div>
+
+    <div *ngIf="tab==='docs'">
+      <div class="docs-section">
+
+  <h4>Documentos Normativos</h4>
+
+  <ul class="docs-list">
+
+   
+  </ul>
+
+</div>
+    </div>
+
+ <div *ngIf="tab === 'informes'" class="docs-section">
+
+
+
+  <ul class="docs-list">
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">
+          1. - MECANISMOS PARA QUEJAS 
+      </a>
+    </li>
+  </ul>
+
+</div>
+
+    <div *ngIf="tab==='quejas'">
+       <h4></h4>
+
+  <ul class="docs-list">
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">
+         
+      </a>
+    </li>
+  </ul>
+    </div>
+
+    <div *ngIf="tab==='logo'" class="logo-tab">
+       <ul class="docs-list">
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">
+         1. - Logotipo Contraloría Social 
+      </a>
+    </li>
+ 
+  </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<br>

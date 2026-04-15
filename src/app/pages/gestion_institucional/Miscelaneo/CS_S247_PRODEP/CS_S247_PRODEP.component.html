@@ -1,3 +1,156 @@
-<p>
-  CS_S247_PRODEP works!
-</p>
+
+<div class="contraloria-section">
+
+  <h2>CONTRALORÍA SOCIAL 2025</h2>
+  
+
+  <!-- LOGO -->
+  <div class="contraloria-logo">
+    <img src="assets/home_logos/logo_conta.jpg">
+  </div>
+
+  <!-- RESPONSABLE -->
+  <div class="contraloria-responsable">
+    <p><strong>■ RESPONSABLE</strong></p>
+    <p>Gabriela Gutiérrez Hernández | Responsable de Contraloría Social y CSU006</p>
+    <p>E-mail: <a href="#">prodep@escarcega.tecnm.mx</a></p>
+  </div>
+
+  <!-- 🔥 MENÚ TIPO PESTAÑAS (IGUAL QUE LOS DEMÁS) -->
+  <div class="tabs-menu">
+
+    <button [class.active]="tab==='prodep'" (click)="tab='prodep'">PRODEP2025</button>
+    <button [class.active]="tab==='social'" (click)="tab='social'">CONTRALORÍA SOCIAL</button>
+    <button [class.active]="tab==='docs'" (click)="tab='docs'">DOCUMENTOS NORMATIVOS</button>
+    <button [class.active]="tab==='informes'" (click)="tab='informes'">INFORMES</button>
+    <button [class.active]="tab==='quejas'" (click)="tab='quejas'">QUEJAS</button>
+    <button [class.active]="tab==='logo'" (click)="tab='logo'">LOGOTIPO</button>
+
+  </div>
+
+  <!-- CONTENIDO -->
+  <div class="tabs-content">
+
+    <div *ngIf="tab==='prodep'">
+      <iframe src="assets/vinculacion/S247_2025.pdf">
+        <p>prueba</p>
+      </iframe>
+    </div>
+
+    <div *ngIf="tab==='social'">
+      <iframe src="assets/vinculacion/CS2025.pdf"></iframe>
+    </div>
+
+    <div *ngIf="tab==='docs'">
+      <div class="docs-section">
+
+  <h4>Documentos Normativos</h4>
+
+  <ul class="docs-list">
+
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/lineamientos.pdf" target="_blank">Lineamientos</a>
+    </li>
+
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/esquema.pdf" target="_blank">Esquema de Contraloría Social 2025</a>
+    </li>
+
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/guia.pdf" target="_blank">Modelo Guía Operativa</a>
+    </li>
+
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/modelo4.pdf" target="_blank">Modelo 4 PATCS</a>
+    </li>
+
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/oficio.pdf" target="_blank">OF Validación S247 2025</a>
+    </li>
+
+  </ul>
+
+  <h4>Formatos de la Guía Operativa</h4>
+
+  <ul class="docs-list">
+
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="#">Anexo 1 - Acta de Constitución del Comité de Contraloría Social 2025</a>
+    </li>
+
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="#">Anexo 2 - Acta de Sustitución de Integrante(s) del Comité de C.S. 2025</a>
+    </li>
+
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="#">Anexo 3 - Minuta de Reunión de Comité de Contraloría Social 2025</a>
+    </li>
+
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="#">Anexo 4 - Informe de Comité de Contraloría Social 2025</a>
+    </li>
+
+  </ul>
+
+</div>
+    </div>
+
+ <div *ngIf="tab === 'informes'" class="docs-section">
+
+
+
+  <ul class="docs-list">
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">
+         1. - S247 INFORME F PRODEP-TecNM-2024 
+      </a>
+    </li>
+  </ul>
+
+</div>
+
+    <div *ngIf="tab==='quejas'">
+       <h4></h4>
+
+  <ul class="docs-list">
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">
+         1. - MECANISMOS PARA QUEJAS y DENUNCIAS 2025
+      </a>
+    </li>
+  </ul>
+    </div>
+
+    <div *ngIf="tab==='logo'" class="logo-tab">
+       <ul class="docs-list">
+    <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">
+         1. - Logotipo Guardianes del Gasto
+      </a>
+    </li>
+      <li>
+      <img src="assets/vinculacion/pdf.png">
+      <a href="assets/contraloria/informe.pdf" target="_blank">
+          1. - Logotipo Guardianes del Gasto 
+      </a>
+    </li>
+  </ul>
+    </div>
+
+  </div>
+
+</div>
+
+<br>

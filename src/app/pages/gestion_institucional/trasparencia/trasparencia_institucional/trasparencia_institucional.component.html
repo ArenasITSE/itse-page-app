@@ -1,0 +1,79 @@
+<div class="transparencia-section">
+
+  <!-- TÍTULO -->
+  <h2>TRANSPARENCIA INSTITUCIONAL</h2>
+  <p class="busqueda">| Ctrl + F | PARA BUSCAR SU FRACCIÓN .</p>
+
+  <!-- 🔥 TABS -->
+  <div class="tabs-menu">
+
+    <button [class.active]="tab==='art74'" (click)="tab='art74'">ARTÍCULO 74</button>
+    <button [class.active]="tab==='art75'" (click)="tab='art75'">ARTÍCULO 75</button>
+    <button [class.active]="tab==='iecr'" (click)="tab='iecr'">IECR ITSE</button>
+    <button [class.active]="tab==='irc'" (click)="tab='irc'">IRC ITSE</button>
+
+  </div>
+
+  <!-- CONTENIDO -->
+  <div class="tabs-content">
+
+    <!-- ================= ARTICULO 74 ================= -->
+    <div *ngIf="tab==='art74'">
+
+      <div class="titulo-azul">ARTÍCULO 74.</div>
+
+      <!-- PDF -->
+      <div class="pdf-item">
+        <img src="assets/icons/pdf.png">
+        <a href="assets/transparencia/art74.pdf" target="_blank">
+          Tabla Actualización y Conservación Art. 74 Descargar
+        </a>
+      </div>
+
+      <hr>
+
+      <!-- 🔥 FRACCIONES DINÁMICAS -->
+      <div class="fraccion-box" *ngFor="let f of fracciones">
+
+        <!-- HEADER -->
+        <div class="fraccion-header" (click)="toggleFraccion(f.num)">
+          FRACCIÓN {{f.num}}.
+        </div>
+
+        <!-- TEXTO -->
+        <p class="fraccion-texto">
+          {{f.texto}}
+        </p>
+
+        <!-- DESPLEGABLE -->
+        <div *ngIf="fraccionAbierta === f.num" class="fraccion-contenido">
+
+          <iframe [src]="getSafeUrl(f.link)"></iframe>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- ================= ARTICULO 75 ================= -->
+    <div *ngIf="tab==='art75'">
+      <h3>Artículo 75</h3>
+      <p>Contenido del artículo 75...</p>
+    </div>
+
+    <!-- ================= IECR ================= -->
+    <div *ngIf="tab==='iecr'">
+      <h3>IECR ITSE</h3>
+      <p>Contenido IECR...</p>
+    </div>
+
+    <!-- ================= IRC ================= -->
+    <div *ngIf="tab==='irc'">
+      <h3>IRC ITSE</h3>
+      <p>Contenido IRC...</p>
+    </div>
+
+  </div>
+
+</div>

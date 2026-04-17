@@ -57,6 +57,13 @@ import { CS_S247_PRODEPComponent } from './pages/gestion_institucional/Miscelane
 import { CS_PpU006Component } from './pages/gestion_institucional/Miscelaneo/CS_PpU006/CS_PpU006.component';
 import { AccesibilidadComponent } from './pages/gestion_institucional/Miscelaneo/accesibilidad/accesibilidad.component';
 
+// rutas trasparencia institucional
+import { Trasparencia_institucionalComponent } from './pages/gestion_institucional/trasparencia/trasparencia_institucional/trasparencia_institucional.component';
+import { Aviso_privacidadComponent } from './pages/gestion_institucional/trasparencia/aviso_privacidad/aviso_privacidad.component';
+import { Index_trasparenciaComponent} from './pages/gestion_institucional/trasparencia/index_trasparencia/index_trasparencia.component';
+import { Informes_trasparenciaComponent} from './pages/gestion_institucional/trasparencia/informes_trasparencia/informes_trasparencia.component';
+import { CIIEComponent } from './pages/gestion_institucional/trasparencia/CIIE/CIIE.component';
+
 // vinculacion
 import { VinculacionComponent } from './pages/gestion_institucional/vinculacion/vinculacion.component';
 
@@ -137,7 +144,13 @@ export const routes: Routes = [
       {path: 'cs-s247-prodep', component: CS_S247_PRODEPComponent},
       {path: 'cs-ppu006', component: CS_PpU006Component},
       {path: 'accesibilidad', component: AccesibilidadComponent},
-      {path: 'vinculacion', component: VinculacionComponent}
+      {path: 'vinculacion', component: VinculacionComponent},
+      {path: 'trasparencia-institucional', component: Trasparencia_institucionalComponent},
+      {path: 'index-trasparencia', component: Index_trasparenciaComponent},
+      {path: 'aviso-privacidad', component: Aviso_privacidadComponent},
+      {path: 'informes-trasparencia', component: Informes_trasparenciaComponent},
+      {path: 'ciie', component: CIIEComponent}
+
 
     ]
 

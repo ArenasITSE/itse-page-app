@@ -76,7 +76,7 @@ export class Trasparencia_institucionalComponent implements OnInit {
       link: 'https://drive.google.com/embeddedfolderview?id=1TZIaLmp_ogsbFj2QszTqpoDqqYLP4AtW#list'
     },
      {
-      num: 'XII',
+      num: 'XIII',
       texto: ' ',
       link: ' '
     },

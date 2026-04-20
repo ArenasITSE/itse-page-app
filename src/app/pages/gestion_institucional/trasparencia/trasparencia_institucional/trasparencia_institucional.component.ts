@@ -14,7 +14,7 @@ export class Trasparencia_institucionalComponent implements OnInit {
   tab: string = 'art74';
   fraccionAbierta: string | null = null;
 
-  fracciones = [
+  fraccionesArt74 = [
     {
       num: 'I',
       texto: 'El marco normativo aplicable al sujeto obligado, en el que deberá incluirse leyes, códigos, reglamentos, decretos de creación, manuales administrativos, reglas de operación, criterios, políticas, entre otros',
@@ -260,15 +260,54 @@ export class Trasparencia_institucionalComponent implements OnInit {
       link: 'https://drive.google.com/embeddedfolderview?id=17P7u1du8hh3rPTdUdzuZYWR8Ok0GCoGN#list'
     },
 
-
- 
-
-    
   ];
+
+ // 🔥 ARTÍCULO 75 (SOLO 6 FRACCIONES)
+  fraccionesArt75 = [
+    {
+      num: 'I',
+      texto: 'Sexenal para el Poder Ejecutivo Federal. Las entidades federativas y el Gobierno de la Ciudad de México: cuando se decrete el Plan respectivo cada seis años; en caso de que el Congreso de la Unión realice observaciones para su ejecución, revisión o adecuación, se actualizará en marzo de cada año. Trianual para los municipios (Ayuntamientos), los cuales actualizarán el Plan Municipal de Desarrollo cada tres o cuatro años, dependiendo de la legislación local que corresponda.',
+      link: 'https://drive.google.com/embeddedfolderview?id=1GZE8qunv8yubVn3xvs-W7VuHlRckdz9x#list'
+    },
+    {
+      num: 'II',
+      texto: 'El presupuesto de egresos y las fórmulas de distribución de los recursos otorgados.',
+      link: 'https://drive.google.com/embeddedfolderview?id=1AWsWi6bWBElt1liQ5dOtpxUH_rJw9yEA#list'
+    },
+    {
+      num: 'III',
+      texto: 'Listado de Expropiaciones decretadas y ejecutadas.',
+      link: 'https://drive.google.com/embeddedfolderview?id=1dxaa0zY9Z3zmO3HxomjulgeN46upmJNd#list'
+    },
+    {
+      num: 'IV',
+      texto: 'El nombre, denominación o razón social y clave del registro federal de los contribuyentes a los que se les hubiera cancelado o condonado algún crédito fiscal',
+      link: 'https://drive.google.com/embeddedfolderview?id=1DXuD9sQyfzWYDsK7Sj7n0atpKFH64gQR#list'
+    },
+    {
+      num: 'V',
+      texto: 'Los nombres de las personas a quienes se les habilitó para ejercer como corredores y notarios públicos',
+      link: 'https://drive.google.com/embeddedfolderview?id=1A3EHnofWB5WJpXUk2ssrz1cuVwnXDLZE#list'
+    },
+    {
+      num: 'VI',
+      texto: 'Las disposiciones administrativas, directamente o a través de la autoridad competente',
+      link: 'https://drive.google.com/embeddedfolderview?id=1fYibe0e7hL6lJg9mwM0z8YheAYXqDjKd#list'
+    }
+  ];
+
+
 
   constructor(private sanitizer: DomSanitizer) {}
 
   ngOnInit() {}
+
+
+  // 🔥 CAMBIAR TAB (RESETEA FRACCIÓN ABIERTA)
+  setTab(tab: string) {
+    this.tab = tab;
+    this.fraccionAbierta = null;
+  }
 
   // 🔥 ABRIR / CERRAR FRACCIÓN
   toggleFraccion(f: string) {

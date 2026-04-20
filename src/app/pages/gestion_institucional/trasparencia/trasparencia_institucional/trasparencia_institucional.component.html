@@ -7,10 +7,21 @@
   <!-- 🔥 TABS -->
   <div class="tabs-menu">
 
-    <button [class.active]="tab==='art74'" (click)="tab='art74'">ARTÍCULO 74</button>
-    <button [class.active]="tab==='art75'" (click)="tab='art75'">ARTÍCULO 75</button>
-    <button [class.active]="tab==='iecr'" (click)="tab='iecr'">IECR ITSE</button>
-    <button [class.active]="tab==='irc'" (click)="tab='irc'">IRC ITSE</button>
+    <button [class.active]="tab==='art74'" (click)="setTab('art74')">
+      ARTÍCULO 74
+    </button>
+
+    <button [class.active]="tab==='art75'" (click)="setTab('art75')">
+      ARTÍCULO 75
+    </button>
+
+    <button [class.active]="tab==='iecr'" (click)="setTab('iecr')">
+      IECR ITSE
+    </button>
+
+    <button [class.active]="tab==='irc'" (click)="setTab('irc')">
+      IRC ITSE
+    </button>
 
   </div>
 
@@ -22,7 +33,7 @@
 
       <div class="titulo-azul">ARTÍCULO 74.</div>
 
-      <!-- PDF -->
+      <!-- PDF PRINCIPAL -->
       <div class="pdf-item">
         <img src="assets/vinculacion/pdf.png">
         <a href="assets/trasparencia/pdfs/TABLA_DE_ACTUALIZACION_Y_CONSERVACION_ARTICULO_74_2018.pdf" target="_blank">
@@ -32,56 +43,56 @@
 
       <hr>
 
-      <!-- 🔥 FRACCIONES DINÁMICAS -->
-      <div class="fraccion-box" *ngFor="let f of fracciones">
+      <!-- 🔥 FRACCIONES 74 -->
+      <div class="fraccion-box" *ngFor="let f of fraccionesArt74">
 
-        <!-- HEADER -->
         <div class="fraccion-header" (click)="toggleFraccion(f.num)">
           FRACCIÓN {{f.num}}.
         </div>
 
-        <!-- TEXTO -->
         <p class="fraccion-texto">
           {{f.texto}}
         </p>
 
-        <!-- DESPLEGABLE -->
         <div *ngIf="fraccionAbierta === f.num" class="fraccion-contenido">
-
           <iframe [src]="getSafeUrl(f.link)"></iframe>
-
         </div>
-        
-        <br> <br>  
+
       </div>
-         <div class="pdf-item">
+
+      <!-- PDFs EXTRAS (SIN ARRAY) -->
+      <div class="pdf-item">
         <img src="assets/vinculacion/pdf.png">
         <a href="assets/trasparencia/pdfs/Tabla_de_aplicabilidad_Art_74-2022.pdf" target="_blank">
-          Tabla de Aplicabilidad Art. 74-2022 Descargar
+          Tabla de Aplicabilidad Art. 74-2022
         </a>
       </div>
-         <div class="pdf-item">
+
+      <div class="pdf-item">
         <img src="assets/vinculacion/pdf.png">
         <a href="assets/trasparencia/pdfs/Tabla _de_Aplicabilidad_Art_74-2021.pdf" target="_blank">
-          Tabla de Aplicabilidad Art. 74-2021 Descargar
+          Tabla de Aplicabilidad Art. 74-2021
         </a>
       </div>
-         <div class="pdf-item">
+
+      <div class="pdf-item">
         <img src="assets/vinculacion/pdf.png">
         <a href="assets/trasparencia/pdfs/Tabla_de_aplicabilidad_2020_ITSE.pdf" target="_blank">
-          Tabla de Aplicabilidad Art. 74-2020 Descargar
+          Tabla de Aplicabilidad Art. 74-2020
         </a>
       </div>
-         <div class="pdf-item">
+
+      <div class="pdf-item">
         <img src="assets/vinculacion/pdf.png">
         <a href="assets/trasparencia/pdfs/Tabla_de_aplicabilidad_Art_74-2019.pdf" target="_blank">
-          Tabla de Aplicabilidad Art. 74-2019 Descargar
+          Tabla de Aplicabilidad Art. 74-2019
         </a>
       </div>
-         <div class="pdf-item">
+
+      <div class="pdf-item">
         <img src="assets/vinculacion/pdf.png">
-        <a href="assets/trasparencia/pdfs/TABLA_DE_APLICABILIDAD_2018" target="_blank">
-          Tabla de Aplicabilidad Art. 74-2018 Descargar
+        <a href="assets/trasparencia/pdfs/TABLA_DE_APLICABILIDAD_2018.pdf" target="_blank">
+          Tabla de Aplicabilidad Art. 74-2018
         </a>
       </div>
 
@@ -89,20 +100,137 @@
 
     <!-- ================= ARTICULO 75 ================= -->
     <div *ngIf="tab==='art75'">
-      <h3>Artículo 75</h3>
-      <p>Contenido del artículo 75...</p>
+
+      <div class="titulo-azul">ARTÍCULO 75.</div>
+
+      <div class="pdf-item">
+        <img src="assets/vinculacion/pdf.png">
+        <a href="assets/trasparencia/pdfs/TABLA_DE_ACTUALIZACION_Y_CONSERVACION_ARTICULO_75.pdf" target="_blank">
+          Tabla de Actualización y Conservación Art. 75
+        </a>
+      </div>
+
+      <hr>
+
+      <!-- 🔥 FRACCIONES 75 -->
+      <div class="fraccion-box" *ngFor="let f of fraccionesArt75">
+
+        <div class="fraccion-header" (click)="toggleFraccion(f.num)">
+          FRACCIÓN {{f.num}}.
+        </div>
+
+        <p class="fraccion-texto">
+          {{f.texto}}
+        </p>
+
+        <div *ngIf="fraccionAbierta === f.num" class="fraccion-contenido">
+          <iframe [src]="getSafeUrl(f.link)"></iframe>
+        </div>
+
+      </div>
+
+        <!-- PDFs EXTRAS (SIN ARRAY) -->
+      <div class="pdf-item">
+        <img src="assets/vinculacion/pdf.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_aplicabilidad_Art75-2022.pdf" target="_blank">
+          Tabla de Aplicabilidad Art. 75-2022
+        </a>
+      </div>
+
+      <div class="pdf-item">
+        <img src="assets/vinculacion/pdf.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_Aplicabilidad_Art_75-2021.pdf" target="_blank">
+          Tabla de Aplicabilidad Art. 75-2021
+        </a>
+      </div>
+
+      <div class="pdf-item">
+        <img src="assets/vinculacion/pdf.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_aplicabilidad_art752020_ITSE.pdf" target="_blank">
+          Tabla de Aplicabilidad Art. 75-2020
+        </a>
+      </div>
+
+      <div class="pdf-item">
+        <img src="assets/vinculacion/pdf.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_aplicabilidad_Art_75-2019.pdf" target="_blank">
+          Tabla de Aplicabilidad Art. 75-2019
+        </a>
+      </div>
+
+      <div class="pdf-item">
+        <img src="assets/vinculacion/pdf.png">
+        <a href="assets/trasparencia/pdfs/TABLA_DE_APLICABILIDAD_2018_art75.pdf" target="_blank">
+          Tabla de Aplicabilidad Art. 75-2018
+        </a>
+      </div>
+
+
     </div>
 
     <!-- ================= IECR ================= -->
     <div *ngIf="tab==='iecr'">
       <h3>IECR ITSE</h3>
-      <p>Contenido IECR...</p>
+      <br>
+
+      <h4>2020</h4>
+      <div class="pdf-item">
+        <img src="assets/vinculacion/excel.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_Aplicabilidad_Art_75-2021.pdf" target="_blank">IECR ITSE PRIMER SEMESTRE 2020</a>
+      </div>
+
+        <h4>2019</h4>
+      <div class="pdf-item">
+        <img src="assets/vinculacion/excel.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_Aplicabilidad_Art_75-2021.pdf" target="_blank">IECR ITSE PRIMER SEMESTRE 2019</a>
+      </div>
+       <div class="pdf-item">
+        <img src="assets/vinculacion/excel.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_Aplicabilidad_Art_75-2021.pdf" target="_blank">IECR ITSE SEGUNDO SEMESTRE 2019</a>
+      </div>
+
+        <h4>2018</h4>
+      <div class="pdf-item">
+        <img src="assets/vinculacion/excel.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_Aplicabilidad_Art_75-2021.pdf" target="_blank">IECR ITSE PRIMER SEMESTRE 2018</a>
+      </div>
+       <div class="pdf-item">
+        <img src="assets/vinculacion/excel.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_Aplicabilidad_Art_75-2021.pdf" target="_blank">IECR ITSE SEGUNDO SEMESTRE 2018</a>
+      </div>
+
+          <h4>2017</h4>
+      <div class="pdf-item">
+        <img src="assets/vinculacion/excel.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_Aplicabilidad_Art_75-2021.pdf" target="_blank">IECR ITSE PRIMER SEMESTRE 2017</a>
+      </div>
+       <div class="pdf-item">
+        <img src="assets/vinculacion/excel.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_Aplicabilidad_Art_75-2021.pdf" target="_blank">IECR ITSE SEGUNDO SEMESTRE 2017</a>
+      </div>
+
+
+
+
     </div>
 
     <!-- ================= IRC ================= -->
     <div *ngIf="tab==='irc'">
       <h3>IRC ITSE</h3>
-      <p>Contenido IRC...</p>
+
+       <div class="pdf-item">
+        <img src="assets/vinculacion/pdf.png">
+        <a href="assets/trasparencia/pdfs/Tabla_de_aplicabilidad_Art_75-2019.pdf" target="_blank">
+          ITSE-IRC-2021 Descargar
+        </a>
+      </div>
+
+      <div class="pdf-item">
+        <img src="assets/vinculacion/pdf.png">
+        <a href="assets/trasparencia/pdfs/TABLA_DE_APLICABILIDAD_2018_art75.pdf" target="_blank">
+          ITSE-IRC-2020 Descargar
+        </a>
+      </div>
     </div>
 
   </div>

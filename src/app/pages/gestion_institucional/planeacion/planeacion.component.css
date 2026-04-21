@@ -1,0 +1,59 @@
+/* CONTENEDOR */
+.docs-section {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.docs-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* TITULO */
+.docs-container h2 {
+  margin-bottom: 15px;
+}
+
+/* LISTA */
+.docs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* ITEM */
+.docs-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: 0.2s;
+}
+
+/* HOVER */
+.docs-list li:hover {
+  background: #f5f9ff;
+}
+
+/* ICONO */
+.docs-list img {
+  width: 22px;
+  margin-right: 10px;
+}
+
+/* LINK */
+.docs-list a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-size: 14px;
+  width: 100%;
+}
+
+.docs-list a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,53 @@
+/* CONTENEDOR */
+.indicadores-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* CAJA */
+.indicadores-container {
+  padding: 20px;
+}
+
+/* 🔥 TITULO LATERAL */
+.titulo-lateral {
+  border-left: 5px solid #1976d2;
+  padding-left: 10px;
+}
+
+/* CONTENIDO CENTRADO */
+.indicadores-content {
+  text-align: center;
+  padding-top: 20px;
+
+}
+
+/* SUBTITULO */
+.indicadores-content h3 {
+  margin-bottom: 15px;
+}
+
+/* ICONO */
+.icono {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.icono img {
+  width: 60px;
+}
+
+/* LINK */
+.link-indicadores {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.link-indicadores:hover {
+  text-decoration: underline;
+}

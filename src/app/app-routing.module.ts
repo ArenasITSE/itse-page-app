@@ -63,6 +63,8 @@ import { Aviso_privacidadComponent } from './pages/gestion_institucional/traspar
 import { Index_trasparenciaComponent} from './pages/gestion_institucional/trasparencia/index_trasparencia/index_trasparencia.component';
 import { Informes_trasparenciaComponent} from './pages/gestion_institucional/trasparencia/informes_trasparencia/informes_trasparencia.component';
 import { CIIEComponent } from './pages/gestion_institucional/trasparencia/CIIE/CIIE.component';
+import { Indicadores_ciaComponent } from './pages/gestion_institucional/trasparencia/indicadores_cia/indicadores_cia.component';
+import { PlaneacionComponent} from './pages/gestion_institucional/planeacion/planeacion.component';
 
 // vinculacion
 import { VinculacionComponent } from './pages/gestion_institucional/vinculacion/vinculacion.component';
@@ -149,8 +151,9 @@ export const routes: Routes = [
       {path: 'index-trasparencia', component: Index_trasparenciaComponent},
       {path: 'aviso-privacidad', component: Aviso_privacidadComponent},
       {path: 'informes-trasparencia', component: Informes_trasparenciaComponent},
-      {path: 'ciie', component: CIIEComponent}
-
+      {path: 'ciie', component: CIIEComponent},
+      {path: 'indicadores-cia', component: Indicadores_ciaComponent},
+      {path: 'planeacion', component: PlaneacionComponent}
 
     ]
 

@@ -1,3 +1,54 @@
-<p>
-  CIIE works!
-</p>
+<section class="ciie-section">
+
+  <div class="ciie-container">
+
+    <h2>CIIE - Centro de Incubación e Innovación Empresarial</h2>
+
+    <!-- 🔥 MENÚ -->
+    <div class="ciie-tabs">
+
+      <button 
+        [class.active]="tabCIIE === 'catalogo'" 
+        (click)="tabCIIE = 'catalogo'">
+        Formato
+      </button>
+
+      <button 
+        [class.active]="tabCIIE === 'convocatorias'" 
+        (click)="tabCIIE = 'convocatorias'">
+        Cursos
+      </button>
+
+    </div>
+
+    <!-- 🔥 CONTENIDO -->
+    <div class="ciie-content">
+
+      <!-- 🔥 CATÁLOGO (PDF) -->
+      <div *ngIf="tabCIIE === 'catalogo'" class="ciie-card">
+
+        <h3>Catálogo de Cursos CIIE</h3>
+
+        <iframe 
+          src="assets/trasparencia/pdfs/CATALOGO_DE_CURSOS_CIIE_ACTUALIZADO_2026.pdf"
+          class="pdf-viewer">
+        </iframe>
+
+      </div>
+
+      <!-- 🔥 CONVOCATORIAS (IMAGEN) -->
+      <div *ngIf="tabCIIE === 'convocatorias'" class="ciie-card">
+
+        <h3>Cursos</h3>
+
+        <div class="ciie-img">
+          <img src="assets/vinculacion/CONVOCATORIA_CIEE.jpeg" alt="Convocatorias">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

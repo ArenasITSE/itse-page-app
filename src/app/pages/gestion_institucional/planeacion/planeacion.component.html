@@ -1,54 +1,39 @@
-<section class="planeacion-section">
+<div class="convocatorias-container">
 
-  <h2 class="titulo">PLANEACIÓN</h2>
+  <div 
+    class="conv-card"
+    *ngFor="let t of tabs">
 
-  <!-- 🔥 WRAPPER -->
-  <div class="tabs-wrapper">
+    <!-- HEADER -->
+    <div 
+      class="conv-header"
+      [class.active]="tabActivo === t.nombre"
+      (click)="tabActivo = tabActivo === t.nombre ? '' : t.nombre">
 
-    <!-- IZQUIERDA -->
-    <button class="scroll-btn left" (click)="scrollTabs('left')">
-      ‹
-    </button>
+      <div class="icono">▶</div>
 
-    <!-- TABS -->
-    <div class="tabs-menu" #tabsContainer>
-
-      <button 
-        *ngFor="let t of tabs"
-        [class.active]="tabActivo === t.nombre"
-        (click)="tabActivo = t.nombre">
-
+      <div class="titulo">
         {{t.nombre}}
-
-      </button>
-
-    </div>
-
-    <!-- DERECHA -->
-    <button class="scroll-btn right" (click)="scrollTabs('right')">
-      ›
-    </button>
-
-  </div>
-
-  <!-- CONTENIDO -->
-  <div class="tabs-content">
-
-    <div *ngFor="let t of tabs">
-      <div *ngIf="tabActivo === t.nombre">
-
-        <ul class="docs-list">
-          <li *ngFor="let doc of t.archivos">
-            <img src="assets/vinculacion/pdf.png">
-            <a [href]="doc.url" target="_blank">
-              {{doc.nombre}}
-            </a>
-          </li>
-        </ul>
-
       </div>
+
+    </div>
+
+    <!-- CONTENIDO -->
+    <div 
+      class="conv-body"
+      *ngIf="tabActivo === t.nombre">
+
+      <ul class="docs-list">
+        <li *ngFor="let doc of t.archivos">
+          <img src="assets/vinculacion/pdf.png">
+          <a [href]="doc.url" target="_blank">
+            {{doc.nombre}}
+          </a>
+        </li>
+      </ul>
+
     </div>
 
   </div>
 
-</section>
+</div>

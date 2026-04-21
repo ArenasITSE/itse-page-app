@@ -1,107 +1,53 @@
-<section class="docs-section">
+<section class="planeacion-section">
 
-  <div class="docs-container">
+  <h2 class="titulo">PLANEACIÓN</h2>
 
-    <h2>Documentos</h2>
+  <!-- 🔥 WRAPPER -->
+  <div class="tabs-wrapper">
 
-    <ul class="docs-list">
+    <!-- IZQUIERDA -->
+    <button class="scroll-btn left" (click)="scrollTabs('left')">
+      ‹
+    </button>
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PAE 2025 Ejercicio Fiscal 2025</a>
-      </li>
+    <!-- TABS -->
+    <div class="tabs-menu" #tabsContainer>
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PAE 2024 Ejercicio Fiscal 2023</a>
-      </li>
+      <button 
+        *ngFor="let t of tabs"
+        [class.active]="tabActivo === t.nombre"
+        (click)="tabActivo = t.nombre">
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PAE 2023 Ejercicio Fiscal 2022</a>
-      </li>
+        {{t.nombre}}
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PAE 2022 Ejercicio Fiscal 2021</a>
-      </li>
+      </button>
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PAE 2021 Ejercicio Fiscal 2020</a>
-      </li>
+    </div>
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PAE 2020 Ejercicio Fiscal 2019</a>
-      </li>
+    <!-- DERECHA -->
+    <button class="scroll-btn right" (click)="scrollTabs('right')">
+      ›
+    </button>
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PAE 2019 Ejercicio Fiscal 2018</a>
-      </li>
+  </div>
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PDI 2021-2027 ITSE ESTATAL</a>
-      </li>
+  <!-- CONTENIDO -->
+  <div class="tabs-content">
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PDI DEL ITSE 2019 - 2024</a>
-      </li>
+    <div *ngFor="let t of tabs">
+      <div *ngIf="tabActivo === t.nombre">
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PDI 2024-2027</a>
-      </li>
+        <ul class="docs-list">
+          <li *ngFor="let doc of t.archivos">
+            <img src="assets/vinculacion/pdf.png">
+            <a [href]="doc.url" target="_blank">
+              {{doc.nombre}}
+            </a>
+          </li>
+        </ul>
 
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">DICTAMEN PDI 2024-2027</a>
-      </li>
-
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">Evaluación de Diseño Programa 107</a>
-      </li>
-
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">IRC 2023</a>
-      </li>
-
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">IRC 2022</a>
-      </li>
-
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">IRC 2021</a>
-      </li>
-
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">IRC 2020</a>
-      </li>
-
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">IRC 2012-2018</a>
-      </li>
-
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">IRC 2018</a>
-      </li>
-
-      <li>
-        <img src="assets/icons/pdf.png">
-        <a href="#">PROGRAMA U079</a>
-      </li>
-
-    </ul>
+      </div>
+    </div>
 
   </div>
 

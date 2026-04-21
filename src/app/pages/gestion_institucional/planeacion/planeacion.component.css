@@ -1,57 +1,107 @@
 /* CONTENEDOR */
-.docs-section {
+.planeacion-section {
   max-width: 1000px;
   margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 8px;
-}
-
-.docs-container {
-  border: 1px solid #ccc;
-  padding: 20px;
-  background: #fff;
-  border-radius: 8px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* TITULO */
-.docs-container h2 {
+.titulo {
   margin-bottom: 15px;
+}
+
+/* WRAPPER */
+.tabs-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* BOTONES */
+.scroll-btn {
+  background: #1976d2;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 6px;
+  margin: 0 5px;
+}
+
+.scroll-btn:hover {
+  background: #125ea5;
+}
+
+/* TABS */
+.tabs-menu {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  flex: 1;
+  scroll-behavior: smooth;
+}
+
+/* OCULTAR SCROLL */
+.tabs-menu::-webkit-scrollbar {
+  display: none;
+}
+
+/* TAB */
+.tabs-menu button {
+  min-width: 260px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f0f0f0;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: 6px;
+  transition: 0.2s;
+  padding-bottom: 10px;
+}
+
+/* HOVER */
+.tabs-menu button:hover {
+  background: #e3f2fd;
+}
+
+/* ACTIVO */
+.tabs-menu button.active {
+  background: white;
+  border-bottom: 3px solid #1976d2;
+  color: #1976d2;
+  font-weight: bold;
+}
+
+/* CONTENIDO */
+.tabs-content {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 6px;
 }
 
 /* LISTA */
 .docs-list {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
-/* ITEM */
 .docs-list li {
   display: flex;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #e0e0e0;
-  transition: 0.2s;
+  margin: 10px 0;
 }
 
-/* HOVER */
-.docs-list li:hover {
-  background: #f5f9ff;
-}
-
-/* ICONO */
 .docs-list img {
   width: 22px;
   margin-right: 10px;
 }
 
-/* LINK */
 .docs-list a {
-  text-decoration: none;
   color: #1a73e8;
-  font-size: 14px;
-  width: 100%;
+  text-decoration: none;
 }
 
 .docs-list a:hover {

@@ -1,0 +1,64 @@
+/* CONTENEDOR */
+.ierc-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 15px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* TITULO PRINCIPAL */
+.titulo-principal {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* SUBINFO */
+.subinfo {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* TITULO SECUNDARIO */
+.titulo-secundario {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPCIÓN */
+.descripcion {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* LISTA */
+.lista-pdf {
+  list-style: none;
+  padding: 0;
+}
+
+/* ITEM */
+.lista-pdf li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* ICONO */
+.lista-pdf img {
+  width: 22px;
+  margin-right: 10px;
+}
+
+/* LINK */
+.lista-pdf a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-size: 15px;
+}
+
+/* HOVER */
+.lista-pdf a:hover {
+  text-decoration: underline;
+}

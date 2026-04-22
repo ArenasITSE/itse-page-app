@@ -1,0 +1,54 @@
+/* CONTENEDOR */
+.contacto-section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  padding-top: 45px;
+  padding-bottom: 40px;
+
+}
+
+/* CARD */
+.contacto-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* TITULO */
+.contacto-card h2 {
+  margin-bottom: 15px;
+  font-size: 26px;
+  color: #333;
+}
+
+/* TEXTO */
+.contacto-card p {
+  margin-bottom: 12px;
+  line-height: 1.5;
+  color: #444;
+}
+
+/* LISTA */
+.contacto-list {
+  margin-top: 15px;
+  padding-left: 18px;
+}
+
+/* ITEMS */
+.contacto-list li {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .contacto-card {
+    padding: 18px;
+  }
+
+  .contacto-card h2 {
+    font-size: 22px;
+  }
+}

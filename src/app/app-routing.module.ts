@@ -33,6 +33,7 @@ import { OrganigramaComponent } from './pages/ITSESCARCEGA/organigrama/organigra
 import { SiacebComponent } from './pages/plataforma/siaceb/siaceb.component';
 import { Sistema_mantenimientoComponent } from './pages/plataforma/sistema_mantenimiento/sistema_mantenimiento.component';
 import { TutoriasComponent } from './pages/plataforma/tutorias/tutorias.component';
+import { InactivaComponent } from './pages/plataforma/inactiva/inactiva.component';
 
 // componentes servicios 
 
@@ -65,6 +66,8 @@ import { Informes_trasparenciaComponent} from './pages/gestion_institucional/tra
 import { CIIEComponent } from './pages/gestion_institucional/trasparencia/CIIE/CIIE.component';
 import { Indicadores_ciaComponent } from './pages/gestion_institucional/trasparencia/indicadores_cia/indicadores_cia.component';
 import { PlaneacionComponent} from './pages/gestion_institucional/planeacion/planeacion.component';
+import { ContactenosComponent } from './pages/gestion_institucional/contactenos/contactenos.component';
+import { RendicioncuentasComponent } from './pages/gestion_institucional/rendicioncuentas/rendicioncuentas.component';
 
 // vinculacion
 import { VinculacionComponent } from './pages/gestion_institucional/vinculacion/vinculacion.component';
@@ -112,7 +115,8 @@ export const routes: Routes = [
     children: [
         {path: 'siaceb', component: SiacebComponent},
         {path: 'sistema-mantenimiento', component: Sistema_mantenimientoComponent},
-        {path: 'tutorias', component: TutoriasComponent}
+        {path: 'tutorias', component: TutoriasComponent},
+        {path: 'inactiva', component: InactivaComponent}
 
     ]
   },
@@ -153,7 +157,9 @@ export const routes: Routes = [
       {path: 'informes-trasparencia', component: Informes_trasparenciaComponent},
       {path: 'ciie', component: CIIEComponent},
       {path: 'indicadores-cia', component: Indicadores_ciaComponent},
-      {path: 'planeacion', component: PlaneacionComponent}
+      {path: 'planeacion', component: PlaneacionComponent},
+      {path: 'contactenos', component: ContactenosComponent},
+      {path: 'rendicion-cuentas', component: RendicioncuentasComponent}
 
     ]
 

@@ -146,15 +146,31 @@ export class PlaneacionComponent {
     {
       nombre: 'PAE 2020 Ejercicio Fiscal 2019',
       archivos: [
-        { nombre: 'Documento 2020', url: 'assets/planeacion/pae2020.pdf' },
-        { nombre: 'Documento 2020', url: 'assets/planeacion/pae2020.pdf' }
+        { nombre: '1_Evaluacion_PAE_ITSE_2020.pdf', url: 'assets/planeacion-pdf/PAE_2020/1_Evaluacion_PAE_ITSE_2020.pdf' },
+        { nombre: '2.-T', url: 'assets/planeacion-pdf/PAE_2020/2.-T' },
+        { nombre: '3_Anexo_1_Difusion.pdf', url: 'assets/planeacion-pdf/PAE_2020/3_Anexo_1_Difusion.pdf' },
+        { nombre: '4_Ficha_Tecnica_del_evaluador.pdf', url: 'assets/planeacion-pdf/PAE_2020/4_Ficha_Tecnica_del_evaluador.pdf' },
+        { nombre: '5_Curriculum.pdf', url: 'assets/planeacion-pdf/PAE_2020/5_Curriculum.pdf' },
+        { nombre: '6.-EVALUACIONESPECIFICADELDESEMPE', url: 'assets/planeacion-pdf/PAE_2020/6.-EVALUACIONESPECIFICADELDESEMPE' },
+        { nombre: '7_CONEVAL_REGISTRO.pdf', url: 'assets/planeacion-pdf/PAE_2020/7_CONEVAL_REGISTRO.pdf' },
+        { nombre: '7_Copia_de_MYES201704_Certificado.pdf', url: 'assets/planeacion-pdf/PAE_2020/7_Copia_de_MYES201704_Certificado.pdf' },
+        { nombre: '7_Documento_que_acredita_experiencia.pdf', url: 'assets/planeacion-pdf/PAE_2020/7_Documento_que_acredita_experiencia.pdf' },
+        { nombre: '8_Escrito_experiencia.pdf', url: 'assets/planeacion-pdf/PAE_2020/8_Escrito_experiencia.pdf' },
+        { nombre: '9_IdcGeneraConstancia-SAT.pdf', url: 'assets/planeacion-pdf/PAE_2020/9_IdcGeneraConstancia-SAT.pdf' },
+        { nombre: '10_Resumen_Ejecutivo.pdf', url: 'assets/planeacion-pdf/PAE_2020/10_Resumen_Ejecutivo.pdf' },
+        { nombre: '11_Propuesta_tecnica_seduc_2020.pdf', url: 'assets/planeacion-pdf/PAE_2020/11_Propuesta_tecnica_seduc_2020.pdf' },
+        { nombre: 'ASM_DEL_PAE_2020_EJERCICIO_2019.pdf', url: 'assets/planeacion-pdf/PAE_2020/ASM_DEL_PAE_2020_EJERCICIO_2019.pdf' },
+
       ]
     },
 
     {
       nombre: 'PAE 2019 Ejercicio Fiscal 2018',
       archivos: [
-        { nombre: 'Documento 2019', url: 'assets/planeacion/pae2019.pdf' }
+        { nombre: '1Ficha_tecnica_ITSE_2019.pdf', url: 'assets/planeacion-pdf/PAE_2019/1Ficha_tecnica_ITSE_2019.pdf' },
+        { nombre: '2Manifestacionporescritodequeelevaluadortieneexperiencia.pdf', url: 'assets/planeacion-pdf/PAE_2019/2Manifestacionporescritodequeelevaluadortieneexperiencia.pdf' },
+        { nombre: '3Propuestade_trabajo.pdf', url: 'assets/planeacion-pdf/PAE_2019/3Propuestade_trabajo.pdf' },
+        { nombre: '4ResumenEjecutivo2019.pdf', url: 'assets/planeacion-pdf/PAE_2019/' },
       ]
     },
 
@@ -254,14 +270,7 @@ export class PlaneacionComponent {
     {
       nombre: 'Calendario Escolar',
       archivos: [
-        { nombre: ' ', url: 'assets/planeacion-pdf/' }
-      ]
-    },
-
-    {
-      nombre: 'Contraloria Social U079',
-      archivos: [
-        { nombre: ' ', url: 'assets/planeacion-pdf/' }
+        { nombre: 'Calendario_escolar_ago_2023-jul 2024.pdf', url: 'assets/planeacion-pdf/calendario/Calendario_escolar_ago_2023-jul 2024.pdf' }
       ]
     },
     {
@@ -289,18 +298,6 @@ export class PlaneacionComponent {
         { nombre: 'GESTIONES_ADMINISTRATIVAS_FAM_2023.pdf', url: 'assets/planeacion-pdf/FAM_2023/GESTIONES_ADMINISTRATIVAS_FAM_2023.pdf' },
       ]
     },
-    {
-      nombre: 'CEPCI ITSE',
-      archivos: [
-        { nombre: ' ', url: 'assets/planeacion-pdf/' }
-      ]
-    },
-
-
-
-
-
-
 
   ];
 

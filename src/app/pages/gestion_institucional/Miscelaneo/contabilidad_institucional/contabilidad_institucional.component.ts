@@ -103,17 +103,28 @@ export class Contabilidad_institucionalComponent {
             abierto: false,
             archivos:[
               {nombre: 'F1_ESF_3132025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/6-LDF-1-ert-2025/F1_ESF_3132025.xls'},
-              {nombre: '', url: ''},
-              {nombre: '', url: ''},
-              {nombre: '', url: ''},
-              {nombre: '', url: ''},
-              {nombre: '', url: ''},
-              {nombre: '', url: ''},
-              {nombre: '', url: ''},
-              {nombre: '', url: ''}
-              
+              {nombre: 'F2_IADPOP_3132025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/6-LDF-1-ert-2025/F2_IADPOP_3132025.xls'},
+              {nombre: 'F3_IAODF_3132025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/6-LDF-1-ert-2025/F3_IAODF_3132025.xls'},
+              {nombre: 'F4_BP_3132025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/6-LDF-1-ert-2025/F4_BP_3132025.xls'},
+              {nombre: 'F5_EAID_3132025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/6-LDF-1-ert-2025/F5_EAID_3132025.xls'},
+              {nombre: 'F6a_EAEPED_COG_3132025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/6-LDF-1-ert-2025/F6a_EAEPED_COG_3132025.xls'},
+              {nombre: 'F6b_EAEPED_CA_3132025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/6-LDF-1-ert-2025/F6b_EAEPED_CA_3132025.xls'},
+              {nombre: 'F6c_EAEPED_CF_3132025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/6-LDF-1-ert-2025/F6c_EAEPED_CF_3132025.xls'},
+              {nombre: 'F6d_EAEPED_CSP_3132025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/6-LDF-1-ert-2025/F6d_EAEPED_CSP_3132025.xls'}
+
+           
 
             ] 
+            },
+            {
+            nombre: '7-Formato-de-la-SHCP',
+            abierto: false,
+            archivos:[
+              {nombre: 'ITSE ReporteFinal.pdf' , url: 'assets/contabilidad_institucional/estados_financieros/2025/7-Formato-de-la-SHCP/ITSE ReporteFinal.pdf'}
+              
+
+
+            ]  
             }
 
           ]

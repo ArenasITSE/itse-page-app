@@ -10,7 +10,7 @@ import { CommonModule } from '@angular/common';
 })
 export class Contabilidad_institucionalComponent {
 
-  // 🔥 DATA DENTRO DE LA CLASE
+ 
   data = [
 
     // ================= 2025 =================

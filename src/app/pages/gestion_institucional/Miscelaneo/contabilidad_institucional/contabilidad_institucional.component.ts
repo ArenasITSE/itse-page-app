@@ -36,7 +36,18 @@ export class Contabilidad_institucionalComponent {
               nombre: '1-Contable',
               abierto: false,
               archivos: [
-                { nombre: 'Estado financiero', url: 'assets/.../2025/t1/contable/doc1.pdf' }
+                { nombre: '1-Estado de_actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/1-Estado de_actividades.pdf' },
+                { nombre: '2-Estado de situacion financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/2-Estado de situacion financiera.pdf' },
+                { nombre: '3-Estado de Cambios en la SF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/3-Estado de Cambios en la SF.pdf' },
+                { nombre: '4-Estado Analitico del Activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/2-Estado de situacion financiera.pdf' },
+                { nombre: '5-Estado Analitico de la DyOP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/2-Estado de situacion financiera.pdf' },
+                { nombre: '6-Estado de Variacion en la HP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/2-Estado de situacion financiera.pdf' },
+                { nombre: '7-Estado de Flujos de Efectivo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/2-Estado de situacion financiera.pdf' },
+                { nombre: '8-Informe sobre pasivos contingentes.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/2-Estado de situacion financiera.pdf' },
+                { nombre: '9-Conciliación entre los IPyC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/2-Estado de situacion financiera.pdf' },
+                { nombre: '10-Conciliacion entre los EPyGC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/2-Estado de situacion financiera.pdf' },
+                { nombre: '11-Notas a los EF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1-Contable/2-Estado de situacion financiera.pdf' },
+               
               ]
             },
             {

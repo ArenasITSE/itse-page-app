@@ -1,47 +1,194 @@
+/* ================= CONTENIDO PRINCIPAL ================= */
 
-/* CONTENIDO */
 .contenido {
-   flex: 1;
+  flex: 1;
   max-width: 1150px;
-  margin: 0 auto; /* centra el bloque */
-  margin-top: 50px ;
-  margin-bottom: 150px;
+  margin: 50px auto 150px auto;
+  padding: 0 10px;
 }
 
+/* TITULO */
 .contenido h2 {
   margin-bottom: 20px;
+  font-weight: 600;
 }
 
-/* TABS */
+/* ================= TABS ================= */
+
+.custom-tabs {
+  margin-bottom: 10px;
+}
+
 .custom-tabs .nav-link {
-  background: #eee;
+  background: #f0f0f0;
   border: 1px solid #ccc;
   margin-right: 5px;
+  border-radius: 6px 6px 0 0;
+  color: #333;
+  transition: 0.2s;
+}
+
+.custom-tabs .nav-link:hover {
+  background: #e3f2fd;
 }
 
 .custom-tabs .nav-link.active {
-  background: #fff;
-  border-bottom: 2px solid #ff6b00;
+  background: #ffffff;
+  border-bottom: 3px solid #1976d2;
+  color: #1976d2;
+  font-weight: 600;
 }
 
-/* CAJA */
+/* ================= CAJA ================= */
+
 .box-content {
-  border: 1px solid #ffffff;
+  border: 1px solid #ddd;
   padding: 20px;
   background: #ffffff;
   border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
-/* LINKS PDF */
+/* ================= SUBTITULOS ================= */
+
+h5 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* ================= LISTA GENERAL ================= */
+
+.box-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* ITEMS PDF */
+.box-content li {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+}
+
+/* ICONO PDF */
+.box-content img {
+  width: 16px;
+  height: auto;
+  margin-right: 6px;
+}
+
+/* LINKS */
 .box-content a {
-  color: #1e88e5;
+  color: #1a73e8;
   text-decoration: none;
+  font-size: 14px;
 }
 
 .box-content a:hover {
   text-decoration: underline;
 }
-h5 {
-  margin-top: 20px;
-  margin-bottom: 15px;
+
+/* ================= ESTRUCTURA JERÁRQUICA ================= */
+
+/* 🔥 AÑO */
+.anio-card {
+  margin-bottom: 20px;
+}
+
+.anio-header {
+  background: #243f6b;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.anio-header:hover {
+  background: #243f6b;
+}
+
+/* 🔥 TRIMESTRES */
+.trimestre {
+  margin-top: 12px;
+}
+
+.trimestre-header {
+  background: #e3f2fd;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-left: 4px solid #64b5f6;
+  font-weight: 500;
+}
+
+.trimestre-header:hover {
+  background: #d0e7fb;
+}
+
+/* 🔥 SUBCARPETAS (INDENTACIÓN REAL) */
+.subcarpeta {
+  margin-top: 10px;
+  padding-left: 20px; /* 🔥 indentación */
+  border-left: 2px solid #e0e0e0; /* guía visual */
+}
+
+/* HEADER SUBCARPETA */
+.subcarpeta-header {
+  background: #fafafa;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.subcarpeta-header:hover {
+  background: #f0f0f0;
+}
+
+/* 🔥 ARCHIVOS (SEGUNDO NIVEL) */
+.subcarpeta ul {
+  padding-left: 20px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+}
+
+/* ITEMS */
+.subcarpeta li {
+  margin: 5px 0;
+}
+
+/* ================= ANIMACIÓN SUAVE ================= */
+
+.anio-body,
+.trimestre-body,
+.subcarpeta ul {
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-3px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 600px) {
+  .contenido {
+    padding: 0 5px;
+  }
+
+  .anio-header,
+  .trimestre-header,
+  .subcarpeta-header {
+    font-size: 13px;
+  }
 }

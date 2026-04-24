@@ -23,125 +23,61 @@
     <!-- TAB 1 -->
     <div class="tab-pane fade show active" id="tab1">
 
-      <h5>ESTADOS FINANCIEROS</h5>
+      <div class="anio-card" *ngFor="let anio of data">
 
-      <ul class="pdf-list">
-        <p>Presupuesto 2024</p>
+  <!-- AÑO -->
+  <div class="anio-header" (click)="anio.abierto = !anio.abierto">
+    📁 Presupuesto {{anio.anio}}
+  </div>
 
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank"> Presupuesto Estatal 2025</a></li>
-        <li><a href="" target="_blank">Presupuesto Federal 2025</a></li>
-        <ul>
-          <li><a href="" target="_blank"> 1 Trimestre </a></li>
-          <li><a href="" target="_blank"> 2 Trimestre </a></li>
-          <li><a href="" target="_blank"> 3 Trimestre </a></li>
-          <li><a href="" target="_blank"> 4 Trimestre </a></li>
-        </ul>
+  <div *ngIf="anio.abierto" class="anio-body">
 
+    <!-- PRESUPUESTOS -->
+    <ul class="docs-list">
+      <li *ngFor="let p of anio.presupuestos">
+        <img src="assets/vinculacion/pdf.png">
+        <a [href]="p.url" target="_blank">
+          {{p.nombre}}
+        </a>
+      </li>
+    </ul>
 
-        <br><br>
+    <!-- TRIMESTRES -->
+    <div class="trimestre" *ngFor="let t of anio.trimestres">
 
-        <p>Presupuesto 2024</p>
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank"> Presupuesto Estatal 2024</a></li>
-        <li><a href="" target="_blank">Presupuesto Federal 2024</a></li>
-        <ul>
-          <li><a href="" target="_blank"> 1 Trimestre </a></li>
-          <li><a href="" target="_blank"> 2 Trimestre </a></li>
-          <li><a href="" target="_blank"> 3 Trimestre </a></li>
-          <li><a href="" target="_blank"> 4 Trimestre </a></li>
-        </ul>
+      <div class="trimestre-header" (click)="t.abierto = !t.abierto">
+        📂 {{t.nombre}}
+      </div>
 
-        <br><br>
-        <p>Presupuesto 2022</p>
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank"> Presupuesto Estatal 2022</a></li>
-        <li><a href="" target="_blank">Presupuesto Federal 2022</a></li>
-        <ul>
-          <li><a href="" target="_blank"> 1 Trimestre </a></li>
-          <li><a href="" target="_blank"> 2 Trimestre </a></li>
-          <li><a href="" target="_blank"> 3 Trimestre </a></li>
-          <li><a href="" target="_blank"> 4 Trimestre </a></li>
-        </ul>
+      <div *ngIf="t.abierto">
 
-         <br><br>
-        <p>Presupuesto 2021</p>
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank"> Presupuesto Estatal 2021</a></li>
-        <li><a href="" target="_blank">Presupuesto Federal 2021</a></li>
-        <ul>
-          <li><a href="" target="_blank"> 1 Trimestre </a></li>
-          <li><a href="" target="_blank"> 2 Trimestre </a></li>
-          <li><a href="" target="_blank"> 3 Trimestre </a></li>
-          <li><a href="" target="_blank"> 4 Trimestre </a></li>
-        </ul>
+        <!-- CARPETAS -->
+        <div class="subcarpeta" *ngFor="let c of t.carpetas">
 
-         <br><br>
-        <p>Presupuesto 2020</p>
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank"> Presupuesto Estatal 2020</a></li>
-        <li><a href="" target="_blank">Presupuesto Federal 2020</a></li>
-        <ul>
-          <li><a href="" target="_blank"> 1 Trimestre </a></li>
-          <li><a href="" target="_blank"> 2 Trimestre </a></li>
-          <li><a href="" target="_blank"> 3 Trimestre </a></li>
-          <li><a href="" target="_blank"> 4 Trimestre </a></li>
-        </ul>
+          <div class="subcarpeta-header" (click)="c.abierto = !c.abierto">
+            📁 {{c.nombre}}
+          </div>
 
-         <br><br>
-        <p>Presupuesto 2019</p>
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank"> Presupuesto Estatal 2019</a></li>
-        <li><a href="" target="_blank">Presupuesto Federal 2019</a></li>
-        <ul>
-          <li><a href="" target="_blank"> 1 Trimestre </a></li>
-          <li><a href="" target="_blank"> 2 Trimestre </a></li>
-          <li><a href="" target="_blank"> 3 Trimestre </a></li>
-          <li><a href="" target="_blank"> 4 Trimestre </a></li>
-        </ul>
+          <!-- ARCHIVOS -->
+          <ul *ngIf="c.abierto">
+            <li *ngFor="let doc of c.archivos">
+              <img src="assets/vinculacion/pdf.png">
+              <a [href]="doc.url" target="_blank">
+                {{doc.nombre}}
+              </a>
+            </li>
+          </ul>
 
-         <br><br>
-        <p>Presupuesto 2018</p>
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank"> Presupuesto Estatal 2018</a></li>
-        <li><a href="" target="_blank">Presupuesto Federal 2018</a></li>
-        <ul>
-          <li><a href="" target="_blank"> 1 Trimestre </a></li>
-          <li><a href="" target="_blank"> 2 Trimestre </a></li>
-          <li><a href="" target="_blank"> 3 Trimestre </a></li>
-          <li><a href="" target="_blank"> 4 Trimestre </a></li>
-        </ul>
+        </div>
 
-         <br><br>
-        <p>Presupuesto 2017</p>
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank"> Presupuesto Estatal 2017</a></li>
-        <li><a href="" target="_blank">Presupuesto Federal 2017</a></li>
-        <ul>
-          <li><a href="" target="_blank"> 1 Trimestre </a></li>
-          <li><a href="" target="_blank"> 2 Trimestre </a></li>
-          <li><a href="" target="_blank"> 3 Trimestre </a></li>
-          <li><a href="" target="_blank"> 4 Trimestre </a></li>
-        </ul>
+      </div>
 
- <br><br>
-        <p>Presupuesto 2016</p>
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank"> Presupuesto Estatal 2016</a></li>
-        <li><a href="" target="_blank">Presupuesto Federal 2016</a></li>
-        <ul>
-          <li><a href="" target="_blank"> 1 Trimestre </a></li>
-          <li><a href="" target="_blank"> 2 Trimestre </a></li>
-          <li><a href="" target="_blank"> 3 Trimestre </a></li>
-          <li><a href="" target="_blank"> 4 Trimestre </a></li>
-        </ul>
+    </div>
 
-         <br><br>
-        <p>Presupuesto 2015</p>
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank"> Presupuesto Estatal 2015</a></li>
-        <li><a href="" target="_blank">Presupuesto Federal 2015</a></li>
-        <ul>
-          <li><a href="" target="_blank"> 1 Trimestre </a></li>
-          <li><a href="" target="_blank"> 2 Trimestre </a></li>
-          <li><a href="" target="_blank"> 3 Trimestre </a></li>
-          <li><a href="" target="_blank"> 4 Trimestre </a></li>
-        </ul>
+  </div>
 
-         <p>Presupuesto 2014</p>
-        <li><a href="pdfs/cuotas_2026.pdf" target="_blank">Informacion del Ejercicio</a></li>
+</div>
 
-      </ul>
     </div>
 
     <!-- TAB 2 -->

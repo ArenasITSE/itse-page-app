@@ -129,7 +129,37 @@ export class Contabilidad_institucionalComponent {
 
           ]
         },
-        { nombre: '2do Trimestre', abierto: false, carpetas: [] },
+        { nombre: '2do Trimestre', 
+          abierto: false, 
+          carpetas: [
+            {
+              nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+              {nombre: '1-Estado de actividades.pdf' , url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/1-Estado de actividades.pdf'},
+              {nombre: '2-Estado de situacion financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
+              {nombre: '3- Estado ', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
+              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
+              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
+              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
+              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
+              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
+              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
+              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
+              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'}
+
+
+
+              ]
+            }
+                     ]
+        
+
+            
+
+
+
+         },
         { nombre: '3er Trimestre', abierto: false, carpetas: [] },
         { nombre: '4to Trimestre', abierto: false, carpetas: [] }
       ]

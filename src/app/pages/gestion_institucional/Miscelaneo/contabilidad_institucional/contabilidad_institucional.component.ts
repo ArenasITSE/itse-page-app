@@ -408,7 +408,85 @@ export class Contabilidad_institucionalComponent {
 
                  ] 
         
-                }
+                },
+
+
+
+
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos:[
+
+                {nombre: '1-Gasto por Categoria Programatica.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/3-Programatica/1-Gasto por Categoria Programatica.pdf'},
+                {nombre: '2-Programas y proyectos de inversion.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/3-Programatica/2-Programas y proyectos de inversion.pdf'},
+                {nombre: '3-Indicador de resultados.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/3-Programatica/3-Indicador de resultados.pdf'}
+
+
+
+              ]
+
+
+            },
+
+
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos:[
+                {nombre: '1-Montos pagados por AyS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/4-Titulo V/1-Montos pagados por AyS.pdf'},
+                {nombre: '2-Formato del ejercicio DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/4-Titulo V/2-Formato del ejercicio DGFyR.pdf'},
+                {nombre: '3-Formato de programas con RC por OG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/4-Titulo V/3-Formato de programas con RC por OG.pdf'}
+                
+              ]
+
+            },
+
+
+
+            { nombre: '5-Anexo',
+              abierto: false,
+              archivos: [
+
+                {nombre: '1-Formato de obligaciones.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/5-Anexo/1-Formato de obligaciones.pdf'},
+                {nombre: '2-Relacion de EByCF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/5-Anexo/2-Relacion de EByCF.pdf'},
+                {nombre: '3-Avance financiero 4to. trimestre 2026.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/5-Anexo/3-Avance financiero 4to. trimestre 2026.pdf'}
+                
+
+                
+              ]
+
+
+
+            },
+
+
+            { nombre: '6-LDF 4to. Trimestre 2025',
+              abierto: false,
+              archivos: [
+
+                {nombre: 'F1_ESF_31122025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F1_ESF_31122025.xls'},
+                {nombre: 'F2_IADPOP_31122025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F2_IADPOP_31122025.xls'},
+                {nombre: 'F3_IAODF_31122025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F3_IAODF_31122025.xls'},
+                {nombre: 'F4_BP_31122025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F4_BP_31122025.xls'},
+                {nombre: 'F5_EAID_31122025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F5_EAID_31122025.xls'},
+                {nombre: 'F6a_EAEPED_COG_31122025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F6a_EAEPED_COG_31122025.xls'},
+                {nombre: 'F6b_EAEPED_CA_31122025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F6b_EAEPED_CA_31122025.xls'},
+                {nombre: 'F6c_EAEPED_CF_31122025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F6c_EAEPED_CF_31122025.xls'},
+                {nombre: 'F6d_EAEPED_CSP_3092025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F6d_EAEPED_CSP_3092025.xls'}
+
+
+
+              ]
+
+            
+
+
+
+
+
+            }
+
+
+
              ]
 
           }

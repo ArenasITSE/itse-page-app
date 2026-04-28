@@ -137,16 +137,16 @@ export class Contabilidad_institucionalComponent {
               abierto: false,
               archivos: [
               {nombre: '1-Estado de actividades.pdf' , url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/1-Estado de actividades.pdf'},
-              {nombre: '2-Estado de situacion financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
-              {nombre: '3- Estado ', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
-              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
-              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
-              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
-              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
-              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
-              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
-              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'},
-              {nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/'}
+              {nombre: '2-Estado de situacion financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/2-Estado de situacion financiera.pdf'},
+              {nombre: '3-Estado de Cambios en la SF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/3-Estado de Cambios en la SF.pdf'},
+              {nombre: '4-Estado analitico del activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/4-Estado analitico del activo.pdf'},
+              {nombre: '5-Estado Analitico de la D y OP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/5-Estado Analitico de la D y OP.pdf'},
+              {nombre: '6-Estado de variacion en la HP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/6-Estado de variacion en la HP.pdf'},
+              {nombre: '7-Estado de flujos de efectivo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/7-Estado de flujos de efectivo.pdf'},
+              {nombre: '8-Informe sobre PC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/8-Informe sobre PC.pdf'},
+              {nombre: '9-Conciliacion entre los IPyC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/9-Conciliacion entre los IPyC.pdf'},
+              {nombre: '10-Conciliacion entre los EPyGC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/10-Conciliacion entre los EPyGC.pdf'},
+              {nombre: '11-Notas de los EF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/11-Notas de los EF.pdf'}
 
 
 

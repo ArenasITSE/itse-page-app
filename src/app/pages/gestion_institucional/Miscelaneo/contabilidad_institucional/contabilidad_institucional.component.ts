@@ -151,21 +151,107 @@ export class Contabilidad_institucionalComponent {
 
 
               ]
+            },
+            { nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+              {nombre: '1-Estado analitico de ingresos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/1-Estado analitico de ingresos.pdf'},
+              {nombre: '2-Estado AEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/2-Estado AEPECA.pdf'},
+              {nombre: '3-Estado AEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/3-Estado AEPECE.pdf'},
+              {nombre: '4-Estado AEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/4-Estado AEPECOG.pdf'},
+              {nombre: '5-Estado AEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/5-Estado AEPECF.pdf'},
+              {nombre: '6-Endeudamiento neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/6-Endeudamiento neto.pdf'},
+              {nombre: '7-Intereses de la deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/7-Intereses de la deuda.pdf'},
+              {nombre: '8-Indicadores de postura fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/8-Indicadores de postura fiscal.pdf'},
+              {nombre: '9-Flujo de fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/9-Flujo de fondos.pdf'}
+
+              
+
+
+                     
+            ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+              //{nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/'},
+
+              {nombre: '1-Gasto por categoria programatica.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/3-Programatica/1-Gasto por categoria programatica.pdf'},
+              {nombre: '2-Programas y Proyectos de inversion.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/3-Programatica/2-Programas y Proyectos de inversion.pdf'},
+              {nombre: '3-Indicador de resultados.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/3-Programatica/3-Indicador de resultados.pdf'}
+
+
+
+
+              ]
+
+            },
+
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos:[
+              {nombre: '1-Montos pagados por AyS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/4- Titulo V/1-Montos pagados por AyS.pdf'},
+              {nombre: '2-Formato del ejercicio y DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/4- Titulo V/2-Formato del ejercicio y DGFyR.pdf'},
+              {nombre: '3-Formato de PRCporOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/4- Titulo V/3-Formato de PRCporOG.pdf'}
+
+
+              ]
+
+            },
+
+            { nombre: '5-Anexos',
+              abierto: false,
+              archivos:[
+                {nombre: '1-Montos pagados por AyS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/5- Anexos/1-Montos pagados por AyS.pdf'},
+                {nombre: '2-Formato del ejercicio y DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/5- Anexos/2-Formato del ejercicio y DGFyR.pdf'},
+                {nombre: '3-Formato de PRCporOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/5- Anexos/3-Formato de PRCporOG.pdf'}
+
+
+              ]
+
+            },
+
+            { nombre: '6-2doT. LDF 2025',
+              abierto: false,
+              archivos: [
+                {nombre: 'F1_ESF_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F1_ESF_3062025.xls'},
+                {nombre: 'F2_IADPOP_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F2_IADPOP_3062025.xls'},
+                {nombre: 'F3_IAODF_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F3_IAODF_3062025.xls'},
+                {nombre: 'F4_BP_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F4_BP_3062025.xls'},
+                {nombre: 'F5_EAID_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F5_EAID_3062025.xls'},
+                {nombre: 'F6a_EAEPED_COG.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F6a_EAEPED_COG.xls'},
+                {nombre: 'F6b_EAEPED_CA_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F6b_EAEPED_CA_3062025.xls'},
+                {nombre: 'F6c_EAEPED_CF_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F6c_EAEPED_CF_3062025.xls'},
+                {nombre: 'F6d_EAEPED_CSP_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F6d_EAEPED_CSP_3062025.xls'}
+
+
+              ]
+
+            },
+            { nombre: '7-formato de la SHCP',
+              abierto: false,
+              archivos: [
+                {nombre: 'SRFT 2DOT 2025.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/7-Formato de la SHCP/SRFT 2DOT 2025.pdf'}
+                
+
+              ]
+
+
             }
-                     ]
-        
 
+
+            ]
+          
+            },
+
+              
             
-
-
-
-         },
         { nombre: '3er Trimestre', abierto: false, carpetas: [] },
         { nombre: '4to Trimestre', abierto: false, carpetas: [] }
       ]
 
     },
-
+  
     // ================= 2024 =================
     {
       anio: 2024,
@@ -236,4 +322,8 @@ export class Contabilidad_institucionalComponent {
 
   ];
 
+
+
 }
+
+  

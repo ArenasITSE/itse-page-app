@@ -20,11 +20,11 @@ export class Contabilidad_institucionalComponent {
       presupuestos: [
         {
           nombre: 'Presupuesto Estatal 2025',
-          url: 'assets/contabilidad_institucional/estados_financieros/2025/presupuesto-estatal-2025.pdf'
+          url: 'assets/contabilidad_institucional/estados_financieros/2025/Presupuesto-estatal-2025.pdf'
         },
         {
           nombre: 'Presupuesto Federal 2025',
-          url: 'assets/contabilidad_institucional/estados_financieros/2025/presupuesto-federal-2025.pdf'
+          url: 'assets/contabilidad_institucional/estados_financieros/2025/Presupuesto-federal-2025.pdf'
         }
       ],
       trimestres: [
@@ -219,7 +219,7 @@ export class Contabilidad_institucionalComponent {
                 {nombre: 'F3_IAODF_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F3_IAODF_3062025.xls'},
                 {nombre: 'F4_BP_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F4_BP_3062025.xls'},
                 {nombre: 'F5_EAID_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F5_EAID_3062025.xls'},
-                {nombre: 'F6a_EAEPED_COG.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F6a_EAEPED_COG.xls'},
+                {nombre: 'F6a_EAEPED_COG_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F6a_EAEPED_COG_3062025.xls'},
                 {nombre: 'F6b_EAEPED_CA_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F6b_EAEPED_CA_3062025.xls'},
                 {nombre: 'F6c_EAEPED_CF_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F6c_EAEPED_CF_3062025.xls'},
                 {nombre: 'F6d_EAEPED_CSP_3062025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/6-2doT. LDF 2025/F6d_EAEPED_CSP_3062025.xls'}
@@ -244,9 +244,34 @@ export class Contabilidad_institucionalComponent {
           
             },
 
-              
             
-        { nombre: '3er Trimestre', abierto: false, carpetas: [] },
+        { nombre: '3er Trimestre', 
+          abierto: false, 
+          carpetas: [
+
+            { nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                {nombre: '1-Estado de Actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/1-Estado de Actividades.pdf'},
+                {nombre: '2-Estado de situacion financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/2-Estado de situacion financiera.pdf'},
+                {nombre: '3-Estado de Cambios en la SF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/3-Estado de Cambios en la SF.pdf'},
+                {nombre: '4-Estado Analitico del Activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/4-Estado Analitico del Activo.pdf'},
+                {nombre: '5-Estado Analitico de la D y OP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/5-Estado Analitico de la D y OP.pdf'},
+                {nombre: '6-Estado de variación en la HP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/6-Estado de variación en la HP.pdf'},
+                {nombre: '7-Estado de Flujos de Efectivo', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/7-Estado de Flujos de Efectivo'},
+                {nombre: '8-Informe sobre pasivos contingentes.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/8-Informe sobre pasivos contingentes.pdf'},
+                {nombre: '9-Conciliación entre los IPyC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/9-Conciliación entre los IPyC.pdf'},
+                {nombre: '10-Conciliación entre los EPyGC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/10-Conciliación entre los EPyGC.pdf'},
+                {nombre: '11-Notas a los EF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/3er_Trimestre/1-Contable/11-Notas a los EF.pdf'}
+                
+
+              ]
+
+
+            }
+
+
+          ] },
         { nombre: '4to Trimestre', abierto: false, carpetas: [] }
       ]
 

@@ -136,17 +136,17 @@ export class Contabilidad_institucionalComponent {
               nombre: '1-Contable',
               abierto: false,
               archivos: [
-              {nombre: '1-Estado de actividades.pdf' , url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/1-Estado de actividades.pdf'},
+              {nombre: '1-Estado de actividades.pdf' , url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/1-Estado de actividades.pdf'},
               {nombre: '2-Estado de situacion financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/2-Estado de situacion financiera.pdf'},
-              {nombre: '3-Estado de Cambios en la SF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/3-Estado de Cambios en la SF.pdf'},
-              {nombre: '4-Estado analitico del activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/4-Estado analitico del activo.pdf'},
-              {nombre: '5-Estado Analitico de la D y OP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/5-Estado Analitico de la D y OP.pdf'},
-              {nombre: '6-Estado de variacion en la HP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/6-Estado de variacion en la HP.pdf'},
-              {nombre: '7-Estado de flujos de efectivo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/7-Estado de flujos de efectivo.pdf'},
-              {nombre: '8-Informe sobre PC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/8-Informe sobre PC.pdf'},
-              {nombre: '9-Conciliacion entre los IPyC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/9-Conciliacion entre los IPyC.pdf'},
-              {nombre: '10-Conciliacion entre los EPyGC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/10-Conciliacion entre los EPyGC.pdf'},
-              {nombre: '11-Notas de los EF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/11-Notas de los EF.pdf'}
+              {nombre: '3-Estado de Cambios en la SF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/3-Estado de Cambios en la SF.pdf'},
+              {nombre: '4-Estado analitico del activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/4-Estado analitico del activo.pdf'},
+              {nombre: '5-Estado Analitico de la D y OP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/5-Estado Analitico de la D y OP.pdf'},
+              {nombre: '6-Estado de variacion en la HP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/6-Estado de variacion en la HP.pdf'},
+              {nombre: '7-Estado de flujos de efectivo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/7-Estado de flujos de efectivo.pdf'},
+              {nombre: '8-Informe sobre PC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/8-Informe sobre PC.pdf'},
+              {nombre: '9-Conciliacion entre los IPyC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/9-Conciliacion entre los IPyC.pdf'},
+              {nombre: '10-Conciliacion entre los EPyGC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/10-Conciliacion entre los EPyGC.pdf'},
+              {nombre: '11-Notas de los EF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/11-Notas de los EF.pdf'}
 
 
 
@@ -156,14 +156,14 @@ export class Contabilidad_institucionalComponent {
               abierto: false,
               archivos: [
               {nombre: '1-Estado analitico de ingresos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/1-Estado analitico de ingresos.pdf'},
-              {nombre: '2-Estado AEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/2-Estado AEPECA.pdf'},
-              {nombre: '3-Estado AEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/3-Estado AEPECE.pdf'},
-              {nombre: '4-Estado AEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/4-Estado AEPECOG.pdf'},
-              {nombre: '5-Estado AEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/5-Estado AEPECF.pdf'},
-              {nombre: '6-Endeudamiento neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/6-Endeudamiento neto.pdf'},
-              {nombre: '7-Intereses de la deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/7-Intereses de la deuda.pdf'},
-              {nombre: '8-Indicadores de postura fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/8-Indicadores de postura fiscal.pdf'},
-              {nombre: '9-Flujo de fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/9-Flujo de fondos.pdf'}
+              {nombre: '2-Estado AEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/2-Estado AEPECA.pdf'},
+              {nombre: '3-Estado AEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/3-Estado AEPECE.pdf'},
+              {nombre: '4-Estado AEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/4-Estado AEPECOG.pdf'},
+              {nombre: '5-Estado AEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/5-Estado AEPECF.pdf'},
+              {nombre: '6-Endeudamiento neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/6-Endeudamiento neto.pdf'},
+              {nombre: '7-Intereses de la deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/7-Intereses de la deuda.pdf'},
+              {nombre: '8-Indicadores de postura fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/8-Indicadores de postura fiscal.pdf'},
+              {nombre: '9-Flujo de fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/9-Flujo de fondos.pdf'}
 
               
 
@@ -190,9 +190,9 @@ export class Contabilidad_institucionalComponent {
             { nombre: '4-Titulo V',
               abierto: false,
               archivos:[
-              {nombre: '1-Montos pagados por AyS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/4- Titulo V/1-Montos pagados por AyS.pdf'},
-              {nombre: '2-Formato del ejercicio y DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/4- Titulo V/2-Formato del ejercicio y DGFyR.pdf'},
-              {nombre: '3-Formato de PRCporOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/4- Titulo V/3-Formato de PRCporOG.pdf'}
+              {nombre: '1-Montos pagados por AyS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/4-Titulo V/1-Montos pagados por AyS.pdf'},
+              {nombre: '2-Formato del ejercicio y DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/4-Titulo V/2-Formato del ejercicio y DGFyR.pdf'},
+              {nombre: '3-Formato de PRCporOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/4-Titulo V/3-Formato de PRCporOG.pdf'}
 
 
               ]
@@ -202,9 +202,9 @@ export class Contabilidad_institucionalComponent {
             { nombre: '5-Anexos',
               abierto: false,
               archivos:[
-                {nombre: '1-Montos pagados por AyS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/5- Anexos/1-Montos pagados por AyS.pdf'},
-                {nombre: '2-Formato del ejercicio y DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/5- Anexos/2-Formato del ejercicio y DGFyR.pdf'},
-                {nombre: '3-Formato de PRCporOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/5- Anexos/3-Formato de PRCporOG.pdf'}
+                {nombre: '1-Montos pagados por AyS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/5-Anexos/1-Montos pagados por AyS.pdf'},
+                {nombre: '2-Formato del ejercicio y DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/5-Anexos/2-Formato del ejercicio y DGFyR.pdf'},
+                {nombre: '3-Formato de PRCporOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/5-Anexos/3-Formato de PRCporOG.pdf'}
 
 
               ]
@@ -473,17 +473,22 @@ export class Contabilidad_institucionalComponent {
                 {nombre: 'F6c_EAEPED_CF_31122025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F6c_EAEPED_CF_31122025.xls'},
                 {nombre: 'F6d_EAEPED_CSP_3092025.xls', url: 'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F6d_EAEPED_CSP_3092025.xls'}
 
+                  ]
+
+            },
+
+            { nombre: '7-Formato de la SHCP',
+              abierto: false,
+              archivos: [
+
+                {nombre:'Extraccion_ITSE_21 (SRFT).pdf', url:'assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/7-Formato de la SHCP/Extraccion_ITSE_21 (SRFT).pdf'}
 
 
               ]
 
-            
-
-
-
-
 
             }
+
 
 
 

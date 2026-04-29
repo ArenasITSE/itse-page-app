@@ -523,7 +523,17 @@ export class Contabilidad_institucionalComponent {
               nombre: '1-Contable',
               abierto: false,
               archivos: [
-                { nombre: 'Documento contable', url: 'assets/.../2024/t1/contable/doc1.pdf' }
+                { nombre: '1-Estado de actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/1-Estado de actividades.pdf' },
+                { nombre: '2-Estado de Situacion Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/2-Estado de Situacion Financiera.pdf' },
+                { nombre: '3-Estado de Cambios en I SF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/3-Estado de Cambios en I SF.pdf' },
+                { nombre: '4-Estado Analitico del Activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/4-Estado Analitico del Activo.pdf' },
+                { nombre: '5-Estado Analitico de la Deuda y OP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/5-Estado Analitico de la Deuda y OP.pdf' },
+                { nombre: '6-Estado de Variacion en la HP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/6-Estado de Variacion en la HP.pdf' },
+                { nombre: '7-Estado de Flujos de Efectivo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/7-Estado de Flujos de Efectivo.pdf' },
+                { nombre: '8-Informe Sobre Pasivos Contingentes.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/8-Informe Sobre Pasivos Contingentes.pdf' },
+                { nombre: '9-Conciliacion entre los IP y C.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/9-Conciliacion entre los IP y C.pdf' },
+                { nombre: '10-Conciliacion entre los EP y GC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/10-Conciliacion entre los EP y GC.pdf' },
+                { nombre: '11-Notas a los EF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/11-Notas a los EF.pdf' }
               ]
             }
           ]

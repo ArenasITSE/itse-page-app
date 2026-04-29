@@ -137,7 +137,7 @@ export class Contabilidad_institucionalComponent {
               abierto: false,
               archivos: [
               {nombre: '1-Estado de actividades.pdf' , url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/1-Estado de actividades.pdf'},
-              {nombre: '2-Estado de situacion financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1- Contable/2-Estado de situacion financiera.pdf'},
+              {nombre: '2-Estado de situacion financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/2-Estado de situacion financiera.pdf'},
               {nombre: '3-Estado de Cambios en la SF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/3-Estado de Cambios en la SF.pdf'},
               {nombre: '4-Estado analitico del activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/4-Estado analitico del activo.pdf'},
               {nombre: '5-Estado Analitico de la D y OP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/1-Contable/5-Estado Analitico de la D y OP.pdf'},
@@ -155,7 +155,7 @@ export class Contabilidad_institucionalComponent {
             { nombre: '2-Presupuestaria',
               abierto: false,
               archivos: [
-              {nombre: '1-Estado analitico de ingresos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2- Presupuestaria/1-Estado analitico de ingresos.pdf'},
+              {nombre: '1-Estado analitico de ingresos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/1-Estado analitico de ingresos.pdf'},
               {nombre: '2-Estado AEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/2-Estado AEPECA.pdf'},
               {nombre: '3-Estado AEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/3-Estado AEPECE.pdf'},
               {nombre: '4-Estado AEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/2do_Trimestre/2-Presupuestaria/4-Estado AEPECOG.pdf'},
@@ -507,11 +507,11 @@ export class Contabilidad_institucionalComponent {
       presupuestos: [
         {
           nombre: 'Presupuesto Estatal 2024',
-          url: 'assets/contabilidad_institucional/estados_financieros/2024/presupuesto-estatal-2024.pdf'
+          url: 'assets/contabilidad_institucional/estados_financieros/2024/PRESUPUESTO ESTATAL 2024.pdf'
         },
         {
           nombre: 'Presupuesto Federal 2024',
-          url: 'assets/contabilidad_institucional/estados_financieros/2024/presupuesto-federal-2024.pdf'
+          url: 'assets/contabilidad_institucional/estados_financieros/2024/PRESUPUESTO ESTATAL 2024.pdf'
         }
       ],
       trimestres: [

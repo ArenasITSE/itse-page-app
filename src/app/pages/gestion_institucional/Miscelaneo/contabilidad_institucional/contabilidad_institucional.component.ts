@@ -708,10 +708,37 @@ export class Contabilidad_institucionalComponent {
                 {nombre: '9-Conciliación entre los IP y C.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/9-Conciliación entre los IP y C.pdf'},
                 {nombre: '10-Conciliación entre los EP y GC.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/10-Conciliación entre los EP y GC.pdf'},
                 {nombre: '11-Notas a los EF.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/11-Notas a los EF.pdf'}
-
               ]
-
-
+            },
+            { nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos:[
+                {nombre: '1-Estado Analitico del Ingreso.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/2-Presupuestaria/1-Estado Analitico del Ingreso.pdf'},
+                {nombre: '2-EAEPECA.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/2-Presupuestaria/2-EAEPECA.pdf'},
+                {nombre: '3-EAEPECOG.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/2-Presupuestaria/3-EAEPECOG.pdf'},
+                {nombre: '4-EAEPECE.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/2-Presupuestaria/4-EAEPECE.pdf'},
+                {nombre: '5-EAEPECA.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/2-Presupuestaria/5-EAEPECA.pdf'},
+                {nombre: '6-Endeudamiento neto.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/2-Presupuestaria/6-Endeudamiento neto.pdf'},
+                {nombre: '7-Intereses de la Deuda.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/2-Presupuestaria/7-Intereses de la Deuda.pdf'},
+                {nombre: '8-Indicadores de Postura Fiscal.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/2-Presupuestaria/8-Indicadores de Postura Fiscal.pdf'},
+                {nombre: '9-Flujo de fondos.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/2-Presupuestaria/9-Flujo de fondos.pdf'}
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos:[
+                {nombre: '1-Gasto por categoria programatica.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/3-Programatica/1-Gasto por categoria programatica.pdf'},
+                {nombre: '2-Programas y Proyectos de inversion.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/3-Programatica/2-Programas y Proyectos de inversion.pdf'},
+                {nombre: '3-Indicadores 3er. Trim 2024.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/3-Programatica/3-Indicadores 3er. Trim 2024.pdf'}
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos:[
+                {nombre: '1-Montos Pagados por A y S.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/4-Titulo V/1-Montos Pagados por A y S.pdf'},
+                {nombre: '2-Formato de programas con RC por OG.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/4-Titulo V/2-Formato de programas con RC por OG.pdf'},
+                {nombre: '3-Formato del EyD de GFyR.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/4-Titulo V/3-Formato del EyD de GFyR.pdf'}
+              ]
             }
 
 

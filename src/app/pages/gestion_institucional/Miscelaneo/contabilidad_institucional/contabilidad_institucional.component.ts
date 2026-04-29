@@ -739,8 +739,34 @@ export class Contabilidad_institucionalComponent {
                 {nombre: '2-Formato de programas con RC por OG.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/4-Titulo V/2-Formato de programas con RC por OG.pdf'},
                 {nombre: '3-Formato del EyD de GFyR.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/4-Titulo V/3-Formato del EyD de GFyR.pdf'}
               ]
+            },
+            { nombre: '5-Anexos',
+              abierto: false,
+              archivos:[
+                {nombre: '1-Formato de obligaciones.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/5-Anexos/1-Formato de obligaciones.pdf'},
+                {nombre: '2-Relacion de EB y CF.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/5-Anexos/2-Relacion de EB y CF.pdf'},
+                {nombre: '3-Avance Financiero.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/5-Anexos/3-Avance Financiero.pdf'}
+              ]
+            },
+            { nombres: '6-LDF 3er T. 2024',
+              abierto: false,
+              archivos:[
+                {nombre: 'F1_ESF_3092024.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/6-LDF 3er T. 2024/F1_ESF_3092024.pdf'},
+                {nombre: 'F2_IADPOP_3092024.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/6-LDF 3er T. 2024/F2_IADPOP_3092024.pdf'},
+                {nombre: 'F3_IAODF_3092024.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/6-LDF 3er T. 2024/F3_IAODF_3092024.pdf'},
+                {nombre: 'F4_BP_3092024.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/6-LDF 3er T. 2024/F4_BP_3092024.pdf'},
+                {nombre: 'F5_EAID_3092024.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/6-LDF 3er T. 2024/F5_EAID_3092024.pdf'},
+                {nombre: 'F6a_EAEPED_COG_3092024.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/6-LDF 3er T. 2024/F6a_EAEPED_COG_3092024.pdf'},
+                {nombre: 'F6b_EAEPED_CA_3092024.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/6-LDF 3er T. 2024/F6b_EAEPED_CA_3092024.pdf'},
+                {nombre: 'F6c_EAEPED_CF_3092024.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/6-LDF 3er T. 2024/F6c_EAEPED_CF_3092024.pdf'},
+                {nombre: 'F6d_EAEPEd_CSP_3092024.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/6-LDF 3er T. 2024/F6d_EAEPEd_CSP_3092024.pdf'}
+              ]
+            },
+            { nombre: '7-Formato SHCP',
+              abierto: false,
+              archivos:[
+              ]
             }
-
 
           ] 
         },
@@ -748,6 +774,11 @@ export class Contabilidad_institucionalComponent {
         { nombre: '4to Trimestre',
            abierto: false, 
            carpetas: [
+            { nombre: '1-Contable',
+              abierto: false,
+              archivos:[
+              ]
+            }
 
            ] 
           }

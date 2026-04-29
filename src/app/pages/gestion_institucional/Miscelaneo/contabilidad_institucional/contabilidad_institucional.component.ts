@@ -519,8 +519,7 @@ export class Contabilidad_institucionalComponent {
           nombre: '1er Trimestre',
           abierto: false,
           carpetas: [
-            {
-              nombre: '1-Contable',
+            { nombre: '1-Contable',
               abierto: false,
               archivos: [
                 { nombre: '1-Estado de actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/1-Estado de actividades.pdf' },
@@ -536,8 +535,7 @@ export class Contabilidad_institucionalComponent {
                 { nombre: '11-Notas a los EF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/1-Contable/11-Notas a los EF.pdf' }
               ]
             },
-            {
-              nombre: '2-Presupuestaria',
+            { nombre: '2-Presupuestaria',
               abierto: false,
               archivos:[
                 { nombre: '1-Estado Analitico del Ingreso.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/2-Presupuestaria/1-Estado Analitico del Ingreso.pdf' },
@@ -553,19 +551,16 @@ export class Contabilidad_institucionalComponent {
                 ]
             },
 
-            {
-              nombre:'3-Programatica',
+            { nombre:'3-Programatica',
               abierto: false,
               archivos:[
                 { nombre: '1-Gasto por Categoria Programatica.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/3-Programatica/1-Gasto por Categoria Programatica.pdf'},
                 { nombre: '2-Programas y Proyectos de Inversion.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/3-Programatica/2-Programas y Proyectos de Inversion.pdf'},
                 { nombre: '3-Indicador de resultados.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/3-Programatica/3-Indicador de resultados.pdf'}
 
-
               ]
             },
-            {
-              nombre:'4-Titulo V',
+            { nombre:'4-Titulo V',
               abierto: false,
               archivos:[
                 { nombre: '1-Montos pagados por ayudas y S.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/4-Titulo V/1-Montos pagados por ayudas y S.pdf'},
@@ -574,8 +569,7 @@ export class Contabilidad_institucionalComponent {
 
               ]
             },
-            {
-              nombre: '5-Anexos',
+            { nombre: '5-Anexos',
               abierto: false,
               archivos:[
                 { nombre: '1-Formato de obligaciones.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/5-Anexos/1-Formato de obligaciones.pdf'},
@@ -584,8 +578,7 @@ export class Contabilidad_institucionalComponent {
 
               ]
             },
-            {
-              nombre: '6-LDF 1er T. 2024',
+            { nombre: '6-LDF 1er T. 2024',
               abierto: false,
               archivos:[
                 { nombre: 'F1_ESF_3132024.xls', url:'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/6-LDF 1er T. 2024/F1_ESF_3132024.xls'},
@@ -600,23 +593,19 @@ export class Contabilidad_institucionalComponent {
 
               ]
             },
-            {
-              nombre: '7-Formato SHCP',
+            { nombre: '7-Formato SHCP',
               abierto: false,
               archivos:[
                 { nombre: '1-SRFT 1erT.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/1er_Trimestre/7-Formato SHCP/1-SRFT 1erT.pdf'}
               ]
             }
-
-            
           ]
-        },
 
+        },
         { nombre: '2do Trimestre', 
           abierto: false, 
           carpetas: [
-            {
-              nombre:'1-Contable',
+            { nombre:'1-Contable',
               abierto: false,
               archivos:[
                 { nombre: '1-Estado de Actividades.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/1-Contable/1-Estado de Actividades.pdf'},
@@ -633,8 +622,7 @@ export class Contabilidad_institucionalComponent {
 
               ]
             },
-            {
-              nombre: '2-Presupuestaria',
+            { nombre: '2-Presupuestaria',
               abierto: false,
               archivos:[
                 { nombre: '1-Estado analitico de ingresos.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/2-Presupuestaria/1-Estado analitico de ingresos.pdf'},
@@ -647,9 +635,57 @@ export class Contabilidad_institucionalComponent {
                 { nombre: '8-Indicadores de Postura Fiscal.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/2-Presupuestaria/8-Indicadores de Postura Fiscal.pdf'},
                 { nombre: '9-Flujos de fondos.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/2-Presupuestaria/9-Flujos de fondos.pdf'}
 
-
               ]
 
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: '1-Gasto por Categoria Programatica.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/3-Programatica/1-Gasto por Categoria Programatica.pdf'},
+                { nombre: '2-Programas y proyectos de inversion.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/3-Programatica/2-Programas y proyectos de inversion.pdf'},
+                { nombre: '3-Indicador de resultados.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/3-Programatica/3-Indicador de resultados.pdf'}
+
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: '1-Montos Pagados por A y S.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/4-Titulo V/1-Montos Pagados por A y S.pdf'},
+                { nombre: '2-Formato de Programas con RC por OG.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/4-Titulo V/2-Formato de Programas con RC por OG.pdf'},
+                { nombre: '3-Forato del EyD de GF y R.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/4-Titulo V/3-Forato del EyD de GF y R.pdf'}
+
+              ]
+            },
+            { nombre: '5-Anexos',
+              abierto: false,
+              archivos: [
+                { nombre: '1-Formato de obligaciones.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/5-Anexos/1-Formato de obligaciones.pdf'},
+                { nombre: '2-Relaciones de EB y CF.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/5-Anexos/2-Relaciones de EB y CF.pdf'},
+                { nombre: '3-Avance Financiero.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/5-Anexos/3-Avance Financiero.pdf'}
+                
+              ]
+            },
+            { nombre: '6-LDF 2do T. 2024',
+              abierto: false,
+              archivos: [
+                { nombre: 'F1_ESF_3062024.xls', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/6-LDF 2do T. 2024/F1_ESF_3062024.xls'},
+                { nombre: 'F2_IADPOP_3062024.xls', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/6-LDF 2do T. 2024/F2_IADPOP_3062024.xls'},
+                { nombre: 'F3_IAODF_3062024.xls', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/6-LDF 2do T. 2024/F3_IAODF_3062024.xls'},
+                { nombre: 'F4_BP_3062024.xls', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/6-LDF 2do T. 2024/F4_BP_3062024.xls'},
+                { nombre: 'F5_EAID_3062024.xls', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/6-LDF 2do T. 2024/F5_EAID_3062024.xls'},
+                { nombre: 'F6a_EAEPED_COG_3062024.xls', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/6-LDF 2do T. 2024/F6a_EAEPED_COG_3062024.xls'},
+                { nombre: 'F6b_EAEPED_CA_3062024.xls', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/6-LDF 2do T. 2024/F6b_EAEPED_CA_3062024.xls'},
+                { nombre: 'F6c_EAEPED_CF_3062024.xls', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/6-LDF 2do T. 2024/F6c_EAEPED_CF_3062024.xls'},
+                { nombre: 'F6d_EAEPED_CSP_3062024.xls', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/6-LDF 2do T. 2024/F6d_EAEPED_CSP_3062024.xls'}             
+
+              ]
+            },
+            { nombre: '7-Formato SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'SRFT 2do. trimestre.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/7-Formato SHCP/SRFT 2do. trimestre.pdf'}
+                          
+              ]
             }
 
           ] 
@@ -658,6 +694,26 @@ export class Contabilidad_institucionalComponent {
         { nombre: '3er Trimestre', 
           abierto: false, 
           carpetas: [
+            { nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                {nombre: '1-Estado de Actividades.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/1-Estado de Actividades.pdf'},
+                {nombre: '2-Estado de situacion financiera.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/2-Estado de situacion financiera.pdf'},
+                {nombre: '3-Estado de Cambios en la SF.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/3-Estado de Cambios en la SF.pdf'},
+                {nombre: '4-Estado Analitico del Activo.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/4-Estado Analitico del Activo.pdf'},
+                {nombre: '5-Estado Analitico de la D y OP.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/5-Estado Analitico de la D y OP.pdf'},
+                {nombre: '6-Estado de variación en la HP.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/6-Estado de variación en la HP.pdf'},
+                {nombre: '7-Estado de Flujos de Efectivo.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/7-Estado de Flujos de Efectivo.pdf'},
+                {nombre: '8-Informe sobre PC.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/8-Informe sobre PC.pdf'},
+                {nombre: '9-Conciliación entre los IP y C.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/9-Conciliación entre los IP y C.pdf'},
+                {nombre: '10-Conciliación entre los EP y GC.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/10-Conciliación entre los EP y GC.pdf'},
+                {nombre: '11-Notas a los EF.pdf', url:'assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/1-Contable/11-Notas a los EF.pdf'}
+
+              ]
+
+
+            }
+
 
           ] 
         },

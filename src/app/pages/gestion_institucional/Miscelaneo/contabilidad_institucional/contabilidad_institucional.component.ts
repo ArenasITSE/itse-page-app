@@ -956,20 +956,62 @@ export class Contabilidad_institucionalComponent {
             { nombre: '2-Presupuestaria',
             abierto: false,
             archivos: [
-              {nombre: '1-Estado Analitico de Ingresos.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/' },
-              {nombre: '2-EAEPECA para estatal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
-              {nombre: '3-EAEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
-              {nombre: '4-EAEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
-              {nombre: '5-EAEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
-              {nombre: '6-EAEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
-              {nombre: '7-Endeudamiento Neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
-              {nombre: '8-Indicadores de Postura Fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
-              {nombre: '9-Flujo de Fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
-              {nombre: '10-Intereses de la Deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'}
+              {nombre: '1-Estado Analitico de Ingresos.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/1-Estado Analitico de Ingresos.pdf' },
+              {nombre: '2-EAEPECA para estatal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/2-EAEPECA para estatal.pdf'},
+              {nombre: '3-EAEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/3-EAEPECA.pdf'},
+              {nombre: '4-EAEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/4-EAEPECE.pdf'},
+              {nombre: '5-EAEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/5-EAEPECF.pdf'},
+              {nombre: '6-EAEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/6-EAEPECOG.pdf'},
+              {nombre: '7-Endeudamiento Neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/7-Endeudamiento Neto.pdf'},
+              {nombre: '8-Indicadores de Postura Fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/8-Indicadores de Postura Fiscal.pdf'},
+              {nombre: '9-Flujo de Fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/9-Flujo de Fondos.pdf'},
+              {nombre: '10-Intereses de la Deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/10-Intereses de la Deuda.pdf'}
 
-            ]
-          
-          
+              ]
+            },
+            { nombre: '3-Programatica',
+            abierto: false,
+            archivos: [
+              {nombre: '1-Gasto por Categoria Programatica.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/3-Programatica/1-Gasto por Categoria Programatica.pdf' },
+              {nombre: '2-Programas y Proyectos de Inversion.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/3-Programatica/2-Programas y Proyectos de Inversion.pdf' },
+              {nombre: '3-Indicador de Resultados.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/3-Programatica/3-Indicador de Resultados.pdf' }
+               ]
+            },
+            { nombre: '4-Titulo V',
+            abierto: false,
+            archivos: [
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+               ]
+            },
+            { nombre: '5-Anexos',
+            abierto: false,
+            archivos: [
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+               ]
+            },
+            { nombre: '6-LDF 3er T. 2023',
+            abierto: false,
+            archivos: [
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' }
+               ]
+            },
+            { nombre: '7-Formato SHCP',
+            abierto: false,
+            archivos: [
+              //{nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/' }
+               ]
             }
 
           ] },

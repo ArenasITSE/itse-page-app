@@ -766,22 +766,53 @@ export class Contabilidad_institucionalComponent {
         }
       ],
       trimestres: [
-        {
-          nombre: '1er Trimestre',
+        { nombre: '1er Trimestre',
           abierto: false,
           carpetas: [
-            {
-              nombre: '1-Contable',
+            { nombre: '1-Contable',
               abierto: false,
               archivos: [
-                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+                {nombre: '1-Estado de Actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/1-Estado de Actividades.pdf' },
+                {nombre: '2-Estado de situación Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/2-Estado de situación Financiera.pdf' },
+                {nombre: '3-Estado de variación en la HP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/3-Estado de variación en la HP.pdf' },
+                {nombre: '4-Estado de cambios en la SF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/4-Estado de cambios en la SF.pdf' },
+                {nombre: '5-Estado de Flujos de Efectivo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/5-Estado de Flujos de Efectivo.pdf' },
+                {nombre: '6-Informe sobre PC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/6-Informe sobre PC.pdf' },
+                {nombre: '7-Notas a los EF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/7-Notas a los EF.pdf' },
+                {nombre: '8-Estado analitico del activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/8-Estado analitico del activo.pdf' },
+                {nombre: '9-Estado analitico de la DyOP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/9-Estado analitico de la DyOP.pdf' },
+                {nombre: '10-Conciliación entre los IPyC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/10-Conciliación entre los IPyC.pdf' },
+                {nombre: '11-Conciliación entre los EPyGC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/11-Conciliación entre los EPyGC.pdf' } 
               ]
-            }
+            },
+          { nombre: '2-Presupuestaria',
+            abierto: false,
+            archivos: [
+              {nombre: '1-Estado de Actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria' },
+
+              ]
+            },
+
           ]
         },
-        { nombre: '2do Trimestre', abierto: false, carpetas: [] },
-        { nombre: '3er Trimestre', abierto: false, carpetas: [] },
-        { nombre: '4to Trimestre', abierto: false, carpetas: [] }
+
+        { nombre: '2do Trimestre',
+           abierto: false, 
+           carpetas: [
+            
+              
+           ] 
+          },
+
+        { nombre: '3er Trimestre', 
+          abierto: false, carpetas: [] },
+
+        { nombre: '4to Trimestre', 
+          abierto: false,
+          carpetas: [
+
+          ]
+         }
       ] //trimestres 2023
     }, //año 2023
 
@@ -789,14 +820,15 @@ export class Contabilidad_institucionalComponent {
       anio: 2022,
       abierto: false,
       presupuestos: [
-        {
-          nombre: 'Presupuesto Estatal 2022',
+
+        { nombre: 'Presupuesto Estatal 2022',
           url: 'assets/contabilidad_institucional/estados_financieros/2022/presupuesto-estatal-2022.pdf'
         },
-        {
-          nombre: 'Presupuesto Federal 2022',
+
+        { nombre: 'Presupuesto Federal 2022',
           url: 'assets/contabilidad_institucional/estados_financieros/2022/presupuesto-federal-2022.pdf'
         }
+
       ],
       trimestres: [
         {

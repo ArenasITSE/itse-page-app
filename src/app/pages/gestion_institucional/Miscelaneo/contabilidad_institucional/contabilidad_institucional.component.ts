@@ -903,44 +903,64 @@ export class Contabilidad_institucionalComponent {
             { nombre: '5-Anexos',
             abierto: false,
             archivos: [
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/5-Anexos' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/5-Anexos' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/5-Anexos' }
+              {nombre: '1-Formato de Obligaciones.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/5-Anexos/1-Formato de Obligaciones.pdf' },
+              {nombre: '2-Relacion de Esquemas bursatiles y CF.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/5-Anexos/2-Relacion de Esquemas bursatiles y CF.pdf' },
+              {nombre: '3-AVANCE FINANCIERO JUNIO 2023.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/5-Anexos/3-AVANCE FINANCIERO JUNIO 2023.pdf' }
               
               ]
             },
             { nombre: '6-LDF 2do T. 2023',
             abierto: false,
             archivos: [
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' }
+              {nombre: 'F1_ESF_3062023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F1_ESF_3062023.xls' },
+              {nombre: 'F2_IADPOP_3062023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F2_IADPOP_3062023.xls' },
+              {nombre: 'F3_IAODF_3062023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F3_IAODF_3062023.xls' },
+              {nombre: 'F4_BP_3062023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F4_BP_3062023.xls' },
+              {nombre: 'F5_EAID_3062023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F5_EAID_3062023.xls' },
+              {nombre: 'F6a_EAEPED_COG_3062023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
+              {nombre: 'F6b_EAEPED_CA_3062023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
+              {nombre: 'F6c_EAEPED_CF_3062023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
+              {nombre: 'F6d_EAEPED_CSP_3062023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' }
               
               ]
             },
             { nombre: '7-Formato SHCP',
             abierto: false,
             archivos: [
-              //{nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/' },
-              
-              ]
+              //{nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/7-Formato SHCP/' },        
+               ]
             }
               
            ] 
           },
 
         { nombre: '3er Trimestre', 
-          abierto: false, carpetas: [] },
+          abierto: false, carpetas: [
+
+            { nombre: '1-Contable',
+            abierto: false,
+            archivos: [
+              {nombre: '1-Estado de Actividades.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/' },
+              {nombre: '2-Estado de Situacion Financiera.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/' },
+              {nombre: '3-Estado de Cambios en la SF.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' }        
+               ]
+            },
+
+          ] },
 
         { nombre: '4to Trimestre', 
           abierto: false,
           carpetas: [
+            
+            
 
           ]
          }

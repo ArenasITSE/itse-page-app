@@ -758,11 +758,11 @@ export class Contabilidad_institucionalComponent {
       presupuestos: [
         {
           nombre: 'Presupuesto Estatal 2023',
-          url: 'assets/contabilidad_institucional/estados_financieros/2023/presupuesto-estatal-2023.pdf'
+          url: 'assets/contabilidad_institucional/estados_financieros/2023/ITSE PRESUPUESTO ESTATAL 2023.pdf'
         },
         {
           nombre: 'Presupuesto Federal 2023',
-          url: 'assets/contabilidad_institucional/estados_financieros/2023/presupuesto-federal-2023.pdf'
+          url: 'assets/contabilidad_institucional/estados_financieros/2023/ITSE PRESUPUESTO FEDERAL 2023.pdf'
         }
       ],
       trimestres: [
@@ -791,11 +791,77 @@ export class Contabilidad_institucionalComponent {
       presupuestos: [
         {
           nombre: 'Presupuesto Estatal 2022',
-          url: 'assets/contabilidad_institucional/estados_financieros/2023/presupuesto-estatal-2022.pdf'
+          url: 'assets/contabilidad_institucional/estados_financieros/2022/presupuesto-estatal-2022.pdf'
         },
         {
           nombre: 'Presupuesto Federal 2022',
-          url: 'assets/contabilidad_institucional/estados_financieros/2023/presupuesto-federal-2022.pdf'
+          url: 'assets/contabilidad_institucional/estados_financieros/2022/presupuesto-federal-2022.pdf'
+        }
+      ],
+      trimestres: [
+        {
+          nombre: '1er Trimestre',
+          abierto: false,
+          carpetas: [
+            {
+              nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2022/t1/contable/doc1.pdf' }
+              ]
+            }
+            ]
+        },
+        { nombre: '2do Trimestre', abierto: false, carpetas: [] },
+        { nombre: '3er Trimestre', abierto: false, carpetas: [] },
+        { nombre: '4to Trimestre', abierto: false, carpetas: [] }
+      ] //trimestres 2022
+    },// año 2022
+
+    {//2021
+      anio: 2021,
+      abierto: false,
+      presupuestos: [
+        {
+          nombre: 'Presupuesto Estatal 2021',
+          url: 'assets/contabilidad_institucional/estados_financieros/2021/presupuesto-estatal-2021.pdf'
+        },
+        {
+          nombre: 'Presupuesto Federal 2021',
+          url: 'assets/contabilidad_institucional/estados_financieros/2021/presupuesto-federal-2021.pdf'
+        }
+      ],
+      trimestres: [
+        {
+          nombre: '1er Trimestre',
+          abierto: false,
+          carpetas: [
+            {
+              nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2021/t1/contable/doc1.pdf' }
+              ]
+            }
+            ]
+        },
+        { nombre: '2do Trimestre', abierto: false, carpetas: [] },
+        { nombre: '3er Trimestre', abierto: false, carpetas: [] },
+        { nombre: '4to Trimestre', abierto: false, carpetas: [] }
+      ] //trimestres 2022
+    },//2022
+
+    {//2020
+      anio: 2020,
+      abierto: false,
+      presupuestos: [
+        {
+          nombre: 'Presupuesto Estatal 2020',
+          url: 'assets/contabilidad_institucional/estados_financieros/2020/presupuesto-estatal-2020.pdf'
+        },
+        {
+          nombre: 'Presupuesto Federal 2020',
+          url: 'assets/contabilidad_institucional/estados_financieros/2020/presupuesto-federal-2020.pdf'
         }
       ],
       trimestres: [
@@ -815,8 +881,8 @@ export class Contabilidad_institucionalComponent {
         { nombre: '2do Trimestre', abierto: false, carpetas: [] },
         { nombre: '3er Trimestre', abierto: false, carpetas: [] },
         { nombre: '4to Trimestre', abierto: false, carpetas: [] }
-      ] //trimestres 2023
-    }// año 2023
+      ] //trimestres 2020
+    }//2020
 
 
     

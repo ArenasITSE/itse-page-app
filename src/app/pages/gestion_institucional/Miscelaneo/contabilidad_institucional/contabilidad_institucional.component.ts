@@ -940,19 +940,28 @@ export class Contabilidad_institucionalComponent {
             { nombre: '1-Contable',
             abierto: false,
             archivos: [
-              {nombre: '1-Estado de Actividades.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/' },
-              {nombre: '2-Estado de Situacion Financiera.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/' },
-              {nombre: '3-Estado de Cambios en la SF.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable' }        
+              {nombre: '1-Estado de Actividades.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/1-Estado de Actividades.pdf' },
+              {nombre: '2-Estado de Situacion Financiera.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/2-Estado de Situacion Financiera.pdf' },
+              {nombre: '3-Estado de Cambios en la SF.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/3-Estado de Cambios en la SF.pdf' },
+              {nombre: '4-Estado analitico del Activo.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/4-Estado analitico del Activo.pdf' },
+              {nombre: '5-Estado Analitico de la D y OP.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/5-Estado Analitico de la D y OP.pdf' },
+              {nombre: '6-Estado de Variacion de la HP.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/6-Estado de Variacion de la HP.pdf' },
+              {nombre: '7-Estado de Flujos de Efectivo.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/7-Estado de Flujos de Efectivo.pdf' },
+              {nombre: '8-Informe Sobre PC.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/8-Informe Sobre PC.pdf' },
+              {nombre: '9-Conciliacion entre IPyC.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/9-Conciliacion entre IPyC.pdf' },
+              {nombre: '10-Conciliacion entre los EP y los GC.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/10-Conciliacion entre los EP y los GC.pdf' },
+              {nombre: '11-Notas a os EF.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/11-Notas a os EF.pdf' }        
                ]
             },
+            { nombre: '2-Presupuestaria',
+            abierto: false,
+            archivos: [
+              {nombre: '11-Notas a os EF.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/11-Notas a os EF.pdf' }
+
+            ]
+          
+          
+            }
 
           ] },
 

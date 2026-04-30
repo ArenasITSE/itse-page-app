@@ -785,13 +785,65 @@ export class Contabilidad_institucionalComponent {
                 {nombre: '11-Conciliación entre los EPyGC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/1-Contable/11-Conciliación entre los EPyGC.pdf' } 
               ]
             },
-          { nombre: '2-Presupuestaria',
+            { nombre: '2-Presupuestaria',
             abierto: false,
             archivos: [
-              {nombre: '1-Estado de Actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria' },
+              {nombre: '1-Estado analitico de ingresos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria/1-Estado analitico de ingresos.pdf' },
+              {nombre: '2-EAEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria/2-EAEPECA.pdf' },
+              {nombre: '3-EAEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria/3-EAEPECE.pdf' },
+              {nombre: '4-EAEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria/4-EAEPECOG.pdf' },
+              {nombre: '5-EAEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria/5-EAEPECF.pdf' },
+              {nombre: '6-Endeudamiento neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria/6-Endeudamiento neto.pdf' },
+              {nombre: '7-Intereses de la deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria/7-Intereses de la deuda.pdf' },
+              {nombre: '8-Flujo de fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria/8-Flujo de fondos.pdf' },
+              {nombre: '9-Indicadores de postura fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/2-Presupuestaria/9-Indicadores de postura fiscal.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+            abierto: false,
+            archivos: [
+              {nombre: '1-Gasto por categoria programatica.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3-Programatica/1-Gasto por categoria programatica.pdf' },
+              {nombre: '2-Programas y PI.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3-Programatica/2-Programas y PI.pdf' },
+              {nombre: '3-Indicador de resultados.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3-Programatica/3-Indicador de resultados.pdf' }
 
               ]
             },
+            { nombre: '4-Titulo V',
+            abierto: false,
+            archivos: [
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },   
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }             
+              ]
+            },
+            { nombre: '5-Anexos',
+            abierto: false,
+            archivos: [
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },   
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }             
+              ]
+            },
+            { nombre: '6-LDF 1er T. 2023',
+            abierto: false,
+            archivos: [
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
+              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }      
+              ]
+            },
+            { nombre: '7-Formato SHCP',
+            abierto: false,
+            archivos: [
+              {nombre: 'SRFT .pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },             
+              ]
+            }
 
           ]
         },

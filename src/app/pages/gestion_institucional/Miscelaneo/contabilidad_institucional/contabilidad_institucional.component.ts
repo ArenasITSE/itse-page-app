@@ -811,37 +811,37 @@ export class Contabilidad_institucionalComponent {
             { nombre: '4-Titulo V',
             abierto: false,
             archivos: [
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },   
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }             
+              {nombre: '1-Montos pagados por AyS.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/4-Titulo V/1-Montos pagados por AyS.pdf' },
+              {nombre: '2-Formato de programas RCporOG.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/4-Titulo V/2-Formato de programas RCporOG.pdf' },   
+              {nombre: '3-Formato del ejercicio DGFyR.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/4-Titulo V/3-Formato del ejercicio DGFyR.pdf' }             
               ]
             },
             { nombre: '5-Anexos',
             abierto: false,
             archivos: [
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },   
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }             
+              {nombre: '1-Formato de obligaciones.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/5-Anexos/1-Formato de obligaciones.pdf' },
+              {nombre: '2-Esquemas bursatiles.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/5-Anexos/2-Esquemas bursatiles.pdf' },   
+              {nombre: '3-Avance financiero.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/5-Anexos/3-Avance financiero.pdf' }             
               ]
             },
             { nombre: '6-LDF 1er T. 2023',
             abierto: false,
             archivos: [
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }, 
-              {nombre: '',url: 'assets/contabilidad_institucional/estados_financieros/2023/' }      
+              {nombre: 'F1_ESF_3132023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/6-LDF 1er T. 2023/F1_ESF_3132023.xls' },
+              {nombre: 'F2_IADPOP_3132023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/6-LDF 1er T. 2023/F2_IADPOP_3132023.xls' }, 
+              {nombre: 'F3_IAODF_3132023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/6-LDF 1er T. 2023/F3_IAODF_3132023.xls' }, 
+              {nombre: 'F4_BP_3132023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/6-LDF 1er T. 2023/F4_BP_3132023.xls' }, 
+              {nombre: 'F5-EAID_3132023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/6-LDF 1er T. 2023/F5-EAID_3132023.xls' }, 
+              {nombre: 'F6a_EAEPED_COG_3132023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/6-LDF 1er T. 2023/F6a_EAEPED_COG_3132023.xls' }, 
+              {nombre: 'F6b_EAEPED_CA_3132023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/6-LDF 1er T. 2023/F6b_EAEPED_CA_3132023.xls' }, 
+              {nombre: 'F6c_EAEPED_CF_3132023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/6-LDF 1er T. 2023/F6c_EAEPED_CF_3132023.xls' }, 
+              {nombre: 'F6d_EAEPED_CSP_3132023.xls',url: 'assets/contabilidad_institucional/estados_financieros/2023/6-LDF 1er T. 2023/F6d_EAEPED_CSP_3132023.xls' }      
               ]
             },
             { nombre: '7-Formato SHCP',
             abierto: false,
             archivos: [
-              {nombre: 'SRFT .pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/' },             
+              {nombre: 'SRFT.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/7-Formato SHCP/SRFT.pdf' },             
               ]
             }
 

@@ -956,7 +956,16 @@ export class Contabilidad_institucionalComponent {
             { nombre: '2-Presupuestaria',
             abierto: false,
             archivos: [
-              {nombre: '11-Notas a os EF.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/11-Notas a os EF.pdf' }
+              {nombre: '1-Estado Analitico de Ingresos.pdf',url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/' },
+              {nombre: '2-EAEPECA para estatal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
+              {nombre: '3-EAEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
+              {nombre: '4-EAEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
+              {nombre: '5-EAEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
+              {nombre: '6-EAEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
+              {nombre: '7-Endeudamiento Neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
+              {nombre: '8-Indicadores de Postura Fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
+              {nombre: '9-Flujo de Fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'},
+              {nombre: '10-Intereses de la Deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/2-Presupuestaria/'}
 
             ]
           

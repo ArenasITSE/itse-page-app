@@ -59,8 +59,8 @@ export class Contabilidad_institucionalComponent {
                 {nombre: '4-EAEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/2-Presupuestaria/4-EAEPECE.pdf'},
                 {nombre: '5-EAEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/2-Presupuestaria/5-EAEPECF.pdf'},
                 {nombre: '6-Endeudamiento neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/2-Presupuestaria/6-Endeudamiento neto.pdf'},
-                {nombre: '7-Interes de la deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/2-Presupuestaria/7-Interes de la deuda.pdf'},
-                {nombre: '8-Indicadores de postura fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/2-Presupuestaria/8-Indicadores de la postura fiscal.pdf'},
+                {nombre: '7-Intereses de la deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/2-Presupuestaria/7-Intereses de la deuda.pdf'},
+                {nombre: '8-Indicadores de postura fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/2-Presupuestaria/8-Indicadores de postura fiscal.pdf'},
                 {nombre: '9-Flujo de fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/2-Presupuestaria/9-Flujo de fondos.pdf'}
                  ]
             },

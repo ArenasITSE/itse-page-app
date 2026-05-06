@@ -1104,12 +1104,12 @@ export class Contabilidad_institucionalComponent {
       abierto: false,
       presupuestos: [
 
-        { nombre: 'Presupuesto Estatal 2022',
-          url: 'assets/contabilidad_institucional/estados_financieros/2022/presupuesto-estatal-2022.pdf'
+        { nombre: 'PRESUPUESTO ESTATAL 2022.pdf',
+          url: 'assets/contabilidad_institucional/estados_financieros/2022/PRESUPUESTO ESTATAL 2022.pdf'
         },
 
-        { nombre: 'Presupuesto Federal 2022',
-          url: 'assets/contabilidad_institucional/estados_financieros/2022/presupuesto-federal-2022.pdf'
+        { nombre: 'PRESUPUESTO FEDERAL 2022.pdf',
+          url: 'assets/contabilidad_institucional/estados_financieros/2022/PRESUPUESTO FEDERAL 2022.pdf'
         }
 
       ],
@@ -1118,13 +1118,84 @@ export class Contabilidad_institucionalComponent {
           nombre: '1er Trimestre',
           abierto: false,
           carpetas: [
-            {
-              nombre: '1-Contable',
+            { nombre: '1-Contable',
               abierto: false,
               archivos: [
-                { nombre: 'Documento contable', url: 'assets/.../2022/t1/contable/doc1.pdf' }
+                { nombre: '1-Estado de Actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/1-Estado de Actividades.pdf' },
+                { nombre: '2-Estado de Situacion Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/2-Estado de Situacion Financiera.pdf' },
+                { nombre: '3-Estado de Cambios en la Situacion Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/3-Estado de Cambios en la Situacion Financiera.pdf' },
+                { nombre: '4-Estado Analitico del Activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/4-Estado Analitico del Activo.pdf' },
+                { nombre: '5-Estado Analitico de la Deuda y Otros Pasivos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/5-Estado Analitico de la Deuda y Otros Pasivos.pdf' },
+                { nombre: '6-Estado de Variación en la Hacienda Publica.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/6-Estado de Variación en la Hacienda Publica.pdf' },
+                { nombre: '7-Estado de flujos de efectivo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/7-Estado de flujos de efectivo.pdf' },
+                { nombre: '8-Pasivos Contingentes.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/8-Pasivos Contingentes.pdf' },
+                { nombre: '9-Notas a los Estados Financieros.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/9-Notas a los Estados Financieros.pdf' },
+                { nombre: '10-Conciliacion entre IP y C.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/10-Conciliacion entre IP y C.pdf' },
+                { nombre: '11-Conciliacion entre los EP y GC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/1-Contable/11-Conciliacion entre los EP y GC.pdf' }
+               ]
+            },
+            { nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: '1-Estado Analitico del Ingreso.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/2-Presupuestaria/1-Estado Analitico del Ingreso.pdf' },
+                { nombre: '2-EAEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/2-Presupuestaria/2-EAEPECA.pdf' },
+                { nombre: '3-EAEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/2-Presupuestaria/3-EAEPECOG.pdf' },
+                { nombre: '4-EAEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/2-Presupuestaria/4-EAEPECE.pdf' },
+                { nombre: '5-EAEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/2-Presupuestaria/5-EAEPECF.pdf' },
+                { nombre: '6-Endeudamiento Neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/2-Presupuestaria/6-Endeudamiento Neto.pdf' },
+                { nombre: '7-Intereses de la Deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/2-Presupuestaria/7-Intereses de la Deuda.pdf' },
+                { nombre: '8-Indicadores de Postura Fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/2-Presupuestaria/8-Indicadores de Postura Fiscal.pdf' },
+                { nombre: '9-Flujos de fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/2-Presupuestaria/9-Flujos de fondos.pdf' }               
+               ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: '1-Gasto por Categoria Programatica.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/3-Programatica/1-Gasto por Categoria Programatica.pdf' },
+                { nombre: '2-Programas y Proyectos de Inversion.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/3-Programatica/2-Programas y Proyectos de Inversion.pdf' },
+                { nombre: '3-Indicador de resultados.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/3-Programatica/3-Indicador de resultados.pdf' }
+
               ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: '1-Montos Pagados por Ayudas y Subsidios.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/4-Titulo V/1-Montos Pagados por Ayudas y Subsidios.pdf'},
+                { nombre: '2-Formato de Programas.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/4-Titulo V/2-Formato de Programas.pdf'},
+                { nombre: '3-Formato del ejercicio y destino.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/4-Titulo V/3-Formato del ejercicio y destino.pdf'}
+              ]
+            },
+            { nombre: '5-Anexos',
+              abierto: false,
+              archivos: [
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/5-Anexos/'},
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/5-Anexos/'},
+
+
+              ]
+
+            },
+            { nombre: '6-LDF 1er T. 2022',
+              abierto: false,
+              archivos: [
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/6-LDF 1er T. 2022'},
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/6-LDF 1er T. 2022'},
+
+
+              ]
+
+            },
+            { nombre: '7-Formato SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/7-Formato SHCP/'},
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/1er_Trimestre/7-Formato SHCP/'},
+
+
+              ]
+
             }
+
             ]
         },
         { nombre: '2do Trimestre', abierto: false, carpetas: [] },

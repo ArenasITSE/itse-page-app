@@ -1216,37 +1216,59 @@ export class Contabilidad_institucionalComponent {
             { nombre: '2-Presupuestaria',
               abierto: false,
               archivos: [
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/2-Presupuestaria'},             
+                { nombre: '1-Estado Analitico de Ingresos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/2-Presupuestaria/1-Estado Analitico de Ingresos.pdf'},
+                { nombre: '2-EAEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/2-Presupuestaria/2-EAEPECA.pdf'},
+                { nombre: '3-EAEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/2-Presupuestaria/3-EAEPECOG.pdf'},
+                { nombre: '4-EAEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/2-Presupuestaria/4-EAEPECE.pdf'},
+                { nombre: '5-EAEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/2-Presupuestaria/5-EAEPECF.pdf'},
+                { nombre: '6-Endeudamiento neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/2-Presupuestaria/6-Endeudamiento neto.pdf'},
+                { nombre: '7-Intereses de la Deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/2-Presupuestaria/7-Intereses de la Deuda.pdf'},
+                { nombre: '8-Indicadores de Postura Fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/2-Presupuestaria/8-Indicadores de Postura Fiscal.pdf'},
+                { nombre: '9-Flujo de fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/2-Presupuestaria/9-Flujo de fondos.pdf'}             
               ]
             },
             { nombre: '3-Programatica',
               abierto: false,
               archivos: [
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/3-Programatica'},             
+                { nombre: '1-Gasto por Categoria Programatica.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/3-Programatica/1-Gasto por Categoria Programatica.pdf'},
+                { nombre: '2-Programa y PI.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/3-Programatica/2-Programa y PI.pdf'},
+                { nombre: '3-Indicador de resultados.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/3-Programatica/3-Indicador de resultados.pdf'}             
               ]
             },
             { nombre: '4-Titulo V',
               abierto: false,
               archivos: [
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/4-Titulo V'},             
+                { nombre: '1-Montos Pagados por ayudas y subsidios.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/4-Titulo V/1-Montos Pagados por ayudas y subsidios.pdf'},
+                { nombre: '2-Formato de Programas.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/4-Titulo V/2-Formato de Programas.pdf'},
+                { nombre: '3-Formato del Ejercicio y DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/4-Titulo V/3-Formato del Ejercicio y DGFyR.pdf'}
               ]
             },
             { nombre: '5-Anexos',
               abierto: false,
               archivos: [
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/5-Anexos'},             
+                { nombre: '1-Formato de obligaciones.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/5-Anexos/'},
+                { nombre: '2-Relacion de esquemas ByCF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/5-Anexos/'},
+                { nombre: '3-Avance financiero.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/5-Anexos/'}
               ]
             },
             { nombre: '6-LDF 2do T. 2022',
               abierto: false,
               archivos: [
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/6-LDF 2do T. 2022'},             
+                { nombre: 'F1_ESF_3062022.xls', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/6-LDF 2do T. 2022/F1_ESF_3062022.xls'},
+                { nombre: 'F2_IADPOP_3062022.xls', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/6-LDF 2do T. 2022/F2_IADPOP_3062022.xls'},  
+                { nombre: 'F3_IAODF_3062022.xls', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/6-LDF 2do T. 2022/F3_IAODF_3062022.xls'},  
+                { nombre: 'F4_BP_3062022.xls', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/6-LDF 2do T. 2022/F4_BP_3062022.xls'},  
+                { nombre: 'F5_EAID_3062022.xls', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/6-LDF 2do T. 2022/F5_EAID_3062022.xls'},  
+                { nombre: 'F6a_EAEPED_COG_3062022.xls', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/6-LDF 2do T. 2022/F6a_EAEPED_COG_3062022.xls'},  
+                { nombre: 'F6b_EAEPED_CA_3062022.xls', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/6-LDF 2do T. 2022/F6b_EAEPED_CA_3062022.xls'},           
+                { nombre: 'F6c_EAEPED_CF_3062022.xls', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/6-LDF 2do T. 2022/F6c_EAEPED_CF_3062022.xls'}
+                
               ]
             },
             { nombre: '7-Formato SHCP',
               abierto: false,
               archivos: [
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/7-Formato SHCP'},             
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/7-Formato SHCP/'},             
               ]
             }
 

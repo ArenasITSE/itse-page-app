@@ -1790,10 +1790,218 @@ export class Contabilidad_institucionalComponent {
       presupuestos: [
         {
           nombre: 'Presupuesto Estatal 2020',
-          url: 'assets/contabilidad_institucional/estados_financieros/2020/presupuesto-estatal-2020.pdf'
+          url: 'assets/contabilidad_institucional/estados_financieros/2020/Presupuesto Estatal 2020.pdf'
         },
         {
           nombre: 'Presupuesto Federal 2020',
+          url: 'assets/contabilidad_institucional/estados_financieros/2020/Presupuesto Federal 2020.pdf'
+        }
+      ],
+      trimestres: [
+        {
+          nombre: '1er Trimestre',
+          abierto: false,
+          carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            }
+
+            ]
+        },
+        { nombre: '2do Trimestre',
+           abierto: false, 
+           carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            }
+
+        ] },
+        { nombre: '3er Trimestre', 
+          abierto: false, 
+          carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            }
+
+        ] },
+        { nombre: '4to Trimestre', 
+          abierto: 
+          false, 
+          carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            }
+
+        ] }
+      ] //trimestres 2020
+    },//2020
+
+    {//2019
+      anio: 2019,
+      abierto: false,
+      presupuestos: [
+        {
+          nombre: 'Presupuesto Estatal 2019',
+          url: 'assets/contabilidad_institucional/estados_financieros/2020/presupuesto-estatal-2020.pdf'
+        },
+        {
+          nombre: 'Presupuesto Federal 2019',
           url: 'assets/contabilidad_institucional/estados_financieros/2020/presupuesto-federal-2020.pdf'
         }
       ],
@@ -1802,8 +2010,43 @@ export class Contabilidad_institucionalComponent {
           nombre: '1er Trimestre',
           abierto: false,
           carpetas: [
-            {
-              nombre: '1-Contable',
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
               abierto: false,
               archivos: [
                 { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
@@ -1811,13 +2054,313 @@ export class Contabilidad_institucionalComponent {
             }
             ]
         },
-        { nombre: '2do Trimestre', abierto: false, carpetas: [] },
-        { nombre: '3er Trimestre', abierto: false, carpetas: [] },
-        { nombre: '4to Trimestre', abierto: false, carpetas: [] }
-      ] //trimestres 2020
-    }//2020
+        { nombre: '2do Trimestre', 
+          abierto: false, 
+          carpetas: [
 
+        ] },
+        { nombre: '3er Trimestre', 
+          abierto: false, 
+          carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            }
 
-    
+          ] },
+        { nombre: '4to Trimestre', 
+          abierto: false, 
+          carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            }
+
+        ] }
+      ] //trimestres 2019
+    },//2019
+
+    {//2018
+      anio: 2018,
+      abierto: false,
+      presupuestos: [
+        {
+          nombre: 'Presupuesto Estatal 2018',
+          url: 'assets/contabilidad_institucional/estados_financieros/2020/presupuesto-estatal-2020.pdf'
+        },
+        {
+          nombre: 'Presupuesto Federal 2018',
+          url: 'assets/contabilidad_institucional/estados_financieros/2020/presupuesto-federal-2020.pdf'
+        }
+      ],
+      trimestres: [
+        {
+          nombre: '1er Trimestre',
+          abierto: false,
+          carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            }
+            ]
+        },
+        { nombre: '2do Trimestre', 
+          abierto: false, 
+          carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            }
+
+        ] },
+        { nombre: '3er Trimestre', 
+          abierto: false, 
+          carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            }
+
+        ] },
+        { nombre: '4to Trimestre',
+           abierto: false, 
+          carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '5-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '6-LDF',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            },
+            { nombre: '7-SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+              ]
+            }
+
+        ] }
+      ] //trimestres 2018
+    },//2018
+
   ]
 }

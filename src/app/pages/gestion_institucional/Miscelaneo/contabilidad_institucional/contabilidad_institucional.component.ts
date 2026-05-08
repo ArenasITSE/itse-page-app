@@ -1805,53 +1805,74 @@ export class Contabilidad_institucionalComponent {
             {nombre: '1-Contable',
               abierto: false,
               archivos: [
-                { nombre: '1-Estado de Actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
-                { nombre: '2-Estado de Situacion Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
-                { nombre: '3-Estado de CAmbios en la Situacion Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
-                { nombre: '4-Estado Analítico del Activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
-                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' }
+                { nombre: '1-Estado de Actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/1-Estado de Actividades.pdf' },
+                { nombre: '2-Estado de Situacion Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/2-Estado de Situacion Financiera.pdf' },
+                { nombre: '3-Estado de Cambios en la Situacion Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/3-Estado de Cambios en la Situacion Financiera.pdf' },
+                { nombre: '4-Estado Analítico del Activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/4-Estado Analítico del Activo.pdf' },
+                { nombre: '5-Estado Analitico de la Deuda y Otros Pasivos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/5-Estado Analitico de la Deuda y Otros Pasivos.pdf' },
+                { nombre: '6-Estado de Variacion en la Hacienda Publica.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/6-Estado de Variacion en la Hacienda Publica.pdf' },
+                { nombre: '7-Estado de Flujos de Efectivo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/7-Estado de Flujos de Efectivo.pdf' },
+                { nombre: '8-Informe de Pasivos Contingentes.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/8-Informe de Pasivos Contingentes.pdf' },
+                { nombre: '9-Conciliacion entre los IP y C.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/9-Conciliacion entre los IP y C.pdf' },
+                { nombre: '10-Conciliacion entre los EP y GC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/10-Conciliacion entre los EP y GC.pdf' },
+                { nombre: '11-Notas a los Estados Financieros.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/11-Notas a los Estados Financieros.pdf' }
               ]
             },
             {nombre: '2-Presupuestaria',
               abierto: false,
               archivos: [
-                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+                { nombre: '1-Estado Analitico de Ingresos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/2-Presupuestal/1-Estado Analitico de Ingresos.pdf' },
+                { nombre: '2-EAEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/2-Presupuestal/2-EAEPECA.pdf' },
+                { nombre: '3-EAEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/2-Presupuestal/3-EAEPECOG.pdf' },
+                { nombre: '4-EAEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/2-Presupuestal/4-EAEPECE.pdf' },
+                { nombre: '5-EAEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/2-Presupuestal/5-EAEPECF.pdf' },
+                { nombre: '6-Endeudamiento Neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/2-Presupuestal/6-Endeudamiento Neto.pdf' },
+                { nombre: '7-Intereses de la Deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/2-Presupuestal/7-Intereses de la Deuda.pdf' },
+                { nombre: '8-Indicadores de Postura Fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/2-Presupuestal/8-Indicadores de Postura Fiscal.pdf' }
               ]
             },
             { nombre: '3-Programatica',
               abierto: false,
               archivos: [
-                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+                { nombre: '1-Gasto por Categoria Programatica.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/3-Programatica/1-Gasto por Categoria Programatica.pdf' },
+                { nombre: '2-Programas y Proyectos de Inversion.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/3-Programatica/2-Programas y Proyectos de Inversion.pdf' },
+                { nombre: '3-Indicador de Resultados.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/3-Programatica/3-Indicador de Resultados.pdf' }
               ]
             },
             { nombre: '4-Titulo V',
               abierto: false,
               archivos: [
-                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+                { nombre: '1-Montos pagados por A y S.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/4-Titulo V/1-Montos pagados por A y S.pdf' },
+                { nombre: '2-Formato de programas RCporOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/4-Titulo V/2-Formato de programas RCporOG.pdf' },
+                { nombre: '3-Formato del ejercicio y DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/4-Titulo V/3-Formato del ejercicio y DGFyR.pdf' }
               ]
             },
-            { nombre: '5-Titulo V',
+            { nombre: '5-Anexos',
               abierto: false,
               archivos: [
-                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+                { nombre: '1-Formato de obligaciones.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/5-Anexos/1-Formato de obligaciones.pdf' },
+                { nombre: '2-Esquemas bursatiles.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/5-Anexos/2-Esquemas bursatiles.pdf' },
+                { nombre: '3-Avance Financiero.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/5-Anexos/3-Avance Financiero.pdf' }
               ]
             },
-            { nombre: '6-LDF',
+            { nombre: '6-LDF 1er T. 2020',
               abierto: false,
               archivos: [
-                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+                { nombre: 'F1_ESF_3132020.xls', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/6-LDF 1er T. 2020/F1_ESF_3132020.xls' },
+                { nombre: 'F2_IADPOP_3132020.xls', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/6-LDF 1er T. 2020/F2_IADPOP_3132020.xls' },
+                { nombre: 'F3_IAODF_3132020.xls', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/6-LDF 1er T. 2020/F3_IAODF_3132020.xls' },
+                { nombre: 'F4_BP_3132020.xls', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/6-LDF 1er T. 2020/F4_BP_3132020.xls' },
+                { nombre: 'F5_EAID_3132020.xls', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/6-LDF 1er T. 2020/F5_EAID_3132020.xls' },
+                { nombre: 'F6a_EAEPED_COG_3132020.xls', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/6-LDF 1er T. 2020/F6a_EAEPED_COG_3132020.xls' },
+                { nombre: 'F6b_EAEPED_CA_3132020.xls', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/6-LDF 1er T. 2020/F6b_EAEPED_CA_3132020.xls' },
+                { nombre: 'F6c_EAEPED_CF_3132020.xls', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/6-LDF 1er T. 2020/F6c_EAEPED_CF_3132020.xls' },
+                { nombre: 'F6d_EAEPED_CSP_3132020.xls', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/6-LDF 1er T. 2020/F6d_EAEPED_CSP_3132020.xls' }
               ]
             },
             { nombre: '7-SHCP',
               abierto: false,
               archivos: [
-                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+                { nombre: '1-SRFT.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/7-Formato SHCP/1-SRFT.pdf' }
               ]
             }
 

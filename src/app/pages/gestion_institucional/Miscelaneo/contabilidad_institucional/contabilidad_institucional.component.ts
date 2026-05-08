@@ -1805,7 +1805,17 @@ export class Contabilidad_institucionalComponent {
             {nombre: '1-Contable',
               abierto: false,
               archivos: [
-                { nombre: 'Documento contable', url: 'assets/.../2023/t1/contable/doc1.pdf' }
+                { nombre: '1-Estado de Actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
+                { nombre: '2-Estado de Situacion Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
+                { nombre: '3-Estado de CAmbios en la Situacion Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
+                { nombre: '4-Estado Analítico del Activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' },
+                { nombre: '', url: 'assets/contabilidad_institucional/estados_financieros/2020/1er_Trimestre/1-Contable/' }
               ]
             },
             {nombre: '2-Presupuestaria',

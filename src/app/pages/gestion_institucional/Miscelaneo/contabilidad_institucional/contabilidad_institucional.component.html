@@ -35,7 +35,7 @@
     <!-- PRESUPUESTOS -->
     <ul class="docs-list">
       <li *ngFor="let p of anio.presupuestos">
-        <img src="//assets/vinculacion/pdf.png">
+        <img src="/assets/vinculacion/pdf.png">
         <a [href]="p.url" target="_blank">
           {{p.nombre}}
         </a>
@@ -61,7 +61,7 @@
           <!-- ARCHIVOS -->
           <ul *ngIf="c.abierto">
             <li *ngFor="let doc of c.archivos">
-              <img src="//assets/vinculacion/pdf.png">
+              <img src="/assets/vinculacion/pdf.png">
               <a [href]="doc.url" target="_blank">
                 {{doc.nombre}}
               </a>

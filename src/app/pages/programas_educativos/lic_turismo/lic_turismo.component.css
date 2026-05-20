@@ -1,232 +1,266 @@
+
+/* ================= BASE ================= */
+
+body {
+  background: #f4f6f9;
+}
+
 /* 🔷 Título */
 .titulo {
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  /* 🟥 Banner */
-  .banner-ia {
-    width: 1300px;
-    height: 270px;
-    align-items: center;
-    justify-content: space-between;
-    
-    border-bottom: 8px solid #6a0f2b;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .banner-left img {
-    width: 1280px;
-    
-  }
-  
-  .banner-right {
-    text-align: right;
-  }
-  
-  .banner-right h4 {
-    color: #6a0f2b;
-    font-weight: bold;
-  }
-  
-  /* 📄 Docs */
-  .doc-section {
-    margin-top: 20px;
-  }
-  
-  .doc-icon {
-    width: 80px;
-    height: 70px;
-  }
-  
-  .doc-link {
-    color: #1f3c88;
-    font-weight: bold;
-  }
-  
-  /* 📝 Texto */
-  .texto {
-    text-align: justify;
-  }
-  
-  /* 🧠 Tabs */
-  .tabs-box {
-    margin-top: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  /* Tabs header */
-  .nav-tabs {
-    background: #e9ecef;
-    border-bottom: none;
-  }
-  
-  .nav-tabs .nav-link {
-    border: none;
-    color: #000;
-    font-weight: 500;
-  }
-  
-  .nav-tabs .nav-link.active {
-    background: #ffffff;
-    border-bottom: 3px solid #1f3c88;
-    font-weight: bold;
-  }
-  
-  /* Contenido */
-  .tab-content {
-    padding: 20px;
-    background: #fff;
-  }
-  
-  /* Lista */
-  .tab-content ul {
-    list-style: square;
-    padding-left: 20px;
-  }
-  
-  .tab-content li {
-    margin-bottom: 10px;
-    font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+/* ================= BANNER ================= */
+
+.banner-ia {
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12); /* 🔥 más suave */
+  border-bottom: 6px solid #6a0f2b;
+}
+
+.banner-left img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= DOCUMENTOS ================= */
+
+.doc-section {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.doc-icon {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.doc-link {
+  color: #1f3c88;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.doc-link:hover {
+  color: #162d66;
+}
+
+/* ================= INFO ================= */
+
+.info-section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.info-block {
+  margin-bottom: 20px;
+  padding: 18px;
+  border-left: 4px solid #1976d2; /* 🔥 más limpio */
+  border-radius: 8px;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.info-block:hover {
+  transform: translateX(4px); /* 🔥 menos exagerado */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.06);
+}
+
+.info-block h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.info-block p {
+  text-align: justify;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ================= CONTACTO ================= */
+
+.contact-section {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.contact-row {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-card {
+  flex: 1;
+  min-width: 280px;
+  background: #ffffff; /* 🔥 quitamos degradado */
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.2s;
+  border-left: 4px solid #1f3c88;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.contact-card h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1f3c88;
+}
+
+.contact-card .name {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contact-card a {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+/* ================= BOTONES (MINIMAL 🔥) ================= */
+
+.btn-section {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn-doc {
+  background: transparent;
+  color: #1f3c88;
+  padding: 8px 18px;
+  border: 1.5px solid #1f3c88;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+/* HOVER */
+.btn-doc:hover {
+  background: #1f3c88;
+  color: #ffffff;
+}
+
+/* CLICK */
+.btn-doc:active {
+  transform: scale(0.96);
+}
+
+/* ================= TABS ================= */
+
+.tabs-box {
+  margin-top: 25px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.nav-tabs {
+  background: #f0f2f5;
+}
+
+.nav-tabs .nav-link {
+  border: none;
+  color: #444;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.nav-tabs .nav-link:hover {
+  background: #e3f2fd;
+}
+
+.nav-tabs .nav-link.active {
+  background: #ffffff;
+  border-bottom: 2px solid #1976d2;
+  font-weight: 400;
+  color: #1976d2;
+}
+
+.tab-content {
+  padding: 25px;
+  background: #ffffff;
+}
+
+.tab-content ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.tab-content li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* ================= HR ================= */
+
+hr {
+  margin: 30px auto;
+  width: 60%;
+  opacity: 0.2;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  .contact-row {
+    flex-direction: column;
   }
 
-
-  .info-section {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
-  
-  .section-title {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 25px;
-    letter-spacing: 1px;
-  }
-  
-  .info-block {
-    margin-bottom: 25px;
-    padding: 15px;
-    border-left: 5px solid #007bff;
-    background-color: #ffffff;
-    border-radius: 5px;
-    transition: 0.3s;
-  }
-  
-  .info-block:hover {
-    transform: translateX(5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  }
-  
-  .info-block h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .info-block p {
-    text-align: justify;
-    color: #555;
-    line-height: 1.6;
-  }
-
-
-  .contact-section {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .contact-card {
-    margin-bottom: 25px;
-  }
-  
-  .contact-card h3 {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #222;
-  }
-  
-  .contact-card .name {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .contact-card a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .contact-card a:hover {
-    text-decoration: underline;
-  }
-  
-  hr {
-    margin: 25px auto;
-    width: 60%;
-  }
-
-
-  .responsables-section {
-    background: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
-  }
-  
-  .responsables-title {
-    font-size: 30px;
-    font-weight: 400;
-    color: #222;
-    margin-bottom: 30px;
-    letter-spacing: 1px;
-  }
-  
-  .responsables-banner {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .responsables-banner:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.16);
-  }
-  
-  .responsables-banner img {
+  .btn-doc {
     width: 100%;
-    display: block;
-    height: auto;
+    text-align: center;
   }
 
+}
 
-  /* Contenedor de la medalla */
-.badge-container {
-    width: 100%;
+ .tab-image-wrapper {
     display: flex;
-    justify-content: center; /* centra horizontal */
+    justify-content: center;
     align-items: center;
-    margin-bottom: 35px;
   }
   
-  /* Imagen pequeña */
-  .badge-img {
-    width: 220px;
-    max-width: 90%;
-    height: auto;
-    display: block;
+  .tab-image {
+    padding-top: 10px;
+    max-width: 100%;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     transition: transform 0.3s ease;
   }
   
-  .badge-img:hover {
-    transform: scale(1.05);
+  .tab-image:hover {
+    transform: scale(1.01);
   }
+
+  

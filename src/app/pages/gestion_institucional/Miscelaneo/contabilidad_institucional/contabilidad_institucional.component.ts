@@ -20,7 +20,7 @@ export class Contabilidad_institucionalComponent {
       presupuestos: [
         {
           nombre: 'Presupuesto Estatal 2025',
-          url: '/assets/contabilidad_institucional/estados_financieros/2025/Presupuesto-estatal-2025.pdf'
+          url: '/assets/contabilidad_institucional/estados_financieros/2025/presupuesto-estatal-2025.pdf'
         },
         {
           nombre: 'Presupuesto Federal 2025',

@@ -45,8 +45,8 @@ export class Contabilidad_institucionalComponent {
                 { nombre: '7-Estado de Flujos de Efectivo.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/1-Contable/7-Estado de Flujos de Efectivo.pdf' },
                 { nombre: '8-Informe sobre pasivos contingentes.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/1-Contable/8-Informe sobre pasivos contingentes.pdf' },
                 { nombre: '9-Conciliación entre los IPyC.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/1-Contable/9-Conciliación entre los IPyC.pdf' },
-                { nombre: '10-Conciliacion entre los EPyGC.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/1-Contable/210-Conciliacion entre los EPyGC.pdf' },
-                { nombre: '11-Notas a los EF.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/11-Notas a los EF.pdf' },    
+                { nombre: '10-Conciliacion entre los EPyGC.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/1-Contable/10-Conciliacion entre los EPyGC.pdf' },
+                { nombre: '11-Notas a los EF.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/1er_Trimestre/1-Contable/11-Notas a los EF.pdf' },    
                  ]
             },
             {
@@ -319,7 +319,7 @@ export class Contabilidad_institucionalComponent {
                 {nombre: '6-Estado de Variacion en la HP.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/1-Contable/6-Estado de Variacion en la HP.pdf'},
                 {nombre: '7-Estado de Flujos de Efectivo.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/1-Contable/7-Estado de Flujos de Efectivo.pdf'},
                 {nombre: '8-Pasivos Contingentes.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/1-Contable/8-Pasivos Contingentes.pdf'},
-                {nombre: '9-Conciliacion entre los EP y GC.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/1-Contable/9-Conciliacion entre los EP y GC.pdf'},
+                {nombre: '9-Conciliacion entre los EP Y GC.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/1-Contable/9-Conciliacion entre los EP Y GC.pdf'},
                 {nombre: '10-Conciliacion entre los IP y C.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/1-Contable/10-Conciliacion entre los IP y C.pdf'},
                 {nombre: '11-Notas a los EF.pdf', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/1-Contable/11-Notas a los EF.pdf'}
               ]
@@ -369,15 +369,15 @@ export class Contabilidad_institucionalComponent {
               abierto: false,
               archivos: [
 
-                {nombre: 'F1_ESF_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F1_ESF_31122025.xls'},
-                {nombre: 'F2_IADPOP_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F2_IADPOP_31122025.xls'},
-                {nombre: 'F3_IAODF_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F3_IAODF_31122025.xls'},
-                {nombre: 'F4_BP_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F4_BP_31122025.xls'},
-                {nombre: 'F5_EAID_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F5_EAID_31122025.xls'},
-                {nombre: 'F6a_EAEPED_COG_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F6a_EAEPED_COG_31122025.xls'},
-                {nombre: 'F6b_EAEPED_CA_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F6b_EAEPED_CA_31122025.xls'},
-                {nombre: 'F6c_EAEPED_CF_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F6c_EAEPED_CF_31122025.xls'},
-                {nombre: 'F6d_EAEPED_CSP_3092025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4to. Trimestre 2025/F6d_EAEPED_CSP_3092025.xls'}
+                {nombre: 'F1_ESF_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4TO. TRIMESTRE 2025/F1_ESF_31122025.xls'},
+                {nombre: 'F2_IADPOP_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4TO. TRIMESTRE 2025/F2_IADPOP_31122025.xls'},
+                {nombre: 'F3_IAODF_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4TO. TRIMESTRE 2025/F3_IAODF_31122025.xls'},
+                {nombre: 'F4_BP_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4TO. TRIMESTRE 2025/F4_BP_31122025.xls'},
+                {nombre: 'F5_EAID_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4TO. TRIMESTRE 2025/F5_EAID_31122025.xls'},
+                {nombre: 'F6a_EAEPED_COG_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4TO. TRIMESTRE 2025/F6a_EAEPED_COG_31122025.xls'},
+                {nombre: 'F6b_EAEPED_CA_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4TO. TRIMESTRE 2025/F6b_EAEPED_CA_31122025.xls'},
+                {nombre: 'F6c_EAEPED_CF_31122025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4TO. TRIMESTRE 2025/F6c_EAEPED_CF_31122025.xls'},
+                {nombre: 'F6d_EAEPED_CSP_3092025.xls', url: '/assets/contabilidad_institucional/estados_financieros/2025/4to_Trimestre/6-LDF 4TO. TRIMESTRE 2025/F6d_EAEPED_CSP_3092025.xls'}
                 ]
             },
             { nombre: '7-Formato de la SHCP',
@@ -545,7 +545,7 @@ export class Contabilidad_institucionalComponent {
               archivos: [
                 { nombre: '1-Montos Pagados por A y S.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/4-Titulo V/1-Montos Pagados por A y S.pdf'},
                 { nombre: '2-Formato de Programas con RC por OG.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/4-Titulo V/2-Formato de Programas con RC por OG.pdf'},
-                { nombre: '3-Forato del EyD de GF y R.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/4-Titulo V/3-Forato del EyD de GF y R.pdf'}
+                { nombre: '3-Formato del EyD de GF y R.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2024/2do_Trimestre/4-Titulo V/3-Formato del EyD de GF y R.pdf'}
 
               ]
             },
@@ -637,7 +637,7 @@ export class Contabilidad_institucionalComponent {
               abierto: false,
               archivos:[
                 {nombre: '1-Formato de obligaciones.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/5-Anexos/1-Formato de obligaciones.pdf'},
-                {nombre: '2-Relacion de EB y CF.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/5-Anexos/2-Relacion de EB y CF.pdf'},
+                {nombre: '2-Relacion de EB y de CF.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/5-Anexos/2-Relacion de EB y de CF.pdf'},
                 {nombre: '3-Avance Financiero.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2024/3er_Trimestre/5-Anexos/3-Avance Financiero.pdf'}
               ]
             },
@@ -860,7 +860,7 @@ export class Contabilidad_institucionalComponent {
               {nombre: '4-Estado Analitico del Activo.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/1-Contable/4-Estado Analitico del Activo.pdf'},
               {nombre: '5-Estado Analitico de la DyOP.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/1-Contable/5-Estado Analitico de la DyOP.pdf'},
               {nombre: '6-Estado de Variacion en la HP.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/1-Contable/6-Estado de Variacion en la HP.pdf'},
-              {nombre: '7-Estado de Flujos en Efectivo.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/1-Contable/7-Estado de Flujos en Efectivo.pdf'},
+              {nombre: '7-Estado de Flujos de Efectivo.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/1-Contable/7-Estado de Flujos de Efectivo.pdf'},
               {nombre: '8-Informe sobre Pasivos Contingentes.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/1-Contable/8-Informe sobre Pasivos Contingentes.pdf'},
               {nombre: '9-Conciliacion entre los IPyC.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/1-Contable/9-Conciliacion entre los IPyC.pdf'},  
               {nombre: '10-Conciliacion entre los EPyGC.pdf', url:'/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/1-Contable/10-Conciliacion entre los EPyGC.pdf'},
@@ -877,7 +877,7 @@ export class Contabilidad_institucionalComponent {
               {nombre: '5-EAEPECF.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/2-Presupuestaria/5-EAEPECF.pdf' },
               {nombre: '6-Endeudamiento Neto.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/2-Presupuestaria/6-Endeudamiento Neto.pdf' },
               {nombre: '7-Intereses de la Deuda.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/2-Presupuestaria/7-Intereses de la Deuda.pdf' },
-              {nombre: '8-Indicadores de la Postura Fiscal.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/2-Presupuestaria/8-Indicadores de la Postura Fiscal.pdf' },
+              {nombre: '8-Indicadores de Postura Fiscal.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/2-Presupuestaria/8-Indicadores de Postura Fiscal.pdf' },
               {nombre: '9-Flujo de Fondos.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/2-Presupuestaria/9-Flujo de Fondos.pdf' }
               ]
             },
@@ -894,9 +894,9 @@ export class Contabilidad_institucionalComponent {
             { nombre: '4-Titulo V',
             abierto: false,
             archivos: [
-              {nombre: '1-Montos pagados por AyS.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/4-Titulo V/' },
-              {nombre: '2-Formato de programas con RCporOG.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/4-Titulo V/' },
-              {nombre: '3-Formato de ejercicio y DGFyR.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/4-Titulo V/' }
+              {nombre: '1-Montos pagados por AyS.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/4-Titulo V/1-Montos pagados por AyS.pdf' },
+              {nombre: '2-Formato de programas con RCporOG.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/4-Titulo V/2-Formato de programas con RCporOG.pdf' },
+              {nombre: '3-Formato del ejercicio y DGFyR.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/4-Titulo V/3-Formato del ejercicio y DGFyR.pdf' }
               
               ]
             },
@@ -917,10 +917,10 @@ export class Contabilidad_institucionalComponent {
               {nombre: 'F3_IAODF_3062023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F3_IAODF_3062023.xls' },
               {nombre: 'F4_BP_3062023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F4_BP_3062023.xls' },
               {nombre: 'F5_EAID_3062023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F5_EAID_3062023.xls' },
-              {nombre: 'F6a_EAEPED_COG_3062023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: 'F6b_EAEPED_CA_3062023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: 'F6c_EAEPED_CF_3062023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' },
-              {nombre: 'F6d_EAEPED_CSP_3062023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/' }
+              {nombre: 'F6a_EAEPED_COG_3062023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F6a_EAEPED_COG_3062023.xls' },
+              {nombre: 'F6b_EAEPED_CA_3062023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F6b_EAEPED_CA_3062023.xls' },
+              {nombre: 'F6c_EAEPED_CF_3062023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F6c_EAEPED_CF_3062023.xls' },
+              {nombre: 'F6d_EAEPED_CSP_3132023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/2do_Trimestre/6-LDF 2do T. 2023/F6d_EAEPED_CSP_3132023.xls' }
               
               ]
             },
@@ -948,9 +948,9 @@ export class Contabilidad_institucionalComponent {
               {nombre: '6-Estado de Variacion de la HP.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/6-Estado de Variacion de la HP.pdf' },
               {nombre: '7-Estado de Flujos de Efectivo.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/7-Estado de Flujos de Efectivo.pdf' },
               {nombre: '8-Informe Sobre PC.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/8-Informe Sobre PC.pdf' },
-              {nombre: '9-Conciliacion entre IPyC.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/9-Conciliacion entre IPyC.pdf' },
+              {nombre: '9-Conciliacion entre los IPyC.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/9-Conciliacion entre los IPyC.pdf' },
               {nombre: '10-Conciliacion entre los EP y los GC.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/10-Conciliacion entre los EP y los GC.pdf' },
-              {nombre: '11-Notas a os EF.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/11-Notas a os EF.pdf' }        
+              {nombre: '11-Notas a los EF.pdf',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/1-Contable/11-Notas a los EF.pdf' }        
                ]
             },
             { nombre: '2-Presupuestaria',
@@ -999,12 +999,12 @@ export class Contabilidad_institucionalComponent {
               {nombre: 'F1_ESF_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/F1_ESF_3092023.xls' },
               {nombre: 'F2_IADPOP_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/F2_IADPOP_3092023.xls' },
               {nombre: 'F3_IAODF_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/F3_IAODF_3092023.xls' },
-              {nombre: 'F4_BP_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/6-LDF 3er T. 2023/F4_BP_3092023.xls' },
-              {nombre: 'F5_EAID_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/6-LDF 3er T. 2023/F5_EAID_3092023.xls' },
-              {nombre: 'F6a_EAEPED_COG_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/6-LDF 3er T. 2023/F6a_EAEPED_COG_3092023.xls' },
-              {nombre: 'F6b_EAEPED_CA_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/6-LDF 3er T. 2023/F6b_EAEPED_CA_3092023.xls' },
-              {nombre: 'F6c_EAEPED_CF_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/6-LDF 3er T. 2023/F6c_EAEPED_CF_3092023.xls' },
-              {nombre: 'F6d_EAEPED_CSP_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/6-LDF 3er T. 2023/F6d_EAEPED_CSP_3092023.xls' }
+              {nombre: 'F4_BP_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/F4_BP_3092023.xls' },
+              {nombre: 'F5_EAID_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/F5_EAID_3092023.xls' },
+              {nombre: 'F6a_EAEPED_COG_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/F6a_EAEPED_COG_3092023.xls' },
+              {nombre: 'F6b_EAEPED_CA_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/F6b_EAEPED_CA_3092023.xls' },
+              {nombre: 'F6c_EAEPED_CF_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/F6c_EAEPED_CF_3092023.xls' },
+              {nombre: 'F6d_EAEPED_CSP_3092023.xls',url: '/assets/contabilidad_institucional/estados_financieros/2023/3er_Trimestre/6-LDF 3er T. 2023/F6d_EAEPED_CSP_3092023.xls' }
                ]
             },
             { nombre: '7-Formato SHCP',

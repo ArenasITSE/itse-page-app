@@ -1,28 +1,37 @@
-/* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { Index_trasparenciaComponent } from './index_trasparencia.component';
+import { IndexTransparenciaComponent } from './index_trasparencia.component';
 
-describe('Index_trasparenciaComponent', () => {
-  let component: Index_trasparenciaComponent;
-  let fixture: ComponentFixture<Index_trasparenciaComponent>;
+describe('IndexTransparenciaComponent', () => {
 
-  beforeEach(async(() => {
+  let component: IndexTransparenciaComponent;
+  let fixture: ComponentFixture<IndexTransparenciaComponent>;
+
+  beforeEach(waitForAsync(() => {
+
     TestBed.configureTestingModule({
-      declarations: [ Index_trasparenciaComponent ]
+      declarations: [IndexTransparenciaComponent]
     })
     .compileComponents();
+
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Index_trasparenciaComponent);
-    component = fixture.componentInstance;
+
+    fixture =
+      TestBed.createComponent(IndexTransparenciaComponent);
+
+    component =
+      fixture.componentInstance;
+
     fixture.detectChanges();
+
   });
 
   it('should create', () => {
+
     expect(component).toBeTruthy();
+
   });
+
 });

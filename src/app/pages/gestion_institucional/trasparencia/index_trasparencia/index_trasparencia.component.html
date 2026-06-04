@@ -1,3 +1,985 @@
-<p>
-  index_trasparencia works!
-</p>
+<div class="contenedor">
+
+    <h1>INDEX DE TRANSPARENCIA</h1>
+
+    <div class="panel">
+
+        <!-- ARCHIVISTICA -->
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'archivistica',
+              '1AuTwwU6qYNWUdDFpbgWw8ZO9-YqH8w62'
+            )">
+
+            📁 ARCHIVISTICA
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'archivistica'
+              ? 'block'
+              : 'none'
+            ">
+
+            @if (carpetaAbierta === 'archivistica') {
+
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+            }
+
+        </div>
+
+        <!-- ARCHIVO -->
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'archivo',
+              '1RXmhaZLR8N6L7LF7GmsNuw9EeyHirNxE'
+            )">
+
+            📁 ARCHIVO
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'archivo'
+              ? 'block'
+              : 'none'
+            ">
+
+            @if (carpetaAbierta === 'archivo') {
+
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+            }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'catalago',
+              '1qobpC-FCCPcMMXBKWqtkq2gEq73O5UGn'
+            )">
+
+            📁 CATALAGO DE PROVEEDORES
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'catalago'
+              ? 'block'
+              : 'none'
+            ">
+
+            @if (carpetaAbierta === 'catalago') {
+
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+            }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'ciie',
+              '1dQ-dBiBN9CFGu_0zuxugteKMiFjgYGZn'
+            )">
+
+            📁 CIIE
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'ciie'
+              ? 'block'
+              : 'none'
+            ">
+
+            @if (carpetaAbierta === 'ciie') {
+
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+            }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'comite',
+              '1cSR35sK-io8aLRGmGQJOdQZi4bYQe7vr'
+            )">
+
+            📁 COMITE DE TRANSPARENCIA
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'comite'
+              ? 'block'
+              : 'none'
+            ">
+
+            @if (carpetaAbierta === 'comite') {
+
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+            }
+
+        </div>
+
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'contrato',
+              '1J3OVHg-C_tjYwhM7D-CNrW21APsKh0AB'
+            )">
+
+            📁 CONTRATO DE SERVICIOS
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'contrato'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'contrato') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'transporte16',
+              '13CWtTA_JuLpN6GihQQeoLrxuMkLU0BZ0'
+            )">
+
+            📁 CONTRATO DE TRANSPORTE 2016
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'transporte16'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'transporte16') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'transporte17',
+              '1NpA6BcGjTgyS5bqikBSlqNqyEwKKVvA0'
+            )">
+
+            📁 CONTRATO DE TRANSPORTE 2017
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'transporte17'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'transporte17') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'convenios',
+              '1IcmA7iAzaKucRVmRoZ25QW37nDrYc-mP'
+            )">
+
+            📁 CONVENIOS
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'convenios'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'convenios') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'cpublica',
+              '1cxqlGfzAUQRFPmL6lQdCYwvTL8KxfWQC'
+            )">
+
+            📁 CUENTA PUBLICA
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'cpublica'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'cpublica') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'planeacion',
+              '1egTwKBz4sLcSJST2thCP4X7QRVu3WIBb'
+            )">
+
+            📁 DEPARTAMENTO DE PLANEACION
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'planeacion'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'planeacion') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'dcomunicacion',
+              '1cC-tAvW8QW2Lu46dwIX9FMRntCOakVgZ'
+            )">
+
+            📁 DEPARTAMENTO DE COMUNICACION Y DIFUSION
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'dcomunicacion'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'dcomunicacion') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'encuesta',
+              '1QrryrV2uGbW7Drb2GFf3ZM6-WvgMJdWW'
+            )">
+
+            📁 ENCUESTA DE SERVICIO
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'encuesta'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'encuesta') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'evaluacion',
+              '13-v9hxWmya-sEtm5upq3Gum7oP0DGVSL'
+            )">
+
+            📁 EVALUACION DOCENTE
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'evaluacion'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'evaluacion') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'evidencias',
+              '1bK8hlvcpOK9PAEKBGOxGVbJfhKdx_UXL'
+            )">
+
+            📁 EVIDENCIAS
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'evidencias'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'evidencias') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'expedientes2018t',
+              '1UL34C4CB0cRX-aKZ0A9Y-jz96L68a-Ik'
+            )">
+
+            📁 EXPEDIENTES DE TRANSPORTE 2018
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'expedientes2018t'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'expedientes2018t') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'informes_t',
+              '19PAm6csBXcVwIA9-yBkQwfLqUwCzGkJt'
+            )">
+
+            📁 INFORMES DE TRANSPARENCIA
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'informes_t'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'informes_t') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'informes_r',
+              '1PhbHmolHZNIKq-J8uvUX2LjIRSeAzIV3'
+            )">
+
+            📁 INFORMES DE RENDICION DE CUENTAS
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'informes_r'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'informes_r') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'ingresos2016',
+              '1W6IzDNx3jHUakpiAgY6PHeRoJPCl9_XW'
+            )">
+
+            📁 INGRESOS 2016
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'ingresos2016'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'ingresos2016') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'ingresos2017',
+              '1RLy5usd6rTXNXH0uG_Y4XN3UAtzazYAp'
+            )">
+
+            📁 INGRESOS 2017
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'ingresos2017'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'ingresos2017') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'irc_itse',
+              '16M8zRdFyzWVwndpmr4bA_r00ZcDt7F0R'
+            )">
+
+            📁 IRC ITSE
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'irc_itse'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'irc_itse') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'presupuesto2015',
+              '1OYAG6PY1Dpu_kqC2AKLKN3CDFqxgQGBf'
+            )">
+
+            📁 PRESUPUESTO EJERCIDO 2015
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'presupuesto2015'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'presupuesto2015') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'presupuesto2016',
+              '15lJZ_i27B2dZfauf8Co01bVMUfXF3LBi'
+            )">
+
+            📁 PRESUPUESTO EJERCIDO 2016
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'presupuesto2016'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'presupuesto2016') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'presupuesto2017',
+              '1b6SnZhZ9Hg0KPUg8gTO8glquOf7nwL0d'
+            )">
+
+            📁 PRESUPUESTO EJERCIDO 2017
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'presupuesto2017'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'presupuesto2017') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'presupuesto2018',
+              '1aurz4xeBjJcyQXzv4hGu8z-gbZr7prsJ'
+            )">
+
+            📁 PRESUPUESTO EJERCIDO 2018
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'presupuesto2018'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'presupuesto2018') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'poas',
+              '15fE7chLba45ZQnngwHMwvM6-xZyWjIEu'
+            )">
+
+            📁 POAS
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'poas'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'poas') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'rhumanos',
+              '1AzoAx0fpPqfiNFJhhd00oi-1-lf6FAIr'
+            )">
+
+            📁 RECURSOS HUMANOS
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'rhumanos'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'rhumanos') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'seas_itse',
+              '1s9l63asoBHcTGwwZbSHwcf9NQJwedAoR'
+            )">
+
+            📁 SEAES ITSE
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'seas_itse'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'seas_itse') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'nombre1',
+              '1TSbsx-wGF0HbY_B6x0Mw_yW7x7-kV69-'
+            )">
+
+            📁 TABLA DE APLICABILIDAD 2019
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'nombre1'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'nombre1') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'tabla2024',
+              '1cUk9dRI-xSMKsGwb2lcQB0GCG36A8bKd'
+            )">
+
+            📁 TABLA DE APLICABILIDAD 2024
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'tabla2024'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'tabla2024') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'anexos',
+              '1QAkoF01ILb9cZn1qTFUwUxVx8WEy66tc'
+            )">
+
+            📁 ANEXOS
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'anexos'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'anexos') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        <!-- FUTURAS CARPETAS -->
+
+        <!--
+
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'nombre1',
+              'ID_ENLACE DRIVE'
+            )">
+
+            📁 Nombre carpeta
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'nombre1'
+              ? 'block'
+              : 'none'
+            ">
+            
+            @if (carpetaAbierta === 'nombre1') {
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+                }
+
+        </div>
+
+        -->
+
+    </div>
+
+</div>

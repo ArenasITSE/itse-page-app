@@ -11,6 +11,21 @@
   margin-bottom: 10px;
 }
 
+h2{
+
+    color:#1b2d4f;
+
+    font-size:34px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+}
 /* ================= TABS (MISMO ESTILO 🔥) ================= */
 .tabs-menu {
   display: flex;

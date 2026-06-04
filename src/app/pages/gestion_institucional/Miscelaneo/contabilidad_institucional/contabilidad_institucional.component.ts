@@ -20,7 +20,7 @@ export class Contabilidad_institucionalComponent {
       presupuestos: [
         {
           nombre: 'Presupuesto Estatal 2025',
-          url: 'assets/contabilidad_institucional/estados_financieros/2025/presupuesto-estatal-2025.pdf'
+          url: 'assets/contabilidad_institucional/estados_financieros/2025/Presupuesto-estatal-2025.pdf'
         },
         {
           nombre: 'Presupuesto Federal 2025',
@@ -1231,7 +1231,7 @@ export class Contabilidad_institucionalComponent {
               abierto: false,
               archivos: [
                 { nombre: '1-Gasto por Categoria Programatica.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/3-Programatica/1-Gasto por Categoria Programatica.pdf'},
-                { nombre: '2-Programa y PI.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/3-Programatica/2-Programa y PI.pdf'},
+                { nombre: '2-Programas y PI.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/3-Programatica/2-Programas y PI.pdf'},
                 { nombre: '3-Indicador de resultados.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/3-Programatica/3-Indicador de resultados.pdf'}             
               ]
             },
@@ -1246,9 +1246,9 @@ export class Contabilidad_institucionalComponent {
             { nombre: '5-Anexos',
               abierto: false,
               archivos: [
-                { nombre: '1-Formato de obligaciones.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/5-Anexos/'},
-                { nombre: '2-Relacion de esquemas ByCF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/5-Anexos/'},
-                { nombre: '3-Avance financiero.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/5-Anexos/'}
+                { nombre: '1-Formato de obligaciones.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/5-Anexos/1-Formato de obligaciones.pdf'},
+                { nombre: '2-Relacion de esquemas ByCF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/5-Anexos/2-Relacion de esquemas ByCF.pdf'},
+                { nombre: '3-Avance financiero.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/2do_Trimestre/5-Anexos/3-Avance financiero.pdf'}
               ]
             },
             { nombre: '6-LDF 2do T. 2022',
@@ -1383,7 +1383,7 @@ export class Contabilidad_institucionalComponent {
                 { nombre: '3-EAEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/4to_Trimestre/2-Presupuestal/3-EAEPECE.pdf'},             
                 { nombre: '4-EAEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/4to_Trimestre/2-Presupuestal/4-EAEPECOG.pdf'},
                 { nombre: '5-EAEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/4to_Trimestre/2-Presupuestal/5-EAEPECF.pdf'},
-                { nombre: '6-Endeudamiento.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/4to_Trimestre/2-Presupuestal/6-Endeudamiento.pdf'},
+                { nombre: '6-Endeudamiento neto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/4to_Trimestre/2-Presupuestal/6-Endeudamiento neto.pdf'},
                 { nombre: '7-Intereses de la Deuda.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/4to_Trimestre/2-Presupuestal/7-Intereses de la Deuda.pdf'},
                 { nombre: '8-Flujos de Fondos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/4to_Trimestre/2-Presupuestal/8-Flujos de Fondos.pdf'},
                 { nombre: '9-Indicadores de Postura Fiscal.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2022/4to_Trimestre/2-Presupuestal/9-Indicadores de Postura Fiscal.pdf'}
@@ -1502,7 +1502,7 @@ export class Contabilidad_institucionalComponent {
               archivos: [
                 { nombre: '1-Montos pagados por AyS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/1er_Trimestre/4-Titulo V/1-Montos pagados por AyS.pdf' },
                 { nombre: '2-Formato de programas RCporOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/1er_Trimestre/4-Titulo V/2-Formato de programas RCporOG.pdf' },
-                { nombre: '3-Formato del ejercicio DGFyF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/1er_Trimestre/4-Titulo V/3-Formato del ejercicio DGFyF.pdf' }
+                { nombre: '3-Formato del ejercicio DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/1er_Trimestre/4-Titulo V/3-Formato del ejercicio DGFyR.pdf' }
               ]
             },
             {
@@ -1545,7 +1545,7 @@ export class Contabilidad_institucionalComponent {
             { nombre: '1-Contable',
               abierto: false,
               archivos: [
-                { nombre: '1-Estado de situcion financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/1-Estado de situcion financiera.pdf' },
+                { nombre: '1-Estado de situacion financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/1-Estado de situacion financiera.pdf' },
                 { nombre: '2-Estado de actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/2-Estado de actividades.pdf' },
                 { nombre: '3-Estado de Variacion en la HP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/3-Estado de Variacion en la HP.pdf' },
                 { nombre: '4-Estado de Cambio en la Situacion Financiera.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/4-Estado de Cambio en la Situacion Financiera.pdf' },
@@ -1554,7 +1554,7 @@ export class Contabilidad_institucionalComponent {
                 { nombre: '7-Estado Analitico de la Deuda y Otros Pasivos.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/7-Estado Analitico de la Deuda y Otros Pasivos.pdf' },
                 { nombre: '8-Informe de Pasivos Contingentes.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/8-Informe de Pasivos Contingentes.pdf' },
                 { nombre: '9-Conciliacion entre los EP y los GC.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/9-Conciliacion entre los EP y los GC.pdf' },
-                { nombre: '10-Conciliacion entre los IP y C.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/10-Conciliacion entre los IP y C.pdf' },
+                { nombre: '10-Conciliacion entre los IP y los C.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/10-Conciliacion entre los IP y los C.pdf' },
                 { nombre: '11-Notas a los EF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/1-Contable/11-Notas a los EF.pdf' }
               ]
             },
@@ -1574,7 +1574,7 @@ export class Contabilidad_institucionalComponent {
             { nombre: '3-Programatica',
               abierto: false,
               archivos: [
-                { nombre: '1-Gasto por categoria programatica.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/3-Programatica/1-Gasto por categoria programatica.pdf' },
+                { nombre: '1-Gastos por categoria programatica.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/3-Programatica/1-Gastos por categoria programatica.pdf' },
                 { nombre: '2-Programas y Proyectos de Inversion.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/3-Programatica/2-Programas y Proyectos de Inversion.pdf' },
                 { nombre: '3-Indicador de Resultados.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/3-Programatica/3-Indicador de Resultados.pdf' }
               ]
@@ -1582,17 +1582,17 @@ export class Contabilidad_institucionalComponent {
             { nombre: '4-Titulo V',
               abierto: false,
               archivos: [
-                { nombre: '1-Montos Pagados por AyS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/4-Titulo V/1-Montos Pagados por AyS.pdf' },
-                { nombre: '2-Formato de Programas con RC por OG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/4-Titulo V/2-Formato de Programas con RC por OG.pdf' },
-                { nombre: '3-Formato del Ejercicio y DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/4-Titulo V/3-Formato del Ejercicio y DGFyR.pdf' }
+                { nombre: '1-Montos Pagados por AyS.PDF', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/4-Titulo V/1-Montos Pagados por AyS.PDF' },
+                { nombre: '2-Formato de Programas con RC por OG.PDF', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/4-Titulo V/2-Formato de Programas con RC por OG.PDF' },
+                { nombre: '3-Formato del Ejercicio y DGFyR.PDF', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/4-Titulo V/3-Formato del Ejercicio y DGFyR.PDF' }
               ]
             },
             { nombre: '5-Anexos',
               abierto: false,
               archivos: [
-                { nombre: '1-Formato de obligaciones.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/5-Anexos/' },
-                { nombre: '2-Relacion de Esquemas B y CF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/5-Anexos/' },
-                { nombre: '3-Avance Financiero.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/5-Anexos/' }
+                { nombre: '1-Formato de obligaciones.PDF', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/5-Anexos/1-Formato de obligaciones.PDF' },
+                { nombre: '2-Relacion de Esquemas B Y CF.PDF', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/5-Anexos/2-Relacion de Esquemas B Y CF.PDF' },
+                { nombre: '3-Avance Financiero.PDF', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/5-Anexos/3-Avance Financiero.PDF' }
               ]
             },
             { nombre: '6-LDF 2do T. 2021',
@@ -1604,15 +1604,15 @@ export class Contabilidad_institucionalComponent {
                 { nombre: 'F4_BP_3062021.xls', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/6-LDF 2do T. 2021/F4_BP_3062021.xls' },
                 { nombre: 'F5_EAID_3062021.xls', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/6-LDF 2do T. 2021/F5_EAID_3062021.xls' },
                 { nombre: 'F6a_EAEPED_COG_3062021.xls', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/6-LDF 2do T. 2021/F6a_EAEPED_COG_3062021.xls' },
-                { nombre: 'F6b_EAPED_CA_3062021.xls', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/6-LDF 2do T. 2021/F6b_EAPED_CA_3062021.xls' },
+                { nombre: 'F6b_EAEPED_CA_3062021.xls', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/6-LDF 2do T. 2021/F6b_EAEPED_CA_3062021.xls' },
                 { nombre: 'F6c_EAEPED_CF_3062021.xls', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/6-LDF 2do T. 2021/F6c_EAEPED_CF_3062021.xls' },
-                { nombre: 'F6d_EAEPED_CSP_3162021.xls', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/6-LDF 2do T. 2021/F6d_EAEPED_CSP_3062021.xls' }
+                { nombre: 'F6d_EAEPED_CSP_3162021.xls', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/6-LDF 2do T. 2021/F6d_EAEPED_CSP_3162021.xls' }
               ]
             },
             { nombre: '7-Formato SHCP',
               abierto: false,
               archivos: [
-                { nombre: '1-SRFT.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/7-Formato SHCP/1-SRFT.pdf' }
+                { nombre: '1-SRFT.PDF', url: 'assets/contabilidad_institucional/estados_financieros/2021/2do_Trimestre/7-Formato SHCP/1-SRFT.PDF' }
               ]
             }
 
@@ -1662,7 +1662,7 @@ export class Contabilidad_institucionalComponent {
               archivos: [
                 { nombre: '1-Montos pagados por AyS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/3er_Trimestre/4-Titulo V/1-Montos pagados por AyS.pdf' },
                 { nombre: '2-Formato de programas RCporOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/3er_Trimestre/4-Titulo V/2-Formato de programas RCporOG.pdf' },
-                { nombre: '3-Formato del ejerciio DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/3er_Trimestre/4-Titulo V/3-Formato del ejerciio DGFyR.pdf' }
+                { nombre: '3-Formato del ejercicio DGFyR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2021/3er_Trimestre/4-Titulo V/3-Formato del ejercicio DGFyR.pdf' }
               ]
             },
             { nombre: '5-Anexos',
@@ -3180,15 +3180,15 @@ export class Contabilidad_institucionalComponent {
             {nombre: '1-Contable',
               abierto: false,
               archivos: [
-                { nombre: '1-ESTADO ANALITICO DE LA DEUDA Y OTROS PASIVOS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/1-ESTADO ANALITICO DE LA DEUDA Y OTROS PASIVOS.pdf' },
+                { nombre: '1-ESTADO ANALITICO DE LA DEUDA Y OTROS PASIVOS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/ESTADO ANALITICO DE LA DEUDA Y OTROS PASIVOS.pdf' },
                 { nombre: '2-ESTADO ANALITICO DEL ACTIVO.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/ESTADO ANALITICO DEL ACTIVO.pdf' },
                 { nombre: '3-ESTADO DE ACTIVIDADES.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/ESTADO DE ACTIVIDADES.pdf' },
                 { nombre: '4-ESTADO DE CAMBIOS EN LA SITUACION FINANCIERA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/ESTADO DE CAMBIOS EN LA SITUACION FINANCIERA.pdf' },
                 { nombre: '5-ESTADO DE FLUJOS DE EFECTIVO.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/ESTADO DE FLUJOS DE EFECTIVO.pdf' },
-                { nombre: '6-ESTADO DE SITUACION FINANCIERA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/ESTADO DE SITUACION FINANCIERA.pdf' },
+                { nombre: '6-ESTADO DE SITUACION FINANCIERA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/ESTADO DE SITUACION FIANCIERA.pdf' },
                 { nombre: '7-ESTADO DE VARIACION EN LA HACIENDA PUBLICA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/ESTADO DE VARIACION EN LA HACIENDA PUBLICA.pdf' },
                 { nombre: '8-INFORME DE PASIVOS CONTINGENTES.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/INFORME DE PASIVOS CONTINGENTES.pdf' },
-                { nombre: '9-NOTAS A LOS ESTADOS FINANCIEROS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/NOTAS A LOS ESTADOS FINANCIEROS.pd' }
+                { nombre: '9-NOTAS A LOS ESTADOS FINANCIEROS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/2do_Trimestre/1-Contable/NOTAS A LOS ESTADOS FINANCIEROS.pdf' }
               ]
             },
             {nombre: '2-Presupuestaria',
@@ -3252,7 +3252,7 @@ export class Contabilidad_institucionalComponent {
                 { nombre: '2-Estado de actividades.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/3er_Trimestre/1-Contable/2-Estado de actividades.pdf' },
                 { nombre: '3-Estado de variación de la HP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/3er_Trimestre/1-Contable/3-Estado de variación de la HP.pdf' },
                 { nombre: '4-Estado de cambios de la SF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/3er_Trimestre/1-Contable/4-Estado de cambios de la SF.pdf' },
-                { nombre: '5-Estado de flujos de efectivo.pdf.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/3er_Trimestre/1-Contable/5-Estado de flujos de efectivo.pdf.pdf' },
+                { nombre: '5-Estado de flujos de efectivo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/3er_Trimestre/1-Contable/5-Estado de flujos de efectivo.pdf' },
                 { nombre: '6-Estado analitico del activo.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/3er_Trimestre/1-Contable/6-Estado analitico del activo.pdf' },
                 { nombre: '7-Estado analitico de la D y OP.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/3er_Trimestre/1-Contable/7-Estado analitico de la D y OP.pdf' },
                 { nombre: '8-Pasivos contingentes.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/3er_Trimestre/1-Contable/8-Pasivos contingentes.pdf' },
@@ -3381,10 +3381,10 @@ export class Contabilidad_institucionalComponent {
                 { nombre: '3-Informe Analitico de Obligaciones.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/3-Informe Analitico de Obligaciones.pdf' },
                 { nombre: '4-Balance Presupuestario.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/4-Balance Presupuestario.pdf' },
                 { nombre: '5-Estado Analitico del Ingreso Detallado.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/5-Estado Analitico del Ingreso Detallado.pdf' },
-                { nombre: '6a-EAEPED Clasificación por Objeto del Gasto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/6a-EAEPED Clasificación por Objeto del Gasto.pdf' },
-                { nombre: '6b-EAEPED Clasificación Administrativa.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/6b-EAEPED Clasificación Administrativa.pdf' },
-                { nombre: '6c-EAEPED Clasificación Funcional.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/6c-EAEPED Clasificación Funcional.pdf' },
-                { nombre: '6d-EAEPED Clasificación de Servicios Personales.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/6d-EAEPED Clasificación de Servicios Personales.pdf' },
+                { nombre: '6a-EAPED Clasificación por Objeto del Gasto.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/6a-EAPED Clasificación por Objeto del Gasto.pdf' },
+                { nombre: '6b-EAPED Clasificación Administrativa.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/6b-EAPED Clasificación Administrativa.pdf' },
+                { nombre: '6c-EAPED Clasificación Funcional.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/6c-EAPED Clasificación Funcional.pdf' },
+                { nombre: '6d-EAPED Clasificación de Servicios Personales.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/6d-EAPED Clasificación de Servicios Personales.pdf' },
                 { nombre: 'Guías de cumplimiento de la LDF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2016/4to_Trimestre/6-LDF 4to T. 2016/Guías de cumplimiento de la LDF.pdf' }
               ]
             },
@@ -3424,7 +3424,7 @@ export class Contabilidad_institucionalComponent {
                 { nombre: '2-Edo. de Actividades.jpg', url: 'assets/contabilidad_institucional/estados_financieros/2015/1er_Trimestre/ESTADOS FINANCIEROS AL 31 DE MARZO 2015 PARTE 1/2-Edo. de Actividades.jpg' },
                 { nombre: '3-Edo. de Flujos de Efectivo.jpg', url: 'assets/contabilidad_institucional/estados_financieros/2015/1er_Trimestre/ESTADOS FINANCIEROS AL 31 DE MARZO 2015 PARTE 1/3-Edo. de Flujos de Efectivo.jpg' },
                 { nombre: '4-Edo. de Variación en la Hacienda Pública.jpg', url: 'assets/contabilidad_institucional/estados_financieros/2015/1er_Trimestre/ESTADOS FINANCIEROS AL 31 DE MARZO 2015 PARTE 1/4-Edo. de Variación en la Hacienda Pública.jpg' },
-                { nombre: '5-Edo. de Cambios en la Situación Financiera.jpg', url: 'assets/contabilidad_institucional/estados_financieros/2015/1er_Trimestre/ESTADOS FINANCIEROS AL 31 DE MARZO 2015 PARTE 1/5-Edo. de Cambios en la Situación Financiera.jpg' },
+                { nombre: '5-Edo. de Cambios en la Situación Financiera.jpg', url: 'assets/contabilidad_institucional/estados_financieros/2015/1er_Trimestre/ESTADOS FINANCIEROS AL 31 DE MARZO 2015 PARTE 1/5-Edo de Cambios en la Situación Financiera.jpg' },
                 { nombre: '6-Informe de Pasivos Contingentes.jpg', url: 'assets/contabilidad_institucional/estados_financieros/2015/1er_Trimestre/ESTADOS FINANCIEROS AL 31 DE MARZO 2015 PARTE 1/6-Informe de Pasivos Contingentes.jpg' },
                 { nombre: '7-Notas a los Estados Financieros.jpg', url: 'assets/contabilidad_institucional/estados_financieros/2015/1er_Trimestre/ESTADOS FINANCIEROS AL 31 DE MARZO 2015 PARTE 1/7-Notas a los Estados Financieros.jpg' },
                 { nombre: '8-Notas a los Estados Financieros.jpg', url: 'assets/contabilidad_institucional/estados_financieros/2015/1er_Trimestre/ESTADOS FINANCIEROS AL 31 DE MARZO 2015 PARTE 1/8-Notas a los Estados Financieros.jpg' },
@@ -3538,7 +3538,7 @@ export class Contabilidad_institucionalComponent {
               abierto: false,
               archivos: [
                 { nombre: '1-Montos pagados por ayudas y subsidios.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2015/3er_Trimestre/4-Titulo V/1-Montos pagados por ayudas y subsidios.pdf' },
-                { nombre: '2-Programas con RC por OG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2015/3er_Trimestre/4-Titulo V/2-Programas con RC por OG.pdf' },
+                { nombre: '2-Programa con RC por OG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2015/3er_Trimestre/4-Titulo V/2-Programa con RC por OG.pdf' },
                 { nombre: '3-Ejercicio y destino de gasto federalizado y reintegros.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2015/3er_Trimestre/4-Titulo V/3-Ejercicio y destino de gasto federalizado y reintegros.pdf' }
               ]
             },
@@ -3613,7 +3613,7 @@ export class Contabilidad_institucionalComponent {
                 { nombre: '2-ESQUEMAS BURSATILES.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2015/4to_Trimestre/5-Anexos/2-ESQUEMAS BURSATILES.pdf' },
                 { nombre: '3-RELACION DE CUENTAS BANCARIAS PRODUCTIVAS ESPECIFICAS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2015/4to_Trimestre/5-Anexos/3-RELACION DE CUENTAS BANCARIAS PRODUCTIVAS ESPECIFICAS.pdf' },
                 { nombre: '4-RELACION DE BIENES INMUEBLES.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2015/4to_Trimestre/5-Anexos/4-RELACION DE BIENES INMUEBLES.pdf' },
-                { nombre: '5-CLASIFICACION ECONOMICA DE LOS INGRESOS,DE LOS GASTOS Y DEL FI.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2015/4to_Trimestre/5-Anexos/5-CLASIFICACION ECONOMICA DE LOS INGRESOS,DE LOS GASTOS Y DEL FI.pdf' },
+                { nombre: '5-CLASIFICACION ECONOMICA DE LOS INGRESOS, DE LOS GASTOS Y DEL FI.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2015/4to_Trimestre/5-Anexos/5-CLASIFICACION ECONOMICA DE LOS INGRESOS, DE LOS GASTOS Y DEL FI.pdf' },
                 { nombre: '6-RELACIÓN DE BIENES MUEBLES.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2015/4to_Trimestre/5-Anexos/6-RELACIÓN DE BIENES MUEBLES.pdf' }
               ]
             },

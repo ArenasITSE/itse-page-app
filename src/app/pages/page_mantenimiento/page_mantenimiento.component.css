@@ -4,10 +4,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
- /* azul oscuro institucional */
 }
 
 .logo-mantenimiento {
-
+  width: 300px;
+  height: auto;
   object-fit: contain;
+  display: block;
 }

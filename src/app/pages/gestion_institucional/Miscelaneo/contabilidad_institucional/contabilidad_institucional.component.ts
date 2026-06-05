@@ -13,6 +13,108 @@ export class Contabilidad_institucionalComponent {
  
   data = [
 
+    
+    {//2026
+      anio: 2026,
+      abierto: false,
+      presupuestos: [
+        {
+          nombre: 'Oficio Presup Estatal 2026',
+          url: 'assets/contabilidad_institucional/estados_financieros/2026/Oficio Presup Estatal 2026.pdf'
+        },
+        {
+          nombre: 'Oficio Presup Federal 2026',
+          url: 'assets/contabilidad_institucional/estados_financieros/2026/Oficio Presup Federal 2026.pdf'
+        }
+      ],
+      trimestres: [//trimestres 2026
+        {
+          nombre: '1er Trimestre',
+          abierto: false,
+          carpetas: [
+            {nombre: '1-Contable',
+              abierto: false,
+              archivos: [
+                { nombre: '1-ESTADO DE ACTIVIDADES.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/1-ESTADO DE ACTIVIDADES.pdf' },
+                { nombre: '2-ESTADO DE SITUACION FINANCIERA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/2-ESTADO DE SITUACION FINANCIERA.pdf' },
+                { nombre: '3-ESTADOS DE CAMBIO EN LA SITUACION FINANCIERA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/3-ESTADOS DE CAMBIO EN LA SITUACION FINANCIERA.pdf' },
+                { nombre: '4-ESTADO ANALITICO DEL ACTIVO.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/4-ESTADO ANALITICO DEL ACTIVO.pdf' },
+                { nombre: '5-ESTADO ANALITICO DE LA DEUDA Y OTROS PASIVOS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/5-ESTADO ANALITICO DE LA DEUDA Y OTROS PASIVOS.pdf' },
+                { nombre: '6-ESTADO DE VARIACION EN LA HACIENDA PUBLICA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/6-ESTADO DE VARIACION EN LA HACIENDA PUBLICA .pdf' },
+                { nombre: '7-ESTADOS DE FLUJOS DE EFECTIVO.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/7-ESTADOS DE FLUJOS DE EFECTIVO.pdf' },
+                { nombre: '8-INFORME SOBRE PASIVOS CONTINGENTES.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/8-INFORME SOBRE PASIVOS CONTINGETES.pdf' },
+                { nombre: '9-CONCILIACION ENTRE LOS INGRESOS PRESUPUESTARIOS Y CONTABLES.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/9-CONCILIACION ENTRE LOS INGRESOS PRESUPUESTARIOS Y CONTABLES.pdf' },
+                { nombre: '10-CONCILIACION ENTRE LOS EGRESOS PRESUPUESTARIOS Y LOS GASTOS CONTABLES.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/10-CONCILIACION ENTRE LOS EGRESOS PRESUPUESTARIOS Y LOS GASTOS CONTABLES.pdf' },
+                { nombre: '11-NOTAS A LOS ESTADOS FINANCIEROS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/1-Contable/11-NOTAS A LOS ESTADOS FINANCIEROS.pdf' }
+              ]
+            },
+            {nombre: '2-Presupuestaria',
+              abierto: false,
+              archivos: [
+                { nombre: '1-ESTADO ANALITICO DE INGRESOS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/2-Presupuestaria/1-ESTADO ANALITICO DE INGRESOS.pdf' },
+                { nombre: '2-EAEPECA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/2-Presupuestaria/2-EAEPECA.pdf' },
+                { nombre: '2a-EAEPECAPE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/2-Presupuestaria/2a-EAEPECAPE.pdf' },
+                { nombre: '3-EAEPECOG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/2-Presupuestaria/3-EAEPECOG.pdf' },
+                { nombre: '4-EAEPECE.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/2-Presupuestaria/4-EAEPECE.pdf' },
+                { nombre: '5-EAEPECF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/2-Presupuestaria/5-EAEPECF.pdf' },
+                { nombre: '6-ENDEUDAMIENTO NETO.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/2-Presupuestaria/6-ENDEUDAMIENTO NETO.pdf' },
+                { nombre: '7-INTERESES DE LA DEUDA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/2-Presupuestaria/7-INTERESES DE LA DEUDA.pdf' },
+                { nombre: '8-INDICADORES DE POSTURA FISCAL.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/2-Presupuestaria/8-INDICADORES DE POSTURA FISCAL.pdf' },
+                { nombre: '9-FLUJO DE FONDOS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/2-Presupuestaria/9-FLUJO DE FONDOS.pdf' }
+              ]
+            },
+            { nombre: '3-Programatica',
+              abierto: false,
+              archivos: [
+                { nombre: '1-GASTOS POR CATEGORIA PROGRAMATICA.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/3-Programatica/1-GASTOS POR CATEGORIA PROGRAMATICA.pdf' },
+                { nombre: '2-PROGRAMAS Y PROYECTOS DE INVERSION.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/3-Programatica/2-PROGRAMAS Y PROYECTOS DE INVERSION.pdf' }
+              ]
+            },
+            { nombre: '4-Titulo V',
+              abierto: false,
+              archivos: [
+                { nombre: '1-FORMATO DE PROGRAMAS CON RC POR OG.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/4-Titulo V/1-FORMATO DE PROGRAMAS CON RC POR OG.pdf' },
+                { nombre: '2-FORMATO DEL EJERCICIO Y D DEL GFYR.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/4-Titulo V/2-FORMATO DEL EJERCICIO Y D DEL GFYR.pdf' },
+                { nombre: '3-MONTOS PAGADOS POR AYS.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/4-Titulo V/3-MONTOS PAGADOS POR AYS.pdf' }
+              ]
+            },
+            { nombre: '5-Anexos',
+              abierto: false,
+              archivos: [
+                { nombre: '1-FORMATO DE OBLIGACIONES.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/5-Anexo/1-FORMATO DE OBLIGACIONES.pdf' },
+                { nombre: '2-RELACION DE ESQUEMAS BURSATILES Y DE CF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/5-Anexo/2-RELACION DE ESQUEMAS BURSATILES Y DE CF.pdf' },
+                { nombre: '3-Avance financiero.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/5-Anexo/3-Avance financiero.pdf' }
+              ]
+            },
+            { nombre: '6-LDF 1er T. 2016',
+              abierto: false,
+              archivos: [
+                { nombre: 'F1_ESF_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F1_ESF_3132026.xls' },
+                { nombre: 'F2_IADPOP_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F2_IADPOP_3132026.xls' },
+                { nombre: 'F3_IAODF_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F3_IAODF_3132026.xls' },
+                { nombre: 'F4_BP_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F4_BP_3132026.xls' },
+                { nombre: 'F5_EAID_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F5_EAID_3132026.xls' },
+                { nombre: 'F6a_EAEPED_COG_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F6a_EAEPED_COG_3132026.xls' },
+                { nombre: 'F6b_EAEPED_CA_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F6b_EAEPED_CA_3132026.xls' },
+                { nombre: 'F6c_EAEPED_CF_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F6c_EAEPED_CF_3132026.xls' },
+                { nombre: 'F6d_EAEPED_CSP_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F6d_EAEPED_CSP_3132026.xls' }
+              ]
+            },
+            { nombre: '7-Formato SHCP',
+              abierto: false,
+              archivos: [
+                { nombre: 'Extraccion_InformacionNF.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/7-Formato SHCP/Extraccion_InformacionNF.pdf' }
+                ]
+             }
+              
+          
+         
+        
+        ] }
+      ] //trimestres 2026
+    },//2026
+    
+
     // ================= 2025 =================
     {
       anio: 2025,

@@ -1782,7 +1782,7 @@ export class Contabilidad_institucionalComponent {
         ] 
       }
       ] //trimestres 2021
-    },//2021
+    },// 2021
 
     {//2020
       anio: 2020,

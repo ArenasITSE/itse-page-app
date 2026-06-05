@@ -61,7 +61,7 @@ import { AccesibilidadComponent } from './pages/gestion_institucional/Miscelaneo
 // rutas trasparencia institucional
 import { Trasparencia_institucionalComponent } from './pages/gestion_institucional/trasparencia/trasparencia_institucional/trasparencia_institucional.component';
 import { Aviso_privacidadComponent } from './pages/gestion_institucional/trasparencia/aviso_privacidad/aviso_privacidad.component';
-import { Index_trasparenciaComponent} from './pages/gestion_institucional/trasparencia/index_trasparencia/index_trasparencia.component';
+import { IndexTransparenciaComponent} from './pages/gestion_institucional/trasparencia/index_trasparencia/index_trasparencia.component';
 import { Informes_trasparenciaComponent} from './pages/gestion_institucional/trasparencia/informes_trasparencia/informes_trasparencia.component';
 import { CIIEComponent } from './pages/gestion_institucional/trasparencia/CIIE/CIIE.component';
 import { Indicadores_ciaComponent } from './pages/gestion_institucional/trasparencia/indicadores_cia/indicadores_cia.component';
@@ -152,7 +152,7 @@ export const routes: Routes = [
       {path: 'accesibilidad', component: AccesibilidadComponent},
       {path: 'vinculacion', component: VinculacionComponent},
       {path: 'trasparencia-institucional', component: Trasparencia_institucionalComponent},
-      {path: 'index-trasparencia', component: Index_trasparenciaComponent},
+      {path: 'index-trasparencia', component: IndexTransparenciaComponent},
       {path: 'aviso-privacidad', component: Aviso_privacidadComponent},
       {path: 'informes-trasparencia', component: Informes_trasparenciaComponent},
       {path: 'ciie', component: CIIEComponent},

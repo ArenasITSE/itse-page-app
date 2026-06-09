@@ -185,3 +185,12 @@ p {
     font-size: 14px;
   }
 }
+
+.slider-container a {
+  display: block;
+  cursor: pointer;
+}
+
+.slider-img {
+  cursor: pointer;
+}

@@ -1,39 +1,74 @@
-
 <div id="carouselTecNM" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
   <div class="carousel-indicators">
-    <button *ngFor="let img of images; let i = index" type="button" data-bs-target="#carouselTecNM"
-      [attr.data-bs-slide-to]="i" [class.active]="i === 0" [attr.aria-label]="'Slide ' + (i + 1)">
+    <button
+      *ngFor="let img of images; let i = index"
+      type="button"
+      data-bs-target="#carouselTecNM"
+      [attr.data-bs-slide-to]="i"
+      [class.active]="i === 0"
+      [attr.aria-label]="'Slide ' + (i + 1)">
     </button>
   </div>
 
   <!-- 🖼 SLIDES -->
   <div class="carousel-inner">
 
-    <div *ngFor="let img of images; let i = index" class="carousel-item" [class.active]="i === 0">
+    <div
+      *ngFor="let img of images; let i = index"
+      class="carousel-item"
+      [class.active]="i === 0">
 
       <div class="slider-container">
-        <img [src]="img" class="slider-img" alt="Imagen del carrusel">
+
+        <!-- Imagen con enlace -->
+        <a *ngIf="img.link"
+           [href]="img.link"
+           target="_blank">
+
+          <img
+            [src]="img.src"
+            class="slider-img"
+            alt="Imagen del carrusel">
+
+        </a>
+
+        <!-- Imagen sin enlace -->
+        <img
+          *ngIf="!img.link"
+          [src]="img.src"
+          class="slider-img"
+          alt="Imagen del carrusel">
+
       </div>
 
     </div>
 
   </div>
 
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselTecNM" data-bs-slide="prev">
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#carouselTecNM"
+    data-bs-slide="prev">
 
     <span class="carousel-control-prev-icon"></span>
     <span class="visually-hidden">Anterior</span>
 
   </button>
 
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselTecNM" data-bs-slide="next">
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#carouselTecNM"
+    data-bs-slide="next">
 
     <span class="carousel-control-next-icon"></span>
     <span class="visually-hidden">Siguiente</span>
 
-  </button> 
+  </button>
 
+</div>
   <!-- comunicacion  -->
 
   <br>
@@ -154,7 +189,7 @@
 
     <!-- Moodle -->
     <div class="col-6 col-md-3">
-      <a href="https://moodle.org" target="_blank" class="card-plataforma">
+      <a href="https://acad.itsescarcega.edu.mx/login/index.php" target="_blank" class="card-plataforma">
         <img src="assets/home_logos/moodle.png" alt="Moodle">
       </a>
     </div>
@@ -185,4 +220,3 @@
 </div>
 
 
-</div>

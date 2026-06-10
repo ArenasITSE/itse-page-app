@@ -25,6 +25,141 @@
   height: 90px;
 }
 
+.logo-escudo {
+  margin-left: 15px;
+  height: 65px;
+  margin-top: 10px;
+}
+
+.logo-seduc {
+  height: 55px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+
+.tools-right img{
+  width:22px;
+  height:22px;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.tools-right img.activo{
+  transform: scale(1.15);
+  border: 2px solid #1f3c88;
+  border-radius: 50%;
+}
+
+.tools-right img:hover{
+  transform:scale(1.15);
+}
+
+.tools-right span{
+  cursor:pointer;
+  user-select:none;
+  transition:.2s;
+}
+
+.tools-right span:hover{
+  color:#1f3c88;
+  transform:scale(1.1);
+}
+
+
+.tool-icon{
+  width:22px;
+  height:22px;
+  cursor:pointer;
+  transition:all .2s ease;
+}
+
+.tool-icon:hover{
+  transform:scale(1.15);
+}
+
+.tool-icon.activo{
+  border:2px solid #1f3c88;
+  border-radius:50%;
+  transform:scale(1.15);
+}
+
+.dark-btn,
+.font-btn{
+  border:none;
+  background:transparent;
+  cursor:pointer;
+  color:#1f3c88;
+  font-weight:600;
+  transition:.2s;
+}
+
+.dark-btn:hover,
+.font-btn:hover{
+  transform:scale(1.15);
+  color:#6a0f2b;
+}
+
+.dark-btn{
+  font-size:16px;
+}
+
+.font-btn{
+  font-size:13px;
+}
+
+body.dark-mode{
+  background:#1e1e1e;
+  color:white;
+}
+
+body.dark-mode .contenedorGobierno{
+  background:#2b2b2b;
+}
+
+body.dark-mode .menu-bar{
+  background:#111827;
+}
+.logo-itse {
+  height: 50px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+
+.header-logos{
+  display:flex;
+  align-items:center;
+  width:100%;
+  padding:15px 20px;
+}
+
+.logos-left{
+  display:flex;
+  align-items:center;
+  gap:25px;
+}
+
+/* 🔥 Empuja los iconos totalmente a la derecha */
+.tools-right{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.tools-right img{
+  width:22px;
+  height:22px;
+  cursor:pointer;
+}
+
+.tools-right span{
+  cursor:pointer;
+  font-size:16px;
+}
+
+
 /* Iconos */
 .icon {
   font-size: 18px;
@@ -32,32 +167,25 @@
   cursor: pointer;
 }
 
-/* Banderas */
-.flag {
-  height: 35px;
-  width: 35px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-/* Accesibilidad */
-.access {
-  font-size: 14px;
-  cursor: pointer;
-}
-
 /* 🔵 ===== MENÚ AZUL ===== */
 .menu-bar {
   background-color: #243f6b;
-  padding-top: 8px;
-  padding-bottom: 8px;
+
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  min-height: 30px; /* 🔥 altura controlada */
+  padding: 0 !important;
 }
 
 /* Links del menú */
 .menu-bar .nav-link {
   color: white;
   font-weight: 500;
-  padding: 10px 15px;
+
+  padding: 12px 15px !important; /* 🔥 igual al diseño original */
+
+  line-height: 1.2;
 }
 
 .menu-bar .nav-link:hover {
@@ -109,7 +237,8 @@
 
 /* 🏠 Icono home */
 .menu-bar .bi-house-fill {
-  font-size: 18px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 
 /* 📱 Responsive */
@@ -213,4 +342,40 @@
 /* Separación entre bloques (opcional) */
 .submenu-programas .submenu-item:not(:last-child) {
   border-bottom: 1px solid #eaeaea;
+}
+
+.header-superior{
+  overflow:hidden;
+  transition:all .4s ease;
+  max-height:250px;
+}
+
+.ocultar-header{
+  max-height:0;
+  opacity:0;
+}
+
+/* menú azul siempre visible */
+.menu-bar{
+  position:sticky;
+  top:0;
+  z-index:9999;
+  background:#243f6b;
+}
+
+.header-superior{
+  transition: all .4s ease;
+  overflow: hidden;
+  max-height: 250px;
+}
+
+.ocultar-header{
+  max-height: 0;
+  opacity: 0;
+}
+
+.menu-bar{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }

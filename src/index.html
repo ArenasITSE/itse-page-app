@@ -1,14 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="utf-8">
   <title>ITSE Escarcega</title>
+
   <base href="/">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="icon" type="image/x-icon" href="assets/favicon/tecnm.ico">
+
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- GOOGLE TRANSLATE -->
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement(
+        {
+          pageLanguage: 'es',
+          includedLanguages: 'es,en,zh-CN',
+          autoDisplay: false
+        },
+        'google_translate_element'
+      );
+    }
+  </script>
+
+  <script
+    src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+  </script>
+
 </head>
+
 <body>
+
+  <!-- CONTENEDOR OCULTO -->
+  <div id="google_translate_element" style="display:none;"></div>
+
   <app-root></app-root>
+
 </body>
+
 </html>

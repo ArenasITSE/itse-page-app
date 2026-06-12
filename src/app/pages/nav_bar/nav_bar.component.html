@@ -1,51 +1,146 @@
-<!-- 🔴 BARRA GOBIERNO -->
-<nav class="navbar navbar-expand fixed-top barra-gobmx px-4">
+<!-- 🔥 CONTENEDOR QUE SE OCULTA AL HACER SCROLL -->
+<div
+  class="header-superior"
+  [class.ocultar-header]="!mostrarHeader">
 
-  <a class="navbar-brand" routerLink="/https://www.gob.mx/" target="_blank">
-    <img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" class="logo-gobierno"
-      alt="Gobierno de México">
-  </a>
+  <!-- 🔴 BARRA GOBIERNO -->
+  <nav class="navbar navbar-expand fixed-top barra-gobmx px-4">
 
-  <div class="collapse navbar-collapse justify-content-end">
-    <ul class="navbar-nav d-flex align-items-center gap-4 text-white">
-      <li class="nav-item">
-        <a routerLink="/https://www.gob.mx/" class="nav-link text-white">Trámites</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="/https://www.gob.mx/" class="nav-link text-white">Gobierno</a>
-      </li>
-      <li class="nav-item">
-        <i class="bi bi-search"></i>
-      </li>
-    </ul>
-  </div>
+    <a class="navbar-brand" href="https://www.gob.mx/" target="_blank">
+      <img
+        src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg"
+        class="logo-gobierno"
+        alt="Gobierno de México">
+    </a>
 
-</nav>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav d-flex align-items-center gap-4 text-white">
+        <li class="nav-item">
+          <a href="https://www.gob.mx/" class="nav-link text-white">
+            Trámites
+          </a>
+        </li>
 
-<!-- ESPACIO -->
-<div class="mt-5 pt-4"></div>
+        <li class="nav-item">
+          <a href="https://www.gob.mx/" class="nav-link text-white">
+            Gobierno
+          </a>
+        </li>
 
-<!-- 🏛️ ENCABEZADO -->
-<div class="contenedorGobierno py-3 px-4">
-
-  <div class="d-flex justify-content-between align-items-center flex-wrap">
-
-    <!-- Logos -->
-    <div class="d-flex align-items-center gap-3">
-      <a routerLink="/https://www.gob.mx/sep" target="_blank">
-        <img src="assets/logos/educacion.png" class="logo-educacion">
-      </a>
-
-      <a routerLink="//">
-        <img src="assets/logos/tecnm.jpg" class="logo-tecnm">
-      </a>
+        <li class="nav-item">
+          <a href="https://www.gob.mx/busqueda" class="nav-link text-white">
+            <i class="bi bi-search"></i>
+          </a>
+        </li>
+      </ul>
     </div>
 
-    
+  </nav>
+
+  <!-- ESPACIO -->
+  <div class="mt-5 pt-4"></div>
+
+  <!-- 🏛️ ENCABEZADO -->
+  <div class="contenedorGobierno py-3 px-4">
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap">
+
+      <!-- LOGOS -->
+      <div class="d-flex align-items-center gap-3">
+
+        <img src="assets/logos/educacion.png" class="logo-educacion">
+
+        <img src="assets/logos/tecnm.jpg" class="logo-tecnm">
+
+        <img src="assets/encabezado/ESCUDO_GRIS.png" class="logo-escudo">
+
+        <img src="assets/encabezado/logo_seduc.png" class="logo-seduc">
+
+        <img src="assets/encabezado/logo.png" class="logo-itse">
+
+      </div>
+
+      <!-- HERRAMIENTAS -->
+      <div class="top-tools">
+
+        <div class="header-logos">
+
+          <div class="tools-right">
+
+            <!-- CORREO -->
+            <img
+              class="tool-icon"
+              src="assets/encabezado/correo-icono.png"
+              alt="Correo"
+              (click)="abrirCorreo()">
+
+            <!-- CALENDARIO -->
+            <img
+              class="tool-icon"
+              src="assets/encabezado/calendario-icono.png"
+              alt="Calendario"
+              (click)="abrirCalendario()">
+
+            <!-- CHINO -->
+            <img
+              class="tool-icon"
+              [class.activo]="idiomaActual === 'zh'"
+              src="assets/encabezado/china-icono.png"
+              (click)="cambiarIdioma('zh')">
+
+            <!-- INGLÉS -->
+            <img
+              class="tool-icon"
+              [class.activo]="idiomaActual === 'en'"
+              src="assets/encabezado/usa-icono.png"
+              (click)="cambiarIdioma('en')">
+
+            <!-- ESPAÑOL -->
+            <img
+              class="tool-icon"
+              [class.activo]="idiomaActual === 'es'"
+              src="assets/encabezado/mexico-icono.png"
+              (click)="cambiarIdioma('es')">
+
+            <!-- FUENTE -->
+            <button
+              class="font-btn"
+              (click)="disminuirFuente()">
+              A-
+            </button>
+
+            <button
+              class="font-btn"
+              (click)="normalFuente()">
+              A
+            </button>
+
+            <button
+              class="font-btn"
+              (click)="aumentarFuente()">
+              A+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
 
   </div>
 
 </div>
+
+<!-- 🔵 MENÚ AZUL (ESTE SE QUEDA FUERA) -->
+<nav class="navbar navbar-expand-lg menu-bar px-3">
+
+  ...
+
+</nav>
+
+ 
 
 <!-- 🔵 MENÚ CON SUBMENÚ -->
 <nav class="navbar navbar-expand-lg menu-bar px-3">
@@ -119,11 +214,11 @@
           <!-- Lista de Menu de ITSESCARCEGA -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">
-            POSGRADOS
+            Posgrados
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a  routerLink="/https://maestriaeconomiasocialitse.netlify.app/"  class="dropdown-item">Maestria en Economia Social y Solidaria</a>
+              <a  href="https://maestriaeconomiasocialitse.netlify.app/"  class="dropdown-item">Maestria en Economia Social y Solidaria</a>
             </li>
  <!--            <li>
               <a routerLink="/https://itsedirectorio.streamlit.app/?Directorio_Itse=1"  class="dropdown-item">Directorio</a>
@@ -202,6 +297,9 @@
             <li>
               <a  href="https://elibro.net/es/lc/itsescarcega/login_usuario/" class="dropdown-item">Elibro ITSE</a>
             </li>
+            <li>
+              <a  href="https://itsecertificado.netlify.app/" class="dropdown-item">Certificados</a>
+            </li>
 
 
 
@@ -212,7 +310,7 @@
         <!-- menu servicios  -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown">
-            servicios
+            Servicios
           </a>
           <ul class="dropdown-menu">
 
@@ -229,10 +327,10 @@
               <a routerLink="/Servicios/servicios-escolares" class="dropdown-item">Servicios Escolares</a>
             </li>
             <li>
-              <a  class="dropdown-item"  routerLink="/https://ti.itsescarcega.edu.mx/encuesta-app/#/login">Encuesta de Servicio</a>
+              <a  class="dropdown-item"  href="https://ti.itsescarcega.edu.mx/encuesta-app/#/login" target="_blank">Encuesta de Servicio</a>
             </li>
             <li>
-              <a   routerLink="/assets/servicios/lactario.pdf"  class="dropdown-item">Lactario</a>
+              <a   href="/assets/servicios/lactario.pdf"  class="dropdown-item">Lactario</a>
             </li>
           </ul>
         </li>
@@ -246,7 +344,7 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <a  routerLink="/https://congresogastronomiaitse.netlify.app/"  class="dropdown-item">Congreso Gastronomia </a>
+              <a  href="https://congresogastronomiaitse.netlify.app/"  class="dropdown-item">Congreso Gastronomia </a>
             </li>
  <!--            <li>
               <a routerLink="/https://itsedirectorio.streamlit.app/?Directorio_Itse=1"  class="dropdown-item">Directorio</a>
@@ -292,7 +390,7 @@
               <a   routerLink="/assets/img_plataformas/Wallpaper_ITSE.jpg"  class="dropdown-item">Fondo de Pantalla Institucional</a>
             </li>
             <li>
-              <a   routerLink="/assets/img_plataformas/DIRECTORIO_ENLACES_DE_CJM-UNIVERSIDADES.xlsx" class="dropdown-item">Directorio Enlaces de CJM-Universidades </a>
+              <a   href="/assets/img_plataformas/DIRECTORIO_ENLACES_DE_CJM-UNIVERSIDADES.xlsx" class="dropdown-item" target="_blank">Directorio Enlaces de CJM-Universidades </a>
             </li>
 
           </ul>

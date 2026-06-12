@@ -68,9 +68,14 @@ import { Indicadores_ciaComponent } from './pages/gestion_institucional/traspare
 import { PlaneacionComponent} from './pages/gestion_institucional/planeacion/planeacion.component';
 import { ContactenosComponent } from './pages/gestion_institucional/contactenos/contactenos.component';
 import { RendicioncuentasComponent } from './pages/gestion_institucional/rendicioncuentas/rendicioncuentas.component';
+import { Comite_eticaComponent} from './pages/gestion_institucional/comite_etica/comite_etica.component';
+
+// Comite de etica
+
 
 // vinculacion
 import { VinculacionComponent } from './pages/gestion_institucional/vinculacion/vinculacion.component';
+
 
 export const routes: Routes = [
 
@@ -159,7 +164,9 @@ export const routes: Routes = [
       {path: 'indicadores-cia', component: Indicadores_ciaComponent},
       {path: 'planeacion', component: PlaneacionComponent},
       {path: 'contactenos', component: ContactenosComponent},
-      {path: 'rendicion-cuentas', component: RendicioncuentasComponent}
+      {path: 'rendicion-cuentas', component: RendicioncuentasComponent},
+      {path: 'comite-etica', component: Comite_eticaComponent}
+    
 
     ]
 

@@ -1,0 +1,96 @@
+<!-- ===== CONTENIDO ===== -->
+
+<div class="contenido">
+
+  <h2> Comite Etica</h2>
+
+  <!-- ===== TABS ===== -->
+  <ul class="nav nav-tabs custom-tabs">
+
+    <li><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">ESTADOS FINANCIEROS</button></li>
+
+    <li><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2"> </button></li>
+
+    <li><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3"> </button></li>
+
+
+
+  </ul>
+
+  <!-- ===== CONTENIDO DE TABS ===== -->
+  <div class="tab-content box-content">
+
+    <!-- TAB 1 -->
+    <div class="tab-pane fade show active" id="tab1">
+
+      <div class="anio-card" *ngFor="let anio of data">
+
+  <!-- AÑO -->
+  <div class="anio-header" (click)="anio.abierto = !anio.abierto">
+    📁 año {{anio.anio}}
+  </div>
+
+  <div *ngIf="anio.abierto" class="anio-body">
+
+    <!-- PRESUPUESTOS -->
+    <ul class="docs-list">
+      <li *ngFor="let p of anio.presupuestos">
+        <img src="assets/vinculacion/pdf.png">
+        <a [href]="p.url" target="_blank">
+          {{p.nombre}}
+        </a>
+      </li>
+    </ul>
+
+    <!-- TRIMESTRES -->
+    <div class="trimestre" *ngFor="let t of anio.trimestres">
+
+      <div class="trimestre-header" (click)="t.abierto = !t.abierto">
+        📂 {{t.nombre}}
+      </div>
+
+      <div *ngIf="t.abierto">
+
+        <!-- CARPETAS -->
+        <div class="subcarpeta" *ngFor="let c of t.carpetas">
+
+          <div class="subcarpeta-header" (click)="c.abierto = !c.abierto">
+            📁 {{c.nombre}}
+          </div>
+
+          <!-- ARCHIVOS -->
+          <ul *ngIf="c.abierto">
+            <li *ngFor="let doc of c.archivos">
+              <img src="assets/vinculacion/pdf.png">
+              <a [href]="doc.url" target="_blank">
+                {{doc.nombre}}
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+    </div>
+
+    <!-- TAB 2 -->
+    <div class="tab-pane fade" id="tab2">
+
+    
+
+     
+    </div>
+
+   
+
+
+  </div>
+
+</div>

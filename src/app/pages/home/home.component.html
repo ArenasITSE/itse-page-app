@@ -1,137 +1,265 @@
 
+<!-- ========================= -->
+<!-- CARRUSEL PRINCIPAL -->
+<!-- ========================= -->
+
 <div id="carouselTecNM" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+
   <div class="carousel-indicators">
     <button *ngFor="let img of images; let i = index" type="button" data-bs-target="#carouselTecNM"
       [attr.data-bs-slide-to]="i" [class.active]="i === 0" [attr.aria-label]="'Slide ' + (i + 1)">
     </button>
   </div>
 
-  <!-- 🖼 SLIDES -->
   <div class="carousel-inner">
 
     <div *ngFor="let img of images; let i = index" class="carousel-item" [class.active]="i === 0">
 
       <div class="slider-container">
-        <img [src]="img" class="slider-img" alt="Imagen del carrusel">
+
+        <a *ngIf="img.link" [href]="img.link" target="_blank">
+
+          <img [src]="img.src" class="slider-img" alt="Imagen del carrusel">
+
+        </a>
+
+        <img *ngIf="!img.link" [src]="img.src" class="slider-img" alt="Imagen del carrusel">
+
       </div>
 
     </div>
 
   </div>
 
-
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselTecNM" data-bs-slide="prev">
 
     <span class="carousel-control-prev-icon"></span>
-    <span class="visually-hidden">Anterior</span>
 
   </button>
 
   <button class="carousel-control-next" type="button" data-bs-target="#carouselTecNM" data-bs-slide="next">
 
     <span class="carousel-control-next-icon"></span>
-    <span class="visually-hidden">Siguiente</span>
 
-  </button> 
+  </button>
 
-  <!-- comunicacion  -->
+</div>
 
-  <br>
-  
-  <div class="container my-5">
+<!-- ========================= -->
+<!-- CONTENIDO PRINCIPAL -->
+<!-- ========================= -->
+
+<div class="container my-5">
 
   <div class="row">
 
-    <!-- 🧭 SIDEBAR -->
-    <div class="col-md-3 sidebar">
 
-      <h6 class="titulo-side">CONTRALORÍA SOCIAL U079</h6>
-      <img src="assets/home_logos/logo_conta.jpg" class="img-fluid mb-3">
+    <!-- =================================== -->
+    <!-- AVISOS Y COMUNICADOS -->
+    <!-- =================================== -->
 
-      <h6 class="titulo-side">CONTRALORÍA SOCIAL</h6>
-      <img src="assets/home_logos/contro_sociales.png" class="img-fluid mb-3">
+    <div class="col-lg-4 col-md-5">
 
-      <h6 class="titulo-side">COMITÉ DE ÉTICA CEPCI</h6>
-      <img src="assets/home_logos/comite_de_etica.png" class="img-fluid mb-3">
 
-      <p class="side-text">
-        "CONSULTA NUESTRAS VACANTES EN NUESTRA BOLSA DE TRABAJO INSTITUCIONAL"
-      </p>
+      <div class="avisos-panel">
 
-      <img src="assets/home_logos/Bolsa.png" class="img-fluid mb-3">
+        <h5 class="avisos-title">
+          <i class="bi bi-megaphone-fill"></i>
+          Avisos y Comunicados
+        </h5>
 
-      <h6 class="titulo-side">PLATAFORMA DIGITALIA HISPÁNICA</h6>
-      <img src="assets/home_logos/Digitalia.png" class="img-fluid mb-3">
+        <div id="avisosCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
-      <h6 class="titulo-side">OCC MUNDIAL</h6>
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="assets/carrusel_vertical/c1.png" class="aviso-slider-img">
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/carrusel_vertical/c2.png" class="aviso-slider-img">
+            </div>
+
+             <div class="carousel-item">
+              <img src="assets/carrusel_vertical/c3.png" class="aviso-slider-img">
+            </div>
+             <div class="carousel-item">
+              <img src="assets/carrusel_vertical/c4.png" class="aviso-slider-img">
+            </div>
+             <div class="carousel-item">
+              <img src="assets/carrusel_vertical/c5.png" class="aviso-slider-img">
+            </div>
+             <div class="carousel-item">
+              <img src="assets/carrusel_vertical/c6.png" class="aviso-slider-img">
+            </div>
+             <div class="carousel-item">
+              <img src="assets/carrusel_vertical/c7.png" class="aviso-slider-img">
+            </div>
+             <div class="carousel-item">
+              <img src="assets/carrusel_vertical/c8.png" class="aviso-slider-img">
+            </div>
+
+         
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#avisosCarousel" data-bs-slide="prev">
+
+            <span class="carousel-control-prev-icon"></span>
+
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#avisosCarousel" data-bs-slide="next">
+
+            <span class="carousel-control-next-icon"></span>
+
+          </button>
+
+        </div>
+
+      </div>
+
 
     </div>
 
-    <!-- 📄 CONTENIDO -->
-    <div class="col-md-9 contenido">
+    <!-- =================================== -->
+    <!-- CONTENIDO -->
+    <!-- =================================== -->
 
-      <h2 class="titulo-principal">TECNM CAMPUS ESCÁRCEGA</h2>
+    <div class="col-lg-8 col-md-7 contenido">
+
+      <h2 class="titulo-principal">
+        TECNM CAMPUS ESCÁRCEGA
+      </h2>
 
       <p class="sub-info">
-        ITSESCARCEGA – INICIO – Última actualización: 17 Marzo 2025 – Visitas: 51477
+        ITSESCARCEGA – INICIO – Última actualización: 10 Junio 2026
       </p>
 
-      <h4 class="seccion-titulo">POLÍTICAS INSTITUCIONALES</h4>
 
-      <!-- Misión -->
-      <h6 class="subtitulo">MISIÓN</h6>
-      <p>
-        Formar profesionistas competentes ofreciendo un servicio educativo integral de calidad certificada
-        que permite mejorar el nivel de vida de la sociedad de una manera justa y equitativa contribuyendo
-        al desarrollo sustentable de la región.
-      </p>
-      <br>
-      <!-- Visión -->
-      <h6 class="subtitulo">VISIÓN</h6>
-      <p>
-        Ser una institución líder en el Estado de Campeche, con un sistema de gestión integrado y una oferta
-        educativa acreditada en todos sus niveles, que genere un impacto significativo en el desarrollo
-        económico, laboral, social y cultural.
-      </p>
-<br>
-      <!-- Política Integral -->
-      <h6 class="subtitulo">POLÍTICA INTEGRAL</h6>
-      <p>
-        El ITSE establece el compromiso de brindar un servicio educativo de calidad, implementando y mejorando 
-        continuamente sus procesos en armonía con el medio ambiente y la magnitud de sus riesgos, orientándolos 
-        hacia la satisfacción de la comunidad tecnológica, el uso racional de los recursos y el cumplimiento de
-         los requisitos legales aplicables, mediante la implementación y difusión de objetivos y acciones para 
-         prevenir y reducir la contaminación, accidentes y enfermedades de trabajo a través de la mejora continua 
-         y eficacia de los Sistemas de Gestión, conforme a las Normas ISO 9001, ISO 14001 e ISO 45001, así como 
-         promoviendo la igualdad de oportunidades, mediante la Norma Mexicana NMX-R-025-SCFI-2015.
-      </p>
-<br>
-      <!-- Igualdad -->
-      <h6 class="subtitulo">POLÍTICA DE IGUALDAD DE GÉNERO Y NO DISCRIMINACIÓN DEL TECNM</h6>
-      <p>
-        La comunidad del Tecnológico Nacional de México establece el compromiso con la promoción y ejercicio de los 
-        derechos humanos para toda persona que integra los Institutos, Unidades, Centros y Oficinas centrales; garantizando 
-        (en el ámbito de competencia, facultades y responsabilidades), el principio de igualdad sustantiva entre mujeres y 
-        hombres así como el derecho fundamental a la no discriminación en los procesos y condiciones laborales y escolares,
-         quedando prohibido el maltrato, violencia y segregación a cualquier persona de la comunidad por parte de las autoridades 
-         o entre la misma comunidad en cualquier forma de distinción, exclusión o restricción que se encuentre basada en el origen
-          étnico o nacional, color de piel, apariencia física, cultura, sexo, género, edad, discapacidad, condición social o 
-          económica, condiciones de salud, embarazo, lengua, religión, opiniones, preferencias sexuales, estado civil, situación
-           migratoria, situación familiar, antecedentes penales, responsabilidades familiares o cualquier otra, que tenga por 
-           objeto impedir o anular el reconocimiento o el ejercicio de los derechos humanos, laborales o escolares de la comunidad,
-            o impida la igualdad real de oportunidades.
-      </p>
-<br>
-      <!-- Energética -->
-      <h6 class="subtitulo">POLÍTICA ENERGÉTICA</h6>
-      <p>
-      “El Tecnológico Nacional de México establece el compromiso de orientar todas las actividades del Proceso Educativo, hacia el
-       respeto del medio ambiente, mediante la implementación de su Sistema de Gestión de la Energía (SGEn) basado en la norma ISO 
-       50001:2018 NMX-J-SAA-50001-ANCE-IMNC-2019, logrando la mejora continua de su desempeño energético, utilizando como base el uso
-        eficiente de la energía, asegurando la disponibilidad de la información y de los recursos para alcanzar los objetivos y metas
-         establecidos, así como cumplir con la legislación aplicable en materia energética, coadyuvando a ser uno de los pilares
-          fundamentales del desarrollo sostenido, sustentable y equitativo de la nación.”
-      </p>
+      <h3 class="seccion-titulo">
+        POLÍTICAS INSTITUCIONALES
+      </h3>
+
+      <!-- MISIÓN -->
+
+      <div class="policy-card">
+
+        <div class="policy-icon">
+          <i class="bi bi-bullseye"></i>
+        </div>
+
+        <div class="policy-content">
+
+          <h5>MISIÓN</h5>
+
+          <p>
+            Formar profesionistas competentes ofreciendo un servicio educativo
+            integral de calidad certificada que permite mejorar el nivel de vida
+            de la sociedad de una manera justa y equitativa contribuyendo al
+            desarrollo sustentable de la región.
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- VISIÓN -->
+
+      <div class="policy-card">
+
+        <div class="policy-icon vision">
+          <i class="bi bi-eye-fill"></i>
+        </div>
+
+        <div class="policy-content">
+
+          <h5>VISIÓN</h5>
+
+          <p>
+         Ser una institución líder en el Estado de Campeche, con un sistema de gestión integrado y una oferta educativa acreditada en todos sus niveles, que genere un impacto significativo en el desarrollo económico, laboral, social y cultural. 
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- POLÍTICA INTEGRAL -->
+
+      <div class="policy-card">
+
+        <div class="policy-icon integral">
+          <i class="bi bi-shield-check"></i>
+        </div>
+
+        <div class="policy-content">
+
+          <h5>POLÍTICA INTEGRAL</h5>
+
+          <p>
+          El ITSE establece el compromiso de brindar un servicio educativo de calidad, implementando y mejorando continuamente sus procesos en armonía con el medio ambiente y la magnitud de sus riesgos, orientándolos hacia la satisfacción de la comunidad tecnológica, el uso racional de los recursos y el cumplimiento de los requisitos legales aplicables, mediante la implementación y difusión de objetivos y acciones para prevenir y reducir la contaminación, accidentes y enfermedades de trabajo a través de la mejora continua y eficacia de los Sistemas de Gestión, conforme a las Normas ISO 9001, ISO 14001 e ISO 45001, así como promoviendo la igualdad de oportunidades, mediante la Norma Mexicana NMX-R-025-SCFI-2015
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- IGUALDAD -->
+
+      <div class="policy-card">
+
+        <div class="policy-icon igualdad">
+          <i class="bi bi-people-fill"></i>
+        </div>
+
+        <div class="policy-content">
+
+          <h5>
+            POLÍTICA DE IGUALDAD DE GÉNERO Y NO DISCRIMINACIÓN DEL TECNM
+          </h5>
+          <P>
+         La comunidad del Tecnológico Nacional de México establece el compromiso con la promoción y ejercicio de los derechos
+          humanos para toda persona que integra los Institutos, Unidades, Centros y Oficinas centrales; garantizando 
+          (en el ámbito de competencia, facultades y responsabilidades), el principio de igualdad sustantiva entre mujeres y 
+          hombres así como el derecho fundamental a la no discriminación en los procesos y condiciones laborales y escolares,
+           quedando prohibido el maltrato, violencia y segregación a cualquier persona de la comunidad por parte de las autoridades
+            o entre la misma comunidad en cualquier forma de distinción, exclusión o restricción que se encuentre basada en el origen
+             étnico o nacional, color de piel, apariencia física, cultura, sexo, género, edad, discapacidad, condición social o económica, 
+             condiciones de salud, embarazo, lengua, religión, opiniones, preferencias sexuales, estado civil, situación migratoria, 
+             situación familiar, antecedentes penales, responsabilidades familiares o cualquier otra, que tenga por objeto impedir o
+              anular el reconocimiento o el ejercicio de los derechos humanos, laborales o escolares de la comunidad, o impida la 
+              igualdad real de oportunidades. </P>
+        
+
+        </div>
+
+      </div>
+
+      <!-- ENERGÉTICA -->
+
+      <div class="policy-card">
+
+        <div class="policy-icon energia">
+          <i class="bi bi-lightning-charge-fill"></i>
+        </div>
+
+        <div class="policy-content">
+
+          <h5>POLÍTICA ENERGÉTICA</h5>
+
+          <p> 
+             El Tecnológico Nacional de México establece el compromiso de orientar todas las actividades del Proceso Educativo, 
+            hacia el respeto del medio ambiente, mediante la implementación de su Sistema de Gestión de la Energía (SGEn) basado 
+            en la norma ISO 50001:2018 NMX-J-SAA-50001-ANCE-IMNC-2019, logrando la mejora continua de su desempeño energético,
+             utilizando como base el uso eficiente de la energía, asegurando la disponibilidad de la información y de los recursos 
+             para alcanzar los objetivos y metas establecidos, así como cumplir con la legislación aplicable en materia energética, 
+             coadyuvando a ser uno de los pilares fundamentales del desarrollo sostenido, sustentable y equitativo de la nación.
+          </p>
+
+        </div>
+
+      </div>
+
+
 
     </div>
 
@@ -139,11 +267,10 @@
 
 </div>
 
-  
+<!-- ========================= -->
+<!-- PLATAFORMAS -->
+<!-- ========================= -->
 
-
-
-<!-- 🎓 SECCIÓN PLATAFORMAS -->
 <div class="container py-5">
 
   <h2 class="text-center mb-5 titulo-seccion">
@@ -152,37 +279,70 @@
 
   <div class="row justify-content-center g-4">
 
-    <!-- Moodle -->
     <div class="col-6 col-md-3">
-      <a href="https://moodle.org" target="_blank" class="card-plataforma">
+      <a href="https://acad.itsescarcega.edu.mx/login/index.php" target="_blank" class="card-plataforma">
+
         <img src="assets/home_logos/moodle.png" alt="Moodle">
+
       </a>
     </div>
 
-    <!-- Plataforma Nacional -->
     <div class="col-6 col-md-3">
       <a href="https://www.plataformadetransparencia.org.mx/Inicio" target="_blank" class="card-plataforma">
+
         <img src="assets/home_logos/naci.png" alt="Transparencia">
+
       </a>
     </div>
 
-    <!-- Cengage -->
     <div class="col-6 col-md-3">
-      <a href="https://www.conricyt.mx/acervo-editorial/recursos-por-institucion?id_inst=360" target="_blank" class="card-plataforma">
+      <a href="https://www.conricyt.mx/acervo-editorial/recursos-por-institucion?id_inst=360" target="_blank"
+        class="card-plataforma">
+
         <img src="assets/home_logos/cengage.jpg" alt="Cengage">
+
       </a>
     </div>
 
-    <!-- Biblioteca -->
     <div class="col-6 col-md-3">
-      <a href="https://elibro.net/es/lc/itsescarcega/login_usuario/?next=/es/lc/itsescarcega/inicio" target="_blank" class="card-plataforma">
+      <a href="https://elibro.net/es/lc/itsescarcega/login_usuario/?next=/es/lc/itsescarcega/inicio" target="_blank"
+        class="card-plataforma">
         <img src="assets/home_logos/E_LIBRO1.png" alt="Biblioteca">
       </a>
     </div>
 
+        <div class="col-6 col-md-3">
+      <a  target="_blank"
+        class="card-plataforma">
+        <img src="assets/home_logos/comite_de_etica.png" alt="Biblioteca">
+      </a>
+    </div>
+
+            <div class="col-6 col-md-3">
+      <a  target="_blank"
+        class="card-plataforma">
+        <img src="assets/home_logos/contro_sociales.png" alt="Biblioteca">
+      </a>
+    </div>
+
+            <div class="col-6 col-md-3">
+      <a  target="_blank"
+        class="card-plataforma">
+        <img src="assets/home_logos/logo_conta.jpg" alt="Biblioteca">
+      </a>
+    </div>
+
+            <div class="col-6 col-md-3">
+      <a  target="_blank"
+        class="card-plataforma">
+        <img src="assets/home_logos/Digitalia.png" alt="Biblioteca">
+      </a>
+    </div>
+
+
+
+
+
   </div>
-
-</div>
-
 
 </div>

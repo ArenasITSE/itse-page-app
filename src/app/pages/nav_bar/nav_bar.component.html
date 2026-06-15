@@ -1,10 +1,11 @@
 <!-- 🔥 CONTENEDOR QUE SE OCULTA AL HACER SCROLL -->
 <div
-  class="header-superior"
-  [class.ocultar-header]="!mostrarHeader">
+  class="header-superior">
 
   <!-- 🔴 BARRA GOBIERNO -->
-  <nav class="navbar navbar-expand fixed-top barra-gobmx px-4">
+  <nav
+  class="navbar navbar-expand fixed-top barra-gobmx px-4"
+  [class.ocultar-barra-roja]="!mostrarHeader">
 
     <a class="navbar-brand" href="https://www.gob.mx/" target="_blank">
       <img

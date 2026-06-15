@@ -74,11 +74,14 @@ export class Nav_barComponent implements OnInit {
   // SCROLL
   // ==========================
 
-  @HostListener('window:scroll', [])
-  onScroll(): void {
+ @HostListener('window:scroll')
+onScroll(): void {
 
-    this.mostrarHeader = window.scrollY < 120;
-  }
+  const y = window.scrollY;
+
+  // Solo mostrar la barra roja cuando estés realmente cerca del inicio
+  this.mostrarHeader = y < 80;
+}
 
   // ==========================
   // FUENTE

@@ -1,8 +1,12 @@
 /* Barra superior */
-.barra-gobmx {
-  background-color: #6a0f2b;
-  height: 90px;
-  z-index: 1000;
+.barra-gobmx{
+  background-color:#6a0f2b;
+  height:90px;
+  transition:transform .3s ease;
+}
+
+.ocultar-barra-roja{
+  transform:translateY(-100%);
 }
 
 .logo-gobierno {
@@ -344,38 +348,4 @@ body.dark-mode .menu-bar{
   border-bottom: 1px solid #eaeaea;
 }
 
-.header-superior{
-  overflow:hidden;
-  transition:all .4s ease;
-  max-height:250px;
-}
 
-.ocultar-header{
-  max-height:0;
-  opacity:0;
-}
-
-/* menú azul siempre visible */
-.menu-bar{
-  position:sticky;
-  top:0;
-  z-index:9999;
-  background:#243f6b;
-}
-
-.header-superior{
-  transition: all .4s ease;
-  overflow: hidden;
-  max-height: 250px;
-}
-
-.ocultar-header{
-  max-height: 0;
-  opacity: 0;
-}
-
-.menu-bar{
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-}

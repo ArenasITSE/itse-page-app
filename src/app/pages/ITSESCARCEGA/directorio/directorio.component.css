@@ -1,90 +1,401 @@
-
-/* =========================================
-CONTENEDOR GENERAL
-========================================= */
-
-.iframe-container {
-
-    width: 100%;
-
-    margin: 0;
-
-    padding: 0;
-
-    background: transparent;
-
-    overflow: hidden;
-
+:host {
+  display: block;
 }
 
-/* =========================================
-IFRAME
-========================================= */
+/* =========================
+   VARIABLES
+========================= */
 
-.iframe-container iframe {
+:host {
+  --primary-color: #1e3a8a;
+  --primary-dark: #172554;
+  --secondary-color: #2563eb;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
 
-    width: 100%;
+  --accent-admin: #10b981;
+  --accent-planeacion: #f59e0b;
+  --accent-vinculacion: #8b5cf6;
+  --accent-academica: #ef4444;
 
-    height: 100vh;
-
-    min-height: 1400px;
-
-    border: none;
-
-    display: block;
-
-    background: transparent;
-
-    overflow: hidden;
-
+  display: block;
 }
 
-/* =========================================
-BODY
-========================================= */
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
 
-body {
-
-    margin: 0;
-
-    padding: 0;
-
-    background: #f3f3f3;
-
-    overflow-x: hidden;
-
-    font-family:
-        "Montserrat",
-        "Segoe UI",
-        sans-serif;
-
+.header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
-/* =========================================
-ELIMINA ESPACIOS DE ANGULAR
-========================================= */
-
-app-root,
-router-outlet {
-
-    margin: 0;
-
-    padding: 0;
-
-    display: block;
-
+.header h1 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
-/* =========================================
-RESPONSIVE
-========================================= */
+.header p {
+  color: var(--text-muted);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
 
-@media screen and (max-width: 768px){
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
 
-    .iframe-container iframe {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
 
-        min-height: 2200px;
+.stat-card {
 
-    }
+  display: flex;
+  align-items: center;
+  gap: 8px;
 
+  padding: 12px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(37, 99, 235, 0.08);
+
+  border: 1px solid rgba(37, 99, 235, 0.15);
+
+  font-weight: 600;
+
+  color: var(--primary-color);
+
+  transition: all .25s ease;
+}
+
+.stat-card:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,.10);
+}
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.controls {
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 30px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: var(--secondary-color);
+}
+
+/* =========================
+   ÁRBOL
+========================= */
+
+.tree-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.tree {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tree ul {
+  padding-top: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tree li {
+  list-style: none;
+  position: relative;
+  padding: 25px 15px 0 15px;
+}
+
+/* =========================
+   CONECTORES
+========================= */
+
+.tree li::before,
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 2px solid var(--text-muted);
+  width: 50%;
+  height: 25px;
+  opacity: 0.4;
+}
+
+.tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 2px solid var(--text-muted);
+}
+
+.tree li:only-child::after,
+.tree li:only-child::before {
+  display: none;
+}
+
+.tree li:only-child {
+  padding-top: 0;
+}
+
+.tree li:first-child::before,
+.tree li:last-child::after {
+  border: 0;
+}
+
+.tree li:last-child::before {
+  border-right: 2px solid var(--text-muted);
+  border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+}
+
+.tree ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid var(--text-muted);
+  width: 0;
+  height: 25px;
+  opacity: 0.4;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.node {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: 12px;
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 300px;
+  height: 140px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 10px 15px -3px rgba(0,0,0,0.05),
+    0 4px 6px -2px rgba(0,0,0,0.05);
+
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.node:hover {
+  transform: translateY(-5px);
+  border-color: var(--secondary-color);
+}
+
+/* =========================
+   NIVELES
+========================= */
+
+.level-root {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-dark);
+  text-align: center;
+  align-items: center;
+}
+
+.level-root .puesto {
+  color: #93c5fd;
+}
+
+.level-staff {
+  background: #f1f5f9;
+  border: 2px dashed #94a3b8;
+}
+
+.level-sub {
+  background: var(--secondary-color);
+  color: white;
+  border-color: var(--primary-color);
+  text-align: center;
+  align-items: center;
+}
+
+.level-sub .puesto {
+  color: #bfdbfe;
+}
+
+/* =========================
+   DEPARTAMENTOS
+========================= */
+
+.level-dep {
+  border-left: 5px solid var(--secondary-color);
+}
+
+.level-dep.admin {
+  border-left-color: var(--accent-admin);
+}
+
+.level-dep.planeacion {
+  border-left-color: var(--accent-planeacion);
+}
+
+.level-dep.vinculacion {
+  border-left-color: var(--accent-vinculacion);
+}
+
+.level-dep.academica {
+  border-left-color: var(--accent-academica);
+}
+
+/* =========================
+   TEXTO
+========================= */
+
+.dept-title {
+  font-size: 0.70rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.level-root .dept-title,
+.level-sub .dept-title {
+  color: rgba(255,255,255,0.7);
+}
+
+.nombre {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.puesto {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* =========================
+   SUBRAMAS
+========================= */
+
+.sub-branch-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 15px;
+  align-items: center;
+}
+
+/* =========================
+   BUSQUEDA
+========================= */
+
+.highlight {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 0 3px rgba(255,255,255,.8),
+    0 0 15px rgba(0,0,0,.25);
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.03);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1.03);
+  }
+}
+
+.filtered {
+  opacity: 0.3;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1400px) {
+
+  .tree ul {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .tree li {
+    padding-top: 20px;
+  }
+
+  .tree li::before,
+  .tree li::after,
+  .tree ul ul::before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .node {
+    width: 95%;
+    max-width: 320px;
+    height: auto;
+    min-height: 120px;
+  }
+
+  .search-input {
+    width: 95%;
+  }
 }

@@ -1,9 +1,551 @@
+<div class="header">
 
-<div class="iframe-container">
+    <h1>
+        INSTITUTO TECNOLÓGICO SUPERIOR DE ESCÁRCEGA
+    </h1>
 
-    <iframe
-        src="http://10.100.10.81:8501/organigrama_publico"
-        frameborder="0">
-    </iframe>
+    <p>
+        Directorio General Institucional
+    </p>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            👥
+            <span>28 personas</span>
+        </div>
+
+        <div class="stat-card">
+            🏢
+            <span>4 subdirecciones</span>
+        </div>
+
+        <div class="stat-card">
+            📁
+            <span>22 departamentos / divisiones</span>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="controls">
+
+    <input type="text" class="search-input" placeholder="🔍 Buscar personal, puesto o departamento..."
+        (input)="filtrar($event)">
+
+</div>
+
+<div class="tree-container">
+
+    <div class="tree">
+
+        <ul>
+
+            <li>
+
+                <!-- DIRECCIÓN GENERAL -->
+
+                <div class="node level-root">
+
+                    <div class="dept-title">
+                        DIRECCIÓN GENERAL
+                    </div>
+
+                    <div class="nombre">
+                        DANY ALEJANDRO DZIB CAUICH
+                    </div>
+
+                    <div class="puesto">
+                        DIRECTOR GENERAL
+                    </div>
+
+                </div>
+
+                <ul>
+
+                    <!-- STAFF -->
+
+                    <li>
+
+                        <div class="node level-staff">
+
+                            <div class="dept-title">
+                                DIVISIÓN (GENERAL)
+                            </div>
+
+                            <div class="nombre">
+                                LUIS RODOLFO BERNES ROMERO
+                            </div>
+
+                            <div class="puesto">
+                                JEFE DE DIVISIÓN
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <ul>
+
+                    <!-- ADMINISTRATIVA -->
+
+                    <li>
+
+                        <div class="node level-sub">
+
+                            <div class="dept-title">
+                                SUBDIRECCIÓN ADMINISTRATIVA
+                            </div>
+
+                            <div class="nombre">
+                                MARGARITA MAY CHAN
+                            </div>
+
+                            <div class="puesto">
+                                SUBDIRECTORA ADMINISTRATIVA
+                            </div>
+
+                        </div>
+
+                        <div class="sub-branch-container">
+
+                            <div class="node level-dep admin">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE CAPITAL HUMANO
+                                </div>
+
+                                <div class="nombre">
+                                    EPIFANIA DIAZ ALVAREZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+                            <div class="node level-dep admin">
+
+                                <div class="dept-title">
+                                    FINANZAS
+                                </div>
+
+                                <div class="nombre">
+                                    LOURDES DIAZ ALVAREZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep admin">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE RECURSOS MATERIALES Y SERVICIOS
+                                </div>
+
+                                <div class="nombre">
+                                    AUGUSTO ROMAN DZUL ROBALDINO
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep admin">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE MANTENIMIENTO
+                                </div>
+
+                                <div class="nombre">
+                                    EMETERIO JOSE SANCHEZ PONCIANO
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep admin">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE COMPUTO Y TECNOLOGIAS DE LA INFORMACION
+                                </div>
+
+                                <div class="nombre">
+                                    ELISEO REFUGIO HERNANDEZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </li>
+
+                    <!-- PLANEACIÓN -->
+
+                    <li>
+
+                        <div class="node level-sub">
+
+                            <div class="dept-title">
+                                SUBDIRECCIÓN DE PLANEACIÓN Y DESARROLLO
+                            </div>
+
+                            <div class="nombre">
+                                GABRIELA GRANADOS CÓRDOBA
+                            </div>
+
+                            <div class="puesto">
+                                SUBDIRECTORA DE PLANEACIÓN Y DESARROLLO
+                            </div>
+
+                        </div>
+
+                        <div class="sub-branch-container">
+
+                            <div class="node level-dep planeacion">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE PLANEACIÓN Y EVALUACIÓN
+                                </div>
+
+                                <div class="nombre">
+                                    HUGO ENRIQUE SÁNCHEZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+                            <div class="node level-dep planeacion">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE SISTEMA DE GESTIÓN
+                                </div>
+
+                                <div class="nombre">
+                                    MARIANA DE LOS ANGELES FERRER YANH
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+                            <div class="node level-dep planeacion">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE ADMINISTRACIÓN ESCOLAR Y APOYO A ESTUDIANTES
+                                </div>
+
+                                <div class="nombre">
+                                    LIBNI ESTHER GONZALEZ POTENCIANO
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </li>
+
+                    <!-- VINCULACIÓN -->
+
+                    <li>
+
+                        <div class="node level-sub">
+
+                            <div class="dept-title">
+                                SUBDIRECCIÓN DE EXTENSIÓN Y VINCULACIÓN
+                            </div>
+
+                            <div class="nombre">
+                                JUAN CARLOS RIVERA TAPIA
+                            </div>
+
+                            <div class="puesto">
+                                SUBDIRECTOR DE EXTENSIÓN Y VINCULACIÓN
+                            </div>
+
+                        </div>
+
+                        <div class="sub-branch-container">
+
+                            <div class="node level-dep vinculacion">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE VINCULACIÓN E INTERCAMBIO ACADÉMICO
+                                </div>
+
+                                <div class="nombre">
+                                    MARTIN DE LA CRUZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep vinculacion">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE PROMOCIÓN DE LA CULTURA Y EL DEPORTE
+                                </div>
+
+                                <div class="nombre">
+                                    MARTHA DALILA FLORES ARIAS
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep vinculacion">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE DESARROLLO EMPRENDEDOR
+                                </div>
+
+                                <div class="nombre">
+                                    JOSE DEL CARMEN CHI ALCOCER
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep vinculacion">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE COMUNICACIÓN Y DIFUSIÓN
+                                </div>
+
+                                <div class="nombre">
+                                    JUAN MANUEL NAAL ESPINOSA
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </li>
+
+                    <!-- ACADÉMICA -->
+
+                    <li>
+
+                        <div class="node level-sub">
+
+                            <div class="dept-title">
+                                SUBDIRECCIÓN ACADÉMICA DE INVESTIGACIÓN E INNOVACIÓN
+                            </div>
+
+                            <div class="nombre">
+                                JOSÉ ALBERTO ALAVEZ GÓNGORA
+                            </div>
+
+                            <div class="puesto">
+                                SUBDIRECTOR ACADÉMICO
+                            </div>
+
+                        </div>
+
+                        <div class="sub-branch-container">
+
+                            <div class="node level-dep academica">
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE INGENIERÍA EN SISTEMAS COMPUTACIONALES
+                                </div>
+
+                                <div class="nombre">
+                                    MANUEL DE ATOCHA BARRANCOS
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DIVISIÓN
+                                </div>
+
+                            </div>
+
+                            <div class="node level-dep academica">
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE LICENCIATURA EN ADMINISTRACIÓN
+                                </div>
+
+                                <div class="nombre">
+                                    GENI DEL CARMEN GOMEZ XUL
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE INGENIERÍA EN INDUSTRIAS ALIMENTARIAS
+                                </div>
+
+                                <div class="nombre">
+                                    YOLANDA DEL CARMEN ESTRELLA PÉREZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE GASTRONOMÍA
+                                </div>
+
+                                <div class="nombre">
+                                    ERIKA VIVIANA FERRER GOMEZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE INGENIERÍA EN ENERGÍAS RENOVABLES
+                                </div>
+
+                                <div class="nombre">
+                                    LAURA PATRICIA PEÑA YAM
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE LICENCIATURA EN TURISMO
+                                </div>
+
+                                <div class="nombre">
+                                    YAZMIN ESTRADA CHAN
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE DESARROLLO ACADÉMICO
+                                </div>
+
+                                <div class="nombre">
+                                    MIGUEL ANGEL MEJIA BAUTISTA
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE ESTUDIO DE POSGRADO E INVESTIGACIÓN
+                                </div>
+
+                                <div class="nombre">
+                                    IVETTE STEPHANY PACHECO FARFAN
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE CONTADOR PÚBLICO
+                                </div>
+
+                                <div class="nombre">
+                                    ARACELI MAR LUNA
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE INGENIERÍA EN ANIMACIÓN DIGITAL Y EFECTOS VISUALES
+                                </div>
+
+                                <div class="nombre">
+                                    CARLOS ENRIQUE AVILA PEREZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DIVISIÓN
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </div>
 
 </div>

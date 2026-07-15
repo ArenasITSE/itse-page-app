@@ -163,6 +163,39 @@
 
         </div>
 
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'comite_a',
+              '1grxarcu6fMtUygYgkwH2K-8wrzMkSu_G'
+            )">
+
+            📁 COMITE DE ADQUISICIONES 2025
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'comite_a'
+              ? 'block'
+              : 'none'
+            ">
+
+            @if (carpetaAbierta === 'comite_a') {
+
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+            }
+
+        </div>
+
+        
+
 
         <div
             class="folder"

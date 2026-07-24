@@ -175,18 +175,31 @@ body.dark-mode .menu-bar{
   position: sticky;
   top: 90px; /* debajo de la franja roja (90px) */
   z-index: 9999;
-  min-height: 30px;
+  height: 40px;
+  min-height: 40px;
   padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar .container-fluid {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.menu-bar .navbar-nav {
+  align-items: center;
 }
 
 /* Links del menú */
 .menu-bar .nav-link {
   color: white;
   font-weight: 500;
-
-  padding: 12px 15px !important; /* 🔥 igual al diseño original */
-
+  font-size: 14px;
+  padding: 8px 12px !important;
   line-height: 1.2;
+  display: flex;
+  align-items: center;
 }
 
 .menu-bar .nav-link:hover {
@@ -238,15 +251,16 @@ body.dark-mode .menu-bar{
 
 /* 🏠 Icono home */
 .menu-bar .bi-house-fill {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 0;
+  line-height: 1;
 }
 
 /* Logo TecNM en barra azul */
 .logo-tecnm-nav {
-  height: 28px;
+  height: 22px;
   width: auto;
-  margin-left: 14px;
+  margin-left: 10px;
   margin-right: 2px;
   object-fit: contain;
   visibility: hidden; /* oculta pero conserva el espacio */
@@ -381,4 +395,6 @@ body.dark-mode .menu-bar{
   top: 90px;
   z-index: 9999;
   background: #243f6b;
+  height: 40px;
+  min-height: 40px;
 }

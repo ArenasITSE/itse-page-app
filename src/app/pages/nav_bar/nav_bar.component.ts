@@ -18,8 +18,13 @@ export class Nav_barComponent implements OnInit {
 
   idiomaActual: 'es' | 'en' | 'zh' = 'es';
 
-  // 🔥 Controla si se muestra el encabezado superior
+  // 🔥 Controla si se muestra la franja blanca (logos/herramientas)
   mostrarHeader = true;
+
+  private lastScrollY = 0;
+  private scrollLock = false;
+  /** Evita reabrir el header tras el salto de scroll al colapsarlo */
+  private puedeMostrarHeader = false;
 
   constructor() { }
 
@@ -76,8 +81,50 @@ export class Nav_barComponent implements OnInit {
 
   @HostListener('window:scroll', [])
   onScroll(): void {
+    if (this.scrollLock) {
+      return;
+    }
 
-    this.mostrarHeader = window.scrollY < 120;
+    const y = window.scrollY;
+    const bajando = y > this.lastScrollY;
+
+    // Ocultar encabezado (y mostrar logo TecNM) al bajar
+    if (this.mostrarHeader && y > 120) {
+      this.scrollLock = true;
+      this.mostrarHeader = false;
+      this.puedeMostrarHeader = false;
+      this.lastScrollY = y;
+
+      // Ignora el salto de scroll que provoca max-height: 0
+      setTimeout(() => {
+        this.lastScrollY = window.scrollY;
+        this.scrollLock = false;
+      }, 450);
+      return;
+    }
+
+    // Con el header oculto: solo permitir mostrarlo de nuevo
+    // después de que el usuario siga bajando un poco
+    if (!this.mostrarHeader) {
+      if (!this.puedeMostrarHeader && y > 80) {
+        this.puedeMostrarHeader = true;
+      }
+
+      if (this.puedeMostrarHeader && !bajando && y < 40) {
+        this.scrollLock = true;
+        this.mostrarHeader = true;
+        this.puedeMostrarHeader = false;
+        this.lastScrollY = y;
+
+        setTimeout(() => {
+          this.lastScrollY = window.scrollY;
+          this.scrollLock = false;
+        }, 450);
+        return;
+      }
+    }
+
+    this.lastScrollY = y;
   }
 
   // ==========================

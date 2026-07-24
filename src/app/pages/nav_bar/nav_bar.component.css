@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Barra superior */
 .barra-gobmx{
   background-color:#6a0f2b;
@@ -7,6 +8,15 @@
 
 .ocultar-barra-roja{
   transform:translateY(-100%);
+=======
+/* Barra superior (franja roja) — siempre visible */
+.barra-gobmx {
+  background-color: #6a0f2b;
+  height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+>>>>>>> eliseocc
 }
 
 .logo-gobierno {
@@ -43,8 +53,8 @@
 
 
 .tools-right img{
-  width:22px;
-  height:22px;
+  width:26px;
+  height:26px;
   cursor:pointer;
   transition:.2s;
 }
@@ -72,8 +82,8 @@
 
 
 .tool-icon{
-  width:22px;
-  height:22px;
+  width:26px;
+  height:26px;
   cursor:pointer;
   transition:all .2s ease;
 }
@@ -109,7 +119,7 @@
 }
 
 .font-btn{
-  font-size:13px;
+  font-size:15px;
 }
 
 body.dark-mode{
@@ -153,8 +163,8 @@ body.dark-mode .menu-bar{
 }
 
 .tools-right img{
-  width:22px;
-  height:22px;
+  width:26px;
+  height:26px;
   cursor:pointer;
 }
 
@@ -174,22 +184,109 @@ body.dark-mode .menu-bar{
 /* 🔵 ===== MENÚ AZUL ===== */
 .menu-bar {
   background-color: #243f6b;
-
   position: sticky;
-  top: 0;
+  top: 90px; /* debajo de la franja roja (90px) */
   z-index: 9999;
-  min-height: 30px; /* 🔥 altura controlada */
+  min-height: 40px;
   padding: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar .container-fluid,
+.menu-bar .container {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: none;
+  width: 100%;
+}
+
+/* Aire izquierdo igual a TecNM (pl-5 = 3rem = 48px) */
+.menu-bar .navbar-collapse {
+  padding-left: 3rem;
+}
+
+.menu-bar .navbar-nav {
+  align-items: center;
+}
+
+/* Toggler visible sobre fondo azul */
+.menu-bar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.7);
+  margin: 4px 12px;
+  padding: 4px 8px;
+}
+
+/* Desktop: barra fija a 40px como TecNM */
+@media (min-width: 992px) {
+  .menu-bar {
+    height: 40px;
+  }
+
+  .menu-bar .container-fluid,
+  .menu-bar .container {
+    height: 100%;
+    flex-wrap: nowrap;
+  }
+}
+
+/* Móvil/tablet: la barra crece al abrir el menú */
+@media (max-width: 991.98px) {
+  .menu-bar {
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .menu-bar .container-fluid,
+  .menu-bar .container {
+    height: auto;
+    align-items: flex-start;
+  }
+
+  .menu-bar .navbar-collapse {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.75rem;
+    background-color: #243f6b;
+  }
+
+  .menu-bar .navbar-nav {
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .menu-bar .nav-link {
+    width: 100%;
+  }
+
+  /* En móvil el logo TecNM no debe reservar espacio vacío */
+  .menu-bar .logo-tecnm-nav {
+    display: none;
+  }
 }
 
 /* Links del menú */
 .menu-bar .nav-link {
   color: white;
   font-weight: 500;
+<<<<<<< HEAD
 
   padding:4px 15px !important; /* 🔥 igual al diseño original */
 
+=======
+  font-size: 14px;
+  padding: 8px 12px !important;
+>>>>>>> eliseocc
   line-height: 1.2;
+  display: flex;
+  align-items: center;
 }
 
 .menu-bar .nav-link:hover {
@@ -241,8 +338,26 @@ body.dark-mode .menu-bar{
 
 /* 🏠 Icono home */
 .menu-bar .bi-house-fill {
-  font-size: 20px;
-  margin-bottom: 15px;
+  font-size: 16px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+/* Logo TecNM en barra azul */
+.logo-tecnm-nav {
+  height: 40px;
+  width: auto;
+  margin-left: 0;
+  margin-right: 8px;
+  object-fit: contain;
+  visibility: hidden; /* oculta pero conserva el espacio */
+  opacity: 0;
+  transition: opacity .25s ease;
+}
+
+.logo-tecnm-nav--visible {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* 📱 Responsive */
@@ -348,4 +463,28 @@ body.dark-mode .menu-bar{
   border-bottom: 1px solid #eaeaea;
 }
 
+<<<<<<< HEAD
 
+=======
+/* Franja blanca: se oculta por completo al hacer scroll */
+.franja-blanca {
+  overflow: hidden;
+  transition: max-height .35s ease, opacity .25s ease;
+  max-height: 220px;
+}
+
+.ocultar-franja-blanca {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Franja azul: siempre visible, debajo de la roja */
+.menu-bar {
+  position: sticky;
+  top: 90px;
+  z-index: 9999;
+  background: #243f6b;
+  min-height: 40px;
+}
+>>>>>>> eliseocc

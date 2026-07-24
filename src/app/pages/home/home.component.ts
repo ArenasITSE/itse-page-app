@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+<<<<<<< HEAD
 import { RouterLink } from "@angular/router";
+=======
+import { RouterModule } from '@angular/router';
+>>>>>>> eliseocc
 
 @Component({
   selector: 'app-home',
   standalone: true,
+<<<<<<< HEAD
   imports: [CommonModule, RouterLink],
+=======
+  imports: [CommonModule, RouterModule],
+>>>>>>> eliseocc
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

@@ -30,6 +30,15 @@
   margin-bottom: 5px;
 }
 
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
 .logo-footer {
   height: 60px;
 }

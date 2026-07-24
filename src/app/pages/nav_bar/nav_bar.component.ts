@@ -253,4 +253,56 @@ export class Nav_barComponent implements OnInit {
     );
   }
 
+  // ==========================
+  // MENÚ MÓVIL
+  // ==========================
+
+  /** Cierra el menú colapsable tras elegir un enlace (solo en pantallas angostas). */
+  onMenuNavClick(event: Event): void {
+    const toggler = document.querySelector(
+      '.menu-bar .navbar-toggler'
+    ) as HTMLElement | null;
+
+    // En desktop el toggler está oculto: no hay nada que contraer
+    if (!toggler || getComputedStyle(toggler).display === 'none') {
+      return;
+    }
+
+    const target = event.target as HTMLElement | null;
+    const link = target?.closest('a');
+    if (!link) {
+      return;
+    }
+
+    // No cerrar al abrir un dropdown de primer nivel
+    if (
+      link.classList.contains('nav-link') &&
+      link.classList.contains('dropdown-toggle')
+    ) {
+      return;
+    }
+
+    const menu = document.getElementById('menuNav');
+    if (!menu?.classList.contains('show')) {
+      return;
+    }
+
+    const bootstrapApi = (window as unknown as {
+      bootstrap?: {
+        Collapse: {
+          getOrCreateInstance: (
+            el: Element,
+            config?: { toggle?: boolean }
+          ) => { hide: () => void };
+        };
+      };
+    }).bootstrap;
+
+    if (bootstrapApi?.Collapse) {
+      bootstrapApi.Collapse.getOrCreateInstance(menu, { toggle: false }).hide();
+    } else {
+      toggler.click();
+    }
+  }
+
 }

@@ -79,16 +79,6 @@ export class Nav_barComponent implements OnInit {
   // SCROLL
   // ==========================
 
-<<<<<<< HEAD
- @HostListener('window:scroll')
-onScroll(): void {
-
-  const y = window.scrollY;
-
-  // Solo mostrar la barra roja cuando estés realmente cerca del inicio
-  this.mostrarHeader = y < 80;
-}
-=======
   @HostListener('window:scroll', [])
   onScroll(): void {
     if (this.scrollLock) {
@@ -136,7 +126,6 @@ onScroll(): void {
 
     this.lastScrollY = y;
   }
->>>>>>> eliseocc
 
   // ==========================
   // FUENTE

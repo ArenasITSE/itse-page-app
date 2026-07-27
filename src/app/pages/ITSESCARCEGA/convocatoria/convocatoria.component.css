@@ -53,10 +53,7 @@ body {
 
     overflow-x: hidden;
 
-    font-family:
-        "Montserrat",
-        "Segoe UI",
-        sans-serif;
+    font-family: var(--font-sans);
 
 }
 

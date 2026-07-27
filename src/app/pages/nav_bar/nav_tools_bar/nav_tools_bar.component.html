@@ -1,0 +1,92 @@
+<div
+  class="franja-blanca"
+  [class.ocultar-franja-blanca]="!visible">
+
+  <div class="contenedorGobierno py-3 px-4">
+    <div class="d-flex justify-content-between align-items-start flex-wrap franja-blanca-row">
+
+      <!-- LOGOS — altura unificada ~65px como plecas de tecnm.mx -->
+      <div class="logos-header">
+        <a href="https://www.gob.mx/sep" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logos/educacion.png" class="logo-header logo-educacion" alt="Educación">
+        </a>
+
+        <img src="assets/logos/tecnm.jpg" class="logo-header logo-tecnm" alt="Tecnológico Nacional de México">
+
+        <img src="assets/encabezado/ESCUDO_GRIS.png" class="logo-header logo-escudo" alt="Escudo">
+
+        <img src="assets/encabezado/logo_seduc.png" class="logo-header logo-seduc" alt="SEDUC">
+
+        <a href="https://escarcega.tecnm.mx/#/Inicio" target="_blank" rel="noopener noreferrer">
+          <img src="assets/encabezado/logo.png" class="logo-header logo-itse" alt="ITSE">
+        </a>
+      </div>
+
+      <!-- HERRAMIENTAS — distribución/tamaño como .idiomas de tecnm.mx -->
+      <div class="idiomas tools-right">
+        <img
+          class="tool-icon tool-icon--util"
+          src="assets/encabezado/correo-icono.png"
+          alt="Correo"
+          title="Correo Institucional"
+          (click)="ui.abrirCorreo()">
+
+        <img
+          class="tool-icon tool-icon--util"
+          src="assets/encabezado/calendario-icono.png"
+          alt="Calendario"
+          title="Calendario Académico"
+          (click)="ui.abrirCalendario()">
+
+        <img
+          class="tool-icon tool-icon--flag"
+          [class.activo]="ui.idiomaActual() === 'zh'"
+          src="assets/encabezado/china-icono.png"
+          title="Mandarín"
+          alt="Idioma Mandarín"
+          (click)="ui.cambiarIdioma('zh')">
+
+        <img
+          class="tool-icon tool-icon--flag"
+          [class.activo]="ui.idiomaActual() === 'en'"
+          src="assets/encabezado/usa-icono.png"
+          title="Inglés"
+          alt="Idioma Inglés"
+          (click)="ui.cambiarIdioma('en')">
+
+        <img
+          class="tool-icon tool-icon--flag tool-icon--flag-last"
+          [class.activo]="ui.idiomaActual() === 'es'"
+          src="assets/encabezado/mexico-icono.png"
+          title="Español"
+          alt="Idioma Español"
+          (click)="ui.cambiarIdioma('es')">
+
+        <button
+          class="font-btn"
+          type="button"
+          title="Aumentar letra"
+          (click)="ui.aumentarFuente()">
+          A+
+        </button>
+
+        <button
+          class="font-btn"
+          type="button"
+          title="Disminuir letra"
+          (click)="ui.disminuirFuente()">
+          A-
+        </button>
+
+        <button
+          class="font-btn"
+          type="button"
+          title="Restablecer tamaño"
+          (click)="ui.normalFuente()">
+          A
+        </button>
+      </div>
+
+    </div>
+  </div>
+</div>

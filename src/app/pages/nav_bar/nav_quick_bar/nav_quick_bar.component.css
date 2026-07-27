@@ -1,0 +1,179 @@
+/*
+  Overrides sobre navbar-light BS 5.3 (franja 40px tipo tecnm.mx).
+  ≥768px: fila completa. <768px: búsqueda + toggler; enlaces en collapse.
+*/
+:host {
+  display: block;
+  position: sticky;
+  top: 79px;
+  /*
+    Por encima del menú azul (9999) para que el collapse móvil
+    (Correo/Moodle) no quede tapado por el stacking context.
+    En desktop no se solapan en Y (rápida 79px, azul 118px).
+  */
+  z-index: 10001;
+  overflow: visible;
+}
+
+.quick-bar.navbar {
+  --bs-navbar-padding-y: 0;
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
+  --bs-navbar-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
+  --bs-navbar-brand-padding-y: 0;
+  --bs-navbar-toggler-padding-y: 0.2rem;
+  --bs-navbar-toggler-padding-x: 0.4rem;
+  --bs-navbar-toggler-font-size: 0.9rem;
+  --bs-navbar-toggler-border-color: transparent;
+
+  position: relative;
+  height: 40px;
+  min-height: 40px;
+  max-height: 40px;
+  flex-wrap: nowrap;
+  overflow: visible;
+  border-bottom: 1px solid #e9e8e8;
+  font-family: Roboto, "Open Sans", sans-serif;
+}
+
+.quick-bar__inner.container-fluid {
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.quick-bar__search {
+  width: 230px;
+  max-width: min(230px, 48vw);
+  flex: 0 1 auto;
+  margin: 0;
+}
+
+.quick-bar__search .form-control {
+  height: 29px;
+  min-height: 29px;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-radius: 0;
+  font-size: 1rem;
+  box-shadow: none;
+}
+
+.quick-bar__search .form-control:focus {
+  border-color: #1b396a;
+  box-shadow: none;
+}
+
+.quick-bar__toggler {
+  display: none;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: auto;
+  border: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.quick-bar .navbar-nav .nav-link {
+  padding: 0 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+/* —— Tablet / móvil (< md): búsqueda + Menú, panel absoluto —— */
+@media (max-width: 767.98px) {
+  .quick-bar__toggler {
+    display: inline-flex;
+  }
+
+  .quick-bar__search {
+    flex: 1 1 auto;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+  }
+
+  .quick-bar__inner.container-fluid {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .quick-bar__search .form-control {
+    font-size: 0.9375rem;
+    width: 100%;
+  }
+
+  /*
+    Overlay bajo la franja (no empuja el menú azul sticky).
+    Misma idea que el collapse del menú blanco en tecnm.mx.
+  */
+  .quick-bar__collapse.collapse.show,
+  .quick-bar__collapse.collapsing {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    /* por encima del menú azul (9999) mientras está abierto */
+    z-index: 10001;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e9e8e8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 0.25rem 0;
+  }
+
+  .quick-bar__collapse .navbar-nav {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin: 0;
+    padding: 0 0.5rem;
+  }
+
+  .quick-bar__collapse .nav-link {
+    height: auto;
+    min-height: 44px;
+    padding: 0.65rem 0.75rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .quick-bar__collapse .nav-item:last-child .nav-link {
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .quick-bar__search .form-control {
+    font-size: 0.875rem;
+  }
+}
+
+/* Desktop / tablet ancha: enlaces en fila a la derecha */
+@media (min-width: 768px) {
+  .quick-bar__inner.container-fluid {
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .quick-bar__collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
+
+  .quick-bar .navbar-nav {
+    flex-direction: row;
+    align-items: center;
+  }
+}

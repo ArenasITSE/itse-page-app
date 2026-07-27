@@ -1,0 +1,54 @@
+<nav
+  class="navbar navbar-expand-md navbar-light bg-white quick-bar"
+  aria-label="Accesos rápidos">
+  <div class="container-fluid quick-bar__inner">
+    <form class="d-flex quick-bar__search" role="search" (submit)="onSearch($event)">
+      <label class="visually-hidden" for="quick-bar-search">Buscar</label>
+      <input
+        id="quick-bar-search"
+        class="form-control form-control-sm"
+        type="search"
+        name="buscar"
+        placeholder="Buscar"
+        autocomplete="off"
+        required />
+    </form>
+
+    <!-- Móvil: colapsa enlaces (mismo patrón que tecnm.mx) -->
+    <button
+      class="navbar-toggler quick-bar__toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#quickBarNav"
+      aria-controls="quickBarNav"
+      aria-expanded="false"
+      aria-label="Abrir Correo y Moodle">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse quick-bar__collapse" id="quickBarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="https://outlook.office.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            (click)="onQuickLinkClick()">
+            Correo Institucional
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [href]="moodleUrl"
+            target="_blank"
+            rel="noopener noreferrer"
+            (click)="onQuickLinkClick()">
+            Moodle
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

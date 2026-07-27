@@ -1,0 +1,25 @@
+<div
+  class="sticky-container"
+  aria-label="Síguenos en redes sociales"
+  [style.top.px]="stickyTopPx()">
+
+  <ul class="sticky">
+    @for (link of links; track link.platform) {
+      <li>
+        <a
+          [class]="'sticky-icon sticky-icon--' + link.iconModifier"
+          [href]="link.href"
+          target="_blank"
+          rel="noopener noreferrer"
+          [attr.aria-label]="link.ariaLabel">
+          <i [class]="link.iconClass" aria-hidden="true"></i>
+        </a>
+        <p>
+          <a [href]="link.href" target="_blank" rel="noopener noreferrer">
+            {{ link.labelLines[0] }}<br>{{ link.labelLines[1] }}
+          </a>
+        </p>
+      </li>
+    }
+  </ul>
+</div>

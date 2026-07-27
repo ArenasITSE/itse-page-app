@@ -1,193 +1,63 @@
-/* Barra superior (franja roja) — siempre visible */
-.barra-gobmx {
-  background-color: #6a0f2b;
-  height: 90px;
-  position: sticky;
-  top: 0;
-  z-index: 10000;
+/* Tras clic en una opción: ocultar dropdowns aunque el mouse siga encima */
+.menu-bar.menus-force-closed .dropdown-menu {
+  display: none !important;
 }
 
-.logo-gobierno {
-  height: 50px;
-  margin-left: 290px;
-}
-
-/* Contenedor principal */
-.contenedorGobierno {
-  background-color: #ffffff;
-  border-bottom: 1px solid #e9e8e8;
-}
-
-/* Logos */
-.logo-educacion {
-  height: 55px;
-}
-
-.logo-tecnm {
-  height: 90px;
-}
-
-.logo-escudo {
-  margin-left: 15px;
-  height: 65px;
-  margin-top: 10px;
-}
-
-.logo-seduc {
-  height: 55px;
-  margin-left: 15px;
-  margin-top: 10px;
-}
-
-
-.tools-right img{
-  width:26px;
-  height:26px;
-  cursor:pointer;
-  transition:.2s;
-}
-
-.tools-right img.activo{
-  transform: scale(1.15);
-  border: 2px solid #1f3c88;
-  border-radius: 50%;
-}
-
-.tools-right img:hover{
-  transform:scale(1.15);
-}
-
-.tools-right span{
-  cursor:pointer;
-  user-select:none;
-  transition:.2s;
-}
-
-.tools-right span:hover{
-  color:#1f3c88;
-  transform:scale(1.1);
-}
-
-
-.tool-icon{
-  width:26px;
-  height:26px;
-  cursor:pointer;
-  transition:all .2s ease;
-}
-
-.tool-icon:hover{
-  transform:scale(1.15);
-}
-
-.tool-icon.activo{
-  border:2px solid #1f3c88;
-  border-radius:50%;
-  transform:scale(1.15);
-}
-
-.dark-btn,
-.font-btn{
-  border:none;
-  background:transparent;
-  cursor:pointer;
-  color:#1f3c88;
-  font-weight:600;
-  transition:.2s;
-}
-
-.dark-btn:hover,
-.font-btn:hover{
-  transform:scale(1.15);
-  color:#6a0f2b;
-}
-
-.dark-btn{
-  font-size:16px;
-}
-
-.font-btn{
-  font-size:15px;
-}
-
-body.dark-mode{
-  background:#1e1e1e;
-  color:white;
-}
-
-body.dark-mode .contenedorGobierno{
-  background:#2b2b2b;
-}
-
-body.dark-mode .menu-bar{
-  background:#111827;
-}
-.logo-itse {
-  height: 50px;
-  margin-left: 15px;
-  margin-top: 10px;
-}
-
-
-.header-logos{
-  display:flex;
-  align-items:center;
-  width:100%;
-  padding:15px 20px;
-}
-
-.logos-left{
-  display:flex;
-  align-items:center;
-  gap:25px;
-}
-
-/* 🔥 Empuja los iconos totalmente a la derecha */
-.tools-right{
-  margin-left:auto;
-  display:flex;
-  align-items:center;
-  gap:10px;
-}
-
-.tools-right img{
-  width:26px;
-  height:26px;
-  cursor:pointer;
-}
-
-.tools-right span{
-  cursor:pointer;
-  font-size:16px;
-}
-
-
-/* Iconos */
-.icon {
-  font-size: 18px;
-  color: #1f3c88;
-  cursor: pointer;
-}
-
-/* 🔵 ===== MENÚ AZUL ===== */
+/* 🔵 ===== MENÚ AZUL (apariencia visual tipo TecNM; tipografía propia) =====
+   Dimensiones calibradas para igualar el tamaño VISUAL de tecnm.mx:
+   allá Roboto 16px / altura 40px ≈ aquí Source Sans 3 16px / altura 40px.
+*/
 .menu-bar {
-  background-color: #243f6b;
+  --menu-blue: #1b396a;
+  --menu-hover-text: #f9f9f9;
+  --menu-font: Roboto, "Open Sans", sans-serif;
+  --menu-bar-size: 16px;
+  --menu-item-size: 0.9rem; /* ~14.4px, como los dropdown de tecnm.mx */
+  --menu-bar-height: 40px;
+
+  font-family: var(--menu-font);
+  background-color: var(--menu-blue);
+  background-clip: border-box;
   position: sticky;
-  top: 90px; /* debajo de la franja roja (90px) */
+  /*
+    Bajo barra roja (~80px) + franja blanca rápida (40px).
+    Solape 1px con la franja rápida para evitar hueco subpíxel.
+  */
+  top: 118px;
   z-index: 9999;
-  min-height: 40px;
+  height: var(--menu-bar-height);
+  min-height: var(--menu-bar-height);
+  max-height: var(--menu-bar-height);
+  margin: 0;
+  border: 0 !important;
+  border-radius: 0;
   padding: 0 !important;
   display: flex;
   align-items: center;
+  /*
+    Línea blanca fantasmal (~1–2px) bajo el menú al scroll:
+    sellamos borde inferior (y superior) con el mismo azul.
+  */
+  box-shadow:
+    0 -1px 0 0 var(--menu-blue),
+    0 2px 0 0 var(--menu-blue);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.menu-bar .nav-link,
+.menu-bar .dropdown-item,
+.menu-bar .dropdown-menu,
+.menu-bar .submenu-item,
+.menu-bar .submenu-item a,
+.menu-bar .submenu-item .text {
+  font-family: var(--menu-font);
 }
 
 .menu-bar .container-fluid,
 .menu-bar .container {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  min-height: 40px;
+  padding: 0 !important;
+  min-height: var(--menu-bar-height);
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -195,7 +65,6 @@ body.dark-mode .menu-bar{
   width: 100%;
 }
 
-/* Aire izquierdo igual a TecNM (pl-5 = 3rem = 48px) */
 .menu-bar .navbar-collapse {
   padding-left: 3rem;
 }
@@ -204,17 +73,48 @@ body.dark-mode .menu-bar{
   align-items: center;
 }
 
-/* Toggler visible sobre fondo azul */
+/*
+  Hamburguesa azul — redimensión táctica (solo móvil).
+  No poner display aquí: en desktop Bootstrap (.navbar-expand-lg)
+  la oculta; un display:inline-flex global la volvía a mostrar.
+*/
 .menu-bar .navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.7);
-  margin: 4px 12px;
-  padding: 4px 8px;
+  --bs-navbar-toggler-padding-y: 0.2rem;
+  --bs-navbar-toggler-padding-x: 0.4rem;
+  --bs-navbar-toggler-font-size: 0.9rem;
+  --bs-navbar-toggler-border-radius: 0.2rem;
+  --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.55);
+
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 28px;
+  min-height: 28px;
+  max-height: 28px;
+  margin: 0 0.5rem 0 0.65rem;
+  padding: 0.2rem 0.4rem;
+  line-height: 1;
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.55);
 }
 
-/* Desktop: barra fija a 40px como TecNM */
+.menu-bar .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.22);
+}
+
+.menu-bar .navbar-toggler-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
 @media (min-width: 992px) {
+  /* Refuerzo: nunca hamburguesa en escritorio */
+  .menu-bar .navbar-toggler {
+    display: none;
+  }
+
   .menu-bar {
-    height: 40px;
+    height: var(--menu-bar-height);
   }
 
   .menu-bar .container-fluid,
@@ -222,27 +122,97 @@ body.dark-mode .menu-bar{
     height: 100%;
     flex-wrap: nowrap;
   }
+
+  /* Desktop: abrir por hover (equivalente a bootnavbar) */
+  .menu-bar .nav-item.dropdown {
+    position: relative;
+  }
+
+  /* Puente invisible para no perder el hover en el espacio de separación */
+  .menu-bar .nav-item.dropdown::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 0.2rem;
+  }
+
+  .menu-bar .nav-item.dropdown:hover > .dropdown-menu,
+  .menu-bar .nav-item.dropdown:focus-within > .dropdown-menu {
+    display: block;
+    animation: menuFadeIn 0.18s ease;
+  }
+
+  .menu-bar .dropdown-submenu:hover > .dropdown-menu,
+  .menu-bar .dropdown-submenu:focus-within > .dropdown-menu {
+    display: block;
+    animation: menuFadeIn 0.18s ease;
+  }
+
+  .menu-bar .nav-item.dropdown > .dropdown-menu,
+  .menu-bar .nav-item.dropdown > .dropdown-menu[data-bs-popper] {
+    top: 100% !important;
+    margin-top: 2px !important;
+  }
 }
 
-/* Móvil/tablet: la barra crece al abrir el menú */
+@keyframes menuFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @media (max-width: 991.98px) {
+  /*
+    Móvil: la franja azul se queda en 40px.
+    El despliegue es panel absoluto (no crece el sticky ni se solapa
+    con redes / carrusel como bloque enorme).
+  */
+  .menu-bar .navbar-toggler {
+    display: inline-flex;
+  }
+
   .menu-bar {
-    height: auto;
-    align-items: flex-start;
+    height: var(--menu-bar-height);
+    min-height: var(--menu-bar-height);
+    max-height: var(--menu-bar-height);
+    align-items: center;
+    overflow: visible;
   }
 
   .menu-bar .container-fluid,
   .menu-bar .container {
-    height: auto;
-    align-items: flex-start;
+    position: relative;
+    min-height: var(--menu-bar-height);
+    height: 100%;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 
-  .menu-bar .navbar-collapse {
+  .menu-bar:has(.navbar-collapse.show),
+  .menu-bar:has(.navbar-collapse.collapsing) {
+    z-index: 10002; /* por encima de franja blanca rápida y redes */
+  }
+
+  .menu-bar .navbar-collapse.collapse.show,
+  .menu-bar .navbar-collapse.collapsing {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 0.75rem;
-    background-color: #243f6b;
+    max-height: min(70vh, calc(100dvh - 160px));
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 0.35rem 1rem 0.85rem;
+    background-color: var(--menu-blue);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.28);
+    z-index: 1;
   }
 
   .menu-bar .navbar-nav {
@@ -254,215 +224,194 @@ body.dark-mode .menu-bar{
     width: 100%;
   }
 
-  /* En móvil el logo TecNM no debe reservar espacio vacío */
   .menu-bar .logo-tecnm-nav {
     display: none;
   }
 }
 
-/* Links del menú */
+/* Cursor mano en toda la interacción del menú (incl. toggles sin href) */
+.menu-bar a,
+.menu-bar .nav-link,
+.menu-bar .dropdown-item,
+.menu-bar .dropdown-toggle,
+.menu-bar .submenu-item,
+.menu-bar .submenu-item a,
+.menu-bar .bi-house-fill {
+  cursor: pointer !important;
+}
+
+/*
+  Links de la barra:
+  reposo: #f9f9f9; hover: blanco semitransparente
+*/
 .menu-bar .nav-link {
-  color: white;
-  font-weight: 500;
-  font-size: 14px;
-  padding: 8px 12px !important;
+  color: #f9f9f9 !important;
+  font-weight: 700;
+  font-size: var(--menu-bar-size);
+  padding: 8px !important;
   line-height: 1.2;
   display: flex;
   align-items: center;
+  text-decoration: none !important;
+  background-color: transparent;
+  transition: color 0.15s ease;
 }
 
-.menu-bar .nav-link:hover {
-  color: #dcdcdc;
+.menu-bar .nav-link:hover,
+.menu-bar .nav-link:focus,
+.menu-bar .nav-item:hover > .nav-link,
+.menu-bar .nav-item:focus-within > .nav-link {
+  color: rgba(255, 255, 255, 0.5) !important;
+  background-color: transparent;
+  text-decoration: none !important;
 }
 
-/* Dropdown principal */
-.dropdown-menu {
-  border-radius: 6px;
-  border: none;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.menu-bar .nav-link .bi-house-fill {
+  color: inherit;
+  transition: color 0.15s ease;
 }
 
-/* Items dropdown */
-.dropdown-item {
-  font-size: 14px;
-  padding: 8px 15px;
+/* Desplegables: panel separado como tecnm.mx (borde + radio; no pegados a la barra) */
+.menu-bar .dropdown-menu {
+  --menu-hover-bg: #007bff; /* azul claro del hover en tecnm.mx / bootnavbar */
+
+  background-color: var(--menu-blue);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: none;
+  padding: 0.5rem 0;
+  min-width: max-content;
+  width: max-content;
+  max-width: min(92vw, 420px);
+  /* Separación visible respecto a la barra (efecto flotante) */
+  margin-top: 2px !important;
+  pointer-events: auto;
 }
 
-.dropdown-item:hover {
-  background-color: #f1f1f1;
+.menu-bar .dropdown-item {
+  color: #fff;
+  font-size: var(--menu-item-size);
+  font-weight: 400;
+  padding: 0.35em 1.5em !important;
+  background-color: transparent;
+  white-space: nowrap;
+  text-decoration: none !important;
+  opacity: 1;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
-/* 🧩 SUBMENÚ (nivel 2) */
-.dropdown-submenu {
+/* Hover de ítems: fondo azul claro (bootnavbar en tecnm.mx) */
+.menu-bar .dropdown-menu > li:hover,
+.menu-bar .dropdown-menu > li:hover > .dropdown-item,
+.menu-bar .dropdown-item:hover,
+.menu-bar .dropdown-item:focus,
+.menu-bar .dropdown-item:active {
+  background-color: var(--menu-hover-bg) !important;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.menu-bar .dropdown-toggle::after {
+  margin-left: 0.4em;
+  vertical-align: 0.15em;
+}
+
+/* Submenús laterales */
+.menu-bar .dropdown-submenu {
   position: relative;
 }
 
-/* Submenu oculto */
-.dropdown-submenu .dropdown-menu {
+.menu-bar .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
-  margin-left: 2px;
+  margin-left: 0;
+  margin-top: 0;
   display: none;
+  position: absolute;
+  background-color: var(--menu-blue);
 }
 
-/* Mostrar submenu */
-.dropdown-submenu:hover .dropdown-menu {
+.menu-bar .dropdown-submenu:hover > .dropdown-menu {
   display: block;
 }
 
-/* Flechita derecha */
-.dropdown-submenu > a::after {
-  content: "▶";
-  float: right;
-  font-size: 10px;
-  margin-top: 5px;
+.menu-bar .dropdown-menu > li {
+  position: relative;
 }
 
-/* 🏠 Icono home */
+.menu-bar .dropdown-submenu > a.dropdown-item::after {
+  content: "▸";
+  float: right;
+  border: 0;
+  font-size: 0.75em;
+  margin-top: 0.2em;
+  margin-left: 0.75em;
+  color: #fff;
+}
+
+/* Nivel anidado (Misceláneos / Transparencia, etc.) */
+.menu-bar .submenu-programas {
+  background-color: var(--menu-blue);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  min-width: max-content;
+  width: max-content;
+  max-width: min(92vw, 420px);
+  padding: 0.5rem 0;
+  margin-left: 0.25rem;
+  box-shadow: none;
+}
+
+.menu-bar .submenu-programas .submenu-item {
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  border-bottom: 0;
+  transition: background-color 0.15s ease;
+}
+
+.menu-bar .submenu-programas .submenu-item a,
+.menu-bar .submenu-programas .submenu-item .text {
+  display: block;
+  color: #fff !important;
+  font-size: var(--menu-item-size);
+  line-height: 1.35;
+  padding: 0.35em 1.5em;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  white-space: nowrap;
+  opacity: 1;
+  background-color: transparent;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.menu-bar .submenu-programas .submenu-item:hover,
+.menu-bar .submenu-programas .submenu-item a:hover {
+  background-color: var(--menu-hover-bg, #007bff) !important;
+  color: #fff !important;
+  transform: none;
+}
+
+/* Icono home: misma proporción que el texto del menú */
 .menu-bar .bi-house-fill {
-  font-size: 16px;
+  font-size: var(--menu-bar-size);
   margin-bottom: 0;
   line-height: 1;
 }
 
 /* Logo TecNM en barra azul */
 .logo-tecnm-nav {
-  height: 40px;
+  height: var(--menu-bar-height);
   width: auto;
   margin-left: 0;
   margin-right: 8px;
   object-fit: contain;
-  visibility: hidden; /* oculta pero conserva el espacio */
+  visibility: hidden;
   opacity: 0;
-  transition: opacity .25s ease;
+  transition: opacity 0.25s ease;
 }
 
 .logo-tecnm-nav--visible {
   visibility: visible;
   opacity: 1;
-}
-
-/* 📱 Responsive */
-@media (max-width: 768px) {
-  .logo-gobierno {
-    margin-left: 0;
-  }
-
-  .logo-tecnm {
-    height: 60px;
-  }
-
-  .logo-educacion {
-    height: 45px;
-  }
-
-  .flag {
-    height: 25px;
-    width: 25px;
-  }
-
-
-
-/* Hover dropdown */
-.menu-bar .dropdown-item:hover {
-  background-color: #1b2f52;
-  color: #fff;
-}
-
-/* Submenu mismo color */
-.menu-bar .dropdown-submenu .dropdown-menu {
-  background-color: #243f6b;
-}
-
-/* Flechita blanca */
-.dropdown-submenu > a::after {
-  color: white;
-}
-}
-
-/* Contenedor padre */
-.dropdown-submenu {
-  position: relative;
-}
-
-/* Submenu */
-.dropdown-submenu .dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-left: -1px;
-  display: none;
-  position: absolute;
-}
-
-/* 🔥 CLAVE: mantener abierto */
-.dropdown-submenu:hover > .dropdown-menu {
-  display: block;
-}
-
-/* 🔥 CLAVE EXTRA: evita que se cierre al pasar */
-.dropdown-menu > li {
-  position: relative;
-}
-
-/* Mejora interacción */
-.dropdown-menu {
-  pointer-events: auto;
-}
-
-/* Submenu nivel 3 más estilizado */
-.submenu-programas {
-  background-color: #f2f2f2;
-  border: 1px solid #cfcfcf;
-  border-radius: 8px;
-  min-width: 280px;
-  padding: 8px 0;
-  margin-left: 8px; /* separación del menú padre */
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-}
-
-/* Items */
-.submenu-programas .submenu-item {
-  padding: 10px 18px;
-  margin: 2px 6px; /* 🔥 separación entre items */
-  border-radius: 6px;
-  transition: all 0.2s ease;
-}
-
-/* Texto */
-.submenu-programas .submenu-item .text {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-/* Hover elegante */
-.submenu-programas .submenu-item:hover {
-  background-color: #e4e4e4;
-  transform: translateX(3px); /* efecto suave */
-}
-
-/* Separación entre bloques (opcional) */
-.submenu-programas .submenu-item:not(:last-child) {
-  border-bottom: 1px solid #eaeaea;
-}
-
-/* Franja blanca: se oculta por completo al hacer scroll */
-.franja-blanca {
-  overflow: hidden;
-  transition: max-height .35s ease, opacity .25s ease;
-  max-height: 220px;
-}
-
-.ocultar-franja-blanca {
-  max-height: 0;
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* Franja azul: siempre visible, debajo de la roja */
-.menu-bar {
-  position: sticky;
-  top: 90px;
-  z-index: 9999;
-  background: #243f6b;
-  min-height: 40px;
 }

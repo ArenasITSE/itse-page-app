@@ -1,288 +1,191 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  HostListener,
+  OnInit,
+  ViewChild,
+  signal
+} from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Nav_gob_barComponent } from './nav_gob_bar/nav_gob_bar.component';
+import { Nav_tools_barComponent } from './nav_tools_bar/nav_tools_bar.component';
+import { Nav_quick_barComponent } from './nav_quick_bar/nav_quick_bar.component';
 
 @Component({
   selector: 'app-nav_bar',
   standalone: true,
-  imports: [RouterModule],
+  imports: [
+    RouterModule,
+    Nav_gob_barComponent,
+    Nav_tools_barComponent,
+    Nav_quick_barComponent
+  ],
   templateUrl: './nav_bar.component.html',
   styleUrls: ['./nav_bar.component.css']
 })
 export class Nav_barComponent implements OnInit {
+  /** Controla si se muestra la franja blanca (logos/herramientas). */
+  readonly mostrarHeader = signal(true);
 
-  // ==========================
-  // CONFIGURACIÓN
-  // ==========================
+  /**
+   * Desktop (≥992px): menús por hover (estilo TecNM/bootnavbar).
+   * Móvil: Bootstrap dropdown por clic.
+   */
+  readonly isDesktopMenu = signal(false);
 
-  fontSize = 100;
+  /**
+   * Tras elegir una opción, fuerza el cierre del dropdown aunque el mouse
+   * siga encima (en SPA no hay reload y :hover dejaría el menú abierto).
+   */
+  readonly menusForceClosed = signal(false);
 
-  idiomaActual: 'es' | 'en' | 'zh' = 'es';
-
-  // 🔥 Controla si se muestra la franja blanca (logos/herramientas)
-  mostrarHeader = true;
+  @ViewChild('menuNav') private menuNav?: ElementRef<HTMLElement>;
+  @ViewChild('menuToggler') private menuToggler?: ElementRef<HTMLElement>;
 
   private lastScrollY = 0;
   private scrollLock = false;
-  /** Evita reabrir el header tras el salto de scroll al colapsarlo */
-  private puedeMostrarHeader = false;
+  private scrollLockTimer: ReturnType<typeof setTimeout> | null = null;
 
-  constructor() { }
+  private readonly hideHeaderY = 120;
+  private readonly showHeaderY = 40;
+  private readonly topForceShowY = 12;
 
   ngOnInit(): void {
-
-    // ==========================
-    // IDIOMA
-    // ==========================
-
-    const idiomaGuardado = localStorage.getItem('idioma');
-
-    if (
-      idiomaGuardado === 'es' ||
-      idiomaGuardado === 'en' ||
-      idiomaGuardado === 'zh'
-    ) {
-
-      this.idiomaActual = idiomaGuardado;
-
-      setTimeout(() => {
-        this.cambiarIdioma(this.idiomaActual);
-      }, 2000);
-    }
-
-    // ==========================
-    // FUENTE
-    // ==========================
-
-    const fuenteGuardada = localStorage.getItem('fontSize');
-
-    if (fuenteGuardada) {
-
-      this.fontSize = Number(fuenteGuardada);
-
-      document.documentElement.style.fontSize =
-        `${this.fontSize}%`;
-    }
-
-    // ==========================
-    // MODO OSCURO
-    // ==========================
-
-    const darkMode = localStorage.getItem('darkMode');
-
-    if (darkMode === 'true') {
-
-      document.body.classList.add('dark-mode');
-    }
+    this.syncMenuMode();
   }
 
-  // ==========================
-  // SCROLL
-  // ==========================
+  @HostListener('window:resize')
+  onWindowResize(): void {
+    this.syncMenuMode();
+  }
 
-  @HostListener('window:scroll', [])
+  @HostListener('window:scroll')
   onScroll(): void {
     if (this.scrollLock) {
       return;
     }
+    this.updateHeaderVisibility();
+  }
 
-    const y = window.scrollY;
-    const bajando = y > this.lastScrollY;
+  /**
+   * - En el tope siempre se muestra la franja blanca.
+   * - Al bajar past hideHeaderY se oculta.
+   * - Al subir cerca del tope se vuelve a mostrar.
+   */
+  private updateHeaderVisibility(): void {
+    const y = window.scrollY || document.documentElement.scrollTop || 0;
+    const bajando = y > this.lastScrollY + 1;
+    const subiendo = y < this.lastScrollY - 1;
 
-    // Ocultar encabezado (y mostrar logo TecNM) al bajar
-    if (this.mostrarHeader && y > 120) {
-      this.scrollLock = true;
-      this.mostrarHeader = false;
-      this.puedeMostrarHeader = false;
+    if (y <= this.topForceShowY) {
+      if (!this.mostrarHeader()) {
+        this.mostrarHeader.set(true);
+      }
       this.lastScrollY = y;
-
-      // Ignora el salto de scroll que provoca max-height: 0
-      setTimeout(() => {
-        this.lastScrollY = window.scrollY;
-        this.scrollLock = false;
-      }, 450);
       return;
     }
 
-    // Con el header oculto: solo permitir mostrarlo de nuevo
-    // después de que el usuario siga bajando un poco
-    if (!this.mostrarHeader) {
-      if (!this.puedeMostrarHeader && y > 80) {
-        this.puedeMostrarHeader = true;
-      }
+    if (this.mostrarHeader() && bajando && y > this.hideHeaderY) {
+      this.mostrarHeader.set(false);
+      this.lastScrollY = y;
+      this.lockScrollBriefly();
+      return;
+    }
 
-      if (this.puedeMostrarHeader && !bajando && y < 40) {
-        this.scrollLock = true;
-        this.mostrarHeader = true;
-        this.puedeMostrarHeader = false;
-        this.lastScrollY = y;
-
-        setTimeout(() => {
-          this.lastScrollY = window.scrollY;
-          this.scrollLock = false;
-        }, 450);
-        return;
-      }
+    if (!this.mostrarHeader() && subiendo && y < this.showHeaderY) {
+      this.mostrarHeader.set(true);
+      this.lastScrollY = y;
+      this.lockScrollBriefly();
+      return;
     }
 
     this.lastScrollY = y;
   }
 
-  // ==========================
-  // FUENTE
-  // ==========================
+  private lockScrollBriefly(ms = 320): void {
+    this.scrollLock = true;
 
-  aumentarFuente(): void {
-
-    this.fontSize += 10;
-
-    document.documentElement.style.fontSize =
-      `${this.fontSize}%`;
-
-    localStorage.setItem(
-      'fontSize',
-      this.fontSize.toString()
-    );
-  }
-
-  disminuirFuente(): void {
-
-    if (this.fontSize > 70) {
-
-      this.fontSize -= 10;
-
-      document.documentElement.style.fontSize =
-        `${this.fontSize}%`;
-
-      localStorage.setItem(
-        'fontSize',
-        this.fontSize.toString()
-      );
-    }
-  }
-
-  normalFuente(): void {
-
-    this.fontSize = 100;
-
-    document.documentElement.style.fontSize = '100%';
-
-    localStorage.setItem(
-      'fontSize',
-      '100'
-    );
-  }
-
-  // ==========================
-  // MODO OSCURO
-  // ==========================
-
-  toggleDarkMode(): void {
-
-    document.body.classList.toggle('dark-mode');
-
-    localStorage.setItem(
-      'darkMode',
-      document.body.classList.contains('dark-mode').toString()
-    );
-  }
-
-  // ==========================
-  // IDIOMAS
-  // ==========================
-
-  cambiarIdioma(idioma: 'es' | 'en' | 'zh'): void {
-
-    this.idiomaActual = idioma;
-
-    localStorage.setItem('idioma', idioma);
-
-    const combo =
-      document.querySelector('.goog-te-combo') as HTMLSelectElement;
-
-    if (!combo) {
-
-      console.warn(
-        'Google Translate aún no está disponible'
-      );
-
-      return;
+    if (this.scrollLockTimer !== null) {
+      clearTimeout(this.scrollLockTimer);
     }
 
-    switch (idioma) {
+    this.scrollLockTimer = setTimeout(() => {
+      this.scrollLock = false;
+      this.scrollLockTimer = null;
+      this.lastScrollY = window.scrollY || document.documentElement.scrollTop || 0;
 
-      case 'es':
-        combo.value = 'es';
-        break;
-
-      case 'en':
-        combo.value = 'en';
-        break;
-
-      case 'zh':
-        combo.value = 'zh-CN';
-        break;
-    }
-
-    combo.dispatchEvent(
-      new Event('change')
-    );
-
-    console.log(
-      'Idioma seleccionado:',
-      idioma
-    );
+      if (this.lastScrollY <= this.topForceShowY) {
+        this.mostrarHeader.set(true);
+      }
+    }, ms);
   }
 
-  // ==========================
-  // ENLACES RÁPIDOS
-  // ==========================
-
-  abrirCorreo(): void {
-
-    window.open(
-      'https://outlook.office.com/',
-      '_blank'
-    );
+  private syncMenuMode(): void {
+    this.isDesktopMenu.set(window.innerWidth >= 992);
   }
 
-  abrirCalendario(): void {
-
-    window.open(
-      'assets/anexos/CALENDARIO ESC-ITSE 20262027-08052026-0724.pdf',
-      '_blank'
-    );
+  /** Al salir del menú, permite volver a abrir por hover. */
+  onMenuBarMouseLeave(): void {
+    this.menusForceClosed.set(false);
   }
 
-  // ==========================
-  // MENÚ MÓVIL
-  // ==========================
-
-  /** Cierra el menú colapsable tras elegir un enlace (solo en pantallas angostas). */
+  /**
+   * Cierra dropdowns (desktop) y el collapse (móvil) al elegir una opción.
+   * Antes solo cerraba en móvil: en desktop el toggler está oculto y se
+   * hacía return temprano, por eso el menú quedaba abierto.
+   */
   onMenuNavClick(event: Event): void {
-    const toggler = document.querySelector(
-      '.menu-bar .navbar-toggler'
-    ) as HTMLElement | null;
-
-    // En desktop el toggler está oculto: no hay nada que contraer
-    if (!toggler || getComputedStyle(toggler).display === 'none') {
-      return;
-    }
-
     const target = event.target as HTMLElement | null;
     const link = target?.closest('a');
     if (!link) {
       return;
     }
 
-    // No cerrar al abrir un dropdown de primer nivel
-    if (
-      link.classList.contains('nav-link') &&
-      link.classList.contains('dropdown-toggle')
-    ) {
+    // No cerrar al abrir/cerrar un toggle sin navegación (Misceláneos, etc.)
+    if (this.isMenuToggleOnly(link)) {
       return;
     }
 
-    const menu = document.getElementById('menuNav');
+    this.closeAllMenus();
+  }
+
+  private isMenuToggleOnly(link: HTMLElement): boolean {
+    // Títulos de primer nivel (Programas, Servicios, etc.)
+    if (link.classList.contains('nav-link') && link.classList.contains('dropdown-toggle')) {
+      return true;
+    }
+
+    // Submenús (Misceláneos / Transparencia): toggle sin destino real
+    if (link.classList.contains('dropdown-item') && link.classList.contains('dropdown-toggle')) {
+      const href = (link.getAttribute('href') || '').trim();
+      // Sin href o solo "#": no navega. Si Angular/routerLink puso "#/ruta", sí navega.
+      return !href || href === '#';
+    }
+
+    return false;
+  }
+
+  private closeAllMenus(): void {
+    this.menusForceClosed.set(true);
+    (document.activeElement as HTMLElement | null)?.blur();
+
+    const root = this.menuNav?.nativeElement;
+    if (root) {
+      root.querySelectorAll('.dropdown-menu.show').forEach((el) => {
+        el.classList.remove('show');
+      });
+      root.querySelectorAll('[aria-expanded="true"]').forEach((el) => {
+        el.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    // Collapse móvil
+    const toggler = this.menuToggler?.nativeElement ?? null;
+    if (!toggler || getComputedStyle(toggler).display === 'none') {
+      return;
+    }
+
+    const menu = this.menuNav?.nativeElement;
     if (!menu?.classList.contains('show')) {
       return;
     }
@@ -304,5 +207,4 @@ export class Nav_barComponent implements OnInit {
       toggler.click();
     }
   }
-
 }

@@ -1,15 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --font-sans: 'Source Sans 3', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html,
 body {
-  font-family: 'Noto Sans', sans-serif;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*
   Botón de accesibilidad gob.mx:
-  siempre dentro de la franja roja (altura 90px), a la izquierda.
+  centrado verticalmente en la franja roja (altura 80px), a la izquierda.
 */
 #accessibility {
   position: fixed !important;
-  top: 18px !important;
+  top: 21px !important;
   left: 12px !important;
   right: auto !important;
   bottom: auto !important;
@@ -20,4 +27,26 @@ body {
   display: inline-flex !important;
   align-items: center;
   justify-content: center;
+}
+
+/* Modo oscuro — estilos globales (body no entra en encapsulation de componentes) */
+body.dark-mode {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode .contenedorGobierno {
+  background: #2b2b2b;
+}
+
+body.dark-mode .menu-bar {
+  --menu-blue: #111827;
+  background: var(--menu-blue);
+}
+
+/* Mientras el menú azul móvil está abierto, ocultar redes flotantes (evita solape). */
+body:has(.menu-bar .navbar-collapse.show) .sticky-container,
+body:has(.menu-bar .navbar-collapse.collapsing) .sticky-container {
+  visibility: hidden;
+  pointer-events: none;
 }

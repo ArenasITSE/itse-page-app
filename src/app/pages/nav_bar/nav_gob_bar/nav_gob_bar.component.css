@@ -1,0 +1,137 @@
+/*
+  Sticky en el :host (no en el hijo): si sticky vive dentro de
+  app-nav_gob_bar (~80px), al hacer scroll el contenedor se va
+  y la barra roja deja de “seguir”. Con sticky en el host,
+  el padre efectivo vuelve a ser app-nav_bar (como antes del split).
+*/
+:host {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+}
+
+/*
+  Barra roja = header gob.mx real de tecnm.mx
+  (nav.navbar.navbar-inverse.navbar-fixed-top en Shadow DOM):
+  altura 80px, logo_blanco.svg, contenido en .container 1170px.
+*/
+.barra-gobmx {
+  --barra-roja-height: 80px;
+  --barra-roja-bg: #611232;
+
+  background-color: var(--barra-roja-bg);
+  height: var(--barra-roja-height);
+  min-height: var(--barra-roja-height);
+  max-height: var(--barra-roja-height);
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  position: relative;
+  font-family: Roboto, "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  /* Evita hueco subpíxel blanco bajo la barra al hacer scroll */
+  box-shadow: 0 2px 0 0 var(--barra-roja-bg);
+}
+
+/* Equivalente al .container de Bootstrap 3 del framework gob.mx */
+.barra-gobmx-container {
+  width: 100%;
+  height: var(--barra-roja-height);
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.barra-gobmx-header {
+  display: block;
+  height: var(--barra-roja-height);
+}
+
+.barra-gobmx .navbar-brand-logo {
+  display: block;
+  float: none;
+  height: var(--barra-roja-height);
+  padding: 0;
+  margin: 0;
+  line-height: 25px;
+}
+
+.barra-gobmx .navbar-brand-logo img {
+  display: block;
+  height: 80px;
+  width: 176px;
+  max-width: none;
+  padding: 10px 5px 10px 10px;
+  margin: 0;
+  box-sizing: border-box;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.barra-gobmx-enlaces {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0 -15px 0 0;
+  padding: 20px 0 0;
+  height: 65px;
+  gap: 0;
+}
+
+.barra-gobmx-enlaces > li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.barra-gobmx-enlaces a {
+  display: block;
+  color: #fff;
+  font-family: Roboto, "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 10px 15px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.barra-gobmx-enlaces a:hover,
+.barra-gobmx-enlaces a:focus {
+  color: #fff;
+  background-color: transparent;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.barra-gobmx-enlaces .bi-search {
+  font-size: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .barra-gobmx-container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .barra-gobmx-container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .barra-gobmx-container {
+    width: 1170px;
+  }
+}

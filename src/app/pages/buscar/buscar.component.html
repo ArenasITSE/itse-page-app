@@ -1,0 +1,42 @@
+<section class="buscar-page container py-4">
+  <h1 class="h3 text-primary-emphasis mb-3">Buscar</h1>
+
+  @if (query()) {
+    <p class="text-secondary mb-3">
+      Buscar: <strong>{{ query() }}</strong>
+      <span class="ms-2">Resultados: {{ results().length }}</span>
+    </p>
+  } @else {
+    <p class="text-secondary mb-3">
+      Escribe un término en el campo <em>Buscar</em> del menú superior.
+    </p>
+  }
+
+  @if (query() && results().length === 0) {
+    <div class="alert alert-light border" role="status">
+      No se encontraron páginas para “{{ query() }}”.
+    </div>
+  }
+
+  <div class="list-group list-group-flush">
+    @for (hit of results(); track hit.route) {
+      @if (isExternal(hit.route)) {
+        <a
+          class="list-group-item list-group-item-action px-0 py-3"
+          [href]="hit.route"
+          target="_blank"
+          rel="noopener noreferrer">
+          <h2 class="h5 mb-1">{{ hit.title }}</h2>
+          <p class="mb-0 text-secondary small">{{ hit.description }}</p>
+        </a>
+      } @else {
+        <a
+          class="list-group-item list-group-item-action px-0 py-3"
+          [routerLink]="hit.route">
+          <h2 class="h5 mb-1">{{ hit.title }}</h2>
+          <p class="mb-0 text-secondary small">{{ hit.description }}</p>
+        </a>
+      }
+    }
+  </div>
+</section>

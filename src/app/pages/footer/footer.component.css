@@ -1,65 +1,451 @@
-/* 🔵 Parte superior */
-.footer-top {
-  background-color: #243f6b;
+/* =========================================================
+   🔵 LÍNEA AZUL INFERIOR — como #footer2-7 de tecnm.mx
+   ========================================================= */
+.linea-azul-inferior {
+  background-color: #1b396a;
+  color: #fff;
+  font-family: Roboto, "Open Sans", sans-serif;
+  font-size: 16px;
+  padding: 60px 0 10px;
+  text-align: left;
+}
+
+/* ----- Sección superior: dirección / enlaces / ubicación ----- */
+.linea-azul-inferior-seccion-superior {
+  width: 100%;
+}
+
+.linea-azul-inferior .media-container-row.content {
+  display: flex;
+  flex-wrap: nowrap; /* mismo nivel: info | enlaces | mapa (como tecnm.mx) */
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1400px;
+  gap: 0;
+}
+
+.linea-azul-inferior .col-azul {
+  box-sizing: border-box;
+  padding: 0 15px 20px;
+  min-width: 0;
+}
+
+/* Proporciones tipo col-md-3 + col-md-3 + resto (tecnm.mx) */
+.linea-azul-inferior .col-azul--info {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.linea-azul-inferior .col-azul--enlaces {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.linea-azul-inferior .col-azul--ubicacion {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
+
+.linea-azul-inferior .mbr-text {
+  color: #fff;
+  font-size: 1.1rem; /* ~17.6px como display-7 de tecnm */
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.linea-azul-inferior .mbr-text strong {
+  font-weight: 700;
   color: #fff;
 }
 
-.footer-top h5 {
-  font-weight: 600;
-  font-size: 25px;
-}
-
-.footer-top p {
-  margin-bottom: 5px;
-  font-size: 17px;
-}
-
-/* 🔴 Parte inferior */
-.footer-bottom {
-  background-color: #6a0f2b;
-  color: #fff;
-}
-
-.footer-bottom h5 {
-  font-weight: 600;
-  font-size:30px;
-}
-
-.footer-bottom ul li {
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-.footer-bottom a {
+.linea-azul-inferior .mbr-text a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer-bottom a:hover {
+.linea-azul-inferior .mbr-text a:hover {
+  color: #fff;
   text-decoration: underline;
 }
 
-.logo-footer {
-  height: 60px;
+.linea-azul-inferior .footer-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 }
 
-/* Redes */
-.footer-bottom i {
-  cursor: pointer;
+.linea-azul-inferior .footer-dato {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
 }
 
-/* Número */
-.numero {
-  font-size: 28px;
-  font-weight: bold;
+.linea-azul-inferior .footer-dato > .bi {
+  flex: 0 0 auto;
+  margin-top: 3px;
+  font-size: 1.05em;
+  line-height: 1;
+  color: #fff;
 }
 
-.social-icons a {
-  color: white;
+.linea-azul-inferior .footer-dato > span,
+.linea-azul-inferior .footer-dato > a {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* Dirección en 2 líneas (salto controlado en HTML) */
+.linea-azul-inferior .footer-direccion {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 1.4;
+}
+
+.linea-azul-inferior .footer-dir-linea {
+  display: block;
+}
+
+/* Portal de Obligaciones… preferir una sola línea */
+.linea-azul-inferior .footer-link-nowrap {
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.linea-azul-inferior .ubicacion-mapa {
+  display: block;
+  width: 100%;
+  height: 400px; /* igual a itescam.edu.mx/tecnm */
+  border: 0;
+  background: #0f2448;
+}
+
+/* ----- Sección inferior: copyright / aviso / actualización ----- */
+.linea-azul-inferior-seccion-inferior {
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.linea-azul-inferior .footer-lower-hr {
+  border: 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.15);
+  margin: 16px auto;
+  opacity: 1;
+  width: 100%;
+}
+
+.linea-azul-inferior .footer-lower-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 15px 20px;
+  text-align: center;
+}
+
+.linea-azul-inferior .copyright {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  text-align: center !important;
+  color: #fff;
+}
+
+.linea-azul-inferior .copyright .mbr-text,
+.linea-azul-inferior .copyright p {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center !important;
+  margin: 0 auto;
+}
+
+.linea-azul-inferior .copyright a,
+.linea-azul-inferior .copyright span {
+  display: inline;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center !important;
+}
+
+.linea-azul-inferior .footer-aviso-fecha {
+  line-height: 1.35;
+}
+
+.linea-azul-inferior .copyright .text-white,
+.linea-azul-inferior .copyright a {
+  color: #fff;
   text-decoration: none;
-  transition: color .2s ease;
 }
 
-.social-icons a:hover {
-  color: #d9d9d9;
+.linea-azul-inferior .copyright a:hover .text-white,
+.linea-azul-inferior .copyright a:hover {
+  text-decoration: underline;
+}
+
+.linea-azul-inferior .footer-instituto-lema {
+  line-height: 1.35;
+}
+
+.linea-azul-inferior .footer-instituto-lema strong {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px; /* +2px respecto al texto base (16px) */
+}
+
+.linea-azul-inferior .footer-lema {
+  font-style: italic;
+  font-weight: 300;
+}
+
+@media (max-width: 991px) {
+  .linea-azul-inferior .media-container-row.content {
+    flex-wrap: wrap;
+  }
+
+  .linea-azul-inferior .col-azul--info,
+  .linea-azul-inferior .col-azul--enlaces {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+
+  .linea-azul-inferior .col-azul--ubicacion {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .linea-azul-inferior .footer-link-nowrap {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 767px) {
+  .linea-azul-inferior {
+    padding: 40px 0 10px;
+  }
+
+  .linea-azul-inferior .col-azul--info,
+  .linea-azul-inferior .col-azul--enlaces,
+  .linea-azul-inferior .col-azul--ubicacion {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .linea-azul-inferior .ubicacion-mapa {
+    height: 300px;
+  }
+}
+
+/* =========================================================
+   🔴 FOOTER INFERIOR — footer.main-footer de gob.mx / tecnm.mx
+   ========================================================= */
+.main-footer {
+  background-color: #611232;
+  color: #fff;
+  min-height: 56px;
+  padding: 0;
+  text-align: left;
+  font-family: Roboto, "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.main-footer-inner {
+  width: 100%;
+}
+
+/* .container Bootstrap 3 */
+.main-footer-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .main-footer-container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main-footer-container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-footer-container {
+    width: 1170px;
+  }
+}
+
+.bottom-buffer-footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+  padding: 0 0 32px;
+}
+
+.logo-footer-col,
+.main-footer-col {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.logo-footer-col {
+  padding: 10px;
+}
+
+.main-footer .logo_footer {
+  display: block;
+  height: 80px;
+  width: 176px;
+  max-width: 100%;
+  padding: 10px 5px 10px 10px;
+  margin: 0;
+  box-sizing: border-box;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.main-footer h5 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 12.5px 0 18px;
+  line-height: 1.3;
+}
+
+.main-footer p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 0 12px;
+}
+
+.main-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.main-footer .nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-footer .nav-list > li {
+  margin: 8px 0 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.main-footer .nav-list > li:first-child {
+  margin-top: 0;
+}
+
+.main-footer .nav-list a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* Denuncia — subrayado como .link-a > a en gob.mx */
+.main-footer h5.link-a {
+  margin-bottom: 18px;
+}
+
+.main-footer .footer-denuncia {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff !important;
+  text-decoration: underline !important;
+}
+
+.social-media-label {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0 0 1px;
+}
+
+.main-footer .social-media {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.main-footer .social-media > li {
+  display: inline-block;
+  margin: 0 2px;
+  padding: 0;
+  line-height: 0;
+}
+
+.main-footer .social-media > li:first-child {
+  margin-left: 0;
+}
+
+.main-footer .social-media img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.main-footer .social-media a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.logo-079-wrap {
+  margin-top: 4px;
+}
+
+.main-footer .logo-079 {
+  display: block;
+  width: 100%;
+  max-width: 258px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .logo-footer-col,
+  .main-footer-col {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .main-footer .logo_footer {
+    margin: 0 auto;
+  }
+
+  .logo-footer-col {
+    text-align: center;
+  }
 }

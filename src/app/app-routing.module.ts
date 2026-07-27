@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-// componentes de programas educativos 
+// componentes de programas educativos
 import { Contador_pubComponent } from './pages/programas_educativos/contador_pub/contador_pub.component';
 import { Ing_animacionComponent } from './pages/programas_educativos/ing_animacion/ing_animacion.component';
 import { Ing_energias_renoComponent } from './pages/programas_educativos/ing_energias_reno/ing_energias_reno.component';
@@ -19,9 +19,9 @@ import { Nav_barComponent } from './pages/nav_bar/nav_bar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { Page_mantenimientoComponent } from './pages/page_mantenimiento/page_mantenimiento.component';
+import { BuscarComponent } from './pages/buscar/buscar.component';
 
 // componentes de Itsescarcega
- 
 import { ConvocatoriaComponent } from './pages/ITSESCARCEGA/convocatoria/convocatoria.component';
 import { DirectorioComponent } from './pages/ITSESCARCEGA/directorio/directorio.component';
 import { HistoriaComponent } from './pages/ITSESCARCEGA/historia/historia.component';
@@ -29,27 +29,24 @@ import { Manual_lineComponent } from './pages/ITSESCARCEGA/manual_line/manual_li
 import { NormativaComponent } from './pages/ITSESCARCEGA/normativa/normativa.component';
 import { OrganigramaComponent } from './pages/ITSESCARCEGA/organigrama/organigrama.component';
 
-//componentes plataforma
+// componentes plataforma
 import { SiacebComponent } from './pages/plataforma/siaceb/siaceb.component';
 import { Sistema_mantenimientoComponent } from './pages/plataforma/sistema_mantenimiento/sistema_mantenimiento.component';
 import { TutoriasComponent } from './pages/plataforma/tutorias/tutorias.component';
 import { InactivaComponent } from './pages/plataforma/inactiva/inactiva.component';
 
-// componentes servicios 
-
+// componentes servicios
 import { Centro_computoComponent } from './pages/servicios/centro_computo/centro_computo.component';
 import { Centro_informacionComponent } from './pages/servicios/centro_informacion/centro_informacion.component';
 import { Recursos_financierosComponent } from './pages/servicios/recursos_financieros/recursos_financieros.component';
 import { Servicios_escolaresComponent } from './pages/servicios/servicios_escolares/servicios_escolares.component';
 
-// compontes sistemas de gestion
-
+// componentes sistemas de gestion
 import { BuzonComponent } from './pages/sistema_gestion/buzon/buzon.component';
 import { Protecion_civilComponent } from './pages/sistema_gestion/protecion_civil/protecion_civil.component';
 import { Quejas_denunciasComponent } from './pages/sistema_gestion/quejas_denuncias/quejas_denuncias.component';
 import { Sistema_ges_igualdadComponent } from './pages/sistema_gestion/sistema_ges_igualdad/sistema_ges_igualdad.component';
 import { Sistema_ges_integralComponent } from './pages/sistema_gestion/sistema_ges_integral/sistema_ges_integral.component';
-
 
 // rutas gestion institucional MISCELANEO
 import { ArchivoComponent } from './pages/gestion_institucional/Miscelaneo/archivo/archivo.component';
@@ -61,27 +58,20 @@ import { AccesibilidadComponent } from './pages/gestion_institucional/Miscelaneo
 // rutas trasparencia institucional
 import { Trasparencia_institucionalComponent } from './pages/gestion_institucional/trasparencia/trasparencia_institucional/trasparencia_institucional.component';
 import { Aviso_privacidadComponent } from './pages/gestion_institucional/trasparencia/aviso_privacidad/aviso_privacidad.component';
-import { IndexTransparenciaComponent} from './pages/gestion_institucional/trasparencia/index_trasparencia/index_trasparencia.component';
-import { Informes_trasparenciaComponent} from './pages/gestion_institucional/trasparencia/informes_trasparencia/informes_trasparencia.component';
+import { IndexTransparenciaComponent } from './pages/gestion_institucional/trasparencia/index_trasparencia/index_trasparencia.component';
+import { Informes_trasparenciaComponent } from './pages/gestion_institucional/trasparencia/informes_trasparencia/informes_trasparencia.component';
 import { CIIEComponent } from './pages/gestion_institucional/trasparencia/CIIE/CIIE.component';
 import { Indicadores_ciaComponent } from './pages/gestion_institucional/trasparencia/indicadores_cia/indicadores_cia.component';
-import { PlaneacionComponent} from './pages/gestion_institucional/planeacion/planeacion.component';
+import { PlaneacionComponent } from './pages/gestion_institucional/planeacion/planeacion.component';
 import { ContactenosComponent } from './pages/gestion_institucional/contactenos/contactenos.component';
 import { RendicioncuentasComponent } from './pages/gestion_institucional/rendicioncuentas/rendicioncuentas.component';
-import { Comite_eticaComponent} from './pages/gestion_institucional/comite_etica/comite_etica.component';
-
-// Comite de etica
-
+import { Comite_eticaComponent } from './pages/gestion_institucional/comite_etica/comite_etica.component';
 
 // vinculacion
 import { VinculacionComponent } from './pages/gestion_institucional/vinculacion/vinculacion.component';
 
-
 export const routes: Routes = [
-
-
   { path: '', redirectTo: 'Inicio', pathMatch: 'full' },
-
 
   {
     path: 'programas-educativos',
@@ -102,7 +92,6 @@ export const routes: Routes = [
     ]
   },
 
-
   {
     path: 'ITSESCARCEGA',
     children: [
@@ -118,66 +107,61 @@ export const routes: Routes = [
   {
     path: 'Plataforma',
     children: [
-        {path: 'siaceb', component: SiacebComponent},
-        {path: 'sistema-mantenimiento', component: Sistema_mantenimientoComponent},
-        {path: 'tutorias', component: TutoriasComponent},
-        {path: 'inactiva', component: InactivaComponent}
-
+      { path: 'siaceb', component: SiacebComponent },
+      { path: 'sistema-mantenimiento', component: Sistema_mantenimientoComponent },
+      { path: 'tutorias', component: TutoriasComponent },
+      { path: 'inactiva', component: InactivaComponent }
     ]
   },
-    {
+
+  {
     path: 'Servicios',
     children: [
-        {path: 'centro-computo', component: Centro_computoComponent},
-        {path: 'centro-informacion', component: Centro_informacionComponent},
-        {path: 'recursos-financieros', component: Recursos_financierosComponent},
-        {path: 'servicios-escolares', component: Servicios_escolaresComponent}
-
+      { path: 'centro-computo', component: Centro_computoComponent },
+      { path: 'centro-informacion', component: Centro_informacionComponent },
+      { path: 'recursos-financieros', component: Recursos_financierosComponent },
+      { path: 'servicios-escolares', component: Servicios_escolaresComponent }
     ]
   },
-    {
+
+  {
     path: 'sistema-gestion',
     children: [
-        {path: 'buzon', component: BuzonComponent},
-        {path: 'proteccion-civil', component: Protecion_civilComponent},
-        {path: 'quejas-denuncias', component: Quejas_denunciasComponent},
-        {path: 'sistema-ges-igualdad', component: Sistema_ges_igualdadComponent},
-        {path: 'sistema-ges-integral', component: Sistema_ges_integralComponent}
-
+      { path: 'buzon', component: BuzonComponent },
+      { path: 'proteccion-civil', component: Protecion_civilComponent },
+      { path: 'quejas-denuncias', component: Quejas_denunciasComponent },
+      { path: 'sistema-ges-igualdad', component: Sistema_ges_igualdadComponent },
+      { path: 'sistema-ges-integral', component: Sistema_ges_integralComponent }
     ]
   },
 
   {
     path: 'gestion_institucional',
     children: [
-      {path: 'archivo', component: ArchivoComponent},
-      {path: 'contabilidad-institucional', component: Contabilidad_institucionalComponent},
-      {path: 'cs-s247-prodep', component: CS_S247_PRODEPComponent},
-      {path: 'cs-ppu006', component: CS_PpU006Component},
-      {path: 'accesibilidad', component: AccesibilidadComponent},
-      {path: 'vinculacion', component: VinculacionComponent},
-      {path: 'trasparencia-institucional', component: Trasparencia_institucionalComponent},
-      {path: 'index-trasparencia', component: IndexTransparenciaComponent},
-      {path: 'aviso-privacidad', component: Aviso_privacidadComponent},
-      {path: 'informes-trasparencia', component: Informes_trasparenciaComponent},
-      {path: 'ciie', component: CIIEComponent},
-      {path: 'indicadores-cia', component: Indicadores_ciaComponent},
-      {path: 'planeacion', component: PlaneacionComponent},
-      {path: 'contactenos', component: ContactenosComponent},
-      {path: 'rendicion-cuentas', component: RendicioncuentasComponent},
-      {path: 'comite-etica', component: Comite_eticaComponent}
-    
-
+      { path: 'archivo', component: ArchivoComponent },
+      { path: 'contabilidad-institucional', component: Contabilidad_institucionalComponent },
+      { path: 'cs-s247-prodep', component: CS_S247_PRODEPComponent },
+      { path: 'cs-ppu006', component: CS_PpU006Component },
+      { path: 'accesibilidad', component: AccesibilidadComponent },
+      { path: 'vinculacion', component: VinculacionComponent },
+      { path: 'trasparencia-institucional', component: Trasparencia_institucionalComponent },
+      { path: 'index-trasparencia', component: IndexTransparenciaComponent },
+      { path: 'aviso-privacidad', component: Aviso_privacidadComponent },
+      { path: 'informes-trasparencia', component: Informes_trasparenciaComponent },
+      { path: 'ciie', component: CIIEComponent },
+      { path: 'indicadores-cia', component: Indicadores_ciaComponent },
+      { path: 'planeacion', component: PlaneacionComponent },
+      { path: 'contactenos', component: ContactenosComponent },
+      { path: 'rendicion-cuentas', component: RendicioncuentasComponent },
+      { path: 'comite-etica', component: Comite_eticaComponent }
     ]
-
   },
 
   { path: 'Inicio', component: HomeComponent },
+  { path: 'buscar', component: BuscarComponent },
   { path: 'nav-bar', component: Nav_barComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'mantenimiento', component: Page_mantenimientoComponent },
-  
 
   { path: '**', redirectTo: 'mantenimiento' }
-
 ];

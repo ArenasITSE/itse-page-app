@@ -1,118 +1,243 @@
-<!-- 🔵 FOOTER SUPERIOR -->
-<div class="footer-top container-fluid py-4">
+<!--
+  🔵 LÍNEA AZUL INFERIOR (como #footer2-7 de tecnm.mx)
+  Dividida en: sección superior + sección inferior
+-->
+<section class="linea-azul-inferior" id="linea-azul-inferior">
 
-  <div class="row">
+  <!-- ========== SECCIÓN SUPERIOR ========== -->
+  <div class="linea-azul-inferior-seccion-superior">
+    <div class="media-container-row content mbr-white">
 
-    <!-- Dirección -->
-    <div class="col-md-4">
-      <h5>Dirección</h5>
-      <p>
-        85 SN Unidad Esfuerzo y Trabajo 1, 85 SN, Unidad Esfuerzo y Trabajo 1, <br> 24350 Escárcega, Camp.
-      </p>
+      <!-- Dirección / Contacto -->
+      <div class="col-azul col-azul--info">
+        <p class="mbr-text">
+          <strong>Dirección</strong>
+          <br><br>
+          <span class="footer-dato">
+            <i class="bi bi-geo-alt-fill" aria-hidden="true"></i>
+            <span class="footer-direccion">
+              <span class="footer-dir-linea">85 SN Unidad Esfuerzo y Trabajo 1</span>
+              <span class="footer-dir-linea">24350 Escárcega, Camp.</span>
+            </span>
+          </span>
+          <br><br><br>
+          <strong>Contacto</strong>
+          <br><br>
+          <span class="footer-contacto">
+            <span class="footer-dato">
+              <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+              <a href="mailto:contacto@tecnm.mx">Email: contacto@tecnm.mx</a>
+            </span>
+            <span class="footer-dato">
+              <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+              <a href="tel:+525536002500">Conmutador: 55 36002500</a>
+            </span>
+          </span>
+        </p>
+      </div>
 
-      <h5>Contacto</h5>
-      <p>
-        Email: contacto@tecnm.mx <br>
-        Conmutador: 55 36002500
-      </p>
+      <!-- Enlaces -->
+      <div class="col-azul col-azul--enlaces">
+        <p class="mbr-text">
+          <strong>Enlaces</strong>
+          <br><br>
+          <a
+            class="footer-link-nowrap"
+            href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/faces/view/consultaPublica.xhtml#inicio"
+            target="_blank"
+            rel="noopener noreferrer">
+            Portal de Obligaciones de Transparencia
+          </a>
+          <br>
+          <a
+            href="http://inicio.ifai.org.mx/SitePages/ifai.aspx"
+            target="_blank"
+            rel="noopener noreferrer">
+            INAI
+          </a>
+          <br>
+          <a routerLink="/sistema-gestion/buzon">Buzón de Sugerencias</a>
+        </p>
+      </div>
+
+      <!-- Ubicación / mapa — satélite con TecNM Campus Escárcega + Parque Ecoturístico Jaguar -->
+      <div class="col-azul col-azul--ubicacion">
+        <iframe
+          src="https://www.google.com/maps?saddr=TECNM+-+Campus+Esc%C3%A1rcega&daddr=Parque+Ecotur%C3%ADstico+Jaguar,+Esc%C3%A1rcega&hl=es&t=k&z=17&output=embed"
+          class="ubicacion-mapa"
+          width="100%"
+          height="400"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          title="TECNM Campus Escárcega y Parque Ecoturístico Jaguar — vista satélite">
+        </iframe>
+      </div>
+
     </div>
-
-    <!-- Enlaces -->
-    <div class="col-md-4">
-      <h5>Enlaces</h5>
-      <p><a href="https://portaltransparencia.gob.mx/buscador/search/search.do?method=begin" target="_blank">Portal de Obligaciones de Transparencia</a></p>
-      <p>INAI</p>
-      <p>Buzón de Sugerencias</p>
-
-    
-    </div>
-
-    <!-- Mapa -->
-    <div class="col-md-4">
-    <iframe
-  src="https://www.google.com/maps?q=TECNM+Campus+Esc%C3%A1rcega&z=17&output=embed"
-  width="100%"
-  height="350"
-  style="border:0;"
-  loading="lazy">
-</iframe>
-    </div>
-
   </div>
 
-  <!-- Aviso -->
-  <div class="text-center mt-3">
-    <p class="mb-0">Aviso de Privacidad</p>
-    <small>Última actualización: 15/01/2025</small>
+  <!-- ========== SECCIÓN INFERIOR ========== -->
+  <div class="linea-azul-inferior-seccion-inferior footer-lower">
+    <div class="media-container-row">
+      <div class="col-sm-12">
+        <hr class="footer-lower-hr">
+      </div>
+    </div>
+
+    <div class="media-container-row mbr-white footer-lower-copy">
+      <div class="copyright">
+        <p class="mbr-text mbr-fonts-style">
+          © Copyright 2026 ITSE / TecNM Campus Escárcega — Todos los Derechos Reservados
+        </p>
+        <br>
+        <p class="mbr-text mbr-fonts-style footer-aviso-fecha">
+          <a routerLink="/gestion_institucional/aviso-privacidad">
+            <span class="text-white">Aviso de Privacidad</span>
+          </a><br>Última actualización: 15/01/2025
+        </p>
+        <br>
+        <p class="mbr-text mbr-fonts-style footer-instituto-lema">
+          <strong>Instituto Tecnológico Superior de Escárcega | Campeche, México © 2026</strong><br>
+          <span class="footer-lema">&ldquo;Excelencia en Educación Tecnológica, Por la Superación del Sur y la Grandeza de Campeche&rdquo;</span>
+        </p>
+      </div>
+    </div>
   </div>
 
-</div>
+</section>
 
-<!-- 🔴 FOOTER INFERIOR -->
-<div class="footer-bottom container-fluid py-4">
+<!-- 🔴 FOOTER GOB.MX — igual a footer.main-footer de tecnm.mx -->
+<footer class="main-footer">
+  <div class="main-footer-inner">
+    <div class="main-footer-container">
+      <div class="bottom-buffer-footer row">
 
-  <div class="row align-items-center">
+        <!-- Logo -->
+        <div class="col-12 col-sm-3 logo-footer-col">
+          <a href="https://www.gob.mx/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="assets/footer/logo_blanco.svg"
+              alt="logo gobierno de méxico"
+              class="logo_footer">
+          </a>
+        </div>
 
-    <!-- Logo -->
-    <div class="col-md-3 text-center">
-      <img src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" class="logo-footer"
-        alt="Gobierno de México">
-    </div>
+        <!-- Enlaces -->
+        <div class="col-12 col-sm-3 main-footer-col">
+          <h5>Enlaces</h5>
+          <ul class="nav-list">
+            <li>
+              <a href="https://data.buengobierno.gob.mx/databuengobierno" target="_blank" rel="noopener noreferrer" title="Enlace abre en ventana nueva">
+                Datos abiertos de la SABG
+              </a>
+            </li>
+            <li>
+              <a href="http://www.ordenjuridico.gob.mx/" target="_blank" rel="noopener noreferrer" title="Enlace abre en ventana nueva">
+                Marco Jurídico
+              </a>
+            </li>
+            <li>
+              <a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/faces/view/consultaPublica.xhtml#inicio" target="_blank" rel="noopener noreferrer" title="Enlace abre en ventana nueva">
+                Plataforma Nacional de Transparencia
+              </a>
+            </li>
+            <li>
+              <a href="https://transparencia.gob.mx/" target="_blank" rel="noopener noreferrer" title="Enlace abre en ventana nueva">
+                Transparencia para el pueblo
+              </a>
+            </li>
+            <li>
+              <a href="https://alertadores.buengobierno.gob.mx/" target="_blank" rel="noopener noreferrer" title="Enlace abre en ventana nueva">
+                Alerta
+              </a>
+            </li>
+          </ul>
+        </div>
 
-    <!-- Enlaces -->
-    <div class="col-md-3">
-      <h5>Enlaces</h5>
-      <ul class="list-unstyled">
-        <li><a href="https://data.buengobierno.gob.mx/databuengobierno" target="_blank" rel="noopener noreferrer">Datos abiertos de la SABG</a></li>
-        <li><a href="http://www.ordenjuridico.gob.mx/" target="_blank" rel="noopener noreferrer">Marco Jurídico</a></li>
-        <li><a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/faces/view/consultaPublica.xhtml#inicio" target="_blank" rel="noopener noreferrer">Plataforma Nacional de Transparencia</a></li>
-        <li><a href="https://transparencia.gob.mx/home.html" target="_blank" rel="noopener noreferrer">Transparencia para el pueblo</a></li>
-        <li><a href="https://alertadores.buengobierno.gob.mx/" target="_blank" rel="noopener noreferrer">Alerta</a></li>
-      </ul>
-    </div>
+        <!-- ¿Qué es gob.mx? -->
+        <div class="col-12 col-sm-3 main-footer-col">
+          <h5>¿Qué es gob.mx?</h5>
+          <p>
+            Es el portal único de trámites, información y participación ciudadana.
+            <a href="https://www.gob.mx/que-es-gobmx" target="_blank" rel="noopener noreferrer">Leer más</a>
+          </p>
+          <ul class="nav-list">
+            <li>
+              <a href="https://datos.gob.mx/" target="_blank" rel="noopener noreferrer">Portal de datos abiertos</a>
+            </li>
+            <li>
+              <a href="https://www.gob.mx/accesibilidad" target="_blank" rel="noopener noreferrer">Declaración de accesibilidad</a>
+            </li>
+            <li>
+              <a href="https://www.gob.mx/terminos" target="_blank" rel="noopener noreferrer">Términos y Condiciones</a>
+            </li>
+          </ul>
+        </div>
 
-    <!-- gob.mx -->
-    <div class="col-md-3">
-      <h5>¿Qué es gob.mx?</h5>
-      <p>
-        Es el portal único de trámites, información y participación ciudadana.
-       
-      </p>
-
-      <p>Portal de datos abiertos</p>
-      <p>Declaración de accesibilidad</p>
-      <p>Términos y Condiciones</p>
-    </div>
-
-    <!-- Redes -->
-    <div class="col-md-3">
-      <h5>Denuncia contra servidores públicos</h5>
-
-      <h6 class="mt-3">Síguenos en</h6>
-      <div class="d-flex gap-3 fs-4 social-icons">
-            <a href="https://www.facebook.com/gobmexico" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-facebook"></i>
+        <!-- Denuncia / redes / 079 -->
+        <div class="col-12 col-sm-3 main-footer-col main-footer-col--social">
+          <h5 class="link-a">
+            <a
+              class="footer-denuncia"
+              href="https://sidec.buengobierno.gob.mx/#/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Denuncia contra servidores públicos
             </a>
+          </h5>
 
-            <a href="https://twitter.com/GobiernoMX" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-twitter-x"></i>
-            </a>
+          <span class="social-media-label">Síguenos en</span>
+          <ul class="list-inline social-media">
+            <li>
+              <a
+                href="https://www.facebook.com/gobmexico"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="enlace a facebook abre en una nueva ventana">
+                <img src="assets/footer/facebook.png" alt="Facebook" width="24" height="24">
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/GobiernoMX"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Enlace a twitter abre en una nueva ventana">
+                <img src="assets/footer/twitter.png" alt="Twitter" width="25" height="25">
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/gobmexico/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Enlace a instagram abre en una nueva ventana">
+                <img src="assets/footer/instagram.png" alt="Instagram" width="24" height="24">
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@gobiernodemexico"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Enlace a youtube abre en una nueva ventana">
+                <img src="assets/footer/youtube.png" alt="Youtube" width="24" height="24">
+              </a>
+            </li>
+          </ul>
 
-            <a href="https://www.instagram.com/gobmexico/" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-instagram"></i>
-            </a>
-
-            <a href="https://www.youtube.com/@gobiernodemexico" target="_blank" rel="noopener noreferrer">
-              <i class="bi bi-youtube"></i>
+          <div class="logo-079-wrap">
+            <a href="tel:+079" target="_blank" rel="noopener noreferrer">
+              <img
+                src="assets/footer/079.png"
+                alt="079 Comunícate, estamos para ayudarte"
+                class="logo-079">
             </a>
           </div>
+        </div>
 
-      <a href="tel:+079" class="mt-3 d-flex align-items-center gap-2 text-white text-decoration-none">
-        <span class="numero">079</span>
-        <small>Comunícate, estamos para ayudarte</small>
-      </a>
+      </div>
     </div>
-
   </div>
-
-</div>
+</footer>

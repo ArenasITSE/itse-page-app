@@ -1,0 +1,8 @@
+.buscar-page {
+  max-width: 900px;
+}
+
+.buscar-page .list-group-item-action:hover h2 {
+  color: #1b396a;
+  text-decoration: underline;
+}

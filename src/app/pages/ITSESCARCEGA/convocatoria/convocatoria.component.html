@@ -1,9 +1,233 @@
+<section class="convocatoria container py-4">
 
-<div class="iframe-container">
+  <header class="mb-4 text-center text-md-start">
+    <p class="text-uppercase small fw-semibold text-secondary mb-1 letter-space">
+      Instituto Tecnológico Superior de Escárcega
+    </p>
+    <h1 class="h3 fw-bold text-uppercase mb-2">Convocatorias</h1>
+    <p class="text-secondary mb-3">
+      Concursos, estímulos y programas institucionales vigentes e históricos.
+      Última actualización: {{ ultimaActualizacion }}.
+    </p>
 
-    <iframe
-        src="https://convocatoriasitse.netlify.app/"
-        frameborder="0">
-    </iframe>
+    <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+      <span class="stat-pill">
+        <i class="bi bi-megaphone-fill" aria-hidden="true"></i>
+        {{ stats.total }} publicaciones
+      </span>
+      <span class="stat-pill is-open">
+        <i class="bi bi-unlock-fill" aria-hidden="true"></i>
+        {{ stats.abiertas }} abiertas
+      </span>
+      <span class="stat-pill is-closed">
+        <i class="bi bi-lock-fill" aria-hidden="true"></i>
+        {{ stats.cerradas }} cerradas
+      </span>
+    </div>
+  </header>
 
-</div>
+  <div class="row g-3 align-items-stretch mb-4">
+    <div class="col-12 col-lg-7">
+      <label class="visually-hidden" for="convocatoria-buscar">Buscar convocatoria</label>
+      <div class="input-group input-group-lg search-group">
+        <span class="input-group-text bg-white">
+          <i class="bi bi-search" aria-hidden="true"></i>
+        </span>
+        <input
+          id="convocatoria-buscar"
+          type="search"
+          class="form-control"
+          placeholder="Buscar por título, departamento o palabra clave..."
+          [value]="filtro()"
+          (input)="onFiltro($any($event.target).value)"
+          autocomplete="off">
+        <button
+          *ngIf="filtro()"
+          type="button"
+          class="btn btn-outline-secondary"
+          (click)="clearFiltro()"
+          aria-label="Limpiar búsqueda">
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="col-12 col-lg-5">
+      <div class="btn-group w-100 filter-estado" role="group" aria-label="Filtrar por estado">
+        <button
+          type="button"
+          class="btn"
+          [class.btn-primary]="estado() === 'TODAS'"
+          [class.btn-outline-secondary]="estado() !== 'TODAS'"
+          (click)="setEstado('TODAS')">
+          Todas
+        </button>
+        <button
+          type="button"
+          class="btn"
+          [class.btn-success]="estado() === 'ABIERTA'"
+          [class.btn-outline-secondary]="estado() !== 'ABIERTA'"
+          (click)="setEstado('ABIERTA')">
+          Abiertas
+        </button>
+        <button
+          type="button"
+          class="btn"
+          [class.btn-secondary]="estado() === 'CERRADA'"
+          [class.btn-outline-secondary]="estado() !== 'CERRADA'"
+          (click)="setEstado('CERRADA')">
+          Cerradas
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <p class="small text-secondary mb-3" *ngIf="filtro() || estado() !== 'TODAS'">
+    Mostrando {{ filtradas().length }} de {{ stats.total }} convocatorias
+    <span *ngIf="filtro()"> para “{{ filtro() }}”</span>.
+  </p>
+
+  <div class="accordion convocatoria-accordion" *ngIf="filtradas().length; else vacio">
+    <article
+      class="accordion-item convocatoria-item"
+      *ngFor="let item of filtradas(); trackBy: trackById"
+      [class.is-open]="isOpen(item)"
+      [class.is-cerrada]="item.estado === 'CERRADA'">
+
+      <h2 class="accordion-header">
+        <button
+          type="button"
+          class="accordion-button"
+          [class.collapsed]="!isOpen(item)"
+          [attr.aria-expanded]="isOpen(item)"
+          [attr.aria-controls]="'panel-' + item.id"
+          (click)="toggle(item)">
+          <span class="d-flex flex-column flex-md-row align-items-md-center gap-2 w-100 pe-3">
+            <span class="titulo flex-grow-1">{{ item.titulo }}</span>
+            <span
+              class="badge estado-badge align-self-start"
+              [class.bg-success]="item.estado === 'ABIERTA'"
+              [class.bg-secondary]="item.estado === 'CERRADA'">
+              {{ item.estado }}
+            </span>
+          </span>
+        </button>
+      </h2>
+
+      <div
+        class="accordion-collapse"
+        *ngIf="isOpen(item)"
+        [id]="'panel-' + item.id">
+        <div class="accordion-body">
+
+          <div class="row g-3 meta-grid mb-3">
+            <div class="col-12 col-md-4">
+              <div class="meta-card h-100">
+                <span class="meta-label">
+                  <i class="bi bi-calendar3" aria-hidden="true"></i>
+                  Fecha de publicación
+                </span>
+                <span class="meta-value">{{ item.fechaPublicacion }}</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="meta-card h-100">
+                <span class="meta-label">
+                  <i class="bi bi-hourglass-split" aria-hidden="true"></i>
+                  Periodo de recepción
+                </span>
+                <span class="meta-value">{{ item.periodoRecepcion }}</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="meta-card h-100">
+                <span class="meta-label">
+                  <i class="bi bi-building" aria-hidden="true"></i>
+                  Departamento
+                </span>
+                <span class="meta-value">{{ item.departamento }}</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="descripcion mb-4">{{ item.descripcion }}</p>
+
+          <div class="resultado mb-4" *ngIf="item.resultado as res">
+            <h3 class="h6 text-uppercase fw-bold mb-2">
+              <i class="bi bi-trophy me-1" aria-hidden="true"></i>
+              Resultados — {{ res.titulo }}
+            </h3>
+            <p class="mb-3">{{ res.descripcion }}</p>
+
+            <div class="table-responsive mb-3" *ngIf="res.ganadores?.length">
+              <table class="table table-sm table-striped align-middle mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Programa educativo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let g of res.ganadores">
+                    <td>{{ g.nombre }}</td>
+                    <td>{{ g.programa }}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <a
+              *ngIf="res.documento"
+              class="btn btn-outline-primary btn-sm me-2 mb-2"
+              [href]="res.documento.url"
+              target="_blank"
+              rel="noopener noreferrer">
+              <i class="bi bi-file-earmark-pdf" aria-hidden="true"></i>
+              {{ res.documento.label }}
+            </a>
+          </div>
+
+          <div class="documentos">
+            <h3 class="h6 text-uppercase fw-bold mb-2">
+              <i class="bi bi-folder2-open me-1" aria-hidden="true"></i>
+              Documentación técnica
+            </h3>
+            <div class="d-flex flex-wrap gap-2">
+              <a
+                *ngFor="let doc of item.documentos"
+                class="btn btn-primary btn-sm"
+                [href]="doc.url"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i
+                  class="bi"
+                  [class.bi-file-earmark-pdf]="doc.kind !== 'zip'"
+                  [class.bi-file-earmark-zip]="doc.kind === 'zip'"
+                  aria-hidden="true"></i>
+                {{ doc.label }}
+              </a>
+            </div>
+          </div>
+
+          <p class="small text-secondary mt-3 mb-0">
+            Estado de la publicación:
+            <strong [class.text-success]="item.estado === 'ABIERTA'"
+                    [class.text-secondary]="item.estado === 'CERRADA'">
+              {{ item.estado }}
+            </strong>
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <ng-template #vacio>
+    <div class="empty-state text-center py-5 px-3">
+      <i class="bi bi-inbox fs-1 d-block mb-2 text-secondary" aria-hidden="true"></i>
+      <p class="mb-0 text-secondary">
+        No hay convocatorias que coincidan con los filtros actuales.
+      </p>
+    </div>
+  </ng-template>
+
+</section>

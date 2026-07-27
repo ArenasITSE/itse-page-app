@@ -1,12 +1,6 @@
 :host {
   display: block;
-}
 
-/* =========================
-   VARIABLES
-========================= */
-
-:host {
   --primary-color: #1e3a8a;
   --primary-dark: #172554;
   --secondary-color: #2563eb;
@@ -17,215 +11,201 @@
 
   --accent-root: #ffffff;
   --accent-staff: #64748b;
-
   --accent-admin: #ff0000;
   --accent-planeacion: #1900ff;
   --accent-vinculacion: #00eeff;
   --accent-academica: #22c55e;
-
-  display: block;
 }
 
-/* =========================
-   CONTENEDOR GENERAL
-========================= */
-
-.header {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.header h1 {
-  color: var(--primary-color);
-  font-size: 2.2rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-}
-
-.header p {
+.directorio-subtitle {
   color: var(--text-muted);
-  font-size: 1.8rem;
+  font-size: 1.35rem;
   font-weight: 700;
 }
 
-.stats-container {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
-
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
 .stat-card {
-
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-
-  padding: 12px 18px;
-
+  padding: 10px 16px;
   border-radius: 999px;
-
   background: rgba(37, 99, 235, 0.08);
-
   border: 1px solid rgba(37, 99, 235, 0.15);
-
   font-weight: 600;
-
   color: var(--primary-color);
-
-  transition: all .25s ease;
 }
 
-.stat-card:hover {
-
-  transform: translateY(-2px);
-
-  box-shadow:
-    0 4px 12px rgba(0,0,0,.10);
+.search-group {
+  box-shadow: 0 4px 14px rgba(15, 77, 134, 0.08);
+  border-radius: 0.75rem;
+  overflow: hidden;
 }
+
+.search-group .form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+}
+
+/* Leyenda de colores por equipo */
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.legend-item .swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.legend-item.team-admin .swatch { background: var(--accent-admin); }
+.legend-item.team-planeacion .swatch { background: var(--accent-planeacion); }
+.legend-item.team-vinculacion .swatch { background: var(--accent-vinculacion); }
+.legend-item.team-academica .swatch { background: var(--accent-academica); }
 
 /* =========================
-   BUSCADOR
-========================= */
-
-.controls {
-  max-width: 1000px;
-  margin: 0 auto 40px auto;
-  text-align: center;
-}
-
-.search-input {
-  width: 100%;
-  padding: 12px 20px;
-  font-size: 1rem;
-  border: 2px solid var(--border-color);
-  border-radius: 30px;
-  outline: none;
-  transition: all 0.3s ease;
-}
-
-.search-input:focus {
-  border-color: var(--secondary-color);
-}
-
-/* =========================
-   ÁRBOL
+   ÁRBOL (desktop) + conectores
 ========================= */
 
 .tree-container {
+  --tree-line: #475569;
+  --tree-line-w: 3px;
+
   width: 100%;
   overflow-x: auto;
-  overflow-y: hidden;
-  padding: 20px;
-  padding-bottom: 40px;
+  padding: 20px 12px 48px;
 }
 
 .tree {
-  display: table;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   text-align: center;
+  min-width: max-content;
 }
 
-.tree ul {
-  padding-top: 25px;
-  position: relative;
+.vline {
+  display: block;
+  width: var(--tree-line-w);
+  height: 24px;
+  background: var(--tree-line);
+  flex-shrink: 0;
+  border-radius: 1px;
+}
+
+.vline.short {
+  height: 14px;
+}
+
+/* Dirección + División General */
+.top-chain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-chain .node {
+  text-align: center;
+  align-items: center;
+}
+
+.bridge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Fila de subdirecciones con riel horizontal */
+.subs-row {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
-.tree li {
+.subs-row > li {
   list-style: none;
   position: relative;
-  padding: 25px 15px 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 14px;
 }
 
-/* =========================
-   CONECTORES
-========================= */
-
-.tree li::before,
-.tree li::after {
+/* Riel horizontal entre hermanos */
+.subs-row > li::before,
+.subs-row > li::after {
   content: '';
   position: absolute;
   top: 0;
+  height: var(--tree-line-w);
+  background: var(--tree-line);
+  z-index: 0;
+}
+
+.subs-row > li::before {
   right: 50%;
-  border-top: 2px solid var(--text-muted);
-  width: 50%;
-  height: 25px;
-  opacity: 0.4;
+  left: 0;
 }
 
-.tree li::after {
-  right: auto;
+.subs-row > li::after {
   left: 50%;
-  border-left: 2px solid var(--text-muted);
+  right: 0;
 }
 
-.tree li:only-child::after,
-.tree li:only-child::before {
+.subs-row > li:first-child::before {
   display: none;
 }
 
-.tree li:only-child {
-  padding-top: 0;
+.subs-row > li:last-child::after {
+  display: none;
 }
 
-.tree li:first-child::before,
-.tree li:last-child::after {
-  border: 0;
+/* Bajada desde el riel hasta la tarjeta */
+.subs-row > li > .drop {
+  display: block;
+  width: var(--tree-line-w);
+  height: 22px;
+  background: var(--tree-line);
+  position: relative;
+  z-index: 1;
+  border-radius: 1px;
 }
 
-.tree li:last-child::before {
-  border-right: 2px solid var(--text-muted);
-  border-radius: 0 5px 0 0;
-}
-
-.tree li:first-child::after {
-  border-radius: 5px 0 0 0;
-}
-
-.tree ul ul::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  border-left: 2px solid var(--text-muted);
-  width: 0;
-  height: 25px;
-  opacity: 0.4;
+.deps-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* =========================
-   TARJETAS
+   TARJETAS (colores por equipo)
 ========================= */
 
 .node {
   background: var(--card-bg);
   border: 1px solid var(--border-color);
-  padding:16px 16px 16px 16px;
+  padding: 16px;
   border-radius: 12px;
-
   position: relative;
-
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-
   width: 300px;
-  height: 140px;
-
+  min-height: 140px;
   box-sizing: border-box;
-
   box-shadow:
-    0 10px 15px -3px rgba(0,0,0,0.05),
-    0 4px 6px -2px rgba(0,0,0,0.05);
-
+    0 10px 15px -3px rgba(0, 0, 0, 0.05),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
   text-align: left;
   transition: all 0.3s ease;
 }
@@ -236,67 +216,47 @@
 
 .level-dep.admin:hover,
 .sub-admin:hover {
-
-    border-color: var(--accent-admin);
-
-    box-shadow:
-        0 0 0 2px rgba(255,0,0,.15),
-        0 10px 20px rgba(255,0,0,.18);
-
+  border-color: var(--accent-admin);
+  box-shadow:
+    0 0 0 2px rgba(255, 0, 0, 0.15),
+    0 10px 20px rgba(255, 0, 0, 0.18);
 }
 
 .level-dep.planeacion:hover,
 .sub-planeacion:hover {
-
-    border-color: var(--accent-planeacion);
-
-    box-shadow:
-        0 0 0 2px rgba(25,0,255,.15),
-        0 10px 20px rgba(25,0,255,.18);
-
+  border-color: var(--accent-planeacion);
+  box-shadow:
+    0 0 0 2px rgba(25, 0, 255, 0.15),
+    0 10px 20px rgba(25, 0, 255, 0.18);
 }
 
 .level-dep.vinculacion:hover,
 .sub-vinculacion:hover {
-
-    border-color: var(--accent-vinculacion);
-
-    box-shadow:
-        0 0 0 2px rgba(0,238,255,.18),
-        0 10px 20px rgba(0,238,255,.20);
-
+  border-color: var(--accent-vinculacion);
+  box-shadow:
+    0 0 0 2px rgba(0, 238, 255, 0.18),
+    0 10px 20px rgba(0, 238, 255, 0.2);
 }
 
 .level-dep.academica:hover,
 .sub-academica:hover {
-
-    border-color: var(--accent-academica);
-
-    box-shadow:
-        0 0 0 2px rgba(34,197,94,.18),
-        0 10px 20px rgba(34,197,94,.20);
-
+  border-color: var(--accent-academica);
+  box-shadow:
+    0 0 0 2px rgba(34, 197, 94, 0.18),
+    0 10px 20px rgba(34, 197, 94, 0.2);
 }
 
 .level-root:hover {
-
-    box-shadow:
-        0 0 0 2px rgba(30,58,138,.18),
-        0 12px 24px rgba(30,58,138,.25);
-
+  box-shadow:
+    0 0 0 2px rgba(30, 58, 138, 0.18),
+    0 12px 24px rgba(30, 58, 138, 0.25);
 }
 
 .level-staff:hover {
-
-    box-shadow:
-        0 0 0 2px rgba(100,116,139,.15),
-        0 10px 20px rgba(100,116,139,.20);
-
+  box-shadow:
+    0 0 0 2px rgba(100, 116, 139, 0.15),
+    0 10px 20px rgba(100, 116, 139, 0.2);
 }
-
-/* =========================
-   NIVELES
-========================= */
 
 .level-root {
   background: var(--primary-color);
@@ -313,6 +273,17 @@
 .level-staff {
   background: #f1f5f9;
   border: 2px dashed #94a3b8;
+  text-align: center;
+  align-items: center;
+}
+
+.level-staff .dept-title {
+  color: var(--text-muted);
+}
+
+.level-staff .nombre,
+.level-staff .puesto {
+  text-align: center;
 }
 
 .level-sub {
@@ -327,141 +298,56 @@
   color: #bfdbfe;
 }
 
-/* =========================
-   COLORES DE SUBDIRECCIONES
-========================= */
-
-.sub-admin {
-  border-top: 5px solid var(--accent-admin);
-}
-
-.sub-planeacion {
-  border-top: 5px solid var(--accent-planeacion);
-}
-
-.sub-vinculacion {
-  border-top: 5px solid var(--accent-vinculacion);
-}
-
-.sub-academica {
-  border-top: 5px solid var(--accent-academica);
-}
-
-/* =========================
-   DEPARTAMENTOS
-========================= */
+.sub-admin { border-top: 5px solid var(--accent-admin); }
+.sub-planeacion { border-top: 5px solid var(--accent-planeacion); }
+.sub-vinculacion { border-top: 5px solid var(--accent-vinculacion); }
+.sub-academica { border-top: 5px solid var(--accent-academica); }
 
 .level-dep {
   border-left: 5px solid var(--secondary-color);
-  padding-top:18px;
+  padding-top: 18px;
 }
 
-.level-dep.admin {
-  border-left-color: var(--accent-admin);
-}
+.level-dep.admin { border-left-color: var(--accent-admin); }
+.level-dep.planeacion { border-left-color: var(--accent-planeacion); }
+.level-dep.vinculacion { border-left-color: var(--accent-vinculacion); }
+.level-dep.academica { border-left-color: var(--accent-academica); }
 
-.level-dep.planeacion {
-  border-left-color: var(--accent-planeacion);
-}
-
-.level-dep.vinculacion {
-  border-left-color: var(--accent-vinculacion);
-}
-
-.level-dep.academica {
-  border-left-color: var(--accent-academica);
-}
-
-/* Carpetas de las SUBDIRECCIONES */
-
-.level-sub.sub-admin .folder-btn i{
-    color: var(--accent-admin);
-}
-
-.level-sub.sub-planeacion .folder-btn i{
-    color: var(--accent-planeacion);
-}
-
-.level-sub.sub-vinculacion .folder-btn i{
-    color: var(--accent-vinculacion);
-}
-
-.level-sub.sub-academica .folder-btn i{
-    color: var(--accent-academica);
-}
-
-/* Fondo blanco para las carpetas de las SUBDIRECCIONES */
+.level-sub.sub-admin .folder-btn i { color: var(--accent-admin); }
+.level-sub.sub-planeacion .folder-btn i { color: var(--accent-planeacion); }
+.level-sub.sub-vinculacion .folder-btn i { color: var(--accent-vinculacion); }
+.level-sub.sub-academica .folder-btn i { color: var(--accent-academica); }
 
 .level-sub.sub-admin .folder-btn,
 .level-sub.sub-planeacion .folder-btn,
 .level-sub.sub-vinculacion .folder-btn,
-.level-sub.sub-academica .folder-btn{
-
-    background:rgba(255,255,255,.92);
-
+.level-sub.sub-academica .folder-btn {
+  background: rgba(255, 255, 255, 0.92);
 }
 
-.level-sub.sub-admin .folder-btn{
-    border-color: var(--accent-admin);
-}
+.level-sub.sub-admin .folder-btn { border-color: var(--accent-admin); }
+.level-sub.sub-planeacion .folder-btn { border-color: var(--accent-planeacion); }
+.level-sub.sub-vinculacion .folder-btn { border-color: var(--accent-vinculacion); }
+.level-sub.sub-academica .folder-btn { border-color: var(--accent-academica); }
 
-.level-sub.sub-planeacion .folder-btn{
-    border-color: var(--accent-planeacion);
-}
-
-.level-sub.sub-vinculacion .folder-btn{
-    border-color: var(--accent-vinculacion);
-}
-
-.level-sub.sub-academica .folder-btn{
-    border-color: var(--accent-academica);
-}
-/* =========================
-   TEXTO
-========================= */
-
-.dept-title{
-
-    font-size:.70rem;
-    text-transform:uppercase;
-    font-weight:700;
-    color:var(--text-muted);
-    margin-bottom:4px;
-    letter-spacing:.5px;
-
-    word-break:break-word;
-    line-height:1.25;
-
+.dept-title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+  word-break: break-word;
+  line-height: 1.25;
 }
 
 .level-root .dept-title,
 .level-sub .dept-title {
-  color: rgba(255,255,255,0.7);
-}
-.level-dep .dept-title{
-
-    padding-right:40px;
-
+  color: rgba(255, 255, 255, 0.7);
 }
 
-/*
-.level-root,
-.level-staff{
-
-    padding-right:48px;
-
-} */
-
-/* Dirección General */
-
-.level-root .folder-btn i{
-    color: var(--accent-root);
-}
-
-/* División General */
-
-.level-staff .folder-btn i{
-    color: var(--accent-staff);
+.level-dep .dept-title {
+  padding-right: 40px;
 }
 
 .nombre {
@@ -476,146 +362,103 @@
   color: var(--text-muted);
 }
 
-/* folder */
+.correo {
+  font-size: 0.75rem;
+  color: #93c5fd;
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.correo:hover {
+  text-decoration: underline;
+}
+
+.list-node .correo,
+.level-dep .correo,
+.level-staff .correo {
+  color: var(--secondary-color);
+}
+
 .folder-btn {
-
-    position: absolute;
-
-    width:30px;
-    height:30px;
-
-    top:10px;
-    right:10px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-decoration: none;
-
-    border: 1.5px solid #9ca3af;
-    border-radius: 7px;
-
-    background: transparent;
-
-    transition: all .25s ease;
-
-}
-
-.folder-btn i{
-
-    font-size:16px;
-
-
-    transition:inherit;
-
-}
-
-.level-dep.admin .folder-btn i{
-    color: var(--accent-admin);
-}
-
-.level-dep.planeacion .folder-btn i{
-    color: var(--accent-planeacion);
-}
-
-.level-dep.vinculacion .folder-btn i{
-    color: var(--accent-vinculacion);
-}
-
-.level-dep.academica .folder-btn i{
-    color: var(--accent-academica);
-}
-
-.folder-btn:hover{
-
-    transform: scale(1.08);
-
-    box-shadow: 0 2px 8px rgba(0,0,0,.20);
-
-    border-color: #9ca3af;
-
-}
-
-/* =========================
-   SUBRAMAS
-========================= */
-
-.sub-branch-container {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding-top: 15px;
+  justify-content: center;
   align-items: center;
+  text-decoration: none;
+  border: 1.5px solid #9ca3af;
+  border-radius: 7px;
+  background: transparent;
+  transition: all 0.25s ease;
 }
 
-/* =========================
-   BUSQUEDA
-========================= */
+.folder-btn i {
+  font-size: 16px;
+}
+
+.level-dep.admin .folder-btn i { color: var(--accent-admin); }
+.level-dep.planeacion .folder-btn i { color: var(--accent-planeacion); }
+.level-dep.vinculacion .folder-btn i { color: var(--accent-vinculacion); }
+.level-dep.academica .folder-btn i { color: var(--accent-academica); }
+
+.folder-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
 
 .highlight {
   transform: scale(1.03);
   box-shadow:
-    0 0 0 3px rgba(255,255,255,.8),
-    0 0 15px rgba(0,0,0,.25);
+    0 0 0 3px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(0, 0, 0, 0.25);
   animation: pulse 1.2s infinite;
+  z-index: 2;
 }
 
 @keyframes pulse {
-  0% {
-    transform: scale(1.03);
-  }
-
-  50% {
-    transform: scale(1.05);
-  }
-
-  100% {
-    transform: scale(1.03);
-  }
+  0%, 100% { transform: scale(1.03); }
+  50% { transform: scale(1.05); }
 }
 
 .filtered {
-  opacity: 0.3;
+  opacity: 0.35;
 }
 
 /* =========================
-   RESPONSIVE
+   LISTA (mobile / tablet)
 ========================= */
 
-@media (max-width: 1400px) {
-
-  .tree ul {
-    flex-direction: column;
-    align-items: center;
-    padding-top: 0;
-  }
-
-  .tree li {
-    padding-top: 20px;
-  }
-
-  .tree li::before,
-  .tree li::after,
-  .tree ul ul::before {
-    display: none;
-  }
+.lista-directorio .list-node {
+  width: 100%;
+  max-width: none;
+  min-height: auto;
+  height: auto;
+  display: flex;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
-@media (max-width: 768px) {
+.lista-directorio .list-node:hover {
+  transform: none;
+}
 
-  .header h1 {
-    font-size: 1.5rem;
-  }
+.team-badge {
+  align-self: flex-start;
+  margin-top: 8px;
+  font-size: 0.7rem;
+}
 
-  .node {
-    width: 95%;
-    max-width: 320px;
-    height: auto;
-    min-height: 120px;
-  }
+.badge-admin { background: rgba(255, 0, 0, 0.12); color: #b00000; }
+.badge-planeacion { background: rgba(25, 0, 255, 0.12); color: #1400b8; }
+.badge-vinculacion { background: rgba(0, 180, 200, 0.18); color: #007a88; }
+.badge-academica { background: rgba(34, 197, 94, 0.15); color: #15803d; }
+.badge-root { background: rgba(30, 58, 138, 0.12); color: #1e3a8a; }
+.badge-staff { background: rgba(100, 116, 139, 0.15); color: #475569; }
 
-  .search-input {
-    width: 95%;
+@media (max-width: 991.98px) {
+  .directorio-subtitle {
+    font-size: 1.1rem;
   }
 }

@@ -1,528 +1,397 @@
-<br><br><br>
-<div class="container">
+<section class="centro-computo container py-4">
 
-  <!-- HEADER -->
-  <h2 class="title">DEPARTAMENTO DE CÓMPUTO Y TI</h2>
+  <header class="mb-3">
+    <h1 class="h3 fw-bold text-uppercase mb-1">Departamento de Cómputo y TI</h1>
+    <p class="text-secondary mb-0">
+      Servicios tecnológicos, soporte e infraestructura del ITSE.
+    </p>
+  </header>
 
-  <!-- TABS -->
-  <div class="tabs">
+  <!-- Tabs Bootstrap (controlados por Angular) -->
+  <ul class="nav nav-tabs centro-tabs flex-nowrap overflow-auto" role="tablist">
+    <li class="nav-item" role="presentation" *ngFor="let t of tabs">
+      <button
+        type="button"
+        class="nav-link"
+        [class.active]="tab === t.id"
+        [attr.aria-selected]="tab === t.id"
+        role="tab"
+        (click)="setTab(t.id)">
+        {{ t.label }}
+      </button>
+    </li>
+  </ul>
 
+  <div class="tab-content centro-tab-content border border-top-0 rounded-bottom p-3 p-md-4 bg-white">
 
-    <button (click)="tab = 'principal'" [class.active]="tab === 'principal'">
-      Principal
-    </button>
+    <!-- ================= PRINCIPAL ================= -->
+    <div *ngIf="tab === 'principal'" role="tabpanel" class="tab-pane fade show active">
 
-    <button (click)="tab = 'sistema'" [class.active]="tab === 'sistema'">
-      Sistema de Mantenimiento
-    </button>
-
-    <button (click)="tab = 'comite'" [class.active]="tab === 'comite'">
-      Comité TIC'S
-    </button>
-
-    <button (click)="tab = 'instalaciones'" [class.active]="tab === 'instalaciones'">
-      Instalaciones
-    </button>
-  </div>
-
-  <!-- CONTENIDO -->
-  <div class="content">
-
-
-    <!-- ================= TAB PRINCIPAL ================= -->
-
-    <div *ngIf="tab === 'principal'" class="principal">
-
-      <!-- ================= HERO ================= -->
-
-      <div class="hero-ti">
-
-        <div class="hero-icon">
-          🌐
+      <div class="card border-0 text-white hero-ti mb-4">
+        <div class="card-body p-4 d-flex gap-3 align-items-start">
+          <i class="bi bi-globe2 fs-2 flex-shrink-0" aria-hidden="true"></i>
+          <div>
+            <h2 class="h3 fw-bold mb-2">Conoce nuestras instalaciones</h2>
+            <h3 class="h6 fw-semibold mb-2 opacity-90">
+              Departamento de Cómputo y Tecnologías de la Información
+            </h3>
+            <p class="mb-0 opacity-90">
+              El núcleo tecnológico del ITSE — acceso digital, equipamiento confiable y
+              servicios de red con altos estándares de seguridad y eficiencia.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div class="hero-content">
-
-          <h2>
-            Conoce nuestras instalaciones
-          </h2>
-
-          <h3>
-            Departamento de Cómputo y Tecnologías de la Información
-          </h3>
-
-          <p>
-            El núcleo tecnológico del ITSE — acceso digital, equipamiento confiable y
-            servicios de red con altos estándares de seguridad y eficiencia.
+      <div class="card mb-4 info-ti">
+        <div class="card-body">
+          <p class="mb-3">
+            El Departamento de Cómputo y Tecnologías de la Información es el
+            <strong>núcleo tecnológico</strong> de nuestra institución.
+            Nuestro objetivo es garantizar el acceso a herramientas digitales de vanguardia,
+            mantener la operatividad del equipamiento y asegurar la continuidad de los
+            servicios de red bajo los más altos estándares de seguridad y eficiencia.
           </p>
-
+          <p class="mb-0">
+            Para brindar un servicio óptimo a la comunidad estudiantil, docente y administrativa,
+            <strong>nuestras instalaciones están divididas en cuatro áreas estratégicas:</strong>
+          </p>
         </div>
-
       </div>
 
-      <!-- ================= INFORMACIÓN ================= -->
-
-      <div class="info-ti">
-
-        <p>
-          El Departamento de Cómputo y Tecnologías de la Información es el
-          <strong>núcleo tecnológico</strong> de nuestra institución.
-          Nuestro objetivo es garantizar el acceso a herramientas digitales de vanguardia,
-          mantener la operatividad del equipamiento y asegurar la continuidad de los
-          servicios de red bajo los más altos estándares de seguridad y eficiencia.
-        </p>
-
-        <p>
-          Para brindar un servicio óptimo a la comunidad estudiantil, docente y administrativa,
-          <strong>nuestras instalaciones están divididas en cuatro áreas estratégicas:</strong>
-        </p>
-
+      <div class="card mb-4 overflow-hidden">
+        <div class="card-header text-white espacios-header border-0">
+          <h2 class="h5 mb-0">Espacios del Departamento de Cómputo y Tecnologías de la Información</h2>
+        </div>
+        <div class="card-body">
+          <img
+            class="img-fluid rounded border w-100"
+            src="assets/img_plataformas/croquis_cc.PNG"
+            alt="Plano del Departamento de Cómputo y TI">
+        </div>
       </div>
 
-      <!-- ================= ESPACIOS ================= -->
-
-      <div class="espacios-box">
-
-        <div class="espacios-header">
-
-          <div class="line"></div>
-
-          <h3>
-            Espacios del Departamento de Cómputo y Tecnologías de la Información
-          </h3>
-
+      <div class="row g-3 mb-4">
+        <div class="col-md-6">
+          <div class="card h-100 area-card">
+            <div class="card-header text-white area-header border-0">
+              <i class="bi bi-laptop me-2" aria-hidden="true"></i>
+              Sala de Computadoras
+            </div>
+            <div class="card-body">
+              <h3 class="h6 text-primary fw-bold">El espacio de aprendizaje y desarrollo tecnológico.</h3>
+              <p>
+                Esta área de uso público y académico está diseñada específicamente para la atención
+                directa de nuestros usuarios. Es el entorno ideal para que la comunidad estudiantil
+                desarrolle sus proyectos, y para la impartición de clases prácticas, capacitaciones
+                y talleres de software especializado.
+              </p>
+              <div class="alert alert-light border-start border-4 border-primary py-2 px-3 mb-2 fw-semibold">
+                Distribución
+              </div>
+              <p class="mb-0">
+                Cuenta con una estación principal independiente para el control del docente o monitor,
+                y múltiples estaciones de trabajo organizadas en bloques.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <!-- IMAGEN -->
-        <div class="espacios-img">
-
-          <img src="assets/img_plataformas/croquis_cc.PNG" alt="Plano TI">
-
+        <div class="col-md-6">
+          <div class="card h-100 area-card">
+            <div class="card-header text-white area-header border-0">
+              <i class="bi bi-tools me-2" aria-hidden="true"></i>
+              Área de Servicio Técnico
+            </div>
+            <div class="card-body">
+              <h3 class="h6 text-primary fw-bold">El centro operativo para el mantenimiento y soporte.</h3>
+              <p>
+                Dedicada exclusivamente al mantenimiento preventivo y correctivo de nuestro parque
+                informático, esta es el área donde nuestro equipo especializado pone «manos a la obra».
+              </p>
+              <div class="alert alert-light border-start border-4 border-primary py-2 px-3 mb-2 fw-semibold">
+                Actividades
+              </div>
+              <p class="mb-0">
+                Aquí se lleva a cabo el diagnóstico de fallas de hardware, reparación de equipos,
+                mantenimiento de periféricos e impresoras, y la preparación y despliegue de sistemas
+                operativos antes de entregar los equipos a los usuarios. Las mesas de trabajo están
+                dispuestas estratégicamente para el manejo seguro de componentes, desensamble de
+                equipos y gestión eficiente de refacciones.
+              </p>
+            </div>
+          </div>
         </div>
 
+        <div class="col-md-6">
+          <div class="card h-100 area-card">
+            <div class="card-header text-white area-header border-0">
+              <i class="bi bi-building me-2" aria-hidden="true"></i>
+              Oficina de Cómputo y TI
+            </div>
+            <div class="card-body">
+              <h3 class="h6 text-primary fw-bold">El núcleo de gestión, planeación y atención estratégica.</h3>
+              <p>
+                Desde esta oficina se dirige la administración tecnológica de la institución.
+                Es el espacio de trabajo de la jefatura y el personal auxiliar.
+              </p>
+              <div class="alert alert-light border-start border-4 border-primary py-2 px-3 mb-2 fw-semibold">
+                Actividades
+              </div>
+              <p class="mb-0">
+                Se coordinan las operaciones del personal técnico, se planifican los despliegues de
+                infraestructura tecnológica, se gestionan las adquisiciones y se elaboran los reportes
+                institucionales. Asimismo, es el área designada para brindar asesoría directa a usuarios
+                y atender a proveedores tecnológicos.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card h-100 area-card">
+            <div class="card-header text-white area-header site-header border-0">
+              <i class="bi bi-shield-lock me-2" aria-hidden="true"></i>
+              Site de Redes y Servidores
+            </div>
+            <div class="card-body">
+              <h3 class="h6 text-primary fw-bold">El cerebro de nuestra infraestructura tecnológica.</h3>
+              <p>
+                Por su naturaleza crítica, este es un entorno de acceso estrictamente restringido y
+                monitoreado, diseñado bajo principios de alta disponibilidad y ciberseguridad.
+              </p>
+              <div class="alert alert-light border-start border-4 border-info py-2 px-3 mb-2 fw-semibold">
+                Infraestructura
+              </div>
+              <p class="mb-0">
+                Alberga los gabinetes y racks de telecomunicaciones donde convergen los enlaces
+                principales de fibra óptica. Aquí operan los enrutadores de borde, los switches core
+                (encargados de la segmentación segura del tráfico mediante VLANs) y los servidores que
+                alojan las plataformas institucionales.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- ================= ÁREAS ================= -->
-
-      <div class="areas-ti">
-
-        <!-- 🔵 SALA -->
-        <div class="area-card">
-
-          <div class="area-header">
-            💻 Sala de Computadoras
-          </div>
-
-          <div class="area-body">
-
-            <h4>
-              El espacio de aprendizaje y desarrollo tecnológico.
-            </h4>
-
-            <p>
-              Esta área de uso público y académico está diseñada específicamente para la atención directa de nuestros
-              usuarios.
-              Es el entorno ideal para que la comunidad estudiantil desarrolle sus proyectos, y para la impartición de
-              clases
-              prácticas, capacitaciones y talleres de software especializado.
-            </p>
-
-            <div class="sub-box">
-              Distribución
-            </div>
-
-            <p>
-              Cuenta con una estación principal independiente para el control del docente o monitor, y múltiples
-              estaciones de
-              trabajo organizadas en bloques.
-            </p>
-
-          </div>
-
-        </div>
-
-        <!-- 🔵 SERVICIO -->
-        <div class="area-card">
-
-          <div class="area-header">
-            🛠️ Área de Servicio Técnico
-          </div>
-
-          <div class="area-body">
-
-            <h4>
-              El centro operativo para el mantenimiento y soporte.
-            </h4>
-
-            <p>
-              Dedicada exclusivamente al mantenimiento preventivo y correctivo de nuestro parque informático, esta es el
-              área donde nuestro equipo especializado pone «manos a la obra».
-            </p>
-
-            <div class="sub-box">
-              Actividades
-            </div>
-
-            <p>
-              Aquí se lleva a cabo el diagnóstico de fallas de hardware, reparación de equipos, mantenimiento de
-              periféricos e impresoras, y la preparación y despliegue de sistemas operativos antes de entregar los
-              equipos a los usuarios. Las mesas de trabajo están dispuestas estratégicamente para el manejo seguro de
-              componentes, desensamble de equipos y gestión eficiente de refacciones.
-
-            </p>
-
-          </div>
-
-        </div>
-
-        <!-- 🔵 OFICINA -->
-        <div class="area-card">
-
-          <div class="area-header">
-            🏢 Oficina de Cómputo y TI
-          </div>
-
-          <div class="area-body">
-
-            <h4>
-              El núcleo de gestión, planeación y atención estratégica.
-            </h4>
-
-            <p>
-              Desde esta oficina se dirige la administración tecnológica de la institución. Es el espacio de trabajo de
-              la jefatura y el personal auxiliar.
-            </p>
-
-            <div class="sub-box">
-              Actividades
-            </div>
-
-            <p>
-              Se coordinan las operaciones del personal técnico, se planifican los despliegues de infraestructura
-              tecnológica, se gestionan las adquisiciones y se elaboran los reportes institucionales. Asimismo, es el
-              área designada para brindar asesoría directa a usuarios y atender a proveedores tecnológicos.
-
-            </p>
-
-          </div>
-
-        </div>
-
-        <!-- 🟢 SITE -->
-        <div class="area-card">
-
-          <div class="area-header site-header">
-            🔐 Site de Redes y Servidores
-          </div>
-
-          <div class="area-body">
-
-            <h4>
-              El cerebro de nuestra infraestructura tecnológica.
-            </h4>
-
-            <p>
-              Por su naturaleza crítica, este es un entorno de acceso estrictamente restringido y monitoreado, diseñado
-              bajo principios de alta disponibilidad y ciberseguridad.
-
-            </p>
-
-            <div class="sub-box">
-              Infraestructura
-            </div>
-
-            <p>
-              Alberga los gabinetes y racks de telecomunicaciones donde convergen los enlaces principales de fibra
-              óptica. Aquí operan los enrutadores de borde, los switches core (encargados de la segmentación segura del
-              tráfico mediante VLANs) y los servidores que alojan las plataformas institucionales.
-
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- ================= OBJETIVOS ================= -->
-
-      <div class="objetivos-section">
-
-        <div class="objetivos-hero">
-
-          <h3>
+      <div class="card border-0 text-white objetivos-hero mb-3">
+        <div class="card-body p-4">
+          <h2 class="h4 fw-bold mb-0">
             Objetivos Estratégicos del Departamento Cómputo y Tecnologías de la Información - ITSE
-          </h3>
-
+          </h2>
         </div>
-
-        <!-- OBJETIVO -->
-        <div class="objetivo-card">
-
-          <h3>
-            1. Democratización y Disponibilidad Tecnológica
-          </h3>
-
-          <p>
-            Garantizar la democratización y el acceso equitativo a las Tecnologías de la Información y Comunicación
-            (TIC) para toda la comunidad del ITSE. Esto implica proveer una infraestructura robusta que sirva como eje
-            fundamental para la investigación científica de los docentes, el ejercicio pedagógico de vanguardia y el
-            fortalecimiento del proceso de enseñanza-aprendizaje, asegurando que las herramientas digitales sean el
-            motor del desarrollo educativo institucional bajo la visión de la Dirección General.
-
-          </p>
-
-        </div>
-
-        <!-- OBJETIVO -->
-        <div class="objetivo-card">
-
-          <h3>
-            2. Automatización y Gobernanza de Datos
-          </h3>
-
-          <p>
-            Impulsar la transformación digital del Instituto mediante la automatización de procesos administrativos y
-            académicos, integrando los sistemas de información para asegurar la integridad y disponibilidad de los
-            datos. El objetivo es optimizar los servicios de atención al usuario, facilitar la toma de decisiones
-            estratégica por parte de la Subdirección Académica y la Subdirección Administrativa, y elevar los estándares
-            de eficiencia operativa global de la organización.
-
-          </p>
-
-
-
-        </div>
-
-
-        <!-- OBJETIVO -->
-        <div class="objetivo-card">
-
-          <h3>
-            3. Gestión y Ciberseguridad de la Infraestructura Crítica
-          </h3>
-
-          <p>
-            Coordinar y supervisar de manera integral los procesos operativos relacionados con la infraestructura
-            tecnológica, incluyendo la administración avanzada de redes (VLANs, ruteo), servidores de plataformas
-            educativas y administrativas, y dispositivos de conectividad perimetral. Se busca asegurar la alta
-            disponibilidad de los servicios y la continuidad operativa mediante la implementación de políticas de
-            Ciberseguridad por Diseño, protegiendo los activos digitales de cada división y departamento del ITSE.
-
-          </p>
-
-        </div>
-
       </div>
 
-      <!-- ================= FUNCIONES ================= -->
-
-      <div class="funciones-section">
-
-        <!-- TITULO -->
-        <div class="funciones-title">
-          Funciones del Departamento por Área de Servicio
+      <div class="row g-3 mb-4">
+        <div class="col-12">
+          <div class="card objetivo-card h-100">
+            <div class="card-body">
+              <h3 class="h5 text-primary fw-bold">1. Democratización y Disponibilidad Tecnológica</h3>
+              <p class="mb-0">
+                Garantizar la democratización y el acceso equitativo a las Tecnologías de la Información
+                y Comunicación (TIC) para toda la comunidad del ITSE. Esto implica proveer una
+                infraestructura robusta que sirva como eje fundamental para la investigación científica
+                de los docentes, el ejercicio pedagógico de vanguardia y el fortalecimiento del proceso
+                de enseñanza-aprendizaje, asegurando que las herramientas digitales sean el motor del
+                desarrollo educativo institucional bajo la visión de la Dirección General.
+              </p>
+            </div>
+          </div>
         </div>
-
-        <!-- OPERACIÓN -->
-        <div class="funcion-card">
-
-          <div class="funcion-header">
-            Actividades del área de Operación y servicio
-          </div>
-
-          <div class="funcion-body">
-
-            <div class="sub-funcion">
-              Servicios exclusivos para empleados
+        <div class="col-12">
+          <div class="card objetivo-card h-100">
+            <div class="card-body">
+              <h3 class="h5 text-primary fw-bold">2. Automatización y Gobernanza de Datos</h3>
+              <p class="mb-0">
+                Impulsar la transformación digital del Instituto mediante la automatización de procesos
+                administrativos y académicos, integrando los sistemas de información para asegurar la
+                integridad y disponibilidad de los datos. El objetivo es optimizar los servicios de
+                atención al usuario, facilitar la toma de decisiones estratégica por parte de la
+                Subdirección Académica y la Subdirección Administrativa, y elevar los estándares de
+                eficiencia operativa global de la organización.
+              </p>
             </div>
-
-            <ul>
-              <li>Instalación y/o configuración de equipo de cómputo, periféricos y software.</li>
-              <li>Mantenimiento preventivo y correctivo a equipo de cómputo, exclusivos del instituto.</li>
-              <li>Gestión y administración de cuentas institucionales de correo electrónico y de plataformas de la
-                institución.</li>
-            </ul>
-
-            <div class="sub-funcion">
-              Servicios a estudiantes con solicitud a través del Jefe de División de carrera:
-            </div>
-
-            <ul>
-              <li>Gestión y administración de cuentas institucionales de correo electrónico</li>
-            </ul>
-
           </div>
-
         </div>
-
-        <!-- REDES -->
-        <div class="funcion-card">
-
-          <div class="funcion-header redes-header">
-            Área de Redes e Internet
+        <div class="col-12">
+          <div class="card objetivo-card h-100">
+            <div class="card-body">
+              <h3 class="h5 text-primary fw-bold">3. Gestión y Ciberseguridad de la Infraestructura Crítica</h3>
+              <p class="mb-0">
+                Coordinar y supervisar de manera integral los procesos operativos relacionados con la
+                infraestructura tecnológica, incluyendo la administración avanzada de redes (VLANs, ruteo),
+                servidores de plataformas educativas y administrativas, y dispositivos de conectividad
+                perimetral. Se busca asegurar la alta disponibilidad de los servicios y la continuidad
+                operativa mediante la implementación de políticas de Ciberseguridad por Diseño,
+                protegiendo los activos digitales de cada división y departamento del ITSE.
+              </p>
+            </div>
           </div>
-
-          <div class="funcion-body">
-
-            <div class="sub-funcion">
-              Acceso Inalámbrico
-            </div>
-
-            <ul>
-              <li>Monitoreo del Servicio y de acceso internet inalámbrico.</li>
-              <li>Implementación y mantenimiento de Enlaces de fibra óptica de la red troncal</li>
-            </ul>
-
-            <div class="sub-funcion">
-              Comutador IP/híbrido
-            </div>
-
-            <ul>
-              <li>Administración del conmutador</li>
-              <li>Monitoreo del servicio Telefónico</li>
-            </ul>
-
-
-            <div class="sub-funcion">
-              Administración de Equipos de Infraestructura
-            </div>
-
-            <ul>
-              <li>Administración y puesta a punto de más de un centenar de equipos de infraestructura en campus (Switch,
-                router, Access point, Cámaras IP)</li>
-            </ul>
-
-
-            <div class="sub-funcion">
-              Cámaras
-            </div>
-
-            <ul>
-              <li>Presentar una propuesta para Centralizar un punto de monitoreo de todos los equipos de grabación</li>
-
-              <li>Integrar Cámaras y grabadoras en servidor</li>
-            </ul>
-
-
-
-            <div class="sub-funcion">
-              Diseño, Instalación de cableado y puesta a punto de equipos de infraestructura
-            </div>
-
-            <div class="sub-funcion">
-              Conectorización
-            </div>
-
-          </div>
-
         </div>
-
       </div>
 
+      <div class="card mb-0">
+        <div class="card-header text-white funciones-title border-0">
+          <h2 class="h5 mb-0">Funciones del Departamento por Área de Servicio</h2>
+        </div>
+        <div class="card-body">
+          <div class="row g-3">
+            <div class="col-lg-6">
+              <div class="card h-100 funcion-card">
+                <div class="card-header text-white funcion-header border-0">
+                  Actividades del área de Operación y servicio
+                </div>
+                <div class="card-body">
+                  <div class="alert alert-light border-start border-4 border-primary py-2 px-3 fw-semibold">
+                    Servicios exclusivos para empleados
+                  </div>
+                  <ul class="mb-3">
+                    <li>Instalación y/o configuración de equipo de cómputo, periféricos y software.</li>
+                    <li>Mantenimiento preventivo y correctivo a equipo de cómputo, exclusivos del instituto.</li>
+                    <li>Gestión y administración de cuentas institucionales de correo electrónico y de plataformas de la institución.</li>
+                  </ul>
+                  <div class="alert alert-light border-start border-4 border-primary py-2 px-3 fw-semibold">
+                    Servicios a estudiantes con solicitud a través del Jefe de División de carrera
+                  </div>
+                  <ul class="mb-0">
+                    <li>Gestión y administración de cuentas institucionales de correo electrónico</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card h-100 funcion-card">
+                <div class="card-header text-white funcion-header redes-header border-0">
+                  Área de Redes e Internet
+                </div>
+                <div class="card-body">
+                  <div class="alert alert-light border-start border-4 border-info py-2 px-3 fw-semibold">
+                    Acceso Inalámbrico
+                  </div>
+                  <ul class="mb-3">
+                    <li>Monitoreo del Servicio y de acceso internet inalámbrico.</li>
+                    <li>Implementación y mantenimiento de Enlaces de fibra óptica de la red troncal</li>
+                  </ul>
+
+                  <div class="alert alert-light border-start border-4 border-info py-2 px-3 fw-semibold">
+                    Conmutador IP/híbrido
+                  </div>
+                  <ul class="mb-3">
+                    <li>Administración del conmutador</li>
+                    <li>Monitoreo del servicio Telefónico</li>
+                  </ul>
+
+                  <div class="alert alert-light border-start border-4 border-info py-2 px-3 fw-semibold">
+                    Administración de Equipos de Infraestructura
+                  </div>
+                  <ul class="mb-3">
+                    <li>Administración y puesta a punto de más de un centenar de equipos de infraestructura en campus (Switch, router, Access point, Cámaras IP)</li>
+                  </ul>
+
+                  <div class="alert alert-light border-start border-4 border-info py-2 px-3 fw-semibold">
+                    Cámaras
+                  </div>
+                  <ul class="mb-3">
+                    <li>Presentar una propuesta para Centralizar un punto de monitoreo de todos los equipos de grabación</li>
+                    <li>Integrar Cámaras y grabadoras en servidor</li>
+                  </ul>
+
+                  <div class="alert alert-light border-start border-4 border-info py-2 px-3 fw-semibold mb-2">
+                    Diseño, Instalación de cableado y puesta a punto de equipos de infraestructura
+                  </div>
+                  <div class="alert alert-light border-start border-4 border-info py-2 px-3 fw-semibold mb-0">
+                    Conectorización
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SISTEMA ================= -->
+    <div *ngIf="tab === 'sistema'" role="tabpanel" class="tab-pane fade show active">
+      <div class="card border-0 text-white hero-ti mb-4">
+        <div class="card-body p-4">
+          <h2 class="h3 fw-bold mb-2">Sistema de Mantenimiento Preventivo y Correctivo</h2>
+          <p class="mb-0 opacity-90">
+            Plataforma para uso interno del personal administrativo del ITSESCARCEGA.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <h3 class="h5 text-primary fw-bold">Acceso al sistema</h3>
+          <p>
+            Ingresa al portal de mantenimiento para registrar, consultar y dar seguimiento
+            a incidencias y solicitudes.
+          </p>
+          <a
+            class="btn btn-primary mb-4"
+            href="https://ti.itsescarcega.edu.mx/mantenimiento-app/#/login"
+            target="_blank"
+            rel="noopener noreferrer">
+            <i class="bi bi-box-arrow-up-right me-1" aria-hidden="true"></i>
+            Ir al Sistema SEMYTIC
+          </a>
+          <div class="bg-light border rounded p-3 text-center">
+            <img
+              class="img-fluid rounded"
+              src="assets/servicios/Mantenimiento.jpg"
+              alt="Captura del sistema de mantenimiento SEMYTIC">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= COMITÉ ================= -->
+    <div *ngIf="tab === 'comite'" role="tabpanel" class="tab-pane fade show active">
+      <div class="card">
+        <div class="card-header bg-white">
+          <h2 class="h5 text-primary fw-bold mb-0">
+            Funciones y responsabilidades del Comité TIC
+          </h2>
+        </div>
+        <div class="card-body">
+          <div class="ratio ratio-16x9 comite-pdf">
+            <iframe
+              title="Funciones y responsabilidades del Comité de TIC 2025"
+              src="assets/servicios/Funciones _y _responsabilidades _del _comite _de _TIC _2025.pdf">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= INSTALACIONES ================= -->
+    <div *ngIf="tab === 'instalaciones'" role="tabpanel" class="tab-pane fade show active">
+      <header class="mb-4">
+        <h2 class="h3 text-primary fw-bold">Galería de instalaciones</h2>
+        <p class="text-secondary mb-0">
+          Espacios y recursos tecnológicos que respaldan las actividades académicas y administrativas.
+        </p>
+      </header>
+
+      <div class="row g-3">
+        <div class="col-sm-6 col-lg-4" *ngFor="let img of instalaciones">
+          <div class="card h-100 galeria-card overflow-hidden">
+            <img
+              class="card-img-top galeria-img"
+              [src]="img.url"
+              [alt]="img.nombre"
+              loading="lazy">
+            <div class="card-body py-3">
+              <p class="card-text small fw-semibold text-center text-uppercase mb-0">
+                {{ img.nombre }}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
-
-  <!-- TAB 1: IMAGEN LOGIN -->
-<!-- ================= SISTEMA ================= -->
-
-<div *ngIf="tab === 'sistema'" class="sistema-section">
-
-  <!-- HERO -->
-  <div class="sistema-hero">
-
-    <h2>
-      Sistema de Mantenimiento Preventivo y Correctivo
-    </h2>
-
-    <p>
-      Plataforma para uso interno del personal administrativo del ITSESCARCEGA.
-    </p>
-
-  </div>
-
-  <!-- CARD -->
-  <div class="sistema-card">
-
-    <h3>
-      Acceso al sistema
-    </h3>
-
-    <p>
-      Ingresa al portal de mantenimiento para registrar, consultar y dar seguimiento
-      a incidencias y solicitudes.
-    </p>
-
-    <!-- BOTÓN -->
-    <a href="https://ti.itsescarcega.edu.mx/mantenimiento-app/#/login" target="_blank" class="btn-sistema">
-      Ir al Sistema SEMYTIC
-    </a>
-
-    <!-- IMAGEN -->
-    <div class="sistema-img">
-
-      <img src="assets/servicios/Mantenimiento.jpg" alt="Sistema de mantenimiento">
-
-    </div>
-
-  </div>
-
-</div>
-
-  <!-- TAB 2: PDF -->
-  <div *ngIf="tab === 'comite'" class="card">
-    <br>
-    <h3>FUNCIONES Y RESPONSABILIDADES COMITE TIC</h3>
-    br> <br>
-    <iframe src="assets/servicios/Funciones _y _responsabilidades _del _comite _de _TIC _2025.pdf" width="100%"
-      height="500px">
-    </iframe>
-  </div>
-
-  <!-- ================= INSTALACIONES ================= -->
-
-<div *ngIf="tab === 'instalaciones'" class="instalaciones-section">
-
-  <!-- HEADER -->
-  <div class="galeria-header">
-
-    <h2>
-      Galería de instalaciones
-    </h2>
-
-    <p>
-      Espacios y recursos tecnológicos que respaldan las actividades académicas y administrativas.
-    </p>
-
-  </div>
-
-  <!-- GRID -->
-  <div class="galeria-grid">
-
-    <!-- CARD -->
-    <div class="galeria-card" *ngFor="let img of instalaciones">
-
-      <!-- IMG -->
-      <div class="galeria-img">
-
-        <img [src]="img.url" [alt]="img.nombre">
-
-      </div>
-
-      <!-- TEXTO -->
-      <div class="galeria-info">
-
-        {{ img.nombre }}
-
-      </div>
-
-    </div>
-
-  </div>
-
-</div>
-
-</div>
-
-<br><br><br>
+</section>

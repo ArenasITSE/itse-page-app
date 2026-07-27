@@ -1,64 +1,91 @@
+import { Component, computed, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import {
-  Component,
-  OnInit,
-  ElementRef
-} from '@angular/core';
+  DIRECTORIO_ROOT,
+  DirectorioNode,
+  filterDirectorioTree,
+  flattenDirectorio,
+  nodeCssClasses,
+  nodeMatches,
+} from './directorio.data';
 
 @Component({
   selector: 'app-directorio',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './directorio.component.html',
-  styleUrls: ['./directorio.component.css']
+  styleUrls: ['./directorio.component.css'],
 })
-export class DirectorioComponent implements OnInit {
+export class DirectorioComponent {
+  readonly root = DIRECTORIO_ROOT;
+  readonly filtro = signal('');
 
-  filtro = '';
+  readonly allNodes = flattenDirectorio(this.root);
 
-  constructor(
-    private elementRef: ElementRef
-  ) { }
+  readonly stats = {
+    personas: this.allNodes.length,
+    subdirecciones: this.allNodes.filter((n) => n.node.level === 'sub').length,
+    departamentos: this.allNodes.filter((n) => n.node.level === 'dep').length,
+  };
 
-  ngOnInit(): void {}
+  readonly filteredRoot = computed(() => {
+    const q = this.filtro().trim().toLowerCase();
+    return filterDirectorioTree(this.root, q) ?? this.root;
+  });
 
-  filtrar(event: Event): void {
+  readonly treeStaff = computed(() =>
+    (this.filteredRoot().children ?? []).filter((c) => c.level === 'staff')
+  );
 
-    const input =
-      event.target as HTMLInputElement;
+  readonly treeSubs = computed(() =>
+    (this.filteredRoot().children ?? []).filter((c) => c.level === 'sub')
+  );
 
-    this.filtro =
-      input.value.toLowerCase().trim();
+  readonly listaFiltrada = computed(() => {
+    const q = this.filtro().trim().toLowerCase();
+    return flattenDirectorio(this.filteredRoot()).map(({ node, depth }) => ({
+      node,
+      depth,
+      highlight: !!q && nodeMatches(node, q),
+    }));
+  });
 
-    const nodes =
-      this.elementRef.nativeElement
-        .querySelectorAll('.node');
+  onFiltro(event: Event): void {
+    const value = (event.target as HTMLInputElement).value ?? '';
+    this.filtro.set(value);
+  }
 
-    nodes.forEach((node: Element) => {
+  clearFiltro(): void {
+    this.filtro.set('');
+  }
 
-      const htmlNode =
-        node as HTMLElement;
-
-      const texto =
-        htmlNode.innerText.toLowerCase();
-
-      const coincide =
-        texto.includes(this.filtro);
-
-      if (!this.filtro) {
-
-        htmlNode.classList.remove('highlight');
-        htmlNode.classList.remove('filtered');
-        return;
+  classesFor(node: DirectorioNode): string {
+    const classes = nodeCssClasses(node);
+    const q = this.filtro().trim().toLowerCase();
+    if (q) {
+      if (nodeMatches(node, q)) {
+        classes.push('highlight');
+      } else {
+        classes.push('filtered');
       }
+    }
+    return classes.join(' ');
+  }
 
-      htmlNode.classList.toggle(
-        'highlight',
-        coincide
-      );
-
-      htmlNode.classList.toggle(
-        'filtered',
-        !coincide
-      );
-
-    });
+  teamLabel(team: string): string {
+    switch (team) {
+      case 'admin':
+        return 'Administrativa';
+      case 'planeacion':
+        return 'Planeación';
+      case 'vinculacion':
+        return 'Vinculación';
+      case 'academica':
+        return 'Académica';
+      case 'staff':
+        return 'Staff';
+      default:
+        return 'Dirección';
+    }
   }
 }

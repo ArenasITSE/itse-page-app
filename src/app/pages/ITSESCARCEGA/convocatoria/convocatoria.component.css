@@ -1,87 +1,174 @@
+.convocatoria {
+  --primary-color: #1e3a8a;
+  --primary-dark: #172554;
+  --surface: #ffffff;
+  --page-bg: #f1f5f9;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  --open: #15803d;
+  --closed: #64748b;
 
-/* =========================================
-CONTENEDOR GENERAL
-========================================= */
-
-.iframe-container {
-
-    width: 100%;
-
-    margin: 0;
-
-    padding: 0;
-
-    background: transparent;
-
-    overflow: hidden;
-
+  color: var(--text-main);
+  background:
+    radial-gradient(ellipse at top left, rgba(30, 58, 138, 0.08), transparent 50%),
+    linear-gradient(180deg, #eef2ff 0%, var(--page-bg) 40%, #f8fafc 100%);
+  min-height: 70vh;
+  border-radius: 0.5rem;
 }
 
-/* =========================================
-IFRAME
-========================================= */
-
-.iframe-container iframe {
-
-    width: 100%;
-
-    height: 100vh;
-
-    min-height: 1400px;
-
-    border: none;
-
-    display: block;
-
-    background: transparent;
-
-    overflow: hidden;
-
+.letter-space {
+  letter-spacing: 0.06em;
 }
 
-/* =========================================
-BODY
-========================================= */
-
-body {
-
-    margin: 0;
-
-    padding: 0;
-
-    background: #f3f3f3;
-
-    overflow-x: hidden;
-
-    font-family: var(--font-sans);
-
+.stat-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  font-size: 0.875rem;
+  color: var(--text-main);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
-/* =========================================
-ELIMINA ESPACIOS DE ANGULAR
-========================================= */
-
-app-root,
-router-outlet {
-
-    margin: 0;
-
-    padding: 0;
-
-    display: block;
-
+.stat-pill.is-open {
+  color: var(--open);
+  border-color: rgba(21, 128, 61, 0.25);
+  background: rgba(21, 128, 61, 0.08);
 }
 
-/* =========================================
-RESPONSIVE
-========================================= */
+.stat-pill.is-closed {
+  color: var(--closed);
+}
 
-@media screen and (max-width: 768px){
+.search-group .form-control:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.2rem rgba(30, 58, 138, 0.15);
+}
 
-    .iframe-container iframe {
+.filter-estado .btn {
+  font-weight: 600;
+}
 
-        min-height: 2200px;
+.convocatoria-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 
-    }
+.convocatoria-item {
+  border: 1px solid var(--border-color) !important;
+  border-radius: 0.75rem !important;
+  overflow: hidden;
+  background: var(--surface);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
 
+.convocatoria-item.is-open {
+  border-color: rgba(30, 58, 138, 0.35) !important;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+.convocatoria-item .accordion-button {
+  background: #fff;
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 0.95rem;
+  box-shadow: none !important;
+  gap: 0.5rem;
+}
+
+.convocatoria-item .accordion-button:not(.collapsed) {
+  background: linear-gradient(90deg, rgba(30, 58, 138, 0.08), #fff 55%);
+  color: var(--primary-dark);
+}
+
+.convocatoria-item .accordion-button::after {
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.titulo {
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.35;
+}
+
+.estado-badge {
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  padding: 0.4em 0.7em;
+}
+
+.meta-card {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: 0.6rem;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.meta-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.meta-value {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-main);
+  line-height: 1.35;
+}
+
+.descripcion {
+  color: #334155;
+  line-height: 1.6;
+}
+
+.resultado {
+  background: rgba(30, 58, 138, 0.04);
+  border-left: 4px solid var(--primary-color);
+  border-radius: 0 0.5rem 0.5rem 0;
+  padding: 1rem 1.1rem;
+}
+
+.resultado .table {
+  background: #fff;
+  border: 1px solid var(--border-color);
+}
+
+.documentos .btn {
+  font-weight: 600;
+}
+
+.empty-state {
+  background: #fff;
+  border: 2px dashed #94a3b8;
+  border-radius: 0.75rem;
+}
+
+@media (max-width: 575.98px) {
+  .convocatoria-item .accordion-button {
+    font-size: 0.85rem;
+    padding: 0.9rem 1rem;
+  }
+
+  .filter-estado .btn {
+    font-size: 0.85rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }

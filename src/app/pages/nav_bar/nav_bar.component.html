@@ -1,47 +1,42 @@
-<!-- 🔥 CONTENEDOR QUE SE OCULTA AL HACER SCROLL -->
+<!-- 🔴 FRANJA ROJA — siempre visible -->
+<nav class="navbar navbar-expand barra-gobmx px-4">
+
+  <a class="navbar-brand" href="https://www.gob.mx/" target="_blank">
+    <img
+      src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg"
+      class="logo-gobierno"
+      alt="Gobierno de México">
+  </a>
+
+  <div class="collapse navbar-collapse justify-content-end">
+    <ul class="navbar-nav d-flex align-items-center gap-4 text-white">
+      <li class="nav-item">
+        <a href="https://www.gob.mx/" class="nav-link text-white">
+          Trámites
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="https://www.gob.mx/" class="nav-link text-white">
+          Gobierno
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a href="https://www.gob.mx/busqueda" class="nav-link text-white">
+          <i class="bi bi-search"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
+
+<!-- ⚪ FRANJA BLANCA — se oculta al hacer scroll -->
 <div
-  class="header-superior">
+  class="franja-blanca"
+  [class.ocultar-franja-blanca]="!mostrarHeader">
 
-  <!-- 🔴 BARRA GOBIERNO -->
-  <nav
-  class="navbar navbar-expand fixed-top barra-gobmx px-4"
-  [class.ocultar-barra-roja]="!mostrarHeader">
-
-    <a class="navbar-brand" href="https://www.gob.mx/" target="_blank">
-      <img
-        src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg"
-        class="logo-gobierno"
-        alt="Gobierno de México">
-    </a>
-
-    <div class="collapse navbar-collapse justify-content-end">
-      <ul class="navbar-nav d-flex align-items-center gap-4 text-white">
-        <li class="nav-item">
-          <a href="https://www.gob.mx/" class="nav-link text-white">
-            Trámites
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="https://www.gob.mx/" class="nav-link text-white">
-            Gobierno
-          </a>
-        </li>
-
-        <li class="nav-item">
-          <a href="https://www.gob.mx/busqueda" class="nav-link text-white">
-            <i class="bi bi-search"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-  </nav>
-
-  <!-- ESPACIO -->
-  <div class="mt-5 pt-4"></div>
-
-  <!-- 🏛️ ENCABEZADO -->
   <div class="contenedorGobierno py-3 px-4">
 
     <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -49,7 +44,9 @@
       <!-- LOGOS -->
       <div class="d-flex align-items-center gap-3">
 
-        <img src="assets/logos/educacion.png" class="logo-educacion">
+        <a href="https://www.gob.mx/sep" target="_blank" rel="noopener noreferrer">
+          <img src="assets/logos/educacion.png" class="logo-educacion" alt="SEP">
+        </a>
 
         <img src="assets/logos/tecnm.jpg" class="logo-tecnm">
 
@@ -57,7 +54,9 @@
 
         <img src="assets/encabezado/logo_seduc.png" class="logo-seduc">
 
-        <img src="assets/encabezado/logo.png" class="logo-itse">
+        <a href="https://escarcega.tecnm.mx/#/Inicio" target="_blank" rel="noopener noreferrer">
+          <img src="assets/encabezado/logo.png" class="logo-itse" alt="ITSE">
+        </a>
 
       </div>
 
@@ -134,27 +133,28 @@
 
 </div>
 
-<!-- 🔵 MENÚ AZUL (ESTE SE QUEDA FUERA) -->
-<nav class="navbar navbar-expand-lg menu-bar px-3">
-
-  ...
-
-</nav>
-
- 
-
-<!-- 🔵 MENÚ CON SUBMENÚ -->
-<nav class="navbar navbar-expand-lg menu-bar px-3">
+<!-- 🔵 FRANJA AZUL (menú) — siempre visible, sticky bajo la roja -->
+<nav class="navbar navbar-expand-lg navbar-dark menu-bar">
 
   <div class="container-fluid">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav"
+      aria-controls="menuNav" aria-expanded="false" aria-label="Abrir menú de navegación">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="menuNav">
+    <div class="collapse navbar-collapse" id="menuNav" (click)="onMenuNavClick($event)">
 
       <ul class="navbar-nav">
+
+        <!-- Logo TecNM (visible al hacer scroll) -->
+        <li class="nav-item d-flex align-items-center">
+          <img
+            class="logo-tecnm-nav"
+            [class.logo-tecnm-nav--visible]="!mostrarHeader"
+            src="assets/encabezado/LogoTecNM_Blanco.png"
+            alt="Tecnológico Nacional de México">
+        </li>
 
         <!-- Home -->
         <li class="nav-item">
@@ -290,7 +290,7 @@
               <a   href="https://ti.itsescarcega.edu.mx/mantenimiento-app/#/login" class="dropdown-item">Sistema de Mantenimiento</a>
             </li>
             <li>
-              <a routerLink="/Plataforma/inactiva"   class="dropdown-item">Evaluacion Docente</a>
+              <a href="http://187.157.86.214/sed/" target="_blank" rel="noopener noreferrer" class="dropdown-item">Evaluacion Docente</a>
             </li>
             <li>
               <a  href="https://tecnmmx.digitaliapublishing.com/"  class="dropdown-item">Registro Biblioteca</a>
@@ -419,6 +419,11 @@
         <li class="submenu-item">
           <a routerLink="/gestion_institucional/contabilidad-institucional" target="_blank" class="w-100 d-block text-dark text-decoration-none">Contabilidad Institucional</a>
         </li>
+
+        <li class="submenu-item">
+          <a routerLink="/gestion_institucional/contralorias_sociales" target="_blank" class="w-100 d-block text-dark text-decoration-none">Contralorias Sociales</a>
+        </li>
+
         <li class="submenu-item">
           <a routerLink="/gestion_institucional/cs-s247-prodep" target="_blank" class="w-100 d-block text-dark text-decoration-none">CS_S247_PRODEP</a>
         </li>

@@ -2,3 +2,22 @@
 body {
   font-family: 'Noto Sans', sans-serif;
 }
+
+/*
+  Botón de accesibilidad gob.mx:
+  siempre dentro de la franja roja (altura 90px), a la izquierda.
+*/
+#accessibility {
+  position: fixed !important;
+  top: 18px !important;
+  left: 12px !important;
+  right: auto !important;
+  bottom: auto !important;
+  z-index: 100001 !important;
+}
+
+#accessibility .menu-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+}

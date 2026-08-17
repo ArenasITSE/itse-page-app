@@ -1,0 +1,220 @@
+<div class="contralorias-container">
+
+  <!-- =====================================================
+       TÍTULO GENERAL
+       ===================================================== -->
+
+  <h1>CONTRALORÍAS SOCIALES</h1>
+
+
+  <!-- =====================================================
+       SELECTOR DE CONTRALORÍAS
+       ===================================================== -->
+
+  <div class="contralorias-selector">
+
+    @for (contraloria of contralorias; track contraloria.id) {
+
+      <button
+        [class.selected]="
+          contraloriaSeleccionada === contraloria.id
+        "
+        (click)="seleccionarContraloria(contraloria.id)">
+
+        {{ contraloria.nombre }}
+
+      </button>
+
+    }
+
+  </div>
+
+
+  <!-- =====================================================
+       CONTRALORÍA SELECCIONADA
+       ===================================================== -->
+
+  <div class="contraloria-section">
+
+    <!-- TÍTULO -->
+
+    <h2>
+      {{ contraloriaActual.titulo }}
+    </h2>
+
+
+    <!-- ===================================================
+         LOGO
+         =================================================== -->
+
+    <div class="contraloria-logo">
+
+      <img
+        [src]="contraloriaActual.logo"
+        alt="Logo Contraloría Social">
+
+    </div>
+
+
+    <!-- ===================================================
+         RESPONSABLE
+         =================================================== -->
+
+    <div class="contraloria-responsable">
+
+      <p>
+        <strong>■ RESPONSABLE</strong>
+      </p>
+
+      <p>
+        {{ contraloriaActual.responsable }}
+      </p>
+
+      <p>
+        E-mail:
+
+        <a
+          [href]="'mailto:' + contraloriaActual.correo">
+
+          {{ contraloriaActual.correo }}
+
+        </a>
+      </p>
+
+    </div>
+
+
+    <!-- ===================================================
+         PESTAÑAS
+         =================================================== -->
+
+    <div class="tabs-menu">
+
+      @for (
+        pestana of contraloriaActual.pestanas;
+        track pestana.id
+      ) {
+
+        <button
+          [class.active]="
+            tabSeleccionada === pestana.id
+          "
+          (click)="seleccionarTab(pestana.id)">
+
+          {{ pestana.nombre }}
+
+        </button>
+
+      }
+
+    </div>
+
+
+    <!-- ===================================================
+         CONTENIDO DE LA PESTAÑA
+         =================================================== -->
+
+    <div class="tabs-content">
+
+
+      <!-- =================================================
+           PESTAÑA PDF
+           ================================================= -->
+
+      @if (pestanaActual?.tipo === 'pdf') {
+
+        <iframe
+          [src]="obtenerPdfSeguro(pestanaActual?.pdf)"
+          title="Documento PDF">
+        </iframe>
+
+      }
+
+
+      <!-- =================================================
+           PESTAÑA DOCUMENTOS
+           ================================================= -->
+
+      @if (pestanaActual?.tipo === 'documentos') {
+
+        <div class="docs-section">
+
+
+          <!-- =============================================
+               SECCIONES DE DOCUMENTOS
+               ============================================= -->
+
+          @for (
+            seccion of pestanaActual?.secciones ?? [];
+            track seccion.titulo ?? $index
+          ) {
+
+
+            <!-- =========================================
+                 TÍTULO DE LA SECCIÓN
+                 ========================================= -->
+
+            @if (seccion.titulo) {
+
+              <h3>
+                {{ seccion.titulo }}
+              </h3>
+
+            }
+
+
+            <!-- =========================================
+                 LISTA DE DOCUMENTOS
+                 ========================================= -->
+
+            <ul class="docs-list">
+
+              @for (
+                documento of seccion.documentos;
+                track documento.url
+              ) {
+
+                <li>
+
+                  <img
+                    src="assets/vinculacion/pdf.png"
+                    alt="Documento">
+
+                  <a
+                    [href]="documento.url"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    {{ documento.nombre }}
+
+                  </a>
+
+                </li>
+
+              }
+
+            </ul>
+
+          }
+
+        </div>
+
+      }
+
+
+      <!-- =================================================
+           PESTAÑA VACÍA
+           ================================================= -->
+
+      @if (pestanaActual?.tipo === 'vacio') {
+
+        <div class="contenido-vacio">
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</div>

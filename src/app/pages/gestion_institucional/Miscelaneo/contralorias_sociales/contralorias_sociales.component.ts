@@ -155,7 +155,7 @@ export class Contralorias_socialesComponent {
                   nombre: 'Guía Operativa U006',
 
                   url:
-                    'assets/miscelaneo/CS_ppu006/documentos_normativos/3-Guía-Operativa-U006-TecNM.pdf'
+                    'assets/miscelaneo/CS_ppu006/documentos_normativos/3-Guia-Operativa-U006-TecNM.pdf'
                 },
 
                 {
@@ -166,10 +166,10 @@ export class Contralorias_socialesComponent {
                 },
 
                 {
-                  nombre: 'OF Validación U006',
+                  nombre: 'Oficio de Validación U006',
 
                   url:
-                    'assets/miscelaneo/CS_ppu006/documentos_normativos/Oficio-de-Validación-de-Documentos-Normativos-Pp-U006.pdf'
+                    'assets/miscelaneo/CS_ppu006/documentos_normativos/Oficio-de-Validacion-de-Documentos-Normativos-Pp-U006.pdf'
                 }
 
               ]
@@ -190,7 +190,7 @@ export class Contralorias_socialesComponent {
                     'Anexo 1 Acta constitución de CCS U006 2024 TecNM',
 
                   url:
-                    'assets/miscelaneo/CS_ppu006/formatos_guia_operativa/Anexo-1-Acta-constitución-de-CCS-U006-2024-TecNM.pdf'
+                    'assets/miscelaneo/CS_ppu006/formatos_guia_operativa/Anexo-1-Acta-constitucion-de-CCS-U006-2024-TecNM.pdf'
                 },
 
                 {
@@ -198,7 +198,7 @@ export class Contralorias_socialesComponent {
                     'Anexo 2 Acta sustitución de CCS U006 2024 TecNM',
 
                   url:
-                    'assets/miscelaneo/CS_ppu006/formatos_guia_operativa/Anexo-2Acta-sustitución-de-CCS-U006-2024-TecNM.pdf'
+                    'assets/miscelaneo/CS_ppu006/formatos_guia_operativa/Anexo-2Acta-sustitucion-de-CCS-U006-2024-TecNM.pdf'
                 },
 
                 {
@@ -206,7 +206,7 @@ export class Contralorias_socialesComponent {
                     'Anexo 3 Minuta Reunión CCS U006 2024 TecNM',
 
                   url:
-                    'assets/miscelaneo/CS_ppu006/formatos_guia_operativa/Anexo-3-Minuta-Reunión-CCS-U006-2024-.TecNM.pdf'
+                    'assets/miscelaneo/CS_ppu006/formatos_guia_operativa/Anexo-3-Minuta-Reunion-CCS-U006-2024-.TecNM.pdf'
                 },
 
                 {
@@ -214,7 +214,7 @@ export class Contralorias_socialesComponent {
                     'Anexo 4 Informe Final del CCS U006 2024 TecNM',
 
                   url:
-                    'assets/miscelaneo/CS_ppu006/formatos_guia_operativa/Anexo4Informe-Final-del-CCS-U006-2024-TecNM.pdf'
+                    'assets/miscelaneo/CS_ppu006/formatos_guia_operativa/Anexo-4-Informe-Final-del-CCS-U006-2024-TecNM.pdf'
                 }
 
               ]
@@ -228,7 +228,7 @@ export class Contralorias_socialesComponent {
         // INFORMES
         // ---------------------------------------------------
 
-        {
+       {
           id: 'informes',
 
           nombre: 'INFORMES',

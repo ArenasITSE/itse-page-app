@@ -43,7 +43,7 @@ describe('Contralorias_socialesComponent', () => {
 
     expect(
       component.contralorias.length
-    ).toBe(2);
+    ).toBe(3);
 
   });
 

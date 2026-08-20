@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
+import {
+  DomSanitizer,
+  SafeResourceUrl
+} from '@angular/platform-browser';
 
 
 // =========================================================
@@ -36,17 +39,42 @@ interface Pestana {
 
 
 // =========================================================
+// AÑO S247
+// =========================================================
+
+interface AnioS247 {
+  id: string;
+  nombre: string;
+
+  responsable: string;
+  cargo: string;
+  correo: string;
+  logo: string;
+
+  pestanas: Pestana[];
+}
+
+
+// =========================================================
 // CONTRALORÍA
 // =========================================================
 
 interface Contraloria {
   id: string;
   nombre: string;
-  titulo: string;
-  responsable: string;
-  correo: string;
-  logo: string;
-  pestanas: Pestana[];
+
+  responsable?: string;
+  cargo?: string;
+  correo?: string;
+  logo?: string;
+
+  // Pestañas normales.
+  // Se utilizan principalmente para Pp U006.
+  pestanas?: Pestana[];
+
+  // Años disponibles.
+  // Se utiliza para Pp S247 PRODEP.
+  anios?: AnioS247[];
 }
 
 
@@ -60,10 +88,17 @@ export class Contralorias_socialesComponent {
 
 
   // =========================================================
-  // CONTRALORÍA SELECCIONADA
+  // CONTRALORÍA PRINCIPAL SELECCIONADA
   // =========================================================
 
   contraloriaSeleccionada = 'ppu006';
+
+
+  // =========================================================
+  // AÑO S247 SELECCIONADO
+  // =========================================================
+
+  anioS247Seleccionado = 's247-2026';
 
 
   // =========================================================
@@ -74,25 +109,25 @@ export class Contralorias_socialesComponent {
 
 
   // =========================================================
-  // CONTRALORÍAS
+  // CONTRALORÍAS PRINCIPALES
   // =========================================================
 
   contralorias: Contraloria[] = [
 
-
     // =======================================================
-    // CSU006
+    // Pp U006
     // =======================================================
 
     {
       id: 'ppu006',
 
-      nombre: 'CSU006',
-
-      titulo: 'CSU006',
+      nombre: 'Pp U006',
 
       responsable:
-        'Gabriela Gutiérrez Hernández | Responsable de Contraloría Social y CSU006',
+        'Gabriela Gutiérrez Hernández',
+
+      cargo:
+        'Responsable de Contraloría Social y CSU006',
 
       correo:
         'prodep@escarcega.tecnm.mx',
@@ -100,8 +135,8 @@ export class Contralorias_socialesComponent {
       logo:
         'assets/home_logos/logo_conta.jpg',
 
-      pestanas: [
 
+      pestanas: [
 
         // ---------------------------------------------------
         // CONTRALORÍA SOCIAL
@@ -110,7 +145,7 @@ export class Contralorias_socialesComponent {
         {
           id: 'contraloria',
 
-          nombre: 'CONTRALORÍA SOCIAL',
+          nombre: 'Contraloria Social',
 
           tipo: 'pdf',
 
@@ -126,7 +161,7 @@ export class Contralorias_socialesComponent {
         {
           id: 'documentos',
 
-          nombre: 'DOCUMENTOS NORMATIVOS',
+          nombre: 'Documentos Normativos',
 
           tipo: 'documentos',
 
@@ -228,10 +263,10 @@ export class Contralorias_socialesComponent {
         // INFORMES
         // ---------------------------------------------------
 
-       {
+        {
           id: 'informes',
 
-          nombre: 'INFORMES',
+          nombre: 'Informes',
 
           tipo: 'vacio'
         },
@@ -245,7 +280,7 @@ export class Contralorias_socialesComponent {
           id: 'quejas',
 
           nombre:
-            'QUEJAS, DENUNCIAS O IRREGULARIDADES',
+            'Quejas y denuncias',
 
           tipo: 'documentos',
 
@@ -277,7 +312,7 @@ export class Contralorias_socialesComponent {
           id: 'manual',
 
           nombre:
-            'MANUAL DE OPERACIONES DEL SICS-INSTANCIAS EJECUTORAS 2024',
+            'Manual de operaciones SICS-Instancias ejecutoras 2024',
 
           tipo: 'vacio'
         },
@@ -319,226 +354,582 @@ export class Contralorias_socialesComponent {
 
 
     // =======================================================
-    // CS_S247_PRODEP
+    // Pp S247 PRODEP
     // =======================================================
 
     {
       id: 's247',
 
       nombre:
-        'CS_S247_PRODEP',
-
-      titulo:
-        'CONTRALORÍA SOCIAL 2025',
-
-      responsable:
-        'Gabriela Gutiérrez Hernández | Responsable de Contraloría Social y CS_s247',
-
-      correo:
-        'prodep@escarcega.tecnm.mx',
-
-      logo:
-        'assets/home_logos/logo_conta.jpg',
-
-      pestanas: [
+        'Pp S247 PRODEP',
 
 
-        // ---------------------------------------------------
-        // PRODEP 2025
-        // ---------------------------------------------------
+      // =====================================================
+      // AÑOS S247
+      // =====================================================
+
+      anios: [
+
+        // ===================================================
+        // S247 2026
+        // ===================================================
 
         {
-          id: 'prodep',
+          id: 's247-2026',
 
           nombre:
-            'PRODEP2025',
+            'Pp S247 PRODEP_2026',
 
-          tipo: 'pdf',
+          responsable:
+            'Gabriela Gutiérrez Hernández',
 
-          pdf:
-            'assets/vinculacion/S247_2025.pdf'
+          cargo:
+            'Responsable de Contraloría Social y S247 2026',
+
+          correo:
+            'prodep@escarcega.tecnm.mx',
+
+          logo:
+            'assets/miscelaneo/CS_S247_2026/logotipos 2026/LOGOS_GUARDIANES DEL GASTO_PNG_Mesa de trabajo 1 copia 3.png',
+
+          pestanas: [
+
+            // ------------------------------------------------
+            // 1. ¿QUÉ ES EL S247 PRODEP 2026?
+            // ------------------------------------------------
+
+            {
+              id: 'que-es-programa',
+
+              nombre:
+                'PRODEP',
+
+              tipo: 'pdf',
+
+              pdf:
+                'assets/miscelaneo/CS_S247_2026/QUE ES EL S247 PRODEP 2026.pdf'
+            },
+
+
+            // ------------------------------------------------
+            // 2. ¿QUÉ ES LA CONTRALORÍA SOCIAL 2026?
+            // ------------------------------------------------
+
+            {
+              id: 'contraloria-social',
+
+              nombre:
+                'Contraloría Social',
+
+              tipo: 'pdf',
+
+              pdf:
+                'assets/miscelaneo/CS_S247_2026/QUE ES LA CONTRALORIA SOCIAL 2026.pdf'
+            },
+
+
+            // ------------------------------------------------
+            // 3. DOCUMENTOS NORMATIVOS
+            // ------------------------------------------------
+
+            {
+              id: 'documentos',
+
+              nombre:
+                'Documentos Normativos S247 2026',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                // =============================================
+                // DOCUMENTOS NORMATIVOS
+                // =============================================
+
+                {
+                  titulo:
+                    'Documentos Normativos',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        '1-Lineamientos 2024 S247.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/documentos_normativos/1-Lineamientos 2024 S247.pdf'
+                    },
+
+                    {
+                      nombre:
+                        '2.- S247 Esquema de Contraloria Social 2026.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/documentos_normativos/2.- S247 Esquema de Contraloria Social 2026.pdf'
+                    },
+
+                    {
+                      nombre:
+                        '3.- S247 Actividades de seguimiento actual.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/documentos_normativos/3.- S247 Actividades de seguimiento actual.pdf'
+                    },
+
+                    {
+                      nombre:
+                        '4.- S247 OFICIO VALIDACION 2026.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/documentos_normativos/4.- S247 OFICIO VALIDACION 2026.pdf'
+                    }
+
+                  ]
+                },
+
+
+                // =============================================
+                // FORMATOS DE GUÍA OPERATIVA
+                // =============================================
+
+                {
+                  titulo:
+                    'Formatos de Guía Operativa',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Anexo 1: S247 2026 Acta constitución de CCS 2026.docx',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/documentos_normativos/5.- S247 2026 Anexo 1 Acta constitucion de CCS.docx'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo 2: S247 2026 Acta sustitución de CCS 2026.docx',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/documentos_normativos/6.- S247 2026 Anexo 2 Acta sustitucion de CCS.docx'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo 3: S247 2026 Minuta de reunion de CCS 2026.docx',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/documentos_normativos/7.- S247 2026 Anexo 3 Minuta.docx'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo 4: S247 2026 Informe del CCS.xlsx',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/documentos_normativos/8.- S247 2026 Anexo 4 Informe del CCS.xlsx'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 4. INFORME FINAL 2025
+            // ------------------------------------------------
+
+            {
+              id: 'informes',
+
+              nombre:
+                'Informes',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  titulo:
+                    'Informe Final 2025',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Informe Final 2025',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/INFORME FINAL 2025/'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 5. QUEJAS Y DENUNCIAS
+            // ------------------------------------------------
+
+            {
+              id: 'quejas',
+
+              nombre:
+                'Quejas y Denuncias',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  titulo:
+                    'Mecanismo de Quejas y Denuncias 2026',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        'MECANISMO DE QUEJAS y DENUNCIAS 2026',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/MECANISMO DE QUEJAS y DENUNCIAS 2026.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 6. LOGOTIPO
+            // ------------------------------------------------
+
+            {
+              id: 'logo',
+
+              nombre:
+                'Logotipo de Contraloría Social 2026',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  titulo:
+                    'Logotipo Contraloría Social',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Logotipo 1 Contraloría Social 2026.png',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/logotipos 2026/LOGOS_GUARDIANES DEL GASTO_PNG_Mesa de trabajo 1 copia 2.png'
+                    },
+
+                    {
+                      nombre:
+                        'Logotipo 2 Contraloría Social 2026.png',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2026/logotipos 2026/LOGOS_GUARDIANES DEL GASTO_PNG_Mesa de trabajo 1 copia 3.png'
+                    }
+
+                  ]
+                }
+
+              ]
+            }
+
+          ]
         },
 
 
-        // ---------------------------------------------------
-        // CONTRALORÍA SOCIAL
-        // ---------------------------------------------------
+        // ===================================================
+        // S247 2025
+        // ===================================================
 
         {
-          id: 'contraloria',
+          id: 's247-2025',
 
           nombre:
-            'CONTRALORÍA SOCIAL',
+            'Pp S247 PRODEP_2025',
 
-          tipo: 'pdf',
+          responsable:
+            'Gabriela Gutiérrez Hernández',
 
-          pdf:
-            'assets/vinculacion/CS2025.pdf'
-        },
+          cargo:
+            'Responsable de Contraloría Social y S247 2025',
+
+          correo:
+            'prodep@escarcega.tecnm.mx',
+
+          logo:
+            'assets/miscelaneo/CS_S247_2025/Logotipos 2025/LOGOS_2025_1.png',
+
+          pestanas: [
+
+            // ------------------------------------------------
+            // PRODEP 2025
+            // ------------------------------------------------
+
+            {
+              id: 'prodep',
+
+              nombre:
+                'PRODEP',
+
+              tipo: 'pdf',
+
+              pdf:
+                'assets/vinculacion/S247_2025.pdf'
+            },
 
 
-        // ---------------------------------------------------
+            // ------------------------------------------------
+            // CONTRALORÍA SOCIAL
+            // ------------------------------------------------
+
+            {
+              id: 'contraloria',
+
+              nombre:
+                'Contraloría Social',
+
+              tipo: 'pdf',
+
+              pdf:
+                'assets/vinculacion/CS2025.pdf'
+            },
+
+
+            // ------------------------------------------------
+            // DOCUMENTOS NORMATIVOS
+            // ------------------------------------------------
+
+            // ------------------------------------------------
+// DOCUMENTOS NORMATIVOS
+// ------------------------------------------------
+
+    {
+      id: 'documentos',
+
+      nombre:
+        'Documentos Normativos S247 2026',
+
+      tipo: 'documentos',
+
+      secciones: [
+
+        // ==============================================
         // DOCUMENTOS NORMATIVOS
-        // ---------------------------------------------------
+        // ==============================================
 
         {
-          id: 'documentos',
+          titulo:
+            'Documentos Normativos',
 
-          nombre:
-            'DOCUMENTOS NORMATIVOS',
-
-          tipo: 'documentos',
-
-          secciones: [
+          documentos: [
 
             {
-              titulo:
-                'Documentos Normativos',
+              nombre:
+                'Lineamientos',
 
-              documentos: [
+              url:
+                'assets/miscelaneo/CS_247/documentos_normativos/1-Lineamientos-2024-S247.pdf'
+            },
 
-                {
-                  nombre:
-                    'Lineamientos',
+            {
+              nombre:
+                'Esquema de Contraloría Social 2025',
 
-                  url:
-                    'assets/miscelaneo/CS_247/documentos_normativos/1-Lineamientos-2024-S247.pdf'
-                },
+              url:
+                'assets/miscelaneo/CS_247/documentos_normativos/2-Esquema-S247.pdf'
+            },
 
-                {
-                  nombre:
-                    'Esquema de Contraloría Social 2025',
+            {
+              nombre:
+                'Modelo Guía Operativa',
 
-                  url:
-                    'assets/miscelaneo/CS_247/documentos_normativos/2-Esquema-S247.pdf'
-                },
+              url:
+                'assets/miscelaneo/CS_247/documentos_normativos/S247-Modelo-3-Guia-O.pdf'
+            },
 
-                {
-                  nombre:
-                    'Modelo Guía Operativa',
+            {
+              nombre:
+                'Modelo 4 PATCS',
 
-                  url:
-                    'assets/miscelaneo/CS_247/documentos_normativos/S247-Modelo-3-Guia-O.pdf'
-                },
+              url:
+                'assets/miscelaneo/CS_247/documentos_normativos/S247-2025-Modelo-4-PATCS.pdf'
+            },
 
-                {
-                  nombre:
-                    'Modelo 4 PATCS',
+            {
+              nombre:
+                'OF Validación S247 2025',
 
-                  url:
-                    'assets/miscelaneo/CS_247/documentos_normativos/S247-2025-Modelo-4-PATCS.pdf'
-                },
-
-                {
-                  nombre:
-                    'OF Validación S247 2025',
-
-                  url:
-                    'assets/miscelaneo/CS_247/documentos_normativos/OF-DE-VALIDA-S247.pdf'
-                }
-
-              ]
+              url:
+                'assets/miscelaneo/CS_247/documentos_normativos/OF-DE-VALIDA-S247.pdf'
             }
 
           ]
         },
 
 
-        // ---------------------------------------------------
-        // INFORMES
-        // ---------------------------------------------------
+    // ==============================================
+    // FORMATOS DE GUÍA OPERATIVA
+    // ==============================================
 
-        {
-          id: 'informes',
+    {
+      titulo:
+        'Formatos de Guía Operativa',
 
-          nombre:
-            'INFORMES',
+      documentos: [
 
-          tipo: 'documentos',
+                    {
+                      nombre:
+                        'Anexo 1.- Acta de Constitución de Comité de Contraloría Social 2025',
 
-          secciones: [
+                      url:
+                        'assets/miscelaneo/CS_247/formatos_guia/Anexo 1.- Acta de Constitucion de Comite de Contraloria Social 2025.pdf'
+                    },
 
-            {
-              documentos: [
+                    {
+                      nombre:
+                        'Anexo 2.- Acta de Sustitución de Integrante de Comité de C.S. 2025',
 
-                {
-                  nombre:
-                    '1. - S247 INFORME F PRODEP-TecNM-2024',
+                      url:
+                        'assets/miscelaneo/CS_247/formatos_guia/Anexo 2.- Acta de Sustitucion de Integrante de Comite de C.S. 2025.pdf'
+                    },
 
-                  url:
-                    'assets/miscelaneo/CS_247/INFORME-FINAL-I-N-2024.docx'
+                    {
+                      nombre:
+                        'Anexo 3.- Minutas de reunión de Comité de Contraloría Social 2025',
+
+                      url:
+                        'assets/miscelaneo/CS_247/formatos_guia/Anexo 3.- Minutas de reunion de Comite de Contraloria Social 2025.pdf'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo 4.- Informe de Comité de Contraloría Social 2025',
+
+                      url:
+                        'assets/miscelaneo/CS_247/formatos_guia/Anexo 4.- Informe de Comite de Contraloria Social 2025.pdf'
+                    }
+
+                  ]
                 }
 
               ]
-            }
-
-          ]
-        },
+            },
 
 
-        // ---------------------------------------------------
-        // QUEJAS
-        // ---------------------------------------------------
-
-        {
-          id: 'quejas',
-
-          nombre:
-            'QUEJAS',
-
-          tipo: 'documentos',
-
-          secciones: [
+            // ------------------------------------------------
+            // INFORMES
+            // ------------------------------------------------
 
             {
-              documentos: [
+              id: 'informes',
+
+              nombre:
+                'Informes',
+
+              tipo: 'documentos',
+
+              secciones: [
 
                 {
-                  nombre:
-                    '1. - MECANISMOS PARA QUEJAS y DENUNCIAS 2025',
+                  documentos: [
 
-                  url:
-                    'assets/miscelaneo/CS_247/MECANISMOS-DE-QUEJAS-Y-DENUNCIAS-S247-2025.pdf'
+                    {
+                      nombre:
+                        '1. - S247 INFORME F PRODEP-TecNM-2024',
+
+                      url:
+                        'assets/miscelaneo/CS_247/INFORME-FINAL-I-N-2024.docx'
+                    }
+
+                  ]
                 }
 
               ]
-            }
-
-          ]
-        },
+            },
 
 
-        // ---------------------------------------------------
-        // LOGOTIPO
-        // ---------------------------------------------------
-
-        {
-          id: 'logo',
-
-          nombre:
-            'LOGOTIPO',
-
-          tipo: 'documentos',
-
-          secciones: [
+            // ------------------------------------------------
+            // QUEJAS
+            // ------------------------------------------------
 
             {
-              documentos: [
+              id: 'quejas',
+
+              nombre:
+                'Quejas y Denuncias',
+
+              tipo: 'documentos',
+
+              secciones: [
 
                 {
-                  nombre:
-                    '1. - Logotipo Guardianes del Gasto',
+                  documentos: [
 
-                  url:
-                    'assets/miscelaneo/CS_247/LOGOS_GUARDIANES DEL GASTO_PNG_3.png'
-                },
+                    {
+                      nombre:
+                        '1. - MECANISMOS PARA QUEJAS y DENUNCIAS 2025',
+
+                      url:
+                        'assets/miscelaneo/CS_247/MECANISMOS-DE-QUEJAS-Y-DENUNCIAS-S247-2025.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // LOGOTIPO
+            // ------------------------------------------------
+
+            {
+              id: 'logo',
+
+              nombre:
+                'Logotipo de Contraloria Social 2026',
+
+              tipo: 'documentos',
+
+              secciones: [
 
                 {
-                  nombre:
-                    '2. - Logotipo Guardianes del Gasto',
+                  documentos: [
 
-                  url:
-                    'assets/miscelaneo/CS_247/LOGOS_GUARDIANES DEL GASTO_PNG_2.png'
+                    {
+                      nombre:
+                        '1. - Logotipo Guardianes del Gasto',
+
+                      url:
+                        'assets/miscelaneo/CS_247/LOGOS_GUARDIANES DEL GASTO_PNG_3.png'
+                    },
+
+                    {
+                      nombre:
+                        '2. - Logotipo Guardianes del Gasto',
+
+                      url:
+                        'assets/miscelaneo/CS_247/LOGOS_GUARDIANES DEL GASTO_PNG_2.png'
+                    }
+
+                  ]
                 }
 
               ]
@@ -548,196 +939,8 @@ export class Contralorias_socialesComponent {
         }
 
       ]
-    },
 
-    // S247
-  {
-    id: 'NUEVO_ID',
-    nombre: 'S247',
-    titulo: 'S247 2026',
-
-    responsable:
-      'Gabriela Gutiérrez Hernández | Responsable de Contraloría Social y S247',
-
-    correo: 'prodep@escarcega.tecnm.mx',
-
-    logo: 'assets/home_logos/logo_conta.jpg',
-
-    pestanas: [
-
-      // =====================================================
-      // 1. PDF
-      // =====================================================
-
-      {
-        id: 'que-es-programa',
-        nombre: '¿QUÉ ES EL S247 PRODEP 2026?',
-        tipo: 'pdf',
-        pdf: 'assets/miscelaneo/CS_S247_2026/QUE ES EL S247 PRODEP 2026.pdf'
-      },
-
-
-      // =====================================================
-      // 2. PDF
-      // =====================================================
-
-      {
-        id: 'contraloria-social',
-        nombre: '¿QUÉ ES LA CONTRALORÍA SOCIAL 2026?',
-        tipo: 'pdf',
-        pdf: 'assets/miscelaneo/CS_S247_2026/QUE ES LA CONTRALORIA SOCIAL 2026.pdf'
-      },
-
-
-      // =====================================================
-      // 3. DOCUMENTOS NORMATIVOS
-      // =====================================================
-
-      {
-        id: 'documentos',
-        nombre: 'DOCUMENTOS NORMATIVOS',
-        tipo: 'documentos',
-
-        secciones: [
-
-          {
-            titulo: 'Documentos Normativos',
-            documentos: [
-
-              {
-                nombre: '1-Lineamientos 2024 S247.pdf',
-                url: 'assets/miscelaneo/CS_S247_2026/documentos_normativos/1-Lineamientos 2024 S247.pdf'
-              },
-
-              {
-                nombre: '2.- S247 Esquema de Contraloria Social 2026.pdf',
-                url: 'assets/miscelaneo/CS_S247_2026/documentos_normativos/2.- S247 Esquema de Contraloria Social 2026.pdf'
-              },
-
-              {
-                nombre: '3.- S247 Actividades de seguimiento actual.pdf',
-                url: 'assets/miscelaneo/CS_S247_2026/documentos_normativos/3.- S247 Actividades de seguimiento actual.pdf'
-              },
-
-              {
-                nombre: '4.- S247 OFICIO VALIDACION 2026.pdf',
-                url: 'assets/miscelaneo/CS_S247_2026/documentos_normativos/4.- S247 OFICIO VALIDACION 2026.pdf'
-              },
-
-              {
-                nombre: '5.- S247 2026 Anexo 1 Acta constitucion de CCS.docx',
-                url: 'assets/miscelaneo/CS_S247_2026/documentos_normativos/5.- S247 2026 Anexo 1 Acta constitucion de CCS.docx'
-              },
-
-              {
-                nombre: '6.- S247 2026 Anexo 2 Acta sustitucion de CCS.docx',
-                url: 'assets/miscelaneo/CS_S247_2026/documentos_normativos/6.- S247 2026 Anexo 2 Acta sustitucion de CCS.docx'
-              },
-
-              {
-                nombre: '7.- S247 2026 Anexo 3 Minuta.docx',
-                url: 'assets/miscelaneo/CS_S247_2026/documentos_normativos/7.- S247 2026 Anexo 3 Minuta.docx'
-              },
-
-              {
-                nombre: '8.- S247 2026 Anexo 4 Informe del CCS.xlsx',
-                url: 'assets/miscelaneo/CS_S247_2026/documentos_normativos/8.- S247 2026 Anexo 4 Informe del CCS.xlsx'
-              },
-
-            ]
-          }
-
-        ]
-      },
-
-
-      // =====================================================
-      // 4. INFORME FINAL 2025
-      // =====================================================
-
-      {
-        id: 'informes',
-        nombre: 'INFORME FINAL 2025',
-        tipo: 'documentos',
-
-        secciones: [
-
-          {
-            titulo: 'Informe Final 2025',
-            documentos: [
-
-              {
-                nombre: 'Informe Final 2025',
-                url: 'assets/miscelaneo/CS_S247_2026/INFORME FINAL 2025/'
-              }
-
-            ]
-          }
-
-        ]
-      },
-
-
-      // =====================================================
-      // 5. QUEJAS Y DENUNCIAS
-      // =====================================================
-
-      {
-        id: 'quejas',
-        nombre: 'MECANISMO DE QUEJAS Y DENUNCIAS 2026',
-        tipo: 'documentos',
-
-        secciones: [
-
-          {
-            titulo: 'Mecanismo de Quejas y Denuncias 2026',
-            documentos: [
-
-              {
-                nombre: 'MECANISMO DE QUEJAS y DENUNCIAS 2026',
-                url: 'assets/miscelaneo/CS_S247_2026/MECANISMO DE QUEJAS y DENUNCIAS 2026.pdf'
-              }
-
-            ]
-          }
-
-        ]
-      },
-
-      // =====================================================
-// 6. LOGOTIPO
-// =====================================================
-
-        {
-          id: 'logo',
-          nombre: 'LOGOTIPO',
-          tipo: 'documentos',
-
-          secciones: [
-
-            {
-              titulo: 'Logotipo Contraloría Social',
-
-              documentos: [
-
-                {
-                  nombre: 'Logotipo 1 Contraloría Social 2026.png ',
-                  url: 'assets/miscelaneo/CS_S247_2026/logotipos 2026/LOGOS_GUARDIANES DEL GASTO_PNG_Mesa de trabajo 1 copia 2.png'
-                },
-
-                {
-                  nombre: 'Logotipo 2 Contraloría Social 2026.png',
-                  url: 'assets/miscelaneo/CS_S247_2026/logotipos 2026/LOGOS_GUARDIANES DEL GASTO_PNG_Mesa de trabajo 1 copia 3.png'
-                }
-
-              ]
-            }
-
-          ]
-        }
-
-    ]
-  }
+    }
 
   ];
 
@@ -749,11 +952,57 @@ export class Contralorias_socialesComponent {
   get contraloriaActual(): Contraloria {
 
     return this.contralorias.find(
-
       contraloria =>
         contraloria.id === this.contraloriaSeleccionada
-
     ) ?? this.contralorias[0];
+
+  }
+
+
+  // =========================================================
+  // AÑO S247 ACTUAL
+  // =========================================================
+
+  get anioS247Actual(): AnioS247 | undefined {
+
+    const contraloria = this.contraloriaActual;
+
+    if (contraloria.id !== 's247') {
+      return undefined;
+    }
+
+    return contraloria.anios?.find(
+      anio =>
+        anio.id === this.anioS247Seleccionado
+    ) ?? contraloria.anios?.[0];
+
+  }
+
+
+  // =========================================================
+  // PESTAÑAS ACTUALES
+  // =========================================================
+
+  get pestanasActuales(): Pestana[] {
+
+    // -------------------------------------------------------
+    // Pp S247 PRODEP
+    // -------------------------------------------------------
+
+    if (
+      this.contraloriaActual.id === 's247'
+    ) {
+
+      return this.anioS247Actual?.pestanas ?? [];
+
+    }
+
+
+    // -------------------------------------------------------
+    // Pp U006
+    // -------------------------------------------------------
+
+    return this.contraloriaActual.pestanas ?? [];
 
   }
 
@@ -764,39 +1013,67 @@ export class Contralorias_socialesComponent {
 
   get pestanaActual(): Pestana | undefined {
 
-    return this.contraloriaActual.pestanas.find(
-
+    return this.pestanasActuales.find(
       pestana =>
         pestana.id === this.tabSeleccionada
-
     );
 
   }
 
 
   // =========================================================
-  // CAMBIAR CONTRALORÍA
+  // CAMBIAR CONTRALORÍA PRINCIPAL
   // =========================================================
 
   seleccionarContraloria(id: string): void {
 
     this.contraloriaSeleccionada = id;
 
-    const contraloria =
-      this.contralorias.find(
 
-        item =>
-          item.id === id
+    // -------------------------------------------------------
+    // Si entramos a S247, comenzamos siempre en 2026
+    // -------------------------------------------------------
 
-      );
+    if (id === 's247') {
 
-    if (
-      contraloria &&
-      contraloria.pestanas.length > 0
-    ) {
+      this.anioS247Seleccionado = 's247-2026';
+
+    }
+
+
+    // -------------------------------------------------------
+    // Obtener las pestañas correspondientes
+    // -------------------------------------------------------
+
+    const pestanas = this.pestanasActuales;
+
+
+    if (pestanas.length > 0) {
 
       this.tabSeleccionada =
-        contraloria.pestanas[0].id;
+        pestanas[0].id;
+
+    }
+
+  }
+
+
+  // =========================================================
+  // CAMBIAR AÑO S247
+  // =========================================================
+
+  seleccionarAnioS247(id: string): void {
+
+    this.anioS247Seleccionado = id;
+
+
+    const pestanas = this.pestanasActuales;
+
+
+    if (pestanas.length > 0) {
+
+      this.tabSeleccionada =
+        pestanas[0].id;
 
     }
 
@@ -842,12 +1119,9 @@ export class Contralorias_socialesComponent {
     if (!this.pdfCache.has(pdfUrl)) {
 
       this.pdfCache.set(
-
         pdfUrl,
-
         this.sanitizer
           .bypassSecurityTrustResourceUrl(pdfUrl)
-
       );
 
     }

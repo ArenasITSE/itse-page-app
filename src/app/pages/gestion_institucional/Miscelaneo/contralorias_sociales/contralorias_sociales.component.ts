@@ -723,7 +723,7 @@ export class Contralorias_socialesComponent {
       id: 'documentos',
 
       nombre:
-        'Documentos Normativos S247 2026',
+        'Documentos Normativos S247 2025',
 
       tipo: 'documentos',
 

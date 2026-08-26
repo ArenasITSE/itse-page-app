@@ -47,15 +47,27 @@
    Pp U006 / Pp S247 PRODEP
    ========================================================= */
 
+
+/* SEPARACIÓN ENTRE LOS BOTONES PRINCIPALES */
+
+.contralorias-container > .contralorias-selector {
+
+  gap: 5px;
+
+}
+
+
+/* BOTONES */
+
 .contralorias-container > .contralorias-selector button {
 
   padding: 12px 22px;
 
-  border: 1px solid #5f78b5;
+  border: 1px solid #ccc;
 
-  background: #6b82bd;
+  background: #e6e6e6;
 
-  color: white;
+  color: #222;
 
   cursor: pointer;
 
@@ -63,18 +75,20 @@
 
   font-weight: 500;
 
-  border-radius: 4px;
+  border-radius: 0;
 
   transition: 0.2s;
 
 }
 
 
-/* HOVER */
+/* =========================================================
+   HOVER
+   ========================================================= */
 
 .contralorias-container > .contralorias-selector button:hover {
 
-  background: #5f76ad;
+  background: #dcdcdc;
 
 }
 
@@ -418,7 +432,11 @@
 }
 
 
-/* LINKS */
+/* =========================================================
+
+   LINKS
+
+   ========================================================= */
 
 .docs-list a {
 
@@ -465,7 +483,9 @@
   }
 
 
-  /* SELECTOR PRINCIPAL */
+  /* =======================================================
+     SELECTOR PRINCIPAL
+     ======================================================= */
 
   .contralorias-container > .contralorias-selector {
 
@@ -480,7 +500,9 @@
   }
 
 
-  /* SELECTOR DE AÑOS */
+  /* =======================================================
+     SELECTOR DE AÑOS
+     ======================================================= */
 
   .contraloria-section > .contralorias-selector {
 
@@ -495,7 +517,9 @@
   }
 
 
-  /* TABS */
+  /* =======================================================
+     TABS
+     ======================================================= */
 
   .tabs-menu {
 
@@ -512,7 +536,9 @@
   }
 
 
-  /* PDF */
+  /* =======================================================
+     PDF
+     ======================================================= */
 
   .tabs-content iframe {
 

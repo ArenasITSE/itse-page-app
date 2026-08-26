@@ -936,6 +936,548 @@ export class Contralorias_socialesComponent {
             }
 
           ]
+        },
+
+                // ===================================================
+        // S247 2024
+        // ===================================================
+
+        {
+          id: 's247-2024',
+
+          nombre:
+            'Pp S247 PRODEP_2024',
+
+          responsable:
+            'Gabriela Gutiérrez Hernández',
+
+          cargo:
+            'Responsable de Contraloría Social y S247 2024',
+
+          correo:
+            'prodep@escarcega.tecnm.mx',
+
+          logo:
+            'assets/miscelaneo/CS_S247_2024/Logotipo 2024/logo_conta.jpg',
+
+          pestanas: [
+
+            // ------------------------------------------------
+            // 1. PRODEP
+            // ------------------------------------------------
+
+            {
+              id: 'prodep',
+
+              nombre:
+                'PRODEP',
+
+              tipo: 'pdf',
+
+              pdf:
+                'assets/miscelaneo/CS_S247_2024/PRODEP 2024/INFORMACION S247-2024.pdf'
+            },
+
+
+            // ------------------------------------------------
+            // 2. CONTRALORÍA SOCIAL
+            // ------------------------------------------------
+
+            {
+              id: 'contraloria',
+
+              nombre:
+                'Contraloría Social',
+
+              tipo: 'pdf',
+
+              pdf:
+                'assets/miscelaneo/CS_S247_2024/Contraloria 2024/QUE ES CS 2024.pdf'
+            },
+
+
+            // ------------------------------------------------
+            // 3. DOCUMENTOS NORMATIVOS
+            // ------------------------------------------------
+
+            {
+              id: 'documentos',
+
+              nombre:
+                'Documentos Normativos S247 2024',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                // ============================================
+                // DOCUMENTOS NORMATIVOS
+                // ============================================
+
+                {
+                  titulo:
+                    'Documentos Normativos',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Lineamientos 2024 S247.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/documentos formativos 2024/1.-Lineamientos 2024 S247.pdf'
+                    },
+
+                    {
+                      nombre:
+                        'Esquema de Contraloría Social 2024.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/documentos formativos 2024/2.- S247 2024 Modelo 2 Esquema.pdf'
+                    },
+
+                    {
+                      nombre:
+                        'Guía Operativa de Contraloría Social 2024.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/documentos formativos 2024/3.- S247 2024 Modelo 3 Guía Operativa.pdf'
+                    },
+
+                    {
+                      nombre:
+                        'Programa Anual de Trabajo de Contraloría Social “PATCS” 2024.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/documentos formativos 2024/4.- S247 2024 Modelo 4 PATCS-1.pdf'
+                    },
+
+                    {
+                      nombre:
+                        'Oficio de Validación de documentos normativos 2024.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/documentos formativos 2024/OF VALIDACION S247 2024.pdf'
+                    }
+
+                  ]
+                },
+
+
+                // ============================================
+                // FORMATOS DE GUÍA OPERATIVA
+                // ============================================
+
+                {
+                  titulo:
+                    'Formatos de Guía Operativa',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Anexo 1.- Acta de Constitución de Comité de Contraloría Social 2024',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/formatos guia 2024/Anexo 1 Acta constitucion de CCS S247 2024.pdf'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo 2.- Acta de Sustitución de Integrante de Comité de C.S. 2024',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/formatos guia 2024/Anexo 2 Acta sustitucion de CCS S247 2024.pdf'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo 3.- Minutas de reunión de Comité de Contraloría Social 2024',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/formatos guia 2024/Anexo 3 Minuta Reunion CCS S247 2024.pdf'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo 4.- Informe de Comité de Contraloría Social 2024',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/formatos guia 2024/Anexo 4 Informe Final del CCS S247 2024.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 4. INFORMES
+            // ------------------------------------------------
+
+            {
+              id: 'informes',
+
+              nombre:
+                'Informes',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Informe Final S247 2024',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/Informes 2024/2.-INFORME FINAL S247 2023.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 5. QUEJAS Y DENUNCIAS
+            // ------------------------------------------------
+
+            {
+              id: 'quejas',
+
+              nombre:
+                'Quejas y Denuncias',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Mecanismo de Quejas y Denuncias 2024.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/Quejas 2024/MECANISMO DE QUEJAS 2024.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 6. LOGOTIPO
+            // ------------------------------------------------
+
+            {
+              id: 'logo',
+
+              nombre:
+                'Logotipo de Contraloría Social 2024',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Logotipo Contraloría Social 2024.jpg',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/Logotipo 2024/logo_conta.jpg'
+                    }
+
+                  ]
+                }
+
+              ]
+            }
+
+          ]
+        },
+
+        // ===================================================
+// S247 2023
+// ===================================================
+
+        {
+          id: 's247-2023',
+
+          nombre:
+            'Pp S247 PRODEP_2023',
+
+          responsable:
+            'Gabriela Gutiérrez Hernández',
+
+          cargo:
+            'Responsable de Contraloría Social y S247 2023',
+
+          correo:
+            'prodep@escarcega.tecnm.mx',
+
+          logo:
+            'assets/miscelaneo/CS_S247_2023/logotipo 2023/logo contraloria socialf-01.png',
+
+          pestanas: [
+
+            // ------------------------------------------------
+            // 1. PRODEP 2023
+            // ------------------------------------------------
+
+            {
+              id: 'prodep',
+
+              nombre:
+                'PRODEP',
+
+              tipo: 'pdf',
+
+              pdf:
+                'assets/miscelaneo/CS_S247_2023/PRODEP S247/1.- Informacion del Programa S-247.pdf'
+            },
+
+
+            // ------------------------------------------------
+            // 2. CONTRALORÍA SOCIAL
+            // ------------------------------------------------
+
+            {
+              id: 'contraloria',
+
+              nombre:
+                'CONTRALORÍA SOCIAL',
+
+              tipo: 'pdf',
+
+              pdf:
+                'assets/miscelaneo/CS_S247_2023/contraloria 2023/2.- QUE ES CONTRALORIA SOCIAL.pdf'
+            },
+
+
+            // ------------------------------------------------
+            // 3. DOCUMENTOS NORMATIVOS
+            // ------------------------------------------------
+
+            {
+              id: 'documentos',
+
+              nombre:
+                'DOCUMENTOS NORMATIVOS S247 2023',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  titulo:
+                    'Documentos Normativos',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        '1.- Lineamientos S247 2023',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/documentos normativos 2023/1.-Lineamientos_CS_28-10-2016, S247.pdf'
+                    },
+
+                    {
+                      nombre:
+                        '2.- Esquema de Contraloría Social 2023',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/documentos normativos 2023/2.- ESQUEMA S247 PRODEP 2023.pdf'
+                    },
+
+                    {
+                      nombre:
+                        '3.- Guía Operativa de Contraloría Social 2023',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/documentos normativos 2023/3.- GUIA OPERATIVA S247 PRODEP 2023.pdf'
+                    },
+
+                    {
+                      nombre:
+                        '4.- Programa Anual de Trabajo de Contraloría Social “PATCS” 2023',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/documentos normativos 2023/4.- PATCS S247 PRODEP 2023.pdf'
+                    },
+
+                    {
+                      nombre:
+                        '5.- Oficio de Validación de documentos normativos 2023',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/documentos normativos 2023/5.- OFICIO DE VALIDACION S247 2023.pdf'
+                    }
+
+                  ]
+                },
+
+
+                // --------------------------------------------
+                // FORMATOS DE GUÍA OPERATIVA
+                // --------------------------------------------
+
+                {
+                  titulo:
+                    'Formatos de Guía Operativa',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Anexo 1.- Acta de Constitución del Comité de Contraloría Social 2023',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/formatos guia 2023/Anexo 1 Acta Const.docx'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo 2, Acta de Sustitución de Integrante (s) del Comité de C.S. 2023',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/formatos guia 2023/Anexo 2 Acta de Sust.docx'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo 3, Minuta de Reunión de Comité de Contraloría Social 2023',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/formatos guia 2023/Anexo 3 Mint reunion.docx'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo 4, Informe de Comité de Contraloría Social 2023',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/formatos guia 2023/Anexo 4 Informe.xlsx'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 4. INFORMES
+            // ------------------------------------------------
+
+            {
+              id: 'informes',
+
+              nombre:
+                'INFORMES',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  documentos: [
+
+                    {
+                      nombre:
+                        '1.- S247 INFORME F PRODEP-TecNM-2022',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/informes 2023/1.- S247 INFORME F PRODEP-TecNM-2022.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 5. QUEJAS Y DENUNCIAS
+            // ------------------------------------------------
+
+            {
+              id: 'quejas',
+
+              nombre:
+                'QUEJAS Y DENUNCIAS',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Mecanismo de Quejas y Denuncias 2023',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/quejas 2023/MECANISMOS PARA QUEJAS y DENUNCIAS 2023.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 6. LOGOTIPO
+            // ------------------------------------------------
+
+            {
+              id: 'logo',
+
+              nombre:
+                'LOGOTIPO',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Logotipo Contraloría Social 2023.png',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2023/logotipo 2023/logo contraloria socialf-01.png'
+                    }
+
+                  ]
+                }
+
+              ]
+            }
+
+          ]
         }
 
       ]

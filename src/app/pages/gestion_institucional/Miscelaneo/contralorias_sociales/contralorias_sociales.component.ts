@@ -1478,7 +1478,288 @@ export class Contralorias_socialesComponent {
             }
 
           ]
-        }
+        },
+
+        // ===================================================
+        // S247 2022
+        // ===================================================
+
+        {
+          id: 's247-2022',
+
+          nombre:
+            'Pp S247 PRODEP_2022',
+
+          responsable:
+            'Gabriela Gutiérrez Hernández',
+
+          cargo:
+            'Responsable de Contraloría Social y S247 2022',
+
+          correo:
+            'prodep@escarcega.tecnm.mx',
+
+          logo:
+            'assets/miscelaneo/CS_S247_2023/logotipo 2023/logo contraloria socialf-01.png',
+
+          pestanas: [
+
+            // ------------------------------------------------
+            // 1. PRODEP 2022
+            // ------------------------------------------------
+
+            {
+              id: 'prodep',
+
+              nombre:
+                'PRODEP',
+
+              tipo: 'pdf',
+
+              pdf:
+                'assets/miscelaneo/CS_S247_2022/prodep 2022/1.- Informacion del Programa PRODEP.pdf'
+            },
+
+
+            // ------------------------------------------------
+            // 2. CONTRALORÍA SOCIAL
+            // ------------------------------------------------
+
+            {
+              id: 'contraloria',
+
+              nombre:
+                'CONTRALORÍA SOCIAL',
+
+              tipo: 'pdf',
+
+              pdf:
+                'assets/miscelaneo/CS_S247_2022/contraloria 2022/2.- Contraloria Social 2022.pdf'
+            },
+
+
+            // ------------------------------------------------
+            // 3. DOCUMENTOS NORMATIVOS
+            // ------------------------------------------------
+
+            {
+              id: 'documentos',
+
+              nombre:
+                'DOCUMENTOS NORMATIVOS',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                // ==============================================
+                // DOCUMENTOS NORMATIVOS
+                // ==============================================
+
+                {
+                  titulo:
+                    'Documentos Normativos',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        '1.- Lineamientos CS 28-10-2016.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/documentos normativos 2022/1.- Lineamientos CS 28-10-2016.pdf'
+                    },
+
+                    {
+                      nombre:
+                        '2.- Esquema de Contraloría Social 2022.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/documentos normativos 2022/2.- Anexo I. Esquema CS S247.pdf'
+                    },
+
+                    {
+                      nombre:
+                        '3.- Programa Anual de Trabajo de Contraloría Social “PATCS” 2022',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/documentos normativos 2022/3.- Anexo VII. Programa A T PATCS.pdf'
+                    },
+
+                    {
+                      nombre:
+                        '4.- Guía Operativa de Contraloría Social 2022.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/documentos normativos 2022/4.- Anexo II. Guía OCS S247.pdf'
+                    }
+
+                  ]
+                },
+
+
+                // ==============================================
+                // FORMATOS DE GUÍA OPERATIVA
+                // ==============================================
+
+                {
+                  titulo:
+                    'Formatos de Guía Operativa',
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Anexo III.- Acta de Constitución del Comité de Contraloría Social',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/formatos guia 2022/Anexo III. Acta de Constitucion del Comite de Contraloria Social S247.docx'
+                    },
+
+                    {
+                      nombre:
+                        ' Anexo IV.- Acta de Sustitución de Integrante (s) del Comité de C.S.',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/formatos guia 2022/Anexo IV. Acta de sustitucion de integrante(s) del Comite.docx'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo IX.- Programa Institucional de Trabajo PITCS 2022.',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/formatos guia 2022/Anexo IX. Programa lnstitucional de Trabajo PITCS 2022.xlsx'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo V.- Minuta de reunión de Contraloría Social',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/formatos guia 2022/Anexo V. Minuta de Reunion del CS S247.docx'
+                    },
+
+                    {
+                      nombre:
+                        ' Anexo VI. - Informe de Comité de Contraloría Social 2022',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/formatos guia 2022/Anexo VI. Informe del Comite de Contraloría Social 2022.xlsx'
+                    },
+
+                    {
+                      nombre:
+                        'Anexo VIII.- Quejas, Denuncias o Peticiones 2022',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/formatos guia 2022/Anexo VIII Quejas, Denuncias o Peticiones 2022.docx'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 4. INFORMES
+            // ------------------------------------------------
+
+            {
+              id: 'informes',
+
+              nombre:
+                'INFORMES',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Informe Final 2022',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/informe 2022/Informe CS S247_2022.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 5. QUEJAS Y DENUNCIAS
+            // ------------------------------------------------
+
+            {
+              id: 'quejas',
+
+              nombre:
+                'QUEJAS Y DENUNCIAS',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Mecanismo de Quejas y Denuncias 2022',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/quejas 2022/MECANISMO DE QUEJAS Y DENUNCIAS.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 6. LOGOTIPO
+            // ------------------------------------------------
+
+            {
+              id: 'logo',
+
+              nombre:
+                'LOGOTIPO',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Logotipo Contraloría Social 2022',
+
+                      url:
+                        'assets/RUTA/2022/logotipos/LOGOTIPO-2022.png'
+                    }
+
+                  ]
+                }
+
+              ]
+            }
+
+          ]
+        },
 
       ]
 

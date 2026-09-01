@@ -280,7 +280,7 @@ export class Contralorias_socialesComponent {
           id: 'quejas',
 
           nombre:
-            'Quejas y denuncias',
+            'Quejas y denuncias e Irregularidades',
 
           tipo: 'documentos',
 
@@ -851,10 +851,10 @@ export class Contralorias_socialesComponent {
 
                     {
                       nombre:
-                        '1. - S247 INFORME F PRODEP-TecNM-2024',
+                        'Anexo 4: Informe final PRODEP 2024',
 
                       url:
-                        'assets/miscelaneo/CS_247/INFORME-FINAL-I-N-2024.docx'
+                        'assets/miscelaneo/CS_247/Informe final_Anexo 4_PRODEP 2024.pdf'
                     }
 
                   ]
@@ -1153,7 +1153,7 @@ export class Contralorias_socialesComponent {
               id: 'quejas',
 
               nombre:
-                'Quejas y Denuncias',
+                'Quejas, Denuncias e Irregularidades',
 
               tipo: 'documentos',
 
@@ -1212,8 +1212,8 @@ export class Contralorias_socialesComponent {
         },
 
         // ===================================================
-// S247 2023
-// ===================================================
+        // S247 2023
+        // ===================================================
 
         {
           id: 's247-2023',
@@ -1422,7 +1422,7 @@ export class Contralorias_socialesComponent {
               id: 'quejas',
 
               nombre:
-                'QUEJAS Y DENUNCIAS',
+                'Quejas, Denuncias e Irregularidades',
 
               tipo: 'documentos',
 
@@ -1454,7 +1454,7 @@ export class Contralorias_socialesComponent {
               id: 'logo',
 
               nombre:
-                'LOGOTIPO',
+                'Manual de Operación del SICS-Instancias Ejecutoras 2023',
 
               tipo: 'documentos',
 
@@ -1668,42 +1668,10 @@ export class Contralorias_socialesComponent {
             // ------------------------------------------------
 
             {
-              id: 'informes',
-
-              nombre:
-                'INFORMES',
-
-              tipo: 'documentos',
-
-              secciones: [
-
-                {
-                  documentos: [
-
-                    {
-                      nombre:
-                        'Informe Final 2022',
-
-                      url:
-                        'assets/miscelaneo/CS_S247_2022/informe 2022/Informe CS S247_2022.pdf'
-                    }
-
-                  ]
-                }
-
-              ]
-            },
-
-
-            // ------------------------------------------------
-            // 5. QUEJAS Y DENUNCIAS
-            // ------------------------------------------------
-
-            {
               id: 'quejas',
 
               nombre:
-                'QUEJAS Y DENUNCIAS',
+                'Quejas, Denuncias o Peticiones',
 
               tipo: 'documentos',
 
@@ -1718,6 +1686,38 @@ export class Contralorias_socialesComponent {
 
                       url:
                         'assets/miscelaneo/CS_S247_2022/quejas 2022/MECANISMO DE QUEJAS Y DENUNCIAS.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
+
+
+            // ------------------------------------------------
+            // 5. QUEJAS Y DENUNCIAS
+            // ------------------------------------------------
+
+            {
+              id: 'informes',
+
+              nombre:
+                'Informes Trimestrales',
+
+              tipo: 'documentos',
+
+              secciones: [
+
+                {
+                  documentos: [
+
+                    {
+                      nombre:
+                        'Informe Final 2022',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2022/informe 2022/Informe CS S247_2022.pdf'
                     }
 
                   ]

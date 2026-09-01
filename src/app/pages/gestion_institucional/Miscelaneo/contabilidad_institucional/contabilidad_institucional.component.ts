@@ -86,7 +86,7 @@ export class Contabilidad_institucionalComponent {
                 { nombre: '3-Avance financiero.pdf', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/5-Anexo/3-Avance financiero.pdf' }
               ]
             },
-            { nombre: '6-LDF 1er T. 2016',
+            { nombre: '6-LDF 1er T. 2026',
               abierto: false,
               archivos: [
                 { nombre: 'F1_ESF_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F1_ESF_3132026.xls' },
@@ -97,7 +97,12 @@ export class Contabilidad_institucionalComponent {
                 { nombre: 'F6a_EAEPED_COG_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F6a_EAEPED_COG_3132026.xls' },
                 { nombre: 'F6b_EAEPED_CA_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F6b_EAEPED_CA_3132026.xls' },
                 { nombre: 'F6c_EAEPED_CF_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F6c_EAEPED_CF_3132026.xls' },
-                { nombre: 'F6d_EAEPED_CSP_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F6d_EAEPED_CSP_3132026.xls' }
+                { nombre: 'F6d_EAEPED_CSP_3132026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F6d_EAEPED_CSP_3132026.xls' },
+                { nombre: 'F7a_PI_3182026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F7a_PI_3182026.xls' },
+                { nombre: 'F7b_PE_3182026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F7b_PE_3182026.xls' },
+                { nombre: 'F7c_RI_3182026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F7c_RI_3182026.xls' },
+                { nombre: 'F7d_RE_3182026.xls', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/F7d_RE_3182026.xls' },
+                { nombre: 'Guia de Cumplimiento de la Ley de Disciplina Financiera 2025.xlsx', url: 'assets/contabilidad_institucional/estados_financieros/2026/1er_Trimestre/6-LDF 2026/Guia de Cumplimiento de la Ley de Disciplina Financiera 2025.xlsx' }
               ]
             },
             { nombre: '7-Formato SHCP',

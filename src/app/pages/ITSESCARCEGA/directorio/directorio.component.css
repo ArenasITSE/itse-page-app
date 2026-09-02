@@ -1,90 +1,621 @@
+:host {
+  display: block;
+}
 
-/* =========================================
-CONTENEDOR GENERAL
-========================================= */
+/* =========================
+   VARIABLES
+========================= */
 
-.iframe-container {
+:host {
+  --primary-color: #1e3a8a;
+  --primary-dark: #172554;
+  --secondary-color: #2563eb;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
 
-    width: 100%;
+  --accent-root: #ffffff;
+  --accent-staff: #64748b;
 
-    margin: 0;
+  --accent-admin: #ff0000;
+  --accent-planeacion: #1900ff;
+  --accent-vinculacion: #00eeff;
+  --accent-academica: #22c55e;
 
-    padding: 0;
+  display: block;
+}
+
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+
+.header {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.header h1 {
+  color: var(--primary-color);
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.header p {
+  color: var(--text-muted);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(37, 99, 235, 0.08);
+
+  border: 1px solid rgba(37, 99, 235, 0.15);
+
+  font-weight: 600;
+
+  color: var(--primary-color);
+
+  transition: all .25s ease;
+}
+
+.stat-card:hover {
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 4px 12px rgba(0,0,0,.10);
+}
+
+/* =========================
+   BUSCADOR
+========================= */
+
+.controls {
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 30px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: var(--secondary-color);
+}
+
+/* =========================
+   ÁRBOL
+========================= */
+
+.tree-container {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+.tree {
+  display: table;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tree ul {
+  padding-top: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tree li {
+  list-style: none;
+  position: relative;
+  padding: 25px 15px 0 15px;
+}
+
+/* =========================
+   CONECTORES
+========================= */
+
+.tree li::before,
+.tree li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 50%;
+  border-top: 2px solid var(--text-muted);
+  width: 50%;
+  height: 25px;
+  opacity: 0.4;
+}
+
+.tree li::after {
+  right: auto;
+  left: 50%;
+  border-left: 2px solid var(--text-muted);
+}
+
+.tree li:only-child::after,
+.tree li:only-child::before {
+  display: none;
+}
+
+.tree li:only-child {
+  padding-top: 0;
+}
+
+.tree li:first-child::before,
+.tree li:last-child::after {
+  border: 0;
+}
+
+.tree li:last-child::before {
+  border-right: 2px solid var(--text-muted);
+  border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+  border-radius: 5px 0 0 0;
+}
+
+.tree ul ul::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  border-left: 2px solid var(--text-muted);
+  width: 0;
+  height: 25px;
+  opacity: 0.4;
+}
+
+/* =========================
+   TARJETAS
+========================= */
+
+.node {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding:16px 16px 16px 16px;
+  border-radius: 12px;
+
+  position: relative;
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 300px;
+  height: 140px;
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 10px 15px -3px rgba(0,0,0,0.05),
+    0 4px 6px -2px rgba(0,0,0,0.05);
+
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.node:hover {
+  transform: translateY(-5px);
+}
+
+.level-dep.admin:hover,
+.sub-admin:hover {
+
+    border-color: var(--accent-admin);
+
+    box-shadow:
+        0 0 0 2px rgba(255,0,0,.15),
+        0 10px 20px rgba(255,0,0,.18);
+
+}
+
+.level-dep.planeacion:hover,
+.sub-planeacion:hover {
+
+    border-color: var(--accent-planeacion);
+
+    box-shadow:
+        0 0 0 2px rgba(25,0,255,.15),
+        0 10px 20px rgba(25,0,255,.18);
+
+}
+
+.level-dep.vinculacion:hover,
+.sub-vinculacion:hover {
+
+    border-color: var(--accent-vinculacion);
+
+    box-shadow:
+        0 0 0 2px rgba(0,238,255,.18),
+        0 10px 20px rgba(0,238,255,.20);
+
+}
+
+.level-dep.academica:hover,
+.sub-academica:hover {
+
+    border-color: var(--accent-academica);
+
+    box-shadow:
+        0 0 0 2px rgba(34,197,94,.18),
+        0 10px 20px rgba(34,197,94,.20);
+
+}
+
+.level-root:hover {
+
+    box-shadow:
+        0 0 0 2px rgba(30,58,138,.18),
+        0 12px 24px rgba(30,58,138,.25);
+
+}
+
+.level-staff:hover {
+
+    box-shadow:
+        0 0 0 2px rgba(100,116,139,.15),
+        0 10px 20px rgba(100,116,139,.20);
+
+}
+
+/* =========================
+   NIVELES
+========================= */
+
+.level-root {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-dark);
+  text-align: center;
+  align-items: center;
+}
+
+.level-root .puesto {
+  color: #93c5fd;
+}
+
+.level-staff {
+  background: #f1f5f9;
+  border: 2px dashed #94a3b8;
+}
+
+.level-sub {
+  background: var(--secondary-color);
+  color: white;
+  border-color: var(--primary-color);
+  text-align: center;
+  align-items: center;
+}
+
+.level-sub .puesto {
+  color: #bfdbfe;
+}
+
+/* =========================
+   COLORES DE SUBDIRECCIONES
+========================= */
+
+.sub-admin {
+  border-top: 5px solid var(--accent-admin);
+}
+
+.sub-planeacion {
+  border-top: 5px solid var(--accent-planeacion);
+}
+
+.sub-vinculacion {
+  border-top: 5px solid var(--accent-vinculacion);
+}
+
+.sub-academica {
+  border-top: 5px solid var(--accent-academica);
+}
+
+/* =========================
+   DEPARTAMENTOS
+========================= */
+
+.level-dep {
+  border-left: 5px solid var(--secondary-color);
+  padding-top:18px;
+}
+
+.level-dep.admin {
+  border-left-color: var(--accent-admin);
+}
+
+.level-dep.planeacion {
+  border-left-color: var(--accent-planeacion);
+}
+
+.level-dep.vinculacion {
+  border-left-color: var(--accent-vinculacion);
+}
+
+.level-dep.academica {
+  border-left-color: var(--accent-academica);
+}
+
+/* Carpetas de las SUBDIRECCIONES */
+
+.level-sub.sub-admin .folder-btn i{
+    color: var(--accent-admin);
+}
+
+.level-sub.sub-planeacion .folder-btn i{
+    color: var(--accent-planeacion);
+}
+
+.level-sub.sub-vinculacion .folder-btn i{
+    color: var(--accent-vinculacion);
+}
+
+.level-sub.sub-academica .folder-btn i{
+    color: var(--accent-academica);
+}
+
+/* Fondo blanco para las carpetas de las SUBDIRECCIONES */
+
+.level-sub.sub-admin .folder-btn,
+.level-sub.sub-planeacion .folder-btn,
+.level-sub.sub-vinculacion .folder-btn,
+.level-sub.sub-academica .folder-btn{
+
+    background:rgba(255,255,255,.92);
+
+}
+
+.level-sub.sub-admin .folder-btn{
+    border-color: var(--accent-admin);
+}
+
+.level-sub.sub-planeacion .folder-btn{
+    border-color: var(--accent-planeacion);
+}
+
+.level-sub.sub-vinculacion .folder-btn{
+    border-color: var(--accent-vinculacion);
+}
+
+.level-sub.sub-academica .folder-btn{
+    border-color: var(--accent-academica);
+}
+/* =========================
+   TEXTO
+========================= */
+
+.dept-title{
+
+    font-size:.70rem;
+    text-transform:uppercase;
+    font-weight:700;
+    color:var(--text-muted);
+    margin-bottom:4px;
+    letter-spacing:.5px;
+
+    word-break:break-word;
+    line-height:1.25;
+
+}
+
+.level-root .dept-title,
+.level-sub .dept-title {
+  color: rgba(255,255,255,0.7);
+}
+.level-dep .dept-title{
+
+    padding-right:40px;
+
+}
+
+/*
+.level-root,
+.level-staff{
+
+    padding-right:48px;
+
+} */
+
+/* Dirección General */
+
+.level-root .folder-btn i{
+    color: var(--accent-root);
+}
+
+/* División General */
+
+.level-staff .folder-btn i{
+    color: var(--accent-staff);
+}
+
+.nombre {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.puesto {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* folder */
+.folder-btn {
+
+    position: absolute;
+
+    width:30px;
+    height:30px;
+
+    top:10px;
+    right:10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    border: 1.5px solid #9ca3af;
+    border-radius: 7px;
 
     background: transparent;
 
-    overflow: hidden;
+    transition: all .25s ease;
 
 }
 
-/* =========================================
-IFRAME
-========================================= */
+.folder-btn i{
 
-.iframe-container iframe {
+    font-size:16px;
 
-    width: 100%;
 
-    height: 100vh;
-
-    min-height: 1400px;
-
-    border: none;
-
-    display: block;
-
-    background: transparent;
-
-    overflow: hidden;
+    transition:inherit;
 
 }
 
-/* =========================================
-BODY
-========================================= */
+.level-dep.admin .folder-btn i{
+    color: var(--accent-admin);
+}
 
-body {
+.level-dep.planeacion .folder-btn i{
+    color: var(--accent-planeacion);
+}
 
-    margin: 0;
+.level-dep.vinculacion .folder-btn i{
+    color: var(--accent-vinculacion);
+}
 
-    padding: 0;
+.level-dep.academica .folder-btn i{
+    color: var(--accent-academica);
+}
 
-    background: #f3f3f3;
+.folder-btn:hover{
 
-    overflow-x: hidden;
+    transform: scale(1.08);
 
-    font-family:
-        "Montserrat",
-        "Segoe UI",
-        sans-serif;
+    box-shadow: 0 2px 8px rgba(0,0,0,.20);
+
+    border-color: #9ca3af;
 
 }
 
-/* =========================================
-ELIMINA ESPACIOS DE ANGULAR
-========================================= */
+/* =========================
+   SUBRAMAS
+========================= */
 
-app-root,
-router-outlet {
-
-    margin: 0;
-
-    padding: 0;
-
-    display: block;
-
+.sub-branch-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 15px;
+  align-items: center;
 }
 
-/* =========================================
-RESPONSIVE
-========================================= */
+/* =========================
+   BUSQUEDA
+========================= */
 
-@media screen and (max-width: 768px){
+.highlight {
+  transform: scale(1.03);
+  box-shadow:
+    0 0 0 3px rgba(255,255,255,.8),
+    0 0 15px rgba(0,0,0,.25);
+  animation: pulse 1.2s infinite;
+}
 
-    .iframe-container iframe {
+@keyframes pulse {
+  0% {
+    transform: scale(1.03);
+  }
 
-        min-height: 2200px;
+  50% {
+    transform: scale(1.05);
+  }
 
-    }
+  100% {
+    transform: scale(1.03);
+  }
+}
 
+.filtered {
+  opacity: 0.3;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1400px) {
+
+  .tree ul {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+
+  .tree li {
+    padding-top: 20px;
+  }
+
+  .tree li::before,
+  .tree li::after,
+  .tree ul ul::before {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .node {
+    width: 95%;
+    max-width: 320px;
+    height: auto;
+    min-height: 120px;
+  }
+
+  .search-input {
+    width: 95%;
+  }
 }

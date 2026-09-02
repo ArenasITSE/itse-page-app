@@ -54,6 +54,7 @@ import { Sistema_ges_integralComponent } from './pages/sistema_gestion/sistema_g
 // rutas gestion institucional MISCELANEO
 import { ArchivoComponent } from './pages/gestion_institucional/Miscelaneo/archivo/archivo.component';
 import { Contabilidad_institucionalComponent } from './pages/gestion_institucional/Miscelaneo/contabilidad_institucional/contabilidad_institucional.component';
+import { Contralorias_socialesComponent } from './pages/gestion_institucional/Miscelaneo/contralorias_sociales/contralorias_sociales.component';
 import { CS_S247_PRODEPComponent } from './pages/gestion_institucional/Miscelaneo/CS_S247_PRODEP/CS_S247_PRODEP.component';
 import { CS_PpU006Component } from './pages/gestion_institucional/Miscelaneo/CS_PpU006/CS_PpU006.component';
 import { AccesibilidadComponent } from './pages/gestion_institucional/Miscelaneo/accesibilidad/accesibilidad.component';
@@ -152,6 +153,7 @@ export const routes: Routes = [
     children: [
       {path: 'archivo', component: ArchivoComponent},
       {path: 'contabilidad-institucional', component: Contabilidad_institucionalComponent},
+      {path: 'contralorias_sociales', component: Contralorias_socialesComponent},
       {path: 'cs-s247-prodep', component: CS_S247_PRODEPComponent},
       {path: 'cs-ppu006', component: CS_PpU006Component},
       {path: 'accesibilidad', component: AccesibilidadComponent},

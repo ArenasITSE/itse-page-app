@@ -1,0 +1,313 @@
+<div class="contralorias-container">
+
+
+  <!-- =====================================================
+       TÍTULO GENERAL
+       ===================================================== -->
+
+  <h1>CONTRALORÍAS SOCIALES</h1>
+
+
+  <!-- =====================================================
+       SELECTOR PRINCIPAL
+       ===================================================== -->
+
+  <div class="contralorias-selector">
+
+    @for (
+      contraloria of contralorias;
+      track contraloria.id
+    ) {
+
+      <button
+        [class.selected]="
+          contraloriaSeleccionada === contraloria.id
+        "
+        (click)="
+          seleccionarContraloria(contraloria.id)
+        ">
+
+        {{ contraloria.nombre }}
+
+      </button>
+
+    }
+
+  </div>
+
+
+  <!-- =====================================================
+       SECCIÓN PRINCIPAL
+       ===================================================== -->
+
+  <div class="contraloria-section">
+
+
+    <!-- ===================================================
+         SELECTOR DE AÑOS S247
+         
+         Ahora aparece donde estaba el título.
+         =================================================== -->
+
+    @if (contraloriaActual.id === 's247') {
+
+      <div class="contralorias-selector">
+
+        @for (
+          anio of contraloriaActual.anios ?? [];
+          track anio.id
+        ) {
+
+          <button
+            [class.selected]="
+              anioS247Seleccionado === anio.id
+            "
+            (click)="
+              seleccionarAnioS247(anio.id)
+            ">
+
+            {{ anio.nombre }}
+
+          </button>
+
+        }
+
+      </div>
+
+    }
+
+
+    <!-- ===================================================
+         LOGO
+         =================================================== -->
+
+    <div class="contraloria-logo">
+
+      <img
+        [src]="
+          contraloriaActual.id === 's247'
+            ? anioS247Actual?.logo
+            : contraloriaActual.logo
+        "
+        alt="Logo Contraloría Social">
+
+    </div>
+
+
+    <!-- ===================================================
+         RESPONSABLE
+         =================================================== -->
+
+    <div class="contraloria-responsable">
+
+
+      <!-- =================================================
+           RESPONSABLE U006
+           ================================================= -->
+
+      @if (contraloriaActual.id !== 's247') {
+
+        <p>
+          <strong>
+            {{ contraloriaActual.responsable }}
+          </strong>
+        </p>
+
+        <p>
+          {{ contraloriaActual.cargo }}
+        </p>
+
+        <p>
+          E-mail:
+
+          <a
+            [href]="
+              'mailto:' + contraloriaActual.correo
+            ">
+
+            {{ contraloriaActual.correo }}
+
+          </a>
+        </p>
+
+      }
+
+
+      <!-- =================================================
+           RESPONSABLE S247 DEL AÑO ACTUAL
+           ================================================= -->
+
+      @if (contraloriaActual.id === 's247') {
+
+        <p>
+          <strong>
+            {{ anioS247Actual?.responsable }}
+          </strong>
+        </p>
+
+        <p>
+          {{ anioS247Actual?.cargo }}
+        </p>
+
+        <p>
+          E-mail:
+
+          <a
+            [href]="
+              'mailto:' + anioS247Actual?.correo
+            ">
+
+            {{ anioS247Actual?.correo }}
+
+          </a>
+        </p>
+
+      }
+
+    </div>
+
+
+    <!-- ===================================================
+         PESTAÑAS
+         =================================================== -->
+
+    <div class="tabs-menu">
+
+      @for (
+        pestana of pestanasActuales;
+        track pestana.id
+      ) {
+
+        <button
+          [class.active]="
+            tabSeleccionada === pestana.id
+          "
+          (click)="
+            seleccionarTab(pestana.id)
+          ">
+
+          {{ pestana.nombre }}
+
+        </button>
+
+      }
+
+    </div>
+
+
+    <!-- ===================================================
+         CONTENIDO
+         =================================================== -->
+
+    <div class="tabs-content">
+
+
+      <!-- =================================================
+           PDF
+           ================================================= -->
+
+      @if (
+        pestanaActual?.tipo === 'pdf'
+      ) {
+
+        <iframe
+          [src]="
+            obtenerPdfSeguro(
+              pestanaActual?.pdf
+            )
+          "
+          title="Documento PDF">
+        </iframe>
+
+      }
+
+
+      <!-- =================================================
+           DOCUMENTOS
+           ================================================= -->
+
+      @if (
+        pestanaActual?.tipo === 'documentos'
+      ) {
+
+        <div class="docs-section">
+
+
+          @for (
+            seccion of
+              pestanaActual?.secciones ?? [];
+
+            track seccion.titulo ?? $index
+          ) {
+
+
+            <!-- =========================================
+                 TÍTULO DE LA SECCIÓN DE DOCUMENTOS
+                 ========================================= -->
+
+            @if (seccion.titulo) {
+
+              <h3>
+                {{ seccion.titulo }}
+              </h3>
+
+            }
+
+
+            <!-- =========================================
+                 DOCUMENTOS
+                 ========================================= -->
+
+            <ul class="docs-list">
+
+              @for (
+                documento of seccion.documentos;
+                track documento.url
+              ) {
+
+                <li>
+
+                  <img
+                    src="assets/vinculacion/pdf.png"
+                    alt="Documento">
+
+                  <a
+                    [href]="documento.url"
+                    target="_blank"
+                    rel="noopener noreferrer">
+
+                    {{ documento.nombre }}
+
+                  </a>
+
+                </li>
+
+              }
+
+            </ul>
+
+          }
+
+        </div>
+
+      }
+
+
+      <!-- =================================================
+           CONTENIDO VACÍO
+           ================================================= -->
+
+      @if (
+        pestanaActual?.tipo === 'vacio'
+      ) {
+
+        <div class="contenido-vacio">
+        </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</div>

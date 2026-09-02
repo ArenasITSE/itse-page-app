@@ -163,6 +163,39 @@
 
         </div>
 
+        <div
+            class="folder"
+            (click)="mostrarCarpeta(
+              'comite_a',
+              '1grxarcu6fMtUygYgkwH2K-8wrzMkSu_G'
+            )">
+
+            📁 COMITE DE ADQUISICIONES 2025
+
+        </div>
+
+        <div
+            class="visor"
+            [style.display]="
+              carpetaAbierta === 'comite_a'
+              ? 'block'
+              : 'none'
+            ">
+
+            @if (carpetaAbierta === 'comite_a') {
+
+            <iframe
+                [src]="carpetaSeleccionada"
+                width="100%"
+                height="700">
+            </iframe>
+
+            }
+
+        </div>
+
+        
+
 
         <div
             class="folder"
@@ -531,7 +564,7 @@
               '1PhbHmolHZNIKq-J8uvUX2LjIRSeAzIV3'
             )">
 
-            📁 INFORMES DE RENDICION DE CUENTAS
+            📁 INFORMES DE RENDICION DE CUENTAS TRIMESTRAL
 
         </div>
 
@@ -854,46 +887,19 @@
 
         </div>
 
-        <div
-            class="folder"
-            (click)="mostrarCarpeta(
-              'nombre1',
-              '1TSbsx-wGF0HbY_B6x0Mw_yW7x7-kV69-'
-            )">
-
-            📁 TABLA DE APLICABILIDAD 2019
-
-        </div>
-
-        <div
-            class="visor"
-            [style.display]="
-              carpetaAbierta === 'nombre1'
-              ? 'block'
-              : 'none'
-            ">
-            
-            @if (carpetaAbierta === 'nombre1') {
-            <iframe
-                [src]="carpetaSeleccionada"
-                width="100%"
-                height="700">
-            </iframe>
-
-                }
-
-        </div>
-
+        
+        <!--
         <div
             class="folder"
             (click)="mostrarCarpeta(
               'tabla2024',
-              '1cUk9dRI-xSMKsGwb2lcQB0GCG36A8bKd'
+              '1Z6C765FL6l-IlraM7R3MkjK6wiOq8Vti'
             )">
 
-            📁 TABLA DE APLICABILIDAD 2024
+            📁 TABLAS DE APLICABILIDAD
 
         </div>
+        -->
 
         <div
             class="visor"

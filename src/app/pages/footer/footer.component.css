@@ -30,6 +30,15 @@
   margin-bottom: 5px;
 }
 
+.footer-bottom a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
 .logo-footer {
   height: 60px;
 }
@@ -43,4 +52,14 @@
 .numero {
   font-size: 28px;
   font-weight: bold;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.social-icons a:hover {
+  color: #d9d9d9;
 }

@@ -1,95 +1,84 @@
-<!-- ===== CONTENIDO ===== -->
-
 <div class="contenido">
 
-  <h2> Comite Etica</h2>
+  <h2>Comité de Ética</h2>
 
-  <!-- ===== TABS ===== -->
+  <!-- TABS -->
   <ul class="nav nav-tabs custom-tabs">
 
-    <li><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#tab1">ESTADOS FINANCIEROS</button></li>
-
-    <li><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab2"> </button></li>
-
-    <li><button class="nav-link" data-bs-toggle="tab" data-bs-target="#tab3"> </button></li>
-
-
+    <li>
+      <button
+        class="nav-link active"
+        data-bs-toggle="tab"
+        data-bs-target="#tab1">
+        COMITÉ DE ÉTICA
+      </button>
+    </li>
 
   </ul>
 
-  <!-- ===== CONTENIDO DE TABS ===== -->
+  <!-- CONTENIDO TAB -->
   <div class="tab-content box-content">
 
-    <!-- TAB 1 -->
     <div class="tab-pane fade show active" id="tab1">
 
       <div class="anio-card" *ngFor="let anio of data">
 
-  <!-- AÑO -->
-  <div class="anio-header" (click)="anio.abierto = !anio.abierto">
-    📁 año {{anio.anio}}
-  </div>
+        <!-- AÑO -->
+        <div
+          class="anio-header"
+          (click)="anio.abierto = !anio.abierto">
 
-  <div *ngIf="anio.abierto" class="anio-body">
+          📁 {{ anio.anio }}
 
-    <!-- PRESUPUESTOS -->
-    <ul class="docs-list">
-      <li *ngFor="let p of anio.presupuestos">
-        <img src="assets/vinculacion/pdf.png">
-        <a [href]="p.url" target="_blank">
-          {{p.nombre}}
-        </a>
-      </li>
-    </ul>
+        </div>
 
-    <!-- TRIMESTRES -->
-    <div class="trimestre" *ngFor="let t of anio.trimestres">
+        <div
+          *ngIf="anio.abierto"
+          class="anio-body">
 
-      <div class="trimestre-header" (click)="t.abierto = !t.abierto">
-        📂 {{t.nombre}}
-      </div>
+          <!-- TRIMESTRES -->
+          <div
+            class="trimestre"
+            *ngFor="let t of anio.trimestres">
 
-      <div *ngIf="t.abierto">
+            <div
+              class="trimestre-header"
+              (click)="t.abierto = !t.abierto">
 
-        <!-- CARPETAS -->
-        <div class="subcarpeta" *ngFor="let c of t.carpetas">
+              📂 {{ t.nombre }}
 
-          <div class="subcarpeta-header" (click)="c.abierto = !c.abierto">
-            📁 {{c.nombre}}
+            </div>
+
+            <!-- ARCHIVOS PDF -->
+            <ul
+              *ngIf="t.abierto"
+              class="archivos-list">
+
+              <li *ngFor="let doc of t.archivos">
+
+                <img
+                  src="assets/vinculacion/pdf.png"
+                  alt="pdf">
+
+                <a
+                  [href]="doc.url"
+                  target="_blank">
+
+                  {{ doc.nombre }}
+
+                </a>
+
+              </li>
+
+            </ul>
+
           </div>
-
-          <!-- ARCHIVOS -->
-          <ul *ngIf="c.abierto">
-            <li *ngFor="let doc of c.archivos">
-              <img src="assets/vinculacion/pdf.png">
-              <a [href]="doc.url" target="_blank">
-                {{doc.nombre}}
-              </a>
-            </li>
-          </ul>
 
         </div>
 
       </div>
 
     </div>
-
-  </div>
-
-</div>
-
-    </div>
-
-    <!-- TAB 2 -->
-    <div class="tab-pane fade" id="tab2">
-
-    
-
-     
-    </div>
-
-   
-
 
   </div>
 

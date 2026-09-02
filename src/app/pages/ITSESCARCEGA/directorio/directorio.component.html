@@ -1,9 +1,854 @@
+<div class="header">
 
-<div class="iframe-container">
+    <h1>
+        INSTITUTO TECNOLÓGICO SUPERIOR DE ESCÁRCEGA
+    </h1>
 
-    <iframe
-        src="http://10.100.10.81:8501/organigrama_publico"
-        frameborder="0">
-    </iframe>
+    <p>
+        Directorio General Institucional
+    </p>
+
+    <div class="stats-container">
+
+        <div class="stat-card">
+            👥
+            <span>28 personas</span>
+        </div>
+
+        <div class="stat-card">
+            🏢
+            <span>4 subdirecciones</span>
+        </div>
+
+        <div class="stat-card">
+            📁
+            <span>22 departamentos / divisiones</span>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="controls">
+
+    <input type="text" class="search-input" placeholder="🔍 Buscar personal, puesto o departamento..."
+        (input)="filtrar($event)">
+
+</div>
+
+<div class="tree-container">
+
+    <div class="tree">
+
+        <ul>
+
+            <li>
+
+                <!-- DIRECCIÓN GENERAL -->
+
+                <div class="node level-root">
+
+                    <!--<a
+                         class="folder-btn"
+                        href="https://drive.google.com"
+                        target="_blank">
+                        <i class="bi bi-folder-fill"></i>
+
+                    </a> -->
+                    
+                    
+                    <div class="dept-title">
+                        DIRECCIÓN GENERAL
+                    </div>
+
+                    <div class="nombre">
+                        DANY ALEJANDRO DZIB CAUICH
+                    </div>
+
+                    <div class="puesto">
+                        DIRECTOR GENERAL
+                    </div>
+
+                    <div class="correo">
+                        director@itsescarcega.edu.mx
+                    </div>
+
+                </div>
+
+                <ul>
+
+                    <!-- STAFF -->
+
+                    <li>
+
+                        <div class="node level-staff">
+
+                           <!-- <a
+                            class="folder-btn"
+                            href="https://drive.google.com"
+                            target="_blank">
+                            <i class="bi bi-folder-fill"></i>
+
+                            </a> -->
+
+                            <div class="dept-title">
+                                DIVISIÓN (GENERAL)
+                            </div>
+
+                            <div class="nombre">
+                                LUIS RODOLFO BERNES ROMERO
+                            </div>
+
+                            <div class="puesto">
+                                JEFE DE DIVISIÓN
+                            </div>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <ul>
+
+                    <!-- ADMINISTRATIVA -->
+
+                    <li>
+
+                        <div class="node level-sub sub-admin">
+
+                            <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1fCh5BfS_aXWCo_45Zm6hidQ1Zy5KXRUk"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                            <div class="dept-title">
+                                SUBDIRECCIÓN ADMINISTRATIVA
+                            </div>
+
+                            <div class="nombre">
+                                MARGARITA MAY CHAN
+                            </div>
+
+                            <div class="puesto">
+                                SUBDIRECTORA ADMINISTRATIVA
+                            </div>
+
+                        </div>
+
+                        <div class="sub-branch-container">
+
+                            <div class="node level-dep admin">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/166tVSOpcRAniqbCRI22DmCNR8uT46r0r"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE CAPITAL HUMANO
+                                </div>
+
+                                <div class="nombre">
+                                    EPIFANIA DIAZ ALVAREZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+                            <div class="node level-dep admin">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/11pLrjXV8kPZEmj2HUyYjHrdjybsd3cZ7"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    FINANZAS
+                                </div>
+
+                                <div class="nombre">
+                                    LOURDES DIAZ ALVAREZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep admin">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1cZ_0FZLVcYpvCcTTe_S9GZquR8L9bbts"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE RECURSOS MATERIALES Y SERVICIOS
+                                </div>
+
+                                <div class="nombre">
+                                    AUGUSTO ROMAN DZUL ROBALDINO
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep admin">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/10yopMtz9fQ70nG7DlBjJoJfufPUItkUH"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE MANTENIMIENTO
+                                </div>
+
+                                <div class="nombre">
+                                    EMETERIO JOSE SANCHEZ PONCIANO
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep admin">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1CFrRIyp6qGg2jvBfW9_02fEEF2vozMbz"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE COMPUTO Y TECNOLOGIAS DE LA INFORMACION
+                                </div>
+
+                                <div class="nombre">
+                                    ELISEO REFUGIO HERNANDEZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </li>
+
+                    <!-- PLANEACIÓN -->
+
+                    <li>
+
+                        <div class="node level-sub sub-planeacion">
+
+                            <a
+                            class="folder-btn"
+                            href="https://drive.google.com/drive/folders/117fR6RNuxXZbxW0T8gTn2GePO35apSB1"
+                            target="_blank">
+                            <i class="bi bi-folder-fill"></i>
+
+                            </a>
+
+                
+                            <div class="dept-title">
+                                SUBDIRECCIÓN DE PLANEACIÓN Y DESARROLLO
+                            </div>
+
+                            <div class="nombre">
+                                GABRIELA GRANADOS CÓRDOBA
+                            </div>
+
+                            <div class="puesto">
+                                SUBDIRECTORA DE PLANEACIÓN Y DESARROLLO
+                            </div>
+
+                        </div>
+
+                        <div class="sub-branch-container">
+
+                            <div class="node level-dep planeacion">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1Vl1DC5U33sX4MrId5k24fV5kgJaWn0RY"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE PLANEACIÓN Y EVALUACIÓN
+                                </div>
+
+                                <div class="nombre">
+                                    HUGO ENRIQUE SÁNCHEZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+                            <div class="node level-dep planeacion">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1fPKNso5P3S_yLdK34wONyYTP7-ph5wFg"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE SISTEMA DE GESTIÓN
+                                </div>
+
+                                <div class="nombre">
+                                    MARIANA DE LOS ANGELES FERRER YANH
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+                            <div class="node level-dep planeacion">
+
+                                 <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1ADtSM4u5JRCc2sb1HqJWQa_TkTzsWH0e"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE ADMINISTRACIÓN ESCOLAR Y APOYO A ESTUDIANTES
+                                </div>
+
+                                <div class="nombre">
+                                    LIBNI ESTHER GONZALEZ POTENCIANO
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </li>
+
+                    <!-- VINCULACIÓN -->
+
+                    <li>
+
+                        <div class="node level-sub sub-vinculacion">
+                            <a
+                            class="folder-btn"
+                            href="https://drive.google.com/drive/folders/1uXllQ7bP0zVAdarw4KAp23wCP-d1JyZN"
+                            target="_blank">
+                            <i class="bi bi-folder-fill"></i>
+
+                            </a>
+
+                            <div class="dept-title">
+                                SUBDIRECCIÓN DE EXTENSIÓN Y VINCULACIÓN
+                            </div>
+
+                            <div class="nombre">
+                                JUAN CARLOS RIVERA TAPIA
+                            </div>
+
+                            <div class="puesto">
+                                SUBDIRECTOR DE EXTENSIÓN Y VINCULACIÓN
+                            </div>
+
+                        </div>
+
+                        <div class="sub-branch-container">
+
+                            
+
+                            <div class="node level-dep vinculacion">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/10yfydNeMJ_oESewMQ_JAQ9q_rSjYtRZy"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE VINCULACIÓN E INTERCAMBIO ACADÉMICO
+                                </div>
+
+                                <div class="nombre">
+                                    MARTIN DE LA CRUZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep vinculacion">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1V30CeEWetK_sBXA5Te73oP--60bNh6R6"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE PROMOCIÓN DE LA CULTURA Y EL DEPORTE
+                                </div>
+
+                                <div class="nombre">
+                                    MARTHA DALILA FLORES ARIAS
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep vinculacion">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1WwDFocuNcN9DOr_5wzIstvR5DjzDfX7o"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE DESARROLLO EMPRENDEDOR
+                                </div>
+
+                                <div class="nombre">
+                                    JOSE DEL CARMEN CHI ALCOCER
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep vinculacion">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/10mOYa-q78abhraHj_7RKaHG19mvuotRX"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE COMUNICACIÓN Y DIFUSIÓN
+                                </div>
+
+                                <div class="nombre">
+                                    JUAN MANUEL NAAL ESPINOSA
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                    </li>
+
+                    <!-- ACADÉMICA -->
+
+                    <li>
+
+                        <div class="node level-sub sub-academica">
+
+                            <a
+                            class="folder-btn"
+                            href="https://drive.google.com/drive/folders/1c2I8kXi-4by-PU8nbhMc15acN3pGsrKM"
+                            target="_blank">
+                            <i class="bi bi-folder-fill"></i>
+
+                            </a>
+                            
+                            <div class="dept-title">
+                                SUBDIRECCIÓN ACADÉMICA DE INVESTIGACIÓN E INNOVACIÓN
+                            </div>
+
+                            <div class="nombre">
+                                JOSÉ ALBERTO ALAVEZ GÓNGORA
+                            </div>
+
+                            <div class="puesto">
+                                SUBDIRECTOR ACADÉMICO
+                            </div>
+
+                        </div>
+
+                        <div class="sub-branch-container">
+
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1rZiru6vXqtzYTDVPfUtk3GecFtObL7Em"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE INGENIERÍA EN SISTEMAS COMPUTACIONALES
+                                </div>
+
+                                <div class="nombre">
+                                    MANUEL DE ATOCHA BARRANCOS
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DIVISIÓN
+                                </div>
+
+                            </div>
+
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1zuhieBZBHLbK3fw81gaDi01whO_juBBv"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE LICENCIATURA EN ADMINISTRACIÓN
+                                </div>
+
+                                <div class="nombre">
+                                    GENI DEL CARMEN GOMEZ XUL 
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE INGENIERÍA FERROVIARIA
+                                </div>
+
+                                <div class="nombre">
+                                    GARY GEOVANI UCAN DÍAZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DIVISIÓN
+                                </div>
+
+                            </div>
+
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1-w_SvzwEEOfIl63bQTwC26iiHhbX0MF_"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE INGENIERÍA EN INDUSTRIAS ALIMENTARIAS
+                                </div>
+
+                                <div class="nombre">
+                                    YOLANDA DEL CARMEN ESTRELLA PÉREZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1uzOAoOnRYAy8rSR1WnZ5448HqWz4OxsY"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE GASTRONOMÍA
+                                </div>
+
+                                <div class="nombre">
+                                    ERIKA VIVIANA FERRER GOMEZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1eZeR4661rRi8NqNmQmo8WFysn1jXy1Wn"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE INGENIERÍA EN ENERGÍAS RENOVABLES
+                                </div>
+
+                                <div class="nombre">
+                                    LAURA PATRICIA PEÑA YAM
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1dOs81yp-6pfC-l0enFfyEhoZEHO6q2x2"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE LICENCIATURA EN TURISMO
+                                </div>
+
+                                <div class="nombre">
+                                    YAZMIN ESTRADA CHAN
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1OBIwGsce6cyHYt9R1DnxsN6u-NuVse7s"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE DESARROLLO ACADÉMICO
+                                </div>
+
+                                <div class="nombre">
+                                    MIGUEL ANGEL MEJIA BAUTISTA
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/12xa8-6KSN6j_kqhcpv7_zQodRubfB7Us"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DEPARTAMENTO DE ESTUDIO DE POSGRADO E INVESTIGACIÓN
+                                </div>
+
+                                <div class="nombre">
+                                    IVETTE STEPHANY PACHECO FARFAN
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DEPARTAMENTO
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/10GbtmjL-xq6anfHWbomyYOVBDiW8t8wy"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE CONTADOR PÚBLICO
+                                </div>
+
+                                <div class="nombre">
+                                    ARACELI MAR LUNA
+                                </div>
+
+                                <div class="puesto">
+                                    JEFA DE DIVISIÓN
+                                </div>
+
+                            </div>
+                            <div class="node level-dep academica">
+
+                                <a
+                                    class="folder-btn"
+                                    href="https://drive.google.com/drive/folders/1YmVTcs9WM-1-_audy3fEck4QJTshjNhS"
+                                    target="_blank"
+                                    >
+
+                                    <i class="bi bi-folder-fill"></i>
+
+                                </a>
+
+                                <div class="dept-title">
+                                    DIVISIÓN DE INGENIERÍA EN ANIMACIÓN DIGITAL Y EFECTOS VISUALES
+                                </div>
+
+                                <div class="nombre">
+                                    CARLOS ENRIQUE AVILA PEREZ
+                                </div>
+
+                                <div class="puesto">
+                                    JEFE DE DIVISIÓN
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </div>
 
 </div>

@@ -264,13 +264,32 @@ export class Contralorias_socialesComponent {
         // ---------------------------------------------------
 
         {
-          id: 'informes',
+              id: 'informes',
 
-          nombre: 'Informes',
+              nombre:
+                'Informes',
 
-          tipo: 'vacio'
-        },
+              tipo: 'documentos',
 
+              secciones: [
+
+                {
+
+                  documentos: [
+
+                    {
+                      nombre:
+                        'INFORME FINAL S247 2023.pdf',
+
+                      url:
+                        'assets/miscelaneo/CS_S247_2024/Informes 2024/2.-INFORME FINAL S247 2023.pdf'
+                    }
+
+                  ]
+                }
+
+              ]
+            },
 
         // ---------------------------------------------------
         // QUEJAS
@@ -303,21 +322,6 @@ export class Contralorias_socialesComponent {
           ]
         },
 
-
-        // ---------------------------------------------------
-        // MANUAL
-        // ---------------------------------------------------
-
-        {
-          id: 'manual',
-
-          nombre:
-            'Manual de operaciones SICS-Instancias ejecutoras 2024',
-
-          tipo: 'vacio'
-        },
-
-
         // ---------------------------------------------------
         // LOGOTIPO
         // ---------------------------------------------------
@@ -326,7 +330,7 @@ export class Contralorias_socialesComponent {
           id: 'logo',
 
           nombre:
-            'LOGOTIPO CONTRALORIA SOCIAL',
+            'Logotipo de Contraloría Social 2024',
 
           tipo: 'documentos',
 
@@ -1465,10 +1469,10 @@ export class Contralorias_socialesComponent {
 
                     {
                       nombre:
-                        'Logotipo Contraloría Social 2023.png',
+                        'Manual de Operación del SICS-Instancias Ejecutoras 2023.pdf',
 
                       url:
-                        'assets/miscelaneo/CS_S247_2023/logotipo 2023/logo contraloria socialf-01.png'
+                        'assets/miscelaneo/CS_S247_2023/manual SICS-SFP 2023/Manual Ejecutora SICS-2023.pdf'
                     }
 
                   ]
@@ -1500,7 +1504,7 @@ export class Contralorias_socialesComponent {
             'prodep@escarcega.tecnm.mx',
 
           logo:
-            'assets/miscelaneo/CS_S247_2023/logotipo 2023/logo contraloria socialf-01.png',
+            'assets/miscelaneo/CS_S247_2022/logotipo 2022/Logo contraloria Social 2022.jpg',
 
           pestanas: [
 

@@ -205,7 +205,7 @@ export class PlaneacionComponent {
     },
 
     {
-      nombre: 'PROGRAMA INSTITUCIONAL 2025 - 2030 ITSE.pdf',
+      nombre: 'PROGRAMA INSTITUCIONAL 2025 - 2030 ITSE',
       archivos: [
         { nombre: 'PI PROGRAMA INSTITUCIONAL 2025-2030 ITSE.pdf', url: 'assets/planeacion-pdf/pro_ins_25-30/PI PROGRAMA INSTITUCIONAL 2025-2030 ITSE.pdf' },
         

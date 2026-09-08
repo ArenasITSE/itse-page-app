@@ -191,7 +191,7 @@ export class PlaneacionComponent {
     {
       nombre: 'PDI 2024-2027',
       archivos: [
-        { nombre: '6_16-Dictamen_favorable_PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf', url: 'assets/planeacion/PDI_2024-2027/6_16-Dictamen_favorable_PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf' },
+        { nombre: '6_16-Dictamen_favorable_PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf', url: 'assets/planeacion-pdf/PDI_2024-2027/6_16-Dictamen_favorable_PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf' },
         { nombre: 'PDI2427.pdf', url: 'assets/planeacion/PDI_2024-2027/PDI2427.pdf' }
       ]
     },
@@ -199,8 +199,16 @@ export class PlaneacionComponent {
     {
       nombre: 'DICTAMEN PDI 2024-2027',
       archivos: [
-        { nombre: '6_16-Dictamen favorable PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf', url: 'assets/planeacion/DICTAMEN_2024-2027/6_16-Dictamen favorable PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf' },
+        { nombre: '6_16-Dictamen favorable PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf', url: 'assets/planeacion-pdf/DICTAMEN_2024-2027/6_16-Dictamen favorable PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf' },
         { nombre: 'PDI2427.pdf', url: 'assets/planeacion/DICTAMEN_2024-2027/PDI2427.pdf' }
+      ]
+    },
+
+    {
+      nombre: 'PROGRAMA INSTITUCIONAL 2025 - 2030 ITSE.pdf',
+      archivos: [
+        { nombre: 'PI PROGRAMA INSTITUCIONAL 2025-2030 ITSE.pdf', url: 'assets/planeacion-pdf/pro_ins_25-30/PI PROGRAMA INSTITUCIONAL 2025-2030 ITSE.pdf' },
+        
       ]
     },
 
@@ -260,11 +268,11 @@ export class PlaneacionComponent {
     {
       nombre: 'PROGRAMA U079',
       archivos: [
-        { nombre: 'campeche_CONVENIO_U079.pdf', url: 'assets/planeacion/Programa_U079/campeche_CONVENIO_U079.pdf' },
-        { nombre: 'Evidencia_documental_avance_al_3er trimestre_2023.pdf', url: 'assets/planeacion/Programa_U079/Evidencia_documental_avance_al_3er_trimestre_2023.pdf' },
-        { nombre: 'EVIDENCIAS_DOCUMENTAL_DEL_U079_2023.pdf', url: 'assets/planeacion/Programa_U079/EVIDENCIAS_DOCUMENTAL_DEL_U079_2023.pdf' },
-        { nombre: 'GESTIONES_ADMINISTRATIVAS_U079_OCT 23-MAR_24.pdf', url: 'assets/planeacion/Programa_U079/GESTIONES_ADMINISTRATIVAS_U079_OCT 23-MAR_24.pdf' },
-        { nombre: 'PPU079_Resultados_ITSE.pdf', url: 'assets/planeacion/Programa_U079/PPU079_Resultados_ITSE.pdf' },
+        { nombre: 'campeche_CONVENIO_U079.pdf', url: 'assets/planeacion-pdf/Programa_U079/campeche_CONVENIO_U079.pdf' },
+        { nombre: 'Evidencia_documental_avance_al_3er trimestre_2023.pdf', url: 'assets/planeacion-pdf/Programa_U079/Evidencia_documental_avance_al_3er_trimestre_2023.pdf' },
+        { nombre: 'EVIDENCIAS_DOCUMENTAL_DEL_U079_2023.pdf', url: 'assets/planeacion-pdf/Programa_U079/EVIDENCIAS_DOCUMENTAL_DEL_U079_2023.pdf' },
+        { nombre: 'GESTIONES_ADMINISTRATIVAS_U079_OCT 23-MAR_24.pdf', url: 'assets/planeacion-pdf/Programa_U079/GESTIONES_ADMINISTRATIVAS_U079_OCT 23-MAR_24.pdf' },
+        { nombre: 'PPU079_Resultados_ITSE.pdf', url: 'assets/planeacion-pdf/Programa_U079/PPU079_Resultados_ITSE.pdf' },
       ]
     },
     {

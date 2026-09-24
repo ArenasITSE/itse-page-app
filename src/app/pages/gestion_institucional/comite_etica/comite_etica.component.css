@@ -1,147 +1,412 @@
-/* ================= CONTENIDO PRINCIPAL ================= */
+/* =========================================================
+   CONTENIDO PRINCIPAL
+========================================================= */
 
 .contenido {
+
   flex: 1;
+
   max-width: 1150px;
+
   margin: 50px auto 150px auto;
+
   padding: 0 10px;
+
 }
 
-/* TITULO */
+
+/* =========================================================
+   TITULO
+========================================================= */
 
 .contenido h2 {
+
   margin-bottom: 20px;
+
   font-weight: 600;
+
 }
 
-/* ================= TABS ================= */
+
+/* =========================================================
+   TABS PRINCIPAL
+========================================================= */
 
 .custom-tabs {
+
   margin-bottom: 10px;
+
 }
 
 .custom-tabs .nav-link {
+
   background: #f0f0f0;
+
   border: 1px solid #ccc;
+
   margin-right: 5px;
+
   border-radius: 6px 6px 0 0;
+
   color: #333;
+
 }
 
 .custom-tabs .nav-link.active {
+
   background: white;
+
   border-bottom: 3px solid #1976d2;
+
   color: #1976d2;
+
   font-weight: 600;
+
 }
 
-/* ================= CAJA ================= */
+
+/* =========================================================
+   CAJA PRINCIPAL
+========================================================= */
 
 .box-content {
+
   border: 1px solid #ddd;
+
   padding: 20px;
+
   background: white;
+
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,.05);
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
+
 }
 
-/* ================= AÑO ================= */
 
-.anio-card {
+/* =========================================================
+   NAVEGACIÓN DE AÑOS
+========================================================= */
+
+.anios-nav {
+
+  display: flex;
+
+  width: 100%;
+
   margin-bottom: 20px;
+
+  border: 1px solid #243f6b;
+
+  border-radius: 5px;
+
+  overflow: hidden;
+
 }
 
-.anio-header {
-  background: #243f6b;
-  color: white;
-  padding: 12px;
-  border-radius: 6px;
-  cursor: pointer;
+
+/* =========================================================
+   BOTONES DE AÑO
+========================================================= */
+
+.anio-tab {
+
+  flex: 1;
+
+  min-height: 58px;
+
+  border: none;
+
+  border-right: 1px solid #243f6b;
+
+  background: #f5f5f5;
+
+  color: #243f6b;
+
+  font-size: 16px;
+
   font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color .2s ease,
+    color .2s ease;
+
 }
 
-.anio-header:hover {
-  opacity: .95;
+
+/* El último no necesita borde derecho */
+
+.anio-tab:last-child {
+
+  border-right: none;
+
 }
 
-/* ================= TRIMESTRES ================= */
+
+/* Hover */
+
+.anio-tab:hover {
+
+  background: #e3edf8;
+
+}
+
+
+/* Año seleccionado */
+
+.anio-tab.active {
+
+  background: #243f6b;
+
+  color: white;
+
+}
+
+
+/* =========================================================
+   CONTENIDO DEL AÑO
+========================================================= */
+
+.anio-contenido {
+
+  display: none;
+
+  animation: fadeIn .2s ease-in-out;
+
+}
+
+
+/* Solamente el año seleccionado se muestra */
+
+.anio-contenido.visible {
+
+  display: block;
+
+}
+
+
+/* =========================================================
+   TRIMESTRES
+========================================================= */
 
 .trimestre {
+
   margin-top: 12px;
+
 }
+
+
+/* Encabezado del trimestre */
 
 .trimestre-header {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
   background: #e3f2fd;
-  padding: 10px;
+
+  padding: 10px 14px;
+
   border-radius: 5px;
+
   cursor: pointer;
+
   border-left: 4px solid #64b5f6;
+
+  color: #333;
+
+  transition:
+    background-color .2s ease;
+
 }
+
 
 .trimestre-header:hover {
+
   background: #d0e7fb;
+
 }
 
-/* ================= ARCHIVOS ================= */
+
+/* Icono */
+
+.trimestre-icon {
+
+  font-size: 16px;
+
+}
+
+
+/* =========================================================
+   ARCHIVOS
+========================================================= */
 
 .archivos-list {
+
   list-style: none;
+
   margin-top: 10px;
+
   margin-left: 25px;
+
   padding-left: 20px;
+
   border-left: 2px solid #e0e0e0;
+
 }
+
 
 .archivos-list li {
+
   display: flex;
+
   align-items: center;
+
   margin: 8px 0;
+
 }
+
+
+/* Icono PDF */
 
 .archivos-list img {
+
   width: 16px;
+
+  height: auto;
+
   margin-right: 8px;
+
 }
+
+
+/* Enlaces */
 
 .archivos-list a {
+
   text-decoration: none;
+
   color: #1a73e8;
+
 }
+
 
 .archivos-list a:hover {
+
   text-decoration: underline;
+
 }
 
-/* ================= ANIMACIÓN ================= */
 
-.anio-body,
-.archivos-list {
+/* =========================================================
+   ANIMACIÓN
+========================================================= */
+
+.anio-contenido {
+
   animation: fadeIn .2s ease-in-out;
+
 }
+
+
+.archivos-list {
+
+  animation: fadeIn .2s ease-in-out;
+
+}
+
 
 @keyframes fadeIn {
+
   from {
+
     opacity: 0;
+
     transform: translateY(-3px);
+
   }
 
   to {
+
     opacity: 1;
+
     transform: translateY(0);
+
   }
+
 }
 
-/* ================= RESPONSIVE ================= */
 
-@media (max-width: 600px) {
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
 
   .contenido {
+
     padding: 0 5px;
+
   }
 
-  .anio-header,
+
+  .box-content {
+
+    padding: 12px;
+
+  }
+
+
+  .anios-nav {
+
+    flex-wrap: wrap;
+
+  }
+
+
+  .anio-tab {
+
+    flex: 1 1 50%;
+
+    min-height: 50px;
+
+    border-bottom: 1px solid #243f6b;
+
+  }
+
+
+  .anio-tab:nth-child(2n) {
+
+    border-right: none;
+
+  }
+
+
+  .anio-tab:nth-last-child(-n + 2) {
+
+    border-bottom: none;
+
+  }
+
+
   .trimestre-header {
-    font-size: 13px;
+
+    font-size: 14px;
+
+  }
+
+
+  .archivos-list {
+
+    margin-left: 10px;
+
+    padding-left: 15px;
+
   }
 
 }

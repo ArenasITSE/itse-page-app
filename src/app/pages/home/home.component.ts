@@ -14,6 +14,10 @@ export class HomeComponent {
   images = [
     
     {
+      src: 'assets/carrusel_home/carrusel_99.jpg',
+      link: ''
+    },
+    {
       src: 'assets/carrusel_home/carrusel_55.jpg',
       link: ''
     },

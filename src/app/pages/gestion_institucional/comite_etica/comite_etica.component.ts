@@ -13,7 +13,7 @@ export class Comite_eticaComponent {
   data = [
     {
       anio: '2025',
-      abierto: false,
+      abierto: true,
 
       trimestres: [
         {
@@ -524,4 +524,14 @@ export class Comite_eticaComponent {
 
 
   ];//data
+
+  seleccionarAnio(anioSeleccionado: any) {
+
+  this.data.forEach(anio => {
+
+    anio.abierto = anio === anioSeleccionado;
+
+  });
+
+}
 }//export class

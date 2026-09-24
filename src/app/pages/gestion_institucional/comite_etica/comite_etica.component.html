@@ -2,77 +2,89 @@
 
   <h2>Comité de Ética</h2>
 
-  <!-- TABS -->
+  <!-- ================= TABS PRINCIPAL ================= -->
   <ul class="nav nav-tabs custom-tabs">
 
     <li>
       <button
         class="nav-link active"
-        data-bs-toggle="tab"
-        data-bs-target="#tab1">
+        type="button">
         COMITÉ DE ÉTICA
       </button>
     </li>
 
   </ul>
 
-  <!-- CONTENIDO TAB -->
+
+  <!-- ================= CONTENIDO ================= -->
   <div class="tab-content box-content">
 
-    <div class="tab-pane fade show active" id="tab1">
+    <div class="tab-pane fade show active">
 
-      <div class="anio-card" *ngFor="let anio of data">
 
-        <!-- AÑO -->
+      <!-- ================= AÑOS ================= -->
+      <div class="anios-nav">
+
+        <button
+          *ngFor="let anio of data"
+          type="button"
+          class="anio-tab"
+          [class.active]="anio.abierto"
+          (click)="seleccionarAnio(anio)">
+
+          {{ anio.anio }}
+
+        </button>
+
+      </div>
+
+
+      <!-- ================= CONTENIDO DEL AÑO ================= -->
+      <div
+        *ngFor="let anio of data"
+        class="anio-contenido"
+        [class.visible]="anio.abierto">
+
+        <!-- TRIMESTRES -->
         <div
-          class="anio-header"
-          (click)="anio.abierto = !anio.abierto">
+          class="trimestre"
+          *ngFor="let t of anio.trimestres">
 
-          📁 {{ anio.anio }}
-
-        </div>
-
-        <div
-          *ngIf="anio.abierto"
-          class="anio-body">
-
-          <!-- TRIMESTRES -->
+          <!-- ENCABEZADO TRIMESTRE -->
           <div
-            class="trimestre"
-            *ngFor="let t of anio.trimestres">
+            class="trimestre-header"
+            (click)="t.abierto = !t.abierto">
 
-            <div
-              class="trimestre-header"
-              (click)="t.abierto = !t.abierto">
+            <span class="trimestre-icon">📁</span>
 
-              📂 {{ t.nombre }}
-
-            </div>
-
-            <!-- ARCHIVOS PDF -->
-            <ul
-              *ngIf="t.abierto"
-              class="archivos-list">
-
-              <li *ngFor="let doc of t.archivos">
-
-                <img
-                  src="assets/vinculacion/pdf.png"
-                  alt="pdf">
-
-                <a
-                  [href]="doc.url"
-                  target="_blank">
-
-                  {{ doc.nombre }}
-
-                </a>
-
-              </li>
-
-            </ul>
+            <span>{{ t.nombre }}</span>
 
           </div>
+
+
+          <!-- ARCHIVOS -->
+          <ul
+            *ngIf="t.abierto"
+            class="archivos-list">
+
+            <li *ngFor="let doc of t.archivos">
+
+              <img
+                src="assets/vinculacion/pdf.png"
+                alt="PDF">
+
+              <a
+                [href]="doc.url"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                {{ doc.nombre }}
+
+              </a>
+
+            </li>
+
+          </ul>
 
         </div>
 

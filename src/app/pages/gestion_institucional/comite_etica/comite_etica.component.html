@@ -1,28 +1,469 @@
+<!-- =========================================================
+     CONTENEDOR PRINCIPAL
+========================================================= -->
+
 <div class="contenido">
 
-  <h2>Comité de Ética</h2>
+  <!-- =======================================================
+       BANNER
+  ======================================================== -->
 
-  <!-- ================= TABS PRINCIPAL ================= -->
-  <ul class="nav nav-tabs custom-tabs">
+  <div class="banner-etica">
 
-    <li>
-      <button
-        class="nav-link active"
-        type="button">
-        COMITÉ DE ÉTICA
-      </button>
-    </li>
+    <img
+      src="assets/CEPCI_ITSE/etica_banner.png"
+      alt="Comité de Ética">
 
-  </ul>
+  </div>
 
 
-  <!-- ================= CONTENIDO ================= -->
+  <!-- =======================================================
+       ORGANIGRAMA
+  ======================================================== -->
+
+  <section class="organigrama-section">
+
+    <h2 class="seccion-titulo">
+      Organigrama
+    </h2>
+
+
+    <!-- =====================================================
+         LIENZO DEL ORGANIGRAMA
+    ====================================================== -->
+
+    <div class="organigrama">
+
+
+      <!-- ===================================================
+           CONEXIONES SVG
+      ==================================================== -->
+
+      <svg
+        class="organigrama-lineas"
+        viewBox="0 0 1000 720"
+        preserveAspectRatio="xMidYMin meet"
+        aria-hidden="true">
+
+        <defs>
+
+          <!-- Flecha utilizada en las conexiones -->
+          <marker
+            id="flecha-organigrama"
+            viewBox="0 0 10 10"
+            refX="8"
+            refY="5"
+            markerWidth="5"
+            markerHeight="5"
+            orient="auto">
+
+            <path
+              d="M 0 0 L 10 5 L 0 10 Z">
+            </path>
+
+          </marker>
+
+        </defs>
+
+
+        <!-- =================================================
+             PRESIDENTA → SECRETARÍAS
+        ================================================== -->
+
+        <!-- Bajada central desde Presidenta -->
+        <path
+          class="linea-organigrama"
+          d="M 500 106 V 155">
+        </path>
+
+
+        <!-- Línea horizontal de las dos secretarías -->
+        <path
+          class="linea-organigrama"
+          d="M 250 155 H 750">
+        </path>
+
+
+        <!-- Secretaría Ejecutiva -->
+        <path
+          class="linea-organigrama"
+          d="M 250 155 V 180"
+          marker-end="url(#flecha-organigrama)">
+        </path>
+
+
+        <!-- Secretaría Técnica -->
+        <path
+          class="linea-organigrama"
+          d="M 750 155 V 180"
+          marker-end="url(#flecha-organigrama)">
+        </path>
+
+
+        <!-- =================================================
+             CONTINUACIÓN CENTRAL HACIA MIEMBROS
+        ================================================== -->
+
+        <!--
+          Esta línea NO depende de ninguna secretaría.
+          Continúa directamente desde la Presidencia.
+        -->
+
+        <path
+          class="linea-organigrama"
+          d="M 500 155 V 330">
+        </path>
+
+
+        <!-- =================================================
+             LÍNEA PRINCIPAL DE LOS TRES MIEMBROS
+        ================================================== -->
+
+        <path
+          class="linea-organigrama"
+          d="M 125 330 H 875">
+        </path>
+
+
+        <!-- Miembro 1 -->
+        <path
+          class="linea-organigrama"
+          d="M 125 330 V 350"
+          marker-end="url(#flecha-organigrama)">
+        </path>
+
+
+        <!-- Miembro 2 -->
+        <path
+          class="linea-organigrama"
+          d="M 500 330 V 350"
+          marker-end="url(#flecha-organigrama)">
+        </path>
+
+
+        <!-- Miembro 3 -->
+        <path
+          class="linea-organigrama"
+          d="M 875 330 V 350"
+          marker-end="url(#flecha-organigrama)">
+        </path>
+
+
+        <!-- =================================================
+             RAMA HACIA CONSEJERA
+        ================================================== -->
+
+        <!--
+          IMPORTANTE:
+          Esta línea NO sale de Libni Ester.
+
+          Sale de la línea horizontal principal,
+          entre Miembro 1 y Miembro 2.
+        -->
+
+        <path
+          class="linea-organigrama"
+          d="M 325 330 V 520"
+          marker-end="url(#flecha-organigrama)">
+        </path>
+
+
+        <!-- =================================================
+             RAMA HACIA OIC
+        ================================================== -->
+
+        <!--
+          Tampoco sale de Libni Ester.
+
+          Sale de la misma línea horizontal principal,
+          entre Miembro 2 y Miembro 3.
+        -->
+
+        <path
+          class="linea-organigrama"
+          d="M 675 330 V 520"
+          marker-end="url(#flecha-organigrama)">
+        </path>
+
+      </svg>
+
+
+      <!-- ===================================================
+           PRESIDENTA
+      ==================================================== -->
+
+      <div class="rama rama-presidente">
+
+        <div class="puesto puesto-principal">
+
+          <strong>
+            Lic. Margarita May Chan
+          </strong>
+
+          <span>
+            Presidenta
+          </span>
+
+        </div>
+
+
+        <div class="puesto puesto-suplente">
+
+          <strong>
+            Mtro. José Alberto Alavez Góngora
+          </strong>
+
+          <span>
+            Suplente
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           SECRETARÍA EJECUTIVA
+      ==================================================== -->
+
+      <div class="rama rama-secretaria-ejecutiva">
+
+        <div class="puesto puesto-principal">
+
+          <strong>
+            Ing. Eliseo Refugio Hernández
+          </strong>
+
+          <span>
+            Secretario Ejecutivo
+          </span>
+
+        </div>
+
+
+        <div class="puesto puesto-suplente">
+
+          <strong>
+            Lic. Augusto Roman Dzul Robaldino
+          </strong>
+
+          <span>
+            Suplente
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           SECRETARÍA TÉCNICA
+      ==================================================== -->
+
+      <div class="rama rama-secretaria-tecnica">
+
+        <div class="puesto puesto-principal">
+
+          <strong>
+            Lic. Mariana De Los Ángeles Ferrer Yahn
+          </strong>
+
+          <span>
+            Secretaria Técnica
+          </span>
+
+        </div>
+
+
+        <div class="puesto puesto-suplente">
+
+          <strong>
+            C. P. Gabriela Granados Córdoba
+          </strong>
+
+          <span>
+            Suplente
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           MIEMBRO 1
+      ==================================================== -->
+
+      <div class="rama rama-miembro-1">
+
+        <div class="puesto puesto-principal">
+
+          <strong>
+            Mtro. Juan Carlos Rivera Tapia
+          </strong>
+
+          <span>
+            Primer miembro titular electo
+          </span>
+
+        </div>
+
+
+        <div class="puesto puesto-suplente">
+
+          <strong>
+            Lic. Kenia Núñez González
+          </strong>
+
+          <span>
+            Suplente
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           MIEMBRO 2
+      ==================================================== -->
+
+      <div class="rama rama-miembro-2">
+
+        <div class="puesto puesto-principal">
+
+          <strong>
+            Lic. Libni Ester González Potenciano
+          </strong>
+
+          <span>
+            Segundo miembro titular electo
+          </span>
+
+        </div>
+
+
+        <div class="puesto puesto-suplente">
+
+          <strong>
+            Lic. Martín Castillo Valenzuela
+          </strong>
+
+          <span>
+            Suplente
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           MIEMBRO 3
+      ==================================================== -->
+
+      <div class="rama rama-miembro-3">
+
+        <div class="puesto puesto-principal">
+
+          <strong>
+            Mtro. Gary Geovani Ucán Díaz
+          </strong>
+
+          <span>
+            Tercer miembro titular electo
+          </span>
+
+        </div>
+
+
+        <div class="puesto puesto-suplente">
+
+          <strong>
+            Mtra. Alma Patricia Chávez Damián
+          </strong>
+
+          <span>
+            Suplente
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           CONSEJERA
+      ==================================================== -->
+
+      <div class="rama rama-consejera">
+
+        <div class="puesto puesto-principal">
+
+          <strong>
+            Lic. José del Carmen Chi Alcocer
+          </strong>
+
+          <span>
+            Persona Consejera Titular
+          </span>
+
+        </div>
+
+
+        <div class="puesto puesto-suplente">
+
+          <strong>
+            Dr. Miguel Ángel Mejía Bautista
+          </strong>
+
+          <span>
+            Suplente
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===================================================
+           OIC
+      ==================================================== -->
+
+      <div class="rama rama-oic">
+
+        <div class="puesto puesto-principal">
+
+          <strong>
+            L.C. Lileny Vianey Hau Paat
+          </strong>
+
+          <span>
+            Encargada del Órgano Interno de Control del ITSE
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =======================================================
+       DOCUMENTOS
+  ======================================================== -->
+
   <div class="tab-content box-content">
 
     <div class="tab-pane fade show active">
 
 
-      <!-- ================= AÑOS ================= -->
+      <!-- ===================================================
+           NAVEGACIÓN DE AÑOS
+      ==================================================== -->
+
       <div class="anios-nav">
 
         <button
@@ -39,30 +480,46 @@
       </div>
 
 
-      <!-- ================= CONTENIDO DEL AÑO ================= -->
+      <!-- ===================================================
+           CONTENIDO DEL AÑO
+      ==================================================== -->
+
       <div
         *ngFor="let anio of data"
         class="anio-contenido"
         [class.visible]="anio.abierto">
 
-        <!-- TRIMESTRES -->
+
+        <!-- =================================================
+             TRIMESTRES
+        ================================================== -->
+
         <div
           class="trimestre"
           *ngFor="let t of anio.trimestres">
 
-          <!-- ENCABEZADO TRIMESTRE -->
+
+          <!-- ENCABEZADO -->
+
           <div
             class="trimestre-header"
             (click)="t.abierto = !t.abierto">
 
-            <span class="trimestre-icon">📁</span>
+            <span class="trimestre-icon">
+              📁
+            </span>
 
-            <span>{{ t.nombre }}</span>
+            <span>
+              {{ t.nombre }}
+            </span>
 
           </div>
 
 
-          <!-- ARCHIVOS -->
+          <!-- =================================================
+               ARCHIVOS PDF
+          ================================================== -->
+
           <ul
             *ngIf="t.abierto"
             class="archivos-list">

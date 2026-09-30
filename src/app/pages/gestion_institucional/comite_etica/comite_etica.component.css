@@ -584,3 +584,99 @@
   }
 
 }
+
+/* =========================================================
+   OTROS DOCUMENTOS
+========================================================= */
+
+.otros-documentos {
+  margin-top: 25px;
+}
+
+
+/* =========================================================
+   TÍTULO DE OTROS DOCUMENTOS
+========================================================= */
+
+.otros-documentos-titulo {
+  margin: 0 0 15px;
+
+  padding: 10px 14px;
+
+  background: #e3f2fd;
+
+  border-left: 4px solid #64b5f6;
+
+  border-radius: 5px;
+
+  color: #244574;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   LISTA
+========================================================= */
+
+.otros-documentos-lista {
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0 0 0 20px;
+
+  border-left: 2px solid #e0e0e0;
+}
+
+
+/* =========================================================
+   ELEMENTOS
+========================================================= */
+
+.otros-documentos-lista li {
+  display: flex;
+
+  align-items: center;
+
+  margin: 10px 0;
+
+  min-height: 24px;
+}
+
+
+/* =========================================================
+   ICONO PDF
+========================================================= */
+
+.otros-documentos-lista img {
+  width: 16px;
+
+  height: auto;
+
+  margin-right: 8px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   ENLACES
+========================================================= */
+
+.otros-documentos-lista a {
+  color: #1a73e8;
+
+  text-decoration: none;
+
+  line-height: 1.4;
+}
+
+
+.otros-documentos-lista a:hover {
+  text-decoration: underline;
+}

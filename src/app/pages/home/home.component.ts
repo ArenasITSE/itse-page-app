@@ -12,7 +12,10 @@ import { RouterModule } from '@angular/router';
 export class HomeComponent {
 
   images = [
-    
+    {
+      src: 'assets/carrusel_home/carrusel_11.png',
+      link: 'http://edu.devf.la/becalos'
+    },
     {
       src: 'assets/carrusel_home/carrusel_99.jpg',
       link: ''

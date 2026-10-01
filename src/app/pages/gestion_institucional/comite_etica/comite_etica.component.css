@@ -4,35 +4,33 @@
 
 .contenido {
   flex: 1;
-
   max-width: 1150px;
-
-  margin: 50px auto 150px auto;
-
+  margin: 0 auto 150px auto;
   padding: 0 10px;
 }
-
 
 /* =========================================================
    BANNER DE ÉTICA
 ========================================================= */
 
 .banner-etica {
-  width: 100%;
+  width: 100vw;
 
-  margin-bottom: 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 
-  overflow: hidden;
+  margin: 0 auto 45px auto;
 }
 
 .banner-etica img {
   display: block;
 
   width: 100%;
-
   height: auto;
-}
 
+  object-fit: contain;
+}
 
 /* =========================================================
    =========================================================
@@ -67,20 +65,119 @@
   text-align: center;
 }
 
+.organigrama-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(250px, 1fr)
+    1000px
+    minmax(250px, 1fr);
+
+  align-items: start;
+
+  column-gap: 28px;
+
+  width: 100vw;
+
+  position: relative;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  box-sizing: border-box;
+
+  padding: 0 20px;
+}
+
+/* =========================================================
+   CARRUSELES LATERALES
+========================================================= */
+
+.carrusel-lateral {
+  width: 100%;
+  height: 720px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  background: #f5f5f5;
+
+  border-radius: 8px;
+}
+
+
+/* =========================================================
+   CONTENEDOR DE LA IMAGEN
+========================================================= */
+
+.carrusel-imagen {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   IMÁGENES DEL CARRUSEL
+========================================================= */
+
+.carrusel-imagen img {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity .8s ease,
+    visibility .8s ease;
+}
+
+
+/* =========================================================
+   IMAGEN ACTIVA
+========================================================= */
+
+.carrusel-imagen img.visible {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* =========================================================
    LIENZO
 ========================================================= */
 
+/* =========================================================
+   LIENZO DEL ORGANIGRAMA
+========================================================= */
+
 .organigrama {
   position: relative;
 
-  width: min(1000px, 100%);
+  width: 1000px;
+  min-width: 1000px;
+  max-width: 1000px;
 
   height: 720px;
 
-  margin: 0 auto;
+  margin: 0;
 }
+
 
 
 /* =========================================================
@@ -554,33 +651,56 @@
 }
 
 
+
+
 /* =========================================================
    RESPONSIVE
 ========================================================= */
 
-@media (max-width: 1050px) {
+@media (max-width: 1500px) {
 
   .organigrama-section {
     overflow-x: auto;
   }
 
-  .organigrama {
-    min-width: 1000px;
+  .organigrama-layout {
+    width: max-content;
+    min-width: 100%;
+
+    left: 0;
+    transform: none;
+
+    padding: 0 20px;
+  }
+
+  .carrusel-lateral {
+    width: 250px;
+    min-width: 250px;
   }
 
 }
 
 
-@media (max-width: 600px) {
+/* =========================================================
+   RESPONSIVE PARA MOVIL
+========================================================= */
+@media (max-width: 900px) {
 
-  .contenido {
-    padding: 0 5px;
+  .carrusel-lateral {
+    display: none;
   }
 
-  .organigrama-section {
-    padding-left: 0;
+  .organigrama-layout {
+    display: block;
 
-    padding-right: 0;
+    width: 100%;
+    min-width: 0;
+
+    padding: 0;
+  }
+
+  .organigrama {
+    margin: 0 auto;
   }
 
 }

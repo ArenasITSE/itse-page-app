@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  ChangeDetectorRef
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,7 +13,68 @@ import { CommonModule } from '@angular/common';
   templateUrl: './comite_etica.component.html',
   styleUrls: ['./comite_etica.component.css']
 })
-export class Comite_eticaComponent {
+export class Comite_eticaComponent implements OnInit, OnDestroy {
+
+    // =====================================================
+  // CARRUSELES LATERALES
+  // =====================================================
+  constructor(private cdr: ChangeDetectorRef) {}
+
+  imagenesIzquierda = [
+    'assets/CEPCI_ITSE/carrusel/imagen1.jpg',
+    'assets/CEPCI_ITSE/carrusel/imagen2.jpg',
+    'assets/CEPCI_ITSE/carrusel/imagen3.jpg',
+    'assets/CEPCI_ITSE/carrusel/imagen4.jpg'
+  ];
+
+  imagenesDerecha = [
+    'assets/CEPCI_ITSE/carrusel/imagen5.jpg',
+    'assets/CEPCI_ITSE/carrusel/imagen6.jpg',
+    'assets/CEPCI_ITSE/carrusel/imagen7.jpg',
+    'assets/CEPCI_ITSE/carrusel/imagen8.jpeg'
+  ];
+
+  indiceIzquierda = 0;
+  indiceDerecha = 0;
+
+  private intervaloCarrusel: ReturnType<typeof setInterval> | undefined;
+
+
+  // =====================================================
+  // INICIO DEL CARRUSEL
+  // =====================================================
+
+  ngOnInit(): void {
+
+  this.intervaloCarrusel = setInterval(() => {
+
+    this.indiceIzquierda =
+      (this.indiceIzquierda + 1) % this.imagenesIzquierda.length;
+
+    this.indiceDerecha =
+      (this.indiceDerecha + 1) % this.imagenesDerecha.length;
+
+    this.cdr.markForCheck();
+
+    }, 5000);
+
+  }
+
+
+  // =====================================================
+  // LIMPIEZA DEL CARRUSEL
+  // =====================================================
+
+  ngOnDestroy(): void {
+
+    if (this.intervaloCarrusel) {
+
+      clearInterval(this.intervaloCarrusel);
+
+    }
+
+  }
+
 
   data = [
     {

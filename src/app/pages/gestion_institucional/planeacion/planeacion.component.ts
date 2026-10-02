@@ -48,7 +48,7 @@ export class PlaneacionComponent {
         { nombre: '11_Documentacion_que_acredite_experiencia_del_evaluador.pdf', url: 'assets/planeacion-pdf/PAE_2025/11_Documentacion_que_acredite_experiencia_del_evaluador.pdf'},
         { nombre: '12_Manifestacion_por_escrito_de_que_el_evaluador_tiene_experiencia.pdf', url: 'assets/planeacion-pdf/PAE_2025/12_Manifestacion_por_escrito_de_que_el_evaluador_tiene_experiencia.pdf'},
         { nombre: '13_Anexo_A.pdf', url: 'assets/planeacion-pdf/PAE_2025/13_Anexo_A.pdf'},
-        { nombre: '14.-ITSE-SABG-ASM PAE 2025 EJERC 2025-EV DE DISEÑO-CIERRE SEP 2026', url: 'assets/planeacion-pdf/PAE_2025/14.-ITSE-SABG-ASM PAE 2025 EJERC 2025-EV DE DISEÑO-CIERRE SEP 2026.zip'},
+        { nombre: '14.-ITSE-SABG-ASM PAE 2025 EJERC 2025-EV DE DISEÑO-CIERRE SEP 2026', url: 'assets/planeacion-pdf/PAE_2025/14.-ITSE-SABG-ASM PAE 2025 EJERC 2025-EV DE DISE.-CIERRE SEP 2026.zip'},
       ]
     },
 

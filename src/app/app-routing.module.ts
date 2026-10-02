@@ -132,7 +132,7 @@ export const routes: Routes = [
         {path: 'centro-computo', component: Centro_computoComponent},
         {path: 'centro-informacion', component: Centro_informacionComponent},
         {path: 'recursos-financieros', component: Recursos_financierosComponent},
-        {path: 'servicios-escolares', component: Servicios_escolaresComponent}
+        {path: 'administracion-escolar', component: Servicios_escolaresComponent}
 
     ]
   },

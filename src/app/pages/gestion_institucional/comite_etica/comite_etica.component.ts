@@ -30,7 +30,7 @@ export class Comite_eticaComponent implements OnInit, OnDestroy {
   imagenesDerecha = [
     'assets/CEPCI_ITSE/carrusel/imagen5.jpg',
     'assets/CEPCI_ITSE/carrusel/imagen6.jpg',
-    'assets/CEPCI_ITSE/carrusel/imagen7.jpg',
+    'assets/CEPCI_ITSE/carrusel/imagen7.png',
     'assets/CEPCI_ITSE/carrusel/imagen8.jpeg'
   ];
 

@@ -48,7 +48,7 @@ export class PlaneacionComponent {
         { nombre: '11_Documentacion_que_acredite_experiencia_del_evaluador.pdf', url: 'assets/planeacion-pdf/PAE_2025/11_Documentacion_que_acredite_experiencia_del_evaluador.pdf'},
         { nombre: '12_Manifestacion_por_escrito_de_que_el_evaluador_tiene_experiencia.pdf', url: 'assets/planeacion-pdf/PAE_2025/12_Manifestacion_por_escrito_de_que_el_evaluador_tiene_experiencia.pdf'},
         { nombre: '13_Anexo_A.pdf', url: 'assets/planeacion-pdf/PAE_2025/13_Anexo_A.pdf'},
-        { nombre: ' ', url: 'assets/planeacion-pdf/PAE_2025/'},
+        { nombre: '14.-ITSE-SABG-ASM PAE 2025 EJERC 2025-EV DE DISEÑO-CIERRE SEP 2026', url: 'assets/planeacion-pdf/PAE_2025/14.-ITSE-SABG-ASM PAE 2025 EJERC 2025-EV DE DISE.-CIERRE SEP 2026.zip'},
       ]
     },
 
@@ -126,19 +126,19 @@ export class PlaneacionComponent {
     {
       nombre: 'PAE 2021 Ejercicio Fiscal 2020',
       archivos: [
-        { nombre: '1InformeFinal.pdf', url: 'assets/planeacion/PAE_2021/1InformeFinal.pdf' },
-        { nombre: '2TDRITSE2021.pdf', url: 'assets/planeacion/PAE_2021/2TDRITSE2021.pdf' },
-        { nombre: '3Anexo1.pdf', url: 'assets/planeacion/PAE_2021/3Anexo1.pdf' },
-        { nombre: '4FichatecnicadelEvaluador.pdf', url: 'assets/planeacion/PAE_2021/4FichatecnicadelEvaluador.pdf' },
-        { nombre: '5Propuestadetrabajo.pdf', url: 'assets/planeacion/PAE_2021/5Propuestadetrabajo.pdf' },
-        { nombre: '6Resumenejecutivo.pdf', url: 'assets/planeacion/PAE_2021/6Resumenejecutivo.pdf' },
-        { nombre: '7ConstanciadeSituacionFiscal.pdf', url: 'assets/planeacion/PAE_2021/7ConstanciadeSituacionFiscal.pdf' },
-        { nombre: '8ContratodePrestaciondeServicio.pdf', url: 'assets/planeacion/PAE_2021/8ContratodePrestaciondeServicio.pdf' },
-        { nombre: '9CurriculumdelEvaluador.pdf', url: 'assets/planeacion/PAE_2021/9CurriculumdelEvaluador.pdf' },
-        { nombre: '10Documentacionqueacreditelaexperienciadelevaluador.pdf', url: 'assets/planeacion/PAE_2021/10Documentacionqueacreditelaexperienciadelevaluador.pdf' },
-        { nombre: '11Manifestacionporescritodequeelevaluadortieneexperiencia.pdf', url: 'assets/planeacion/PAE_2021/11Manifestacionporescritodequeelevaluadortieneexperiencia.pdf' },
-        { nombre: 'ASM_DEL_PAE_2021-2020..pdf', url: 'assets/planeacion/PAE_2021/ASM_DEL_PAE_2021-2020..pdf' },
-        { nombre: 'Copia_de_MYES201704_Certificado.pdf', url: 'assets/planeacion/PAE_2021/Copia_de_MYES201704_Certificado.pdf' },
+        { nombre: '1InformeFinal.pdf', url: 'assets/planeacion-pdf/PAE_2021/1InformeFinal.pdf' },
+        { nombre: '2TDRITSE2021.pdf', url: 'assets/planeacion-pdf/PAE_2021/2TDRITSE2021.pdf' },
+        { nombre: '3Anexo1.pdf', url: 'assets/planeacion-pdf/PAE_2021/3Anexo1.pdf' },
+        { nombre: '4FichatecnicadelEvaluador.pdf', url: 'assets/planeacion-pdf/PAE_2021/4FichatecnicadelEvaluador.pdf' },
+        { nombre: '5Propuestadetrabajo.pdf', url: 'assets/planeacion-pdf/PAE_2021/5Propuestadetrabajo.pdf' },
+        { nombre: '6Resumenejecutivo.pdf', url: 'assets/planeacion-pdf/PAE_2021/6Resumenejecutivo.pdf' },
+        { nombre: '7ConstanciadeSituacionFiscal.pdf', url: 'assets/planeacion-pdf/PAE_2021/7ConstanciadeSituacionFiscal.pdf' },
+        { nombre: '8ContratodePrestaciondeServicio.pdf', url: 'assets/planeacion-pdf/PAE_2021/8ContratodePrestaciondeServicio.pdf' },
+        { nombre: '9CurriculumdelEvaluador.pdf', url: 'assets/planeacion-pdf/PAE_2021/9CurriculumdelEvaluador.pdf' },
+        { nombre: '10Documentacionqueacreditelaexperienciadelevaluador.pdf', url: 'assets/planeacion-pdf/PAE_2021/10Documentacionqueacreditelaexperienciadelevaluador.pdf' },
+        { nombre: '11Manifestacionporescritodequeelevaluadortieneexperiencia.pdf', url: 'assets/planeacion-pdf/PAE_2021/11Manifestacionporescritodequeelevaluadortieneexperiencia.pdf' },
+        { nombre: 'ASM_DEL_PAE_2021-2020..pdf', url: 'assets/planeacion-pdf/PAE_2021/ASM_DEL_PAE_2021-2020..pdf' },
+        { nombre: 'Copia_de_MYES201704_Certificado.pdf', url: 'assets/planeacion-pdf/PAE_2021/Copia_de_MYES201704_Certificado.pdf' },
        
       ]
     },
@@ -188,28 +188,29 @@ export class PlaneacionComponent {
       ]
     },
 
+    
     {
-      nombre: 'PDI 2024-2027',
+      nombre: 'DICTAMEN PDI 2024-2027',
       archivos: [
-        { nombre: '6_16-Dictamen_favorable_PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf', url: 'assets/planeacion/PDI_2024-2027/6_16-Dictamen_favorable_PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf' },
-        { nombre: 'PDI2427.pdf', url: 'assets/planeacion/PDI_2024-2027/PDI2427.pdf' }
+        { nombre: '6_16-Dictamen favorable PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf', url: 'assets/planeacion-pdf/DICTAMEN_2024-2027/6_16-Dictamen favorable PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf' },
+        { nombre: 'PDI2427.pdf', url: 'assets/planeacion-pdf/DICTAMEN_2024-2027/PDI2427.pdf' }
       ]
     },
 
     {
-      nombre: 'DICTAMEN PDI 2024-2027',
+      nombre: 'PROGRAMA INSTITUCIONAL 2025 - 2030 ITSE',
       archivos: [
-        { nombre: '6_16-Dictamen favorable PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf', url: 'assets/planeacion/DICTAMEN_2024-2027/6_16-Dictamen favorable PDI-2024-2027-SEMAIG-DGPPP-0309-2025.pdf' },
-        { nombre: 'PDI2427.pdf', url: 'assets/planeacion/DICTAMEN_2024-2027/PDI2427.pdf' }
+        { nombre: 'PI PROGRAMA INSTITUCIONAL 2025-2030 ITSE.pdf', url: 'assets/planeacion-pdf/pro_ins_25-30/PI PROGRAMA INSTITUCIONAL 2025-2030 ITSE.pdf' },
+        
       ]
     },
 
     {
       nombre: 'Evaluación de Diseño Programa 107',
       archivos: [
-        { nombre: 'ITSE-ASM_2018.pdf', url: 'assets/planeacion/Evaluacion_107/ITSE-ASM_2018.pdf' },
-        { nombre: 'ITSE-ASM-ANEXO_C-PAE 2019_EJERCICIO 2018.pdf', url: 'assets/planeacion/Evaluacion_107/ITSE-ASM-ANEXO_C-PAE 2019_EJERCICIO 2018.pdf' },
-        { nombre: 'NOR_01_14_011 ITES.pdf', url: 'assets/planeacion/Evaluacion_107/NOR_01_14_011 ITES.pdf' },
+        { nombre: 'ITSE-ASM_2018.pdf', url: 'assets/planeacion-pdf/Evaluacion_107/ITSE-ASM_2018.pdf' },
+        { nombre: 'ITSE-ASM-ANEXO_C-PAE 2019_EJERCICIO 2018.pdf', url: 'assets/planeacion-pdf/Evaluacion_107/ITSE-ASM-ANEXO_C-PAE 2019_EJERCICIO 2018.pdf' },
+        { nombre: 'NOR_01_14_011 ITES.pdf', url: 'assets/planeacion-pdf/Evaluacion_107/NOR_01_14_011 ITES.pdf' },
         
   
       ]
@@ -260,11 +261,11 @@ export class PlaneacionComponent {
     {
       nombre: 'PROGRAMA U079',
       archivos: [
-        { nombre: 'campeche_CONVENIO_U079.pdf', url: 'assets/planeacion/Programa_U079/campeche_CONVENIO_U079.pdf' },
-        { nombre: 'Evidencia_documental_avance_al_3er trimestre_2023.pdf', url: 'assets/planeacion/Programa_U079/Evidencia_documental_avance_al_3er_trimestre_2023.pdf' },
-        { nombre: 'EVIDENCIAS_DOCUMENTAL_DEL_U079_2023.pdf', url: 'assets/planeacion/Programa_U079/EVIDENCIAS_DOCUMENTAL_DEL_U079_2023.pdf' },
-        { nombre: 'GESTIONES_ADMINISTRATIVAS_U079_OCT 23-MAR_24.pdf', url: 'assets/planeacion/Programa_U079/GESTIONES_ADMINISTRATIVAS_U079_OCT 23-MAR_24.pdf' },
-        { nombre: 'PPU079_Resultados_ITSE.pdf', url: 'assets/planeacion/Programa_U079/PPU079_Resultados_ITSE.pdf' },
+        { nombre: 'campeche_CONVENIO_U079.pdf', url: 'assets/planeacion-pdf/Programa_U079/campeche_CONVENIO_U079.pdf' },
+        { nombre: 'Evidencia_documental_avance_al_3er trimestre_2023.pdf', url: 'assets/planeacion-pdf/Programa_U079/Evidencia_documental_avance_al_3er_trimestre_2023.pdf' },
+        { nombre: 'EVIDENCIAS_DOCUMENTAL_DEL_U079_2023.pdf', url: 'assets/planeacion-pdf/Programa_U079/EVIDENCIAS_DOCUMENTAL_DEL_U079_2023.pdf' },
+        { nombre: 'GESTIONES_ADMINISTRATIVAS_U079_OCT 23-MAR_24.pdf', url: 'assets/planeacion-pdf/Programa_U079/GESTIONES_ADMINISTRATIVAS_U079_OCT 23-MAR_24.pdf' },
+        { nombre: 'PPU079_Resultados_ITSE.pdf', url: 'assets/planeacion-pdf/Programa_U079/PPU079_Resultados_ITSE.pdf' },
       ]
     },
     {

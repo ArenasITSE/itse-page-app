@@ -1,84 +1,631 @@
+<!-- =========================================================
+     CONTENEDOR PRINCIPAL
+========================================================= -->
+
 <div class="contenido">
 
-  <h2>Comité de Ética</h2>
+  <!-- =======================================================
+       BANNER
+  ======================================================== -->
 
-  <!-- TABS -->
-  <ul class="nav nav-tabs custom-tabs">
+  <div class="banner-etica">
 
-    <li>
-      <button
-        class="nav-link active"
-        data-bs-toggle="tab"
-        data-bs-target="#tab1">
-        COMITÉ DE ÉTICA
-      </button>
-    </li>
+    <img
+      src="assets/CEPCI_ITSE/etica_banner.png"
+      alt="Comité de Ética">
 
-  </ul>
+  </div>
 
-  <!-- CONTENIDO TAB -->
+
+  <!-- =======================================================
+       ORGANIGRAMA
+  ======================================================== -->
+
+  <section class="organigrama-section">
+
+  <h2 class="seccion-titulo">
+    ORGANIGRAMA DEL COMITÉ DE ÉTICA DEL
+    INSTITUTO TECNOLÓGICO SUPERIOR DE ESCÁRCEGA
+  </h2>
+
+
+  <div class="organigrama-layout">
+
+
+    <!-- ===================================================
+         CARRUSEL IZQUIERDO
+    ==================================================== -->
+
+    <div class="carrusel-lateral carrusel-izquierdo">
+
+      <div class="carrusel-imagen">
+
+        <img
+          *ngFor="let imagen of imagenesIzquierda; let i = index"
+          [src]="imagen"
+          [class.visible]="i === indiceIzquierda"
+          alt="Material informativo del Comité de Ética">
+
+      </div>
+
+    </div>
+
+
+    <!-- ===================================================
+         ORGANIGRAMA ORIGINAL
+    ==================================================== -->
+
+    <div class="organigrama">
+
+  <!-- SVG DE CONEXIONES -->
+
+  <svg
+    class="organigrama-lineas"
+    viewBox="0 0 1000 720"
+    preserveAspectRatio="xMidYMin meet"
+    aria-hidden="true">
+
+    <defs>
+
+      <marker
+        id="flecha-organigrama"
+        viewBox="0 0 10 10"
+        refX="8"
+        refY="5"
+        markerWidth="5"
+        markerHeight="5"
+        orient="auto">
+
+        <path d="M 0 0 L 10 5 L 0 10 Z"></path>
+
+      </marker>
+
+    </defs>
+
+
+    <!-- PRESIDENTA → SECRETARÍAS -->
+
+    <path
+      class="linea-organigrama"
+      d="M 500 106 V 155">
+    </path>
+
+    <path
+      class="linea-organigrama"
+      d="M 250 155 H 750">
+    </path>
+
+    <path
+      class="linea-organigrama"
+      d="M 250 155 V 180"
+      marker-end="url(#flecha-organigrama)">
+    </path>
+
+    <path
+      class="linea-organigrama"
+      d="M 750 155 V 180"
+      marker-end="url(#flecha-organigrama)">
+    </path>
+
+    <path
+      class="linea-organigrama"
+      d="M 500 155 V 330">
+    </path>
+
+
+    <!-- LÍNEA PRINCIPAL DE LOS TRES MIEMBROS -->
+
+    <path
+      class="linea-organigrama"
+      d="M 125 330 H 875">
+    </path>
+
+    <path
+      class="linea-organigrama"
+      d="M 125 330 V 350"
+      marker-end="url(#flecha-organigrama)">
+    </path>
+
+    <path
+      class="linea-organigrama"
+      d="M 500 330 V 350"
+      marker-end="url(#flecha-organigrama)">
+    </path>
+
+    <path
+      class="linea-organigrama"
+      d="M 875 330 V 350"
+      marker-end="url(#flecha-organigrama)">
+    </path>
+
+
+    <!-- RAMA HACIA CONSEJERA -->
+
+    <path
+      class="linea-organigrama"
+      d="M 325 330 V 520"
+      marker-end="url(#flecha-organigrama)">
+    </path>
+
+
+    <!-- RAMA HACIA OIC -->
+
+    <path
+      class="linea-organigrama"
+      d="M 675 330 V 520"
+      marker-end="url(#flecha-organigrama)">
+    </path>
+
+  </svg>
+
+
+  <!-- PRESIDENTA -->
+
+  <div class="rama rama-presidente">
+
+    <div class="puesto puesto-principal">
+
+      <strong>
+        Lic. Margarita May Chan
+      </strong>
+
+      <span>
+        Presidenta
+      </span>
+
+    </div>
+
+    <div class="puesto puesto-suplente">
+
+      <strong>
+        Mtro. José Alberto Alavez Góngora
+      </strong>
+
+      <span>
+        Suplente
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- SECRETARÍA EJECUTIVA -->
+
+  <div class="rama rama-secretaria-ejecutiva">
+
+    <div class="puesto puesto-principal">
+
+      <strong>
+        Ing. Eliseo Refugio Hernández
+      </strong>
+
+      <span>
+        Secretario Ejecutivo
+      </span>
+
+    </div>
+
+    <div class="puesto puesto-suplente">
+
+      <strong>
+        Lic. Augusto Roman Dzul Robaldino
+      </strong>
+
+      <span>
+        Suplente
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- SECRETARÍA TÉCNICA -->
+
+  <div class="rama rama-secretaria-tecnica">
+
+    <div class="puesto puesto-principal">
+
+      <strong>
+        Lic. Mariana De Los Ángeles Ferrer Yahn
+      </strong>
+
+      <span>
+        Secretaria Técnica
+      </span>
+
+    </div>
+
+    <div class="puesto puesto-suplente">
+
+      <strong>
+        C. P. Gabriela Granados Córdoba
+      </strong>
+
+      <span>
+        Suplente
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- MIEMBRO 1 -->
+
+  <div class="rama rama-miembro-1">
+
+    <div class="puesto puesto-principal">
+
+      <strong>
+        Mtro. Juan Carlos Rivera Tapia
+      </strong>
+
+      <span>
+        Primer miembro titular electo
+      </span>
+
+    </div>
+
+    <div class="puesto puesto-suplente">
+
+      <strong>
+        Lic. Kenia Núñez González
+      </strong>
+
+      <span>
+        Suplente
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- MIEMBRO 2 -->
+
+  <div class="rama rama-miembro-2">
+
+    <div class="puesto puesto-principal">
+
+      <strong>
+        Lic. Libni Ester González Potenciano
+      </strong>
+
+      <span>
+        Segundo miembro titular electo
+      </span>
+
+    </div>
+
+    <div class="puesto puesto-suplente">
+
+      <strong>
+        Lic. Martín Castillo Valenzuela
+      </strong>
+
+      <span>
+        Suplente
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- MIEMBRO 3 -->
+
+  <div class="rama rama-miembro-3">
+
+    <div class="puesto puesto-principal">
+
+      <strong>
+        Mtro. Gary Geovani Ucán Díaz
+      </strong>
+
+      <span>
+        Tercer miembro titular electo
+      </span>
+
+    </div>
+
+    <div class="puesto puesto-suplente">
+
+      <strong>
+        Mtra. Alma Patricia Chávez Damián
+      </strong>
+
+      <span>
+        Suplente
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- CONSEJERA -->
+
+  <div class="rama rama-consejera">
+
+    <div class="puesto puesto-principal">
+
+      <strong>
+        Lic. José del Carmen Chi Alcocer
+      </strong>
+
+      <span>
+        Persona Consejera Titular
+      </span>
+
+    </div>
+
+    <div class="puesto puesto-suplente">
+
+      <strong>
+        Dr. Miguel Ángel Mejía Bautista
+      </strong>
+
+      <span>
+        Suplente
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <!-- OIC -->
+
+  <div class="rama rama-oic">
+
+    <div class="puesto puesto-principal">
+
+      <strong>
+        L.C. Lileny Vianey Hau Paat
+      </strong>
+
+      <span>
+        Encargada del Órgano Interno de Control del ITSE
+      </span>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+    <!-- ===================================================
+         CARRUSEL DERECHO
+    ==================================================== -->
+
+    <div class="carrusel-lateral carrusel-derecho">
+
+      <div class="carrusel-imagen">
+
+        <img
+          *ngFor="let imagen of imagenesDerecha; let i = index"
+          [src]="imagen"
+          [class.visible]="i === indiceDerecha"
+          alt="Material informativo del Comité de Ética">
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+  <!-- =======================================================
+       DOCUMENTOS
+  ======================================================== -->
+
   <div class="tab-content box-content">
 
-    <div class="tab-pane fade show active" id="tab1">
+    <div class="tab-pane fade show active">
 
-      <div class="anio-card" *ngFor="let anio of data">
 
-        <!-- AÑO -->
+      <!-- ===================================================
+           NAVEGACIÓN DE AÑOS
+      ==================================================== -->
+
+      <div class="anios-nav">
+
+        <button
+          *ngFor="let anio of data"
+          type="button"
+          class="anio-tab"
+          [class.active]="anio.abierto"
+          (click)="seleccionarAnio(anio)">
+
+          {{ anio.anio }}
+
+        </button>
+
+      </div>
+
+
+      <!-- ===================================================
+           CONTENIDO DEL AÑO
+      ==================================================== -->
+
+      <div
+        *ngFor="let anio of data"
+        class="anio-contenido"
+        [class.visible]="anio.abierto">
+
+
+        <!-- =================================================
+             TRIMESTRES
+        ================================================== -->
+
         <div
-          class="anio-header"
-          (click)="anio.abierto = !anio.abierto">
+          class="trimestre"
+          *ngFor="let t of anio.trimestres">
 
-          📁 {{ anio.anio }}
 
-        </div>
+          <!-- ENCABEZADO -->
 
-        <div
-          *ngIf="anio.abierto"
-          class="anio-body">
-
-          <!-- TRIMESTRES -->
           <div
-            class="trimestre"
-            *ngFor="let t of anio.trimestres">
+            class="trimestre-header"
+            (click)="t.abierto = !t.abierto">
 
-            <div
-              class="trimestre-header"
-              (click)="t.abierto = !t.abierto">
+            <span class="trimestre-icon">
+              📁
+            </span>
 
-              📂 {{ t.nombre }}
-
-            </div>
-
-            <!-- ARCHIVOS PDF -->
-            <ul
-              *ngIf="t.abierto"
-              class="archivos-list">
-
-              <li *ngFor="let doc of t.archivos">
-
-                <img
-                  src="assets/vinculacion/pdf.png"
-                  alt="pdf">
-
-                <a
-                  [href]="doc.url"
-                  target="_blank">
-
-                  {{ doc.nombre }}
-
-                </a>
-
-              </li>
-
-            </ul>
+            <span>
+              {{ t.nombre }}
+            </span>
 
           </div>
+
+
+          <!-- =================================================
+               ARCHIVOS PDF
+          ================================================== -->
+
+          <ul
+            *ngIf="t.abierto"
+            class="archivos-list">
+
+            <li *ngFor="let doc of t.archivos">
+
+              <img
+                src="assets/vinculacion/pdf.png"
+                alt="PDF">
+
+              <a
+                [href]="doc.url"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                {{ doc.nombre }}
+
+              </a>
+
+            </li>
+
+          </ul>
 
         </div>
 
       </div>
 
     </div>
+
+  </div>
+
+    <!-- =======================================================
+       OTROS DOCUMENTOS
+  ======================================================== -->
+
+  <div class="otros-documentos box-content">
+
+    <h3 class="otros-documentos-titulo">
+      Comité de Ética
+    </h3>
+
+
+    <!-- =====================================================
+         LISTA DE DOCUMENTOS
+    ====================================================== -->
+
+    <ul class="otros-documentos-lista">
+
+      <li>
+
+        <img
+          src="assets/vinculacion/pdf.png"
+          alt="PDF">
+
+        <a
+          href="assets/CEPCI_ITSE/anexos_etica/Acuerdo Codigo De Etica Y Lineamientos Generales.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Acuerdo Código De Ética Y Lineamientos Generales Para La Integración Del Comité De Ética
+
+        </a>
+
+      </li>
+
+
+      <li>
+
+        <img
+          src="assets/vinculacion/pdf.png"
+          alt="PDF">
+
+        <a
+          href="assets/CEPCI_ITSE/anexos_etica/Acuerdo Por El Que Se Emite El Codigo De Conducta.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Acuerdo Por El Que Se Emite El Código De Conducta Al Que Deberán Sujetarse Las Personas Servidoras Públicas Del Instituto Tecnológico Superior De Escárcega Del Estado De Campeche
+
+        </a>
+
+      </li>
+
+
+      <li>
+
+        <img
+          src="assets/vinculacion/pdf.png"
+          alt="PDF">
+
+        <a
+          href="assets/CEPCI_ITSE/anexos_etica/Formato Primer Contacto.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Formato De Primer Contacto En Casos De Hostigamiento Sexual Y Acoso Sexual
+
+        </a>
+
+      </li>
+
+      <li>
+
+        <img
+          src="assets/vinculacion/pdf.png"
+          alt="PDF">
+
+        <a
+          href="assets/CEPCI_ITSE/anexos_etica/Posicionamiento De No Tolerancia A Los Actos De Corrupcion.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Posicionamiento De No Tolerancia A Los Actos De Corrupción En El Instituto Tecnológico Superior De Escárcega
+
+        </a>
+
+      </li>
+
+      <li>
+
+        <img
+          src="assets/vinculacion/pdf.png"
+          alt="PDF">
+
+        <a
+          href="assets/CEPCI_ITSE/anexos_etica/Pronunciamiento De Cero Tolerancia Al Hostigamiento Sexual Y Al Acoso Sexual.pdf"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          Pronunciamiento De Cero Tolerancia Al Hostigamiento Sexual Y Al Acoso Sexual En El Instituto Tecnológico Superior De Escárcega
+
+        </a>
+
+      </li>
+
+    </ul>
 
   </div>
 

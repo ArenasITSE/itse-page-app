@@ -1,110 +1,627 @@
-/* ================= CONTENIDO PRINCIPAL ================= */
+/* =========================================================
+   CONTENIDO PRINCIPAL
+========================================================= */
 
 .contenido {
   flex: 1;
   max-width: 1150px;
-  margin: 50px auto 150px auto;
+  margin: 0 auto 150px auto;
   padding: 0 10px;
 }
 
-/* TITULO */
+/* =========================================================
+   BANNER DE ÉTICA
+========================================================= */
 
-.contenido h2 {
-  margin-bottom: 20px;
+.banner-etica {
+  width: 100vw;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin: 0 auto 45px auto;
+}
+
+.banner-etica img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+/* =========================================================
+   =========================================================
+   ORGANIGRAMA
+   =========================================================
+========================================================= */
+
+.organigrama-section {
+  width: 100%;
+
+  margin: 0 auto;
+
+  padding: 20px 0 50px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TÍTULO
+========================================================= */
+
+.seccion-titulo {
+  margin: 0 0 25px;
+
+  color: #244574;
+
+  font-size: 26px;
+
   font-weight: 600;
+
+  text-align: center;
 }
 
-/* ================= TABS ================= */
+.organigrama-layout {
+  display: grid;
 
-.custom-tabs {
-  margin-bottom: 10px;
+  grid-template-columns:
+    minmax(250px, 1fr)
+    1000px
+    minmax(250px, 1fr);
+
+  align-items: start;
+
+  column-gap: 28px;
+
+  width: 100vw;
+
+  position: relative;
+
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  box-sizing: border-box;
+
+  padding: 0 20px;
 }
 
-.custom-tabs .nav-link {
-  background: #f0f0f0;
-  border: 1px solid #ccc;
-  margin-right: 5px;
-  border-radius: 6px 6px 0 0;
-  color: #333;
+/* =========================================================
+   CARRUSELES LATERALES
+========================================================= */
+
+.carrusel-lateral {
+  width: 100%;
+  height: 720px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  background: #f5f5f5;
+
+  border-radius: 8px;
 }
 
-.custom-tabs .nav-link.active {
-  background: white;
-  border-bottom: 3px solid #1976d2;
-  color: #1976d2;
-  font-weight: 600;
+
+/* =========================================================
+   CONTENEDOR DE LA IMAGEN
+========================================================= */
+
+.carrusel-imagen {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
 }
 
-/* ================= CAJA ================= */
+
+/* =========================================================
+   IMÁGENES DEL CARRUSEL
+========================================================= */
+
+.carrusel-imagen img {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: center;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity .8s ease,
+    visibility .8s ease;
+}
+
+
+/* =========================================================
+   IMAGEN ACTIVA
+========================================================= */
+
+.carrusel-imagen img.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =========================================================
+   LIENZO
+========================================================= */
+
+/* =========================================================
+   LIENZO DEL ORGANIGRAMA
+========================================================= */
+
+.organigrama {
+  position: relative;
+
+  width: 1000px;
+  min-width: 1000px;
+  max-width: 1000px;
+
+  height: 720px;
+
+  margin: 0;
+}
+
+
+
+/* =========================================================
+   SVG DE CONEXIONES
+========================================================= */
+
+.organigrama-lineas {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 720px;
+
+  z-index: 1;
+
+  overflow: visible;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   LÍNEAS
+========================================================= */
+
+.linea-organigrama {
+  fill: none;
+
+  stroke: #777;
+
+  stroke-width: 1.5;
+
+  stroke-linecap: square;
+
+  stroke-linejoin: miter;
+}
+
+
+/* =========================================================
+   FLECHAS
+========================================================= */
+
+#flecha-organigrama path {
+  fill: #777;
+}
+
+
+/* =========================================================
+   RAMAS / TARJETAS
+========================================================= */
+
+.organigrama .rama {
+  position: absolute;
+
+  width: 250px;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   POSICIONES
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   PRESIDENTA
+--------------------------------------------------------- */
+
+.rama-presidente {
+  left: 375px;
+
+  top: 0;
+}
+
+
+/* ---------------------------------------------------------
+   SECRETARÍA EJECUTIVA
+--------------------------------------------------------- */
+
+.rama-secretaria-ejecutiva {
+  left: 125px;
+
+  top: 180px;
+}
+
+
+/* ---------------------------------------------------------
+   SECRETARÍA TÉCNICA
+--------------------------------------------------------- */
+
+.rama-secretaria-tecnica {
+  left: 625px;
+
+  top: 180px;
+}
+
+
+/* ---------------------------------------------------------
+   MIEMBRO 1
+--------------------------------------------------------- */
+
+.rama-miembro-1 {
+  left: 0;
+
+  top: 350px;
+}
+
+
+/* ---------------------------------------------------------
+   MIEMBRO 2
+--------------------------------------------------------- */
+
+.rama-miembro-2 {
+  left: 375px;
+
+  top: 350px;
+}
+
+
+/* ---------------------------------------------------------
+   MIEMBRO 3
+--------------------------------------------------------- */
+
+.rama-miembro-3 {
+  left: 750px;
+
+  top: 350px;
+}
+
+
+/* ---------------------------------------------------------
+   CONSEJERA
+--------------------------------------------------------- */
+
+.rama-consejera {
+  left: 200px;
+
+  top: 520px;
+}
+
+
+/* ---------------------------------------------------------
+   OIC
+--------------------------------------------------------- */
+
+.rama-oic {
+  left: 550px;
+
+  top: 520px;
+}
+
+
+/* =========================================================
+   TARJETA PRINCIPAL
+========================================================= */
+
+.puesto-principal {
+  width: 250px;
+
+  min-height: 52px;
+
+  box-sizing: border-box;
+
+  padding: 9px 10px;
+
+  background: #294978;
+
+  color: white;
+
+  border-radius: 5px 5px 0 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  line-height: 1.3;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   NOMBRE
+========================================================= */
+
+.puesto-principal strong {
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   CARGO
+========================================================= */
+
+.puesto-principal span {
+  margin-top: 4px;
+}
+
+
+/* =========================================================
+   SUPLENTE
+========================================================= */
+
+.puesto-suplente {
+  width: 250px;
+
+  min-height: 52px;
+
+  box-sizing: border-box;
+
+  padding: 8px 10px;
+
+  background: #e2f1fc;
+
+  color: #123b6b;
+
+  border-left: 2px solid #55aaf5;
+
+  border-radius: 0 0 5px 5px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  line-height: 1.3;
+
+  font-size: 14px;
+}
+
+
+/* =========================================================
+   NOMBRE DEL SUPLENTE
+========================================================= */
+
+.puesto-suplente strong {
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   CARGO DEL SUPLENTE
+========================================================= */
+
+.puesto-suplente span {
+  margin-top: 4px;
+}
+
+
+/* =========================================================
+   OIC
+========================================================= */
+
+.rama-oic .puesto-principal {
+  min-height: 80px;
+
+  border-radius: 5px;
+}
+
+
+/* =========================================================
+   =========================================================
+   DOCUMENTOS
+   =========================================================
+========================================================= */
 
 .box-content {
   border: 1px solid #ddd;
+
   padding: 20px;
+
   background: white;
+
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,.05);
+
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
 }
 
-/* ================= AÑO ================= */
 
-.anio-card {
+/* =========================================================
+   NAVEGACIÓN DE AÑOS
+========================================================= */
+
+.anios-nav {
+  display: flex;
+
+  width: 100%;
+
   margin-bottom: 20px;
+
+  border: 1px solid #243f6b;
+
+  border-radius: 5px;
+
+  overflow: hidden;
 }
 
-.anio-header {
-  background: #243f6b;
-  color: white;
-  padding: 12px;
-  border-radius: 6px;
-  cursor: pointer;
+
+/* =========================================================
+   BOTONES DE AÑO
+========================================================= */
+
+.anio-tab {
+  flex: 1;
+
+  min-height: 58px;
+
+  border: none;
+
+  border-right: 1px solid #243f6b;
+
+  background: #f5f5f5;
+
+  color: #243f6b;
+
+  font-size: 16px;
+
   font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    background-color .2s ease,
+    color .2s ease;
 }
 
-.anio-header:hover {
-  opacity: .95;
+.anio-tab:last-child {
+  border-right: none;
 }
 
-/* ================= TRIMESTRES ================= */
+.anio-tab:hover {
+  background: #e3edf8;
+}
+
+.anio-tab.active {
+  background: #243f6b;
+
+  color: white;
+}
+
+
+/* =========================================================
+   CONTENIDO DEL AÑO
+========================================================= */
+
+.anio-contenido {
+  display: none;
+
+  animation: fadeIn .2s ease-in-out;
+}
+
+.anio-contenido.visible {
+  display: block;
+}
+
+
+/* =========================================================
+   TRIMESTRES
+========================================================= */
 
 .trimestre {
   margin-top: 12px;
 }
 
 .trimestre-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
   background: #e3f2fd;
-  padding: 10px;
+
+  padding: 10px 14px;
+
   border-radius: 5px;
+
   cursor: pointer;
+
   border-left: 4px solid #64b5f6;
+
+  color: #333;
+
+  transition: background-color .2s ease;
 }
 
 .trimestre-header:hover {
   background: #d0e7fb;
 }
 
-/* ================= ARCHIVOS ================= */
+.trimestre-icon {
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   ARCHIVOS
+========================================================= */
 
 .archivos-list {
   list-style: none;
+
   margin-top: 10px;
+
   margin-left: 25px;
+
   padding-left: 20px;
+
   border-left: 2px solid #e0e0e0;
 }
 
 .archivos-list li {
   display: flex;
+
   align-items: center;
+
   margin: 8px 0;
 }
 
 .archivos-list img {
   width: 16px;
+
+  height: auto;
+
   margin-right: 8px;
 }
 
 .archivos-list a {
   text-decoration: none;
+
   color: #1a73e8;
 }
 
@@ -112,36 +629,174 @@
   text-decoration: underline;
 }
 
-/* ================= ANIMACIÓN ================= */
 
-.anio-body,
-.archivos-list {
-  animation: fadeIn .2s ease-in-out;
-}
+/* =========================================================
+   ANIMACIÓN
+========================================================= */
 
 @keyframes fadeIn {
+
   from {
     opacity: 0;
+
     transform: translateY(-3px);
   }
 
   to {
     opacity: 1;
+
     transform: translateY(0);
   }
+
 }
 
-/* ================= RESPONSIVE ================= */
 
-@media (max-width: 600px) {
 
-  .contenido {
-    padding: 0 5px;
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1500px) {
+
+  .organigrama-section {
+    overflow-x: auto;
   }
 
-  .anio-header,
-  .trimestre-header {
-    font-size: 13px;
+  .organigrama-layout {
+    width: max-content;
+    min-width: 100%;
+
+    left: 0;
+    transform: none;
+
+    padding: 0 20px;
   }
 
+  .carrusel-lateral {
+    width: 250px;
+    min-width: 250px;
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE PARA MOVIL
+========================================================= */
+@media (max-width: 900px) {
+
+  .carrusel-lateral {
+    display: none;
+  }
+
+  .organigrama-layout {
+    display: block;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 0;
+  }
+
+  .organigrama {
+    margin: 0 auto;
+  }
+
+}
+
+/* =========================================================
+   OTROS DOCUMENTOS
+========================================================= */
+
+.otros-documentos {
+  margin-top: 25px;
+}
+
+
+/* =========================================================
+   TÍTULO DE OTROS DOCUMENTOS
+========================================================= */
+
+.otros-documentos-titulo {
+  margin: 0 0 15px;
+
+  padding: 10px 14px;
+
+  background: #e3f2fd;
+
+  border-left: 4px solid #64b5f6;
+
+  border-radius: 5px;
+
+  color: #244574;
+
+  font-size: 18px;
+
+  font-weight: 600;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   LISTA
+========================================================= */
+
+.otros-documentos-lista {
+  list-style: none;
+
+  margin: 0;
+
+  padding: 0 0 0 20px;
+
+  border-left: 2px solid #e0e0e0;
+}
+
+
+/* =========================================================
+   ELEMENTOS
+========================================================= */
+
+.otros-documentos-lista li {
+  display: flex;
+
+  align-items: center;
+
+  margin: 10px 0;
+
+  min-height: 24px;
+}
+
+
+/* =========================================================
+   ICONO PDF
+========================================================= */
+
+.otros-documentos-lista img {
+  width: 16px;
+
+  height: auto;
+
+  margin-right: 8px;
+
+  flex-shrink: 0;
+}
+
+
+/* =========================================================
+   ENLACES
+========================================================= */
+
+.otros-documentos-lista a {
+  color: #1a73e8;
+
+  text-decoration: none;
+
+  line-height: 1.4;
+}
+
+
+.otros-documentos-lista a:hover {
+  text-decoration: underline;
 }

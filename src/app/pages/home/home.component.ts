@@ -12,7 +12,18 @@ import { RouterModule } from '@angular/router';
 export class HomeComponent {
 
   images = [
-    
+    {
+      src: 'assets/carrusel_home/carrusel_11.png',
+      link: 'http://edu.devf.la/becalos'
+    },
+    {
+      src: 'assets/carrusel_home/carrusel_12.png',
+      link: 'assets/CEPCI_ITSE/anexos_etica/Acuerdo Codigo De Etica Y Lineamientos Generales.pdf'
+    },
+    {
+      src: 'assets/carrusel_home/carrusel_99.jpg',
+      link: ''
+    },
     {
       src: 'assets/carrusel_home/carrusel_55.jpg',
       link: ''

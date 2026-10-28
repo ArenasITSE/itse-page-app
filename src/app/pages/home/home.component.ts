@@ -13,6 +13,10 @@ export class HomeComponent {
 
   images = [
     {
+      src: 'assets/carrusel_home/banner1.jpeg',
+      link: ''
+    },
+    {
       src: 'assets/carrusel_home/carrusel_11.png',
       link: 'http://edu.devf.la/becalos'
     },

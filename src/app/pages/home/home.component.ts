@@ -17,6 +17,10 @@ export class HomeComponent {
       link: ''
     },
     {
+      src: 'assets/carrusel_home/banner_constancia.png',
+      link: 'https://escarcega.tecnm.mx/constancias_congreso2026/'
+    },
+    {
       src: 'assets/carrusel_home/carrusel_11.png',
       link: 'http://edu.devf.la/becalos'
     },

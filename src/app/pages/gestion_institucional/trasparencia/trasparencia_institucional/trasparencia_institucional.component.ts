@@ -11,8 +11,37 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 })
 export class Trasparencia_institucionalComponent implements OnInit {
 
+  
+
   tab: string = 'art74';
   fraccionAbierta: string | null = null;
+
+
+    // CARPETAS PRINCIPALES DE GOOGLE DRIVE
+  carpetasDrive = {
+  art64: {
+    id: '1NU-pT5xKPylv4SenGvG9FJqOKDq4Vj9X',
+    resourceKey: ''
+  },
+  art63: {
+    id: '1CDssJP0O0HU1j51VJuXAXSXnamPLz36B',
+    resourceKey: ''
+  },
+  art62: {
+    id: '15atacmqPgUvX5cRIK2bLuJC_D2uKKPOj',
+    resourceKey: ''
+  }
+};
+
+getDriveUrl(carpeta: {id: string, resourceKey: string}): SafeResourceUrl {
+  let url = `https://drive.google.com/u/0/embeddedfolderview?id=${carpeta.id}`;
+
+  if (carpeta.resourceKey) {
+    url += `&resourcekey=${carpeta.resourceKey}`;
+  }
+
+  return this.sanitizer.bypassSecurityTrustResourceUrl(url + '#list');
+}
 
   fraccionesArt74 = [
     {
@@ -303,18 +332,18 @@ export class Trasparencia_institucionalComponent implements OnInit {
   ngOnInit() {}
 
 
-  // 🔥 CAMBIAR TAB (RESETEA FRACCIÓN ABIERTA)
+  //  CAMBIAR TAB (RESETEA FRACCIÓN ABIERTA)
   setTab(tab: string) {
     this.tab = tab;
     this.fraccionAbierta = null;
   }
 
-  // 🔥 ABRIR / CERRAR FRACCIÓN
+  //  ABRIR / CERRAR FRACCIÓN
   toggleFraccion(f: string) {
     this.fraccionAbierta = this.fraccionAbierta === f ? null : f;
   }
 
-  // 🔥 EVITA ERROR DE ANGULAR CON IFRAME
+  //  EVITA ERROR DE ANGULAR CON IFRAME
   getSafeUrl(url: string): SafeResourceUrl {
     return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }

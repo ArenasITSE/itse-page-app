@@ -10,12 +10,12 @@ import { CommonModule } from '@angular/common';
 })
 export class PlaneacionComponent {
 
-  // 🔥 REFERENCIA AL CONTENEDOR
+  //  REFERENCIA AL CONTENEDOR
   @ViewChild('tabsContainer', { static: false }) tabsContainer!: ElementRef;
 
-  tabActivo: string = 'PAE 2025 Ejercicio Fiscal 2025';
+  tabActivo: string = 'PAE 2026 Ejercicio Fiscal 2025';
 
-  // 🔥 SCROLL
+  //  SCROLL
   scrollTabs(direction: string) {
     const container = this.tabsContainer.nativeElement;
 
@@ -29,8 +29,28 @@ export class PlaneacionComponent {
   }
 
 
-  // 🔥 LISTA DE TODOS LOS TABS
+  // LISTA DE TODOS LOS TABS
   tabs = [
+
+    {
+      nombre: 'PAE 2026 Ejercicio Fiscal 2025',
+      archivos: [
+        { nombre: '0.Oficio de entrega SABG_PAE2026_Ejerc2025_Eva_Consistenciayresultados.pdf', url: 'assets/planeacion-pdf/PAE_2026/0.Oficio de entrega SABG_PAE2026_Ejerc2025_Eva_Consistenciayresultados.pdf'},
+        { nombre: '1.V14_ECR_PP135_2026_Final.pdf', url: 'assets/planeacion-pdf/PAE_2026/1.V14_ECR_PP135_2026_Final.pdf'},
+        { nombre: '2.TDR_PP135_Final.pdf', url: 'assets/planeacion-pdf/PAE_2026/2.TDR_PP135_Final.pdf'},
+        { nombre: '3.Anexo_1_Difusion_Resultados_ECR_Progr_Educacion_Superior_2026_-Firmas.pdf', url: 'assets/planeacion-pdf/PAE_2026/3.Anexo_1_Difusion_Resultados_ECR_Progr_Educacion_Superior_2026_-Firmas.pdf'},
+        { nombre: '4.Ficha_Tecnica.pdf', url: 'assets/planeacion-pdf/PAE_2026/4.Ficha_Tecnica.pdf'},
+        { nombre: '5.Propuesta_de_trabajo_2026_final-.pdf', url: 'assets/planeacion-pdf/PAE_2026/5.Propuesta_de_trabajo_2026_final-.pdf'},
+        { nombre: '6.Resumen_ejecutivo.pdf', url: 'assets/planeacion-pdf/PAE_2026/6.Resumen_ejecutivo.pdf'},
+        { nombre: '7.Constancia_situacion_fiscal.pdf', url: 'assets/planeacion-pdf/PAE_2026/7.Constancia_situacion_fiscal.pdf'},
+        { nombre: '8.-PAE 2026.-Contrato_de_prestacion_de serv.pdf', url: 'assets/planeacion-pdf/PAE_2026/8.-PAE 2026.-Contrato_de_prestacion_de serv.pdf'},
+        { nombre: '9.Curriculum_evaluador_2026.pdf', url: 'assets/planeacion-pdf/PAE_2026/9.Curriculum_evaluador_2026.pdf'},
+        { nombre: '10. Documentacion_que_acredite_experiencia_del_evaluador.pdf', url: 'assets/planeacion-pdf/PAE_2026/10. Documentacion_que_acredite_experiencia_del_evaluador.pdf'},
+        { nombre: '11.Manifestacion evaluador_experiencia.pdf', url: 'assets/planeacion-pdf/PAE_2026/11.Manifestacion evaluador_experiencia.pdf'},
+        { nombre: '12.Anexo_A_PAE_2026_SEDUC.pdf', url: 'assets/planeacion-pdf/PAE_2026/12.Anexo_A_PAE_2026_SEDUC.pdf'},
+      
+      ]
+    },
 
     {
       nombre: 'PAE 2025 Ejercicio Fiscal 2025',

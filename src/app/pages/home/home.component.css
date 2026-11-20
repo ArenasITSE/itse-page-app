@@ -88,12 +88,6 @@
   border: none;
 }
 
-.siguenos-embed iframe {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-
 .siguenos-link {
   display: block;
   text-align: center;

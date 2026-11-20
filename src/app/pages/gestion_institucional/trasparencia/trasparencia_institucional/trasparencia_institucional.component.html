@@ -4,7 +4,7 @@
   <h2>TRANSPARENCIA INSTITUCIONAL</h2>
   <p class="busqueda">| Ctrl + F | PARA BUSCAR SU FRACCIÓN .</p>
 
-  <!-- 🔥 TABS -->
+  <!--  TABS -->
   <div class="tabs-menu">
 
     <button [class.active]="tab==='art74'" (click)="setTab('art74')">
@@ -13,6 +13,18 @@
 
     <button [class.active]="tab==='art75'" (click)="setTab('art75')">
       ARTÍCULO 75
+    </button>
+
+    <button [class.active]="tab==='art64'" (click)="setTab('art64')">
+      ARTÍCULO 64
+    </button>
+
+    <button [class.active]="tab==='art63'" (click)="setTab('art63')">
+      ARTÍCULO 63
+    </button>
+
+    <button [class.active]="tab==='art62'" (click)="setTab('art62')">
+      ARTÍCULO 62
     </button>
 
     <button [class.active]="tab==='iecr'" (click)="setTab('iecr')">
@@ -112,7 +124,7 @@
 
       <hr>
 
-      <!-- 🔥 FRACCIONES 75 -->
+      <!-- FRACCIONES 75 -->
       <div class="fraccion-box" *ngFor="let f of fraccionesArt75">
 
         <div class="fraccion-header" (click)="toggleFraccion(f.num)">
@@ -165,6 +177,55 @@
         </a>
       </div>
 
+
+    </div>
+
+    <!-- ================= ARTICULO 64 ================= -->
+    <!-- ================= ARTICULO 64 ================= -->
+    <div *ngIf="tab==='art64'">
+
+      <div class="titulo-azul">ARTÍCULO 64.</div>
+
+      <hr>
+
+      <div class="drive-container">
+        <iframe
+          [src]="getDriveUrl(carpetasDrive.art64)"
+          title="Documentos del Artículo 64">
+        </iframe>
+      </div>
+
+    </div>
+
+    <!-- ================= ARTICULO 63 ================= -->
+    <div *ngIf="tab==='art63'">
+
+      <div class="titulo-azul">ARTÍCULO 63.</div>
+
+      <hr>
+
+      <div class="drive-container">
+        <iframe
+          [src]="getDriveUrl(carpetasDrive.art63)"
+          title="Documentos del Artículo 63">
+        </iframe>
+      </div>
+
+    </div>
+
+    <!-- ================= ARTICULO 62 ================= -->
+    <div *ngIf="tab==='art62'">
+
+      <div class="titulo-azul">ARTÍCULO 62.</div>
+
+      <hr>
+
+      <div class="drive-container">
+        <iframe
+          [src]="getDriveUrl(carpetasDrive.art62)"
+          title="Documentos del Artículo 62">
+        </iframe>
+      </div>
 
     </div>
 

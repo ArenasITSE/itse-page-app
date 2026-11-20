@@ -1,15 +1,15 @@
+
+/* =====================================================
+   VARIABLES Y CONFIGURACIÓN GENERAL
+===================================================== */
+
 :host {
   display: block;
-}
 
-/* =========================
-   VARIABLES
-========================= */
-
-:host {
   --primary-color: #1e3a8a;
   --primary-dark: #172554;
   --secondary-color: #2563eb;
+
   --card-bg: #ffffff;
   --text-main: #0f172a;
   --text-muted: #64748b;
@@ -22,13 +22,12 @@
   --accent-planeacion: #1900ff;
   --accent-vinculacion: #00eeff;
   --accent-academica: #22c55e;
-
-  display: block;
 }
 
-/* =========================
-   CONTENEDOR GENERAL
-========================= */
+
+/* =====================================================
+   ENCABEZADO
+===================================================== */
 
 .header {
   text-align: center;
@@ -56,47 +55,36 @@
   justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
-
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
 .stat-card {
-
   display: flex;
   align-items: center;
   gap: 8px;
-
   padding: 12px 18px;
-
   border-radius: 999px;
-
   background: rgba(37, 99, 235, 0.08);
-
   border: 1px solid rgba(37, 99, 235, 0.15);
-
   font-weight: 600;
-
   color: var(--primary-color);
-
-  transition: all .25s ease;
+  transition: all 0.25s ease;
 }
 
 .stat-card:hover {
-
   transform: translateY(-2px);
-
-  box-shadow:
-    0 4px 12px rgba(0,0,0,.10);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
 }
 
-/* =========================
+
+/* =====================================================
    BUSCADOR
-========================= */
+===================================================== */
 
 .controls {
   max-width: 1000px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 40px;
   text-align: center;
 }
 
@@ -114,9 +102,10 @@
   border-color: var(--secondary-color);
 }
 
-/* =========================
-   ÁRBOL
-========================= */
+
+/* =====================================================
+   CONTENEDOR DEL ORGANIGRAMA
+===================================================== */
 
 .tree-container {
   width: 100%;
@@ -124,30 +113,36 @@
   overflow-y: hidden;
   padding: 20px;
   padding-bottom: 40px;
+  box-sizing: border-box;
 }
 
 .tree {
   display: table;
+  width: max-content;
   margin: 0 auto;
   text-align: center;
 }
 
 .tree ul {
-  padding-top: 25px;
   position: relative;
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 25px 0 0;
+  list-style: none;
 }
 
 .tree li {
-  list-style: none;
   position: relative;
-  padding: 25px 15px 0 15px;
+  list-style: none;
+  padding: 25px 15px 0;
+  text-align: center;
 }
 
-/* =========================
-   CONECTORES
-========================= */
+
+/* =====================================================
+   CONECTORES GENERALES DEL ÁRBOL
+===================================================== */
 
 .tree li::before,
 .tree li::after {
@@ -155,9 +150,9 @@
   position: absolute;
   top: 0;
   right: 50%;
-  border-top: 2px solid var(--text-muted);
   width: 50%;
   height: 25px;
+  border-top: 2px solid var(--text-muted);
   opacity: 0.4;
 }
 
@@ -167,8 +162,8 @@
   border-left: 2px solid var(--text-muted);
 }
 
-.tree li:only-child::after,
-.tree li:only-child::before {
+.tree li:only-child::before,
+.tree li:only-child::after {
   display: none;
 }
 
@@ -190,43 +185,46 @@
   border-radius: 5px 0 0 0;
 }
 
+/* Línea vertical que conecta cada nivel con su padre */
+
 .tree ul ul::before {
   content: '';
   position: absolute;
   top: 0;
   left: 50%;
-  border-left: 2px solid var(--text-muted);
   width: 0;
   height: 25px;
+  border-left: 2px solid var(--text-muted);
   opacity: 0.4;
 }
 
-/* =========================
-   TARJETAS
-========================= */
+
+/* =====================================================
+   TARJETAS GENERALES
+===================================================== */
 
 .node {
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
-  padding:16px 16px 16px 16px;
-  border-radius: 12px;
-
   position: relative;
-
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
 
   width: 300px;
   height: 140px;
-
   box-sizing: border-box;
 
-  box-shadow:
-    0 10px 15px -3px rgba(0,0,0,0.05),
-    0 4px 6px -2px rgba(0,0,0,0.05);
+  padding: 16px;
+
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
 
   text-align: left;
+
+  box-shadow:
+    0 10px 15px -3px rgba(0, 0, 0, 0.05),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
   transition: all 0.3s ease;
 }
 
@@ -234,73 +232,69 @@
   transform: translateY(-5px);
 }
 
+
+/* =====================================================
+   EFECTOS HOVER POR SUBDIRECCIÓN
+===================================================== */
+
 .level-dep.admin:hover,
 .sub-admin:hover {
+  border-color: var(--accent-admin);
 
-    border-color: var(--accent-admin);
-
-    box-shadow:
-        0 0 0 2px rgba(255,0,0,.15),
-        0 10px 20px rgba(255,0,0,.18);
-
+  box-shadow:
+    0 0 0 2px rgba(255, 0, 0, 0.15),
+    0 10px 20px rgba(255, 0, 0, 0.18);
 }
 
 .level-dep.planeacion:hover,
 .sub-planeacion:hover {
+  border-color: var(--accent-planeacion);
 
-    border-color: var(--accent-planeacion);
-
-    box-shadow:
-        0 0 0 2px rgba(25,0,255,.15),
-        0 10px 20px rgba(25,0,255,.18);
-
+  box-shadow:
+    0 0 0 2px rgba(25, 0, 255, 0.15),
+    0 10px 20px rgba(25, 0, 255, 0.18);
 }
 
 .level-dep.vinculacion:hover,
 .sub-vinculacion:hover {
+  border-color: var(--accent-vinculacion);
 
-    border-color: var(--accent-vinculacion);
-
-    box-shadow:
-        0 0 0 2px rgba(0,238,255,.18),
-        0 10px 20px rgba(0,238,255,.20);
-
+  box-shadow:
+    0 0 0 2px rgba(0, 238, 255, 0.18),
+    0 10px 20px rgba(0, 238, 255, 0.20);
 }
 
 .level-dep.academica:hover,
 .sub-academica:hover {
+  border-color: var(--accent-academica);
 
-    border-color: var(--accent-academica);
-
-    box-shadow:
-        0 0 0 2px rgba(34,197,94,.18),
-        0 10px 20px rgba(34,197,94,.20);
-
+  box-shadow:
+    0 0 0 2px rgba(34, 197, 94, 0.18),
+    0 10px 20px rgba(34, 197, 94, 0.20);
 }
 
 .level-root:hover {
-
-    box-shadow:
-        0 0 0 2px rgba(30,58,138,.18),
-        0 12px 24px rgba(30,58,138,.25);
-
+  box-shadow:
+    0 0 0 2px rgba(30, 58, 138, 0.18),
+    0 12px 24px rgba(30, 58, 138, 0.25);
 }
 
 .level-staff:hover {
-
-    box-shadow:
-        0 0 0 2px rgba(100,116,139,.15),
-        0 10px 20px rgba(100,116,139,.20);
-
+  box-shadow:
+    0 0 0 2px rgba(100, 116, 139, 0.15),
+    0 10px 20px rgba(100, 116, 139, 0.20);
 }
 
-/* =========================
-   NIVELES
-========================= */
+
+/* =====================================================
+   NIVELES JERÁRQUICOS
+===================================================== */
+
+/* Dirección general */
 
 .level-root {
   background: var(--primary-color);
-  color: #fff;
+  color: #ffffff;
   border-color: var(--primary-dark);
   text-align: center;
   align-items: center;
@@ -310,26 +304,52 @@
   color: #93c5fd;
 }
 
-.level-staff {
-  background: #f1f5f9;
-  border: 2px dashed #94a3b8;
+.level-root .dept-title {
+  color: rgba(255, 255, 255, 0.7);
 }
+
+/* Subdirecciones */
 
 .level-sub {
   background: var(--secondary-color);
-  color: white;
+  color: #ffffff;
   border-color: var(--primary-color);
   text-align: center;
   align-items: center;
+}
+
+.level-sub .dept-title {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .level-sub .puesto {
   color: #bfdbfe;
 }
 
-/* =========================
+/* División general independiente */
+
+.level-staff {
+  width: 270px;
+  height: 140px;
+
+  background: #f1f5f9;
+  border: 2px dashed #94a3b8;
+  border-radius: 12px;
+
+  box-sizing: border-box;
+
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 16px;
+  text-align: left;
+}
+
+
+/* =====================================================
    COLORES DE SUBDIRECCIONES
-========================= */
+===================================================== */
 
 .sub-admin {
   border-top: 5px solid var(--accent-admin);
@@ -347,13 +367,14 @@
   border-top: 5px solid var(--accent-academica);
 }
 
-/* =========================
-   DEPARTAMENTOS
-========================= */
+
+/* =====================================================
+   DEPARTAMENTOS Y DIVISIONES
+===================================================== */
 
 .level-dep {
   border-left: 5px solid var(--secondary-color);
-  padding-top:18px;
+  padding-top: 18px;
 }
 
 .level-dep.admin {
@@ -372,96 +393,26 @@
   border-left-color: var(--accent-academica);
 }
 
-/* Carpetas de las SUBDIRECCIONES */
 
-.level-sub.sub-admin .folder-btn i{
-    color: var(--accent-admin);
+/* =====================================================
+   TÍTULOS Y TEXTOS
+===================================================== */
+
+.dept-title {
+  font-size: 0.70rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-muted);
+
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+
+  word-break: break-word;
+  line-height: 1.25;
 }
 
-.level-sub.sub-planeacion .folder-btn i{
-    color: var(--accent-planeacion);
-}
-
-.level-sub.sub-vinculacion .folder-btn i{
-    color: var(--accent-vinculacion);
-}
-
-.level-sub.sub-academica .folder-btn i{
-    color: var(--accent-academica);
-}
-
-/* Fondo blanco para las carpetas de las SUBDIRECCIONES */
-
-.level-sub.sub-admin .folder-btn,
-.level-sub.sub-planeacion .folder-btn,
-.level-sub.sub-vinculacion .folder-btn,
-.level-sub.sub-academica .folder-btn{
-
-    background:rgba(255,255,255,.92);
-
-}
-
-.level-sub.sub-admin .folder-btn{
-    border-color: var(--accent-admin);
-}
-
-.level-sub.sub-planeacion .folder-btn{
-    border-color: var(--accent-planeacion);
-}
-
-.level-sub.sub-vinculacion .folder-btn{
-    border-color: var(--accent-vinculacion);
-}
-
-.level-sub.sub-academica .folder-btn{
-    border-color: var(--accent-academica);
-}
-/* =========================
-   TEXTO
-========================= */
-
-.dept-title{
-
-    font-size:.70rem;
-    text-transform:uppercase;
-    font-weight:700;
-    color:var(--text-muted);
-    margin-bottom:4px;
-    letter-spacing:.5px;
-
-    word-break:break-word;
-    line-height:1.25;
-
-}
-
-.level-root .dept-title,
-.level-sub .dept-title {
-  color: rgba(255,255,255,0.7);
-}
-.level-dep .dept-title{
-
-    padding-right:40px;
-
-}
-
-/*
-.level-root,
-.level-staff{
-
-    padding-right:48px;
-
-} */
-
-/* Dirección General */
-
-.level-root .folder-btn i{
-    color: var(--accent-root);
-}
-
-/* División General */
-
-.level-staff .folder-btn i{
-    color: var(--accent-staff);
+.level-dep .dept-title {
+  padding-right: 40px;
 }
 
 .nombre {
@@ -476,89 +427,189 @@
   color: var(--text-muted);
 }
 
-/* folder */
+
+/* =====================================================
+   BOTONES DE CARPETAS
+===================================================== */
+
 .folder-btn {
+  position: absolute;
 
-    position: absolute;
+  top: 10px;
+  right: 10px;
 
-    width:30px;
-    height:30px;
+  width: 30px;
+  height: 30px;
 
-    top:10px;
-    right:10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-decoration: none;
 
-    text-decoration: none;
+  border: 1.5px solid #9ca3af;
+  border-radius: 7px;
 
-    border: 1.5px solid #9ca3af;
-    border-radius: 7px;
+  background: transparent;
 
-    background: transparent;
-
-    transition: all .25s ease;
-
+  transition: all 0.25s ease;
 }
 
-.folder-btn i{
-
-    font-size:16px;
-
-
-    transition:inherit;
-
+.folder-btn i {
+  font-size: 16px;
+  transition: inherit;
 }
 
-.level-dep.admin .folder-btn i{
-    color: var(--accent-admin);
+/* Color de carpetas por departamento */
+
+.level-dep.admin .folder-btn i,
+.level-sub.sub-admin .folder-btn i {
+  color: var(--accent-admin);
 }
 
-.level-dep.planeacion .folder-btn i{
-    color: var(--accent-planeacion);
+.level-dep.planeacion .folder-btn i,
+.level-sub.sub-planeacion .folder-btn i {
+  color: var(--accent-planeacion);
 }
 
-.level-dep.vinculacion .folder-btn i{
-    color: var(--accent-vinculacion);
+.level-dep.vinculacion .folder-btn i,
+.level-sub.sub-vinculacion .folder-btn i {
+  color: var(--accent-vinculacion);
 }
 
-.level-dep.academica .folder-btn i{
-    color: var(--accent-academica);
+.level-dep.academica .folder-btn i,
+.level-sub.sub-academica .folder-btn i {
+  color: var(--accent-academica);
 }
 
-.folder-btn:hover{
+/* Fondo blanco para las carpetas de subdirecciones */
 
-    transform: scale(1.08);
-
-    box-shadow: 0 2px 8px rgba(0,0,0,.20);
-
-    border-color: #9ca3af;
-
+.level-sub.sub-admin .folder-btn,
+.level-sub.sub-planeacion .folder-btn,
+.level-sub.sub-vinculacion .folder-btn,
+.level-sub.sub-academica .folder-btn {
+  background: rgba(255, 255, 255, 0.92);
 }
 
-/* =========================
+/* Bordes de las carpetas */
+
+.level-sub.sub-admin .folder-btn {
+  border-color: var(--accent-admin);
+}
+
+.level-sub.sub-planeacion .folder-btn {
+  border-color: var(--accent-planeacion);
+}
+
+.level-sub.sub-vinculacion .folder-btn {
+  border-color: var(--accent-vinculacion);
+}
+
+.level-sub.sub-academica .folder-btn {
+  border-color: var(--accent-academica);
+}
+
+/* Dirección general y división general */
+
+.level-root .folder-btn i {
+  color: var(--accent-root);
+}
+
+.level-staff .folder-btn i {
+  color: var(--accent-staff);
+}
+
+/* Efecto hover */
+
+.folder-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.20);
+  border-color: #9ca3af;
+}
+
+
+/* =====================================================
    SUBRAMAS
-========================= */
+===================================================== */
 
 .sub-branch-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 12px;
   padding-top: 15px;
-  align-items: center;
 }
 
-/* =========================
-   BUSQUEDA
-========================= */
+
+/* =====================================================
+   DISTRIBUCIÓN ACADÉMICA
+===================================================== */
+
+.academic-layout {
+  position: relative;
+  display: block;
+  width: 300px;
+  padding-top: 0;
+}
+
+.academic-departments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 300px;
+  gap: 12px;
+}
+
+
+/* =====================================================
+   DIVISIÓN GENERAL INDEPENDIENTE
+===================================================== */
+
+/*
+   Esta tarjeta debe estar dentro de:
+   <li class="independent-branch">
+
+   Y ser hermana de las cuatro subdirecciones.
+*/
+
+.tree li.independent-branch {
+  padding-top: 180px;
+}
+
+/* Conector horizontal y vertical hasta la tarjeta */
+
+.tree li.independent-branch::before {
+  height: 180px;
+  border-top: 2px solid var(--text-muted);
+  border-right: 2px solid var(--text-muted);
+  border-radius: 0;
+  opacity: 0.4;
+}
+
+/* Evita dibujar un segundo conector */
+
+.tree li.independent-branch::after {
+  display: none;
+}
+
+
+/* =====================================================
+   BÚSQUEDA Y RESALTADO
+===================================================== */
 
 .highlight {
   transform: scale(1.03);
+
   box-shadow:
-    0 0 0 3px rgba(255,255,255,.8),
-    0 0 15px rgba(0,0,0,.25);
+    0 0 0 3px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(0, 0, 0, 0.25);
+
   animation: pulse 1.2s infinite;
+}
+
+.filtered {
+  opacity: 0.3;
 }
 
 @keyframes pulse {
@@ -575,15 +626,16 @@
   }
 }
 
-.filtered {
-  opacity: 0.3;
-}
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* =====================================================
+   DISEÑO RESPONSIVE
+===================================================== */
+
+/* Pantallas medianas y pequeñas */
 
 @media (max-width: 1400px) {
+
+  /* El organigrama pasa a distribución vertical */
 
   .tree ul {
     flex-direction: column;
@@ -595,17 +647,44 @@
     padding-top: 20px;
   }
 
+  /* Se ocultan las conexiones horizontales */
+
   .tree li::before,
   .tree li::after,
   .tree ul ul::before {
     display: none;
   }
+
+  /* Distribución académica */
+
+  .academic-layout {
+    width: 300px;
+  }
+
+  /* La división independiente vuelve al flujo normal */
+
+  .tree li.independent-branch {
+    padding-top: 20px;
+  }
+
+  .level-staff {
+    position: relative;
+    margin-top: 0;
+    width: 270px;
+  }
 }
+
+
+/* Teléfonos */
 
 @media (max-width: 768px) {
 
   .header h1 {
     font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 1.3rem;
   }
 
   .node {
@@ -617,5 +696,15 @@
 
   .search-input {
     width: 95%;
+  }
+
+  .academic-layout,
+  .academic-departments {
+    width: 300px;
+  }
+
+  .level-staff {
+    width: 270px;
+    max-width: 95%;
   }
 }

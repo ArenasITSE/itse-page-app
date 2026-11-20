@@ -13,6 +13,10 @@ export class HomeComponent {
 
   images = [
     {
+      src: 'assets/carrusel_home/innova.jpg',
+      link: ''
+    },
+    {
       src: 'assets/carrusel_home/banner1.jpeg',
       link: ''
     },
